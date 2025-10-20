@@ -28,6 +28,8 @@ def sample_launchables():
             "id": "llama-3.1-8b",
             "name": "Llama 3.1 (8B)",
             "description": "Fine-tune Llama 3.1 (8B) with Unsloth",
+            "path": "llama-3.1-8b",
+            "notebook": "Llama3.1_(8B).ipynb",
             "gpu": {
                 "tier": "L4",
                 "min_vram_gb": 16
@@ -38,6 +40,8 @@ def sample_launchables():
             "id": "gemma-3-vision",
             "name": "Gemma 3 Vision",
             "description": "",  # Test auto-generation
+            "path": "gemma-3-vision",
+            "notebook": "Gemma3_Vision.ipynb",
             "gpu": {
                 "tier": "L4",
                 "min_vram_gb": 20
@@ -48,6 +52,8 @@ def sample_launchables():
             "id": "whisper-large-v3",
             "name": "Whisper Large V3",
             "description": "",
+            "path": "whisper-large-v3",
+            "notebook": "Whisper.ipynb",
             "gpu": {
                 "tier": "A100-40GB",
                 "min_vram_gb": 16
@@ -192,4 +198,33 @@ Some content
     # Try to update
     success = update_readme(readme_path, "test table")
     assert not success
+
+
+def test_url_encoding_in_links():
+    """Test that notebook links are properly URL-encoded."""
+    # Create launchable with spaces in path and filename
+    launchables = [
+        {
+            "id": "huggingface-course-llama",
+            "name": "HuggingFace Course Llama3",
+            "path": "huggingface course-llama3",  # Space in path
+            "notebook": "HuggingFace Course-Llama3.1_(8B)-GRPO.ipynb",  # Spaces and special chars
+            "gpu": {"tier": "L4", "min_vram_gb": 16},
+            "tags": ["grpo", "reinforcement-learning"]
+        }
+    ]
+    
+    table = generate_table(launchables)
+    
+    # Check that spaces are encoded as %20
+    assert "huggingface%20course-llama3" in table
+    assert "HuggingFace%20Course-Llama3.1_%288B%29-GRPO.ipynb" in table
+    
+    # Check that parentheses are encoded
+    assert "%28" in table  # (
+    assert "%29" in table  # )
+    
+    # Check that the raw space/paren characters are NOT in the link
+    # (The link should be encoded, but the display name can have them)
+    assert "[View Notebook](converted/huggingface%20course-llama3/" in table
 

@@ -12,6 +12,7 @@ import logging
 import sys
 from pathlib import Path
 from typing import List, Dict
+from urllib.parse import quote
 
 # Configure logging
 logging.basicConfig(
@@ -223,7 +224,12 @@ def generate_table(launchables: List[Dict]) -> str:
             # Get launchable path (use 'path' or 'id' which matches directory name)
             launchable_path = launchable.get('path', launchable.get('id', name.lower().replace(' ', '-')))
             notebook_name = launchable.get('notebook', 'notebook.ipynb')
-            github_path = f"converted/{launchable_path}/{notebook_name}"
+            
+            # URL-encode path components for GitHub markdown links
+            # This handles spaces and special characters in filenames
+            encoded_path = quote(launchable_path)
+            encoded_notebook = quote(notebook_name)
+            github_path = f"converted/{encoded_path}/{encoded_notebook}"
             
             # Create link to the notebook in the repo
             notebook_link = f"[View Notebook]({github_path})"
