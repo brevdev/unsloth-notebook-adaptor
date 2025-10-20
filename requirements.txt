@@ -1,0 +1,20 @@
+# Core dependencies for Unsloth to Brev Adapter
+# Python 3.9+
+
+# Jupyter notebook handling
+nbformat>=5.9.0
+nbconvert>=7.8.0
+
+# Templating
+Jinja2>=3.1.2
+
+# Configuration
+PyYAML>=6.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Utilities
+python-dateutil>=2.8.2
+

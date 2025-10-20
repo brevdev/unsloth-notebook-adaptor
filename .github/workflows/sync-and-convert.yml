@@ -1,0 +1,136 @@
+name: Sync and Convert Notebooks
+
+on:
+  schedule:
+    # Run daily at 6 AM UTC
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'adapters/**'
+      - 'templates/**'
+      - 'scripts/**'
+
+jobs:
+  sync-and-convert:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout this repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      
+      - name: Checkout Unsloth notebooks
+        uses: actions/checkout@v4
+        with:
+          repository: unslothai/notebooks
+          path: unsloth-notebooks
+          fetch-depth: 0
+      
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      - name: Compare notebooks (detect changes)
+        id: compare
+        run: |
+          python scripts/compare_notebooks.py \
+            --source unsloth-notebooks/nb \
+            --metadata metadata/last_sync.txt \
+            --output changes.txt
+          
+          if [ -s changes.txt ]; then
+            echo "changes_detected=true" >> $GITHUB_OUTPUT
+            echo "Found changes:"
+            cat changes.txt
+          else
+            echo "changes_detected=false" >> $GITHUB_OUTPUT
+            echo "No changes detected"
+          fi
+      
+      - name: Convert notebooks
+        if: steps.compare.outputs.changes_detected == 'true'
+        run: |
+          python scripts/convert_notebook.py \
+            --source unsloth-notebooks/nb \
+            --output converted \
+            --changed-file changes.txt
+      
+      - name: Generate metadata
+        if: steps.compare.outputs.changes_detected == 'true'
+        run: |
+          python scripts/generate_metadata.py \
+            --notebooks-dir converted \
+            --output metadata/launchables.json
+      
+      - name: Update README with Launchables table
+        if: steps.compare.outputs.changes_detected == 'true'
+        run: |
+          python scripts/generate_readme_table.py \
+            --metadata-path metadata/launchables.json \
+            --readme-path README.md
+      
+      - name: Run tests
+        if: steps.compare.outputs.changes_detected == 'true'
+        run: |
+          pytest tests/ -v --tb=short
+      
+      - name: Update sync metadata
+        if: steps.compare.outputs.changes_detected == 'true'
+        run: |
+          cd unsloth-notebooks
+          COMMIT_HASH=$(git rev-parse HEAD)
+          TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          cd ..
+          
+          mkdir -p metadata
+          echo "$COMMIT_HASH" > metadata/last_sync.txt
+          echo "$TIMESTAMP" >> metadata/last_sync.txt
+          
+          echo "Updated sync metadata:"
+          echo "Commit: $COMMIT_HASH"
+          echo "Timestamp: $TIMESTAMP"
+      
+      - name: Commit and push changes
+        if: steps.compare.outputs.changes_detected == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          git add converted/ metadata/ README.md
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: sync and convert notebooks from unslothai/notebooks
+            
+            - Updated converted notebooks
+            - Regenerated metadata
+            - Updated README launchables table
+            - Synced at $(date -u +"%Y-%m-%d %H:%M:%S UTC")"
+            
+            git push
+          fi
+      
+      - name: Create summary
+        if: always()
+        run: |
+          if [ -f metadata/launchables.json ]; then
+            python scripts/create_summary.py metadata/launchables.json >> $GITHUB_STEP_SUMMARY
+          else
+            echo "## ℹ️ No changes detected" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "All notebooks are up to date." >> $GITHUB_STEP_SUMMARY
+          fi
+
