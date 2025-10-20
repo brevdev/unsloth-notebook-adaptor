@@ -144,9 +144,9 @@ def test_get_config_for_notebook():
     config = get_config_for_notebook('Llama_3.1_(8B).ipynb')
     assert 'llama' in config['model_name'].lower()
     
-    # Test unknown model (should return default)
+    # Test unknown model (should return default with filename-based name)
     config = get_config_for_notebook('unknown-model-xyz')
-    assert config['model_name'] == 'Unknown Model'
+    assert 'Unknown Model Xyz' in config['model_name']  # Should generate from filename
     assert config['recommended_gpu'] == 'L4'
 
 

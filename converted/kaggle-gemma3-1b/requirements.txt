@@ -1,5 +1,5 @@
 # Requirements for Kaggle Gemma3 (1B) Grpo
-# Generated: 2025-10-20T15:53:19.537796+00:00
+# Generated: 2025-10-20T16:36:01.959815+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

@@ -75,6 +75,111 @@ def generate_description(launchable: Dict) -> str:
         return f"{name} - Unsloth fine-tuning"
 
 
+def get_model_type(launchable: Dict) -> str:
+    """
+    Determine the model type/use case from tags and notebook name.
+
+    Args:
+        launchable: Launchable metadata dictionary
+
+    Returns:
+        Model type string (e.g., "Vision", "TTS", "GRPO", etc.)
+    """
+    tags = launchable.get('tags', [])
+    notebook = launchable.get('notebook', '').lower()
+    
+    # Check tags first
+    if 'vision' in tags or 'multimodal' in tags:
+        return 'Vision'
+    elif 'text-to-speech' in tags or 'tts' in tags:
+        return 'TTS'
+    elif 'speech-to-text' in tags or 'stt' in tags:
+        return 'STT'
+    elif 'grpo' in tags or 'reinforcement-learning' in tags:
+        return 'GRPO'
+    elif 'audio' in tags:
+        return 'Audio'
+    
+    # Check notebook filename for clues
+    if 'vision' in notebook:
+        return 'Vision'
+    elif 'tts' in notebook or 'text-to-speech' in notebook:
+        return 'TTS'
+    elif 'stt' in notebook or 'whisper' in notebook:
+        return 'STT'
+    elif 'grpo' in notebook:
+        return 'GRPO'
+    elif 'alpaca' in notebook:
+        return 'Alpaca'
+    elif 'orpo' in notebook:
+        return 'ORPO'
+    elif 'dpo' in notebook:
+        return 'DPO'
+    elif 'conversational' in notebook or 'chat' in notebook:
+        return 'Conversational'
+    elif 'inference' in notebook:
+        return 'Inference'
+    elif 'reasoning' in notebook:
+        return 'Reasoning'
+    elif 'thinking' in notebook:
+        return 'Thinking'
+    elif 'synthetic' in notebook:
+        return 'Synthetic Data'
+    elif 'instruct' in notebook:
+        return 'Instruct'
+    elif 'cpt' in notebook:
+        return 'CPT'
+    elif 'classification' in notebook:
+        return 'Classification'
+    
+    # Default
+    return 'Fine-tuning'
+
+
+def categorize_launchables(launchables: List[Dict]) -> Dict[str, List[Dict]]:
+    """
+    Categorize launchables by type for grouped display.
+
+    Args:
+        launchables: List of launchable metadata dictionaries
+
+    Returns:
+        Dictionary mapping category names to lists of launchables
+    """
+    categories = {
+        'Main Notebooks': [],
+        'Vision (Multimodal) Notebooks': [],
+        'Text-to-Speech (TTS) Notebooks': [],
+        'Speech-to-Text (STT) Notebooks': [],
+        'GRPO Notebooks': [],
+        'Other Notebooks': []
+    }
+    
+    for launchable in launchables:
+        model_type = get_model_type(launchable)
+        tags = launchable.get('tags', [])
+        
+        # Categorize based on type and tags
+        if model_type == 'Vision':
+            categories['Vision (Multimodal) Notebooks'].append(launchable)
+        elif model_type in ['TTS', 'Audio'] and 'text-to-speech' in tags:
+            categories['Text-to-Speech (TTS) Notebooks'].append(launchable)
+        elif model_type == 'STT':
+            categories['Speech-to-Text (STT) Notebooks'].append(launchable)
+        elif model_type == 'GRPO':
+            categories['GRPO Notebooks'].append(launchable)
+        else:
+            # Add to Main if it's a popular/featured model, otherwise Other
+            name = launchable.get('name', '').lower()
+            if any(popular in name for popular in ['llama', 'gemma', 'qwen', 'phi', 'mistral']):
+                categories['Main Notebooks'].append(launchable)
+            else:
+                categories['Other Notebooks'].append(launchable)
+    
+    # Remove empty categories
+    return {k: v for k, v in categories.items() if v}
+
+
 def generate_table(launchables: List[Dict]) -> str:
     """
     Generate markdown table from launchables list.
@@ -87,43 +192,44 @@ def generate_table(launchables: List[Dict]) -> str:
     """
     logger.info(f"Generating table for {len(launchables)} launchables")
     
-    # Sort by primary category, then by name
-    def sort_key(launchable):
-        tags = launchable.get('tags', [])
-        # Get primary category (first non-generic tag)
-        category = 'z-other'  # Default for sorting
-        for tag in tags:
-            if tag not in ['unsloth', 'fine-tuning']:
-                category = tag
-                break
-        return (category, launchable.get('name', ''))
+    # Categorize launchables
+    categorized = categorize_launchables(launchables)
     
-    sorted_launchables = sorted(launchables, key=sort_key)
-    
-    # Build table
+    # Build tables by category
     lines = []
-    lines.append("| Model | Description | GPU | VRAM | Categories | Deploy |")
-    lines.append("|-------|-------------|-----|------|------------|--------|")
     
-    for launchable in sorted_launchables:
-        name = launchable.get('name', 'Unknown')
-        description = generate_description(launchable)
+    for category_name, category_launchables in categorized.items():
+        # Sort alphabetically by name within each category
+        category_launchables.sort(key=lambda x: x.get('name', ''))
         
-        gpu_info = launchable.get('gpu', {})
-        gpu_tier = gpu_info.get('tier', 'N/A')
-        min_vram = gpu_info.get('min_vram_gb', 'N/A')
-        vram_str = f"{min_vram}GB" if min_vram != 'N/A' else 'N/A'
+        # Add category header
+        lines.append(f"\n### {category_name}\n")
+        lines.append("| Model | Type | GPU Requirements | Notebook Link |")
+        lines.append("|-------|------|------------------|---------------|")
         
-        # Get non-generic tags for categories
-        all_tags = launchable.get('tags', [])
-        categories = [tag for tag in all_tags if tag not in ['unsloth', 'fine-tuning']]
-        categories_str = ', '.join(categories[:3]) if categories else 'General'  # Limit to 3
-        
-        # Deploy column is empty (to be filled by Brev team)
-        deploy_str = ""
-        
-        # Add row
-        lines.append(f"| {name} | {description} | {gpu_tier} | {vram_str} | {categories_str} | {deploy_str} |")
+        for launchable in category_launchables:
+            name = launchable.get('name', 'Unknown')
+            model_type = get_model_type(launchable)
+            
+            # Format name with bold and size
+            formatted_name = f"**{name}**"
+            
+            # GPU requirements
+            gpu_info = launchable.get('gpu', {})
+            gpu_tier = gpu_info.get('tier', 'L4')
+            min_vram = gpu_info.get('min_vram_gb', 16)
+            gpu_req = f"{gpu_tier} ({min_vram}GB)"
+            
+            # Get launchable path
+            launchable_name = launchable.get('launchable_name', name.lower().replace(' ', '-'))
+            notebook_name = launchable.get('notebook', 'notebook.ipynb')
+            github_path = f"converted/{launchable_name}/{notebook_name}"
+            
+            # Create link to the notebook in the repo
+            notebook_link = f"[View Notebook]({github_path})"
+            
+            # Add row
+            lines.append(f"| {formatted_name} | {model_type} | {gpu_req} | {notebook_link} |")
     
     return '\n'.join(lines)
 

@@ -85,31 +85,36 @@ def test_generate_table(sample_launchables):
     """Test table generation."""
     table = generate_table(sample_launchables)
     
-    # Check table structure
-    assert "| Model | Description | GPU | VRAM | Categories | Deploy |" in table
-    assert "|-------|-------------|-----|------|------------|--------|" in table
+    # Check new Unsloth-style table structure
+    assert "| Model | Type | GPU Requirements | Notebook Link |" in table
+    assert "|-------|------|------------------|---------------|" in table
     
-    # Check all models are in table
-    assert "Llama 3.1 (8B)" in table
-    assert "Gemma 3 Vision" in table
-    assert "Whisper Large V3" in table
+    # Check categories are present
+    assert "### Main Notebooks" in table
+    assert "### Vision (Multimodal) Notebooks" in table
+    assert "### Speech-to-Text (STT) Notebooks" in table
     
-    # Check GPU tiers
-    assert "L4" in table
-    assert "A100-40GB" in table
+    # Check all models are in table (with bold formatting)
+    assert "**Llama 3.1 (8B)**" in table
+    assert "**Gemma 3 Vision**" in table
+    assert "**Whisper Large V3**" in table
     
-    # Check VRAM
-    assert "16GB" in table
-    assert "20GB" in table
+    # Check GPU requirements (combined format)
+    assert "L4 (16GB)" in table
+    assert "A100-40GB (16GB)" in table
+    assert "L4 (20GB)" in table
+    
+    # Check notebook links are present
+    assert "[View Notebook]" in table
+    assert "converted/" in table
 
 
 def test_generate_table_empty():
     """Test table generation with empty list."""
     table = generate_table([])
     
-    # Should still have headers
-    assert "| Model | Description | GPU | VRAM | Categories | Deploy |" in table
-    assert "|-------|-------------|-----|------|------------|--------|" in table
+    # Empty list returns empty string (no categories to display)
+    assert table == ""
 
 
 def test_update_readme_success(sample_launchables, tmp_path):
