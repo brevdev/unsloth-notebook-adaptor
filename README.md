@@ -36,7 +36,7 @@ This adapter transforms Unsloth Colab notebooks for seamless use on NVIDIA Brev 
 
 To deploy any converted notebook to Brev:
 
-1. **Go to Brev Console**: [console.brev.dev](https://console.brev.dev)
+1. **Go to Brev Console**: [brev.nvidia.com](https://brev.nvidia.com)
 2. **Create New Launchable**: Navigate to Launchables → Create New
 3. **Configure Settings**:
    - **Repository**: `https://github.com/brevdev/unsloth-notebook-adaptor`
@@ -324,7 +324,7 @@ The `metadata/launchables.json` file contains a complete registry of all convert
 ## 🔗 Links
 
 - **Unsloth** - [Website](https://unsloth.ai/) | [Docs](https://docs.unsloth.ai/) | [GitHub](https://github.com/unslothai/unsloth)
-- **NVIDIA Brev** - [Website](https://brev.dev/) | [Docs](https://brev.dev/docs)
+- **NVIDIA Brev** - [Website](https://developer.nvidia.com/brev) | [Docs](https://docs.nvidia.com/brev)
 - **Original Notebooks** - [unslothai/notebooks](https://github.com/unslothai/notebooks)
 - **Issues & Support** - [GitHub Issues](https://github.com/brevdev/unsloth-notebook-adaptor/issues)
 
@@ -337,10 +337,10 @@ The converted notebooks maintain their original licenses from the Unsloth projec
 ## 🙏 Acknowledgments
 
 - **[Unsloth AI](https://unsloth.ai/)** for the amazing fine-tuning framework and notebooks
-- **[NVIDIA Brev](https://brev.dev/)** for providing the GPU infrastructure platform
+- **[NVIDIA Brev](https://developer.nvidia.com/brev)** for providing the GPU infrastructure platform
 - All contributors to the Unsloth and Brev communities
 
 ---
 
-**Built with ❤️ by the Brev team** | [Brev](https://brev.dev/) | [Unsloth](https://unsloth.ai/)
+**Built with ❤️ by the Brev team** | [Brev](https://developer.nvidia.com/brev) | [Unsloth](https://unsloth.ai/)
 

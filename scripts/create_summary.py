@@ -84,7 +84,7 @@ def create_summary(launchables_file: Path) -> str:
         "## 🔗 Quick Links",
         "",
         "- [Unsloth Documentation](https://docs.unsloth.ai/)",
-        "- [Brev Documentation](https://brev.dev/docs)",
+        "- [Brev Documentation](https://docs.nvidia.com/brev)",
         "- [Repository](https://github.com/brevdev/unsloth-notebook-adaptor)",
         ""
     ])

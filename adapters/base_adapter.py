@@ -149,7 +149,7 @@ class NotebookAdapter(ABC):
 ## 📚 Resources
 
 - [Unsloth Documentation](https://docs.unsloth.ai/)
-- [Brev Documentation](https://brev.dev/docs)
+- [Brev Documentation](https://docs.nvidia.com/brev)
 - [Original Notebook]({upstream_url})
 """
         return new_markdown_cell(header_markdown)
