@@ -183,6 +183,7 @@ subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-deps", "trl
         """
         lines = code.split('\n')
         converted_lines = []
+        needs_imports = False
         i = 0
         
         while i < len(lines):
@@ -191,6 +192,7 @@ subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-deps", "trl
             
             # Handle !command patterns (including multiline)
             if stripped.startswith('!'):
+                needs_imports = True
                 indent = line[:len(line) - len(stripped)]
                 command = stripped[1:].strip()
                 
@@ -226,26 +228,26 @@ subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-deps", "trl
                     converted = f'{indent}subprocess.run([{repr(command)}], check=True, shell=True)'
                 
                 converted_lines.append(converted)
-                
-                # Add imports if not present
-                if 'import subprocess' not in code:
-                    code = 'import subprocess\nimport sys\n\n' + code
                     
             # Handle %pip patterns
             elif stripped.startswith('%pip'):
+                needs_imports = True
                 indent = line[:len(line) - len(stripped)]
                 packages = stripped.replace('%pip install', '').strip()
                 converted = f'{indent}subprocess.check_call([sys.executable, "-m", "pip", "install", {repr(packages)}])'
                 converted_lines.append(converted)
-                
-                if 'import subprocess' not in code:
-                    code = 'import subprocess\nimport sys\n\n' + code
             else:
                 converted_lines.append(line)
             
             i += 1
         
-        return '\n'.join(converted_lines)
+        result = '\n'.join(converted_lines)
+        
+        # Add imports at the beginning if needed and not already present
+        if needs_imports and 'import subprocess' not in result:
+            result = 'import subprocess\nimport sys\n\n' + result
+        
+        return result
 
     def convert_gpu_check(self, code: str, config: Dict[str, Any]) -> str:
         """
