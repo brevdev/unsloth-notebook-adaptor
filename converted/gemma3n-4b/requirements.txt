@@ -1,5 +1,5 @@
 # Requirements for Gemma3N (4B) Conversational
-# Generated: 2025-10-20T22:07:57.699530+00:00
+# Generated: 2025-10-20T22:11:24.657466+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

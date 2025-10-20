@@ -1,5 +1,5 @@
 # Requirements for Huggingface Course Advanced Llama3 2 (3B) Grpo Lora
-# Generated: 2025-10-20T22:08:02.129201+00:00
+# Generated: 2025-10-20T22:11:21.374426+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
