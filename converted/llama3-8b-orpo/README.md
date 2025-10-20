@@ -2,18 +2,28 @@
 
 Fine-tune Llama3 (8B) Orpo with Unsloth on NVIDIA GPUs using Brev.
 
-🔗 **Original Notebook:** [Unsloth Colab Notebook](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama3_(8B)-ORPO.ipynb)
+🔗 **Original Notebook:** [View on GitHub](https://github.com/unslothai/notebooks/blob/main/nb/Llama3_(8B)-ORPO.ipynb)
 
-## 🚀 Quick Start (Brev Console)
+## 🤙 Quick Start with NVIDIA Brev
 
-1. **Launch on Brev:**
-   ```bash
-   brev launch llama3-8b-orpo
-   ```
+NVIDIA Brev provides streamlined access to NVIDIA GPU instances, automatic environment setup, and flexible deployment options.
 
-2. **Open Jupyter Lab:**
-   - Navigate to the provided URL (port 8888)
-   - Open the notebook and start training
+### Provision
+Brev provisions a GPU for you - no need to set up cloud accounts. We have solid GPU supply.
+
+### Configure
+Brev configures your GPU with the right drivers and libraries. Advanced options available for Docker containers.
+
+### Connect
+```bash
+# Open in your preferred editor
+brev open llama3-8b-orpo
+
+# Or SSH directly
+ssh llama3-8b-orpo
+```
+
+**Deploy this notebook:** [Click here to deploy on Brev Console](https://brev.nvidia.com)
 
 ## 📊 Requirements
 

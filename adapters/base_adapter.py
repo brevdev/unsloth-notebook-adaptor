@@ -119,11 +119,23 @@ class NotebookAdapter(ABC):
         batch_size = config.get('recommended_batch_size', 'N/A')
         categories = ', '.join(config.get('categories', []))
 
-        header_markdown = f"""# 🚀 {model_name} on NVIDIA Brev
+        # Convert Colab URL to GitHub URL
+        if 'colab.research.google.com' in upstream_url:
+            # Extract notebook path from Colab URL
+            # Format: https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Notebook.ipynb
+            parts = upstream_url.split('/github/')
+            if len(parts) > 1:
+                github_url = f"https://github.com/{parts[1]}"
+            else:
+                github_url = upstream_url
+        else:
+            github_url = upstream_url
+        
+        header_markdown = f"""# 🤙 {model_name} on NVIDIA Brev
 
 <div style="background: linear-gradient(90deg, #00ff87 0%, #60efff 100%); padding: 1px; border-radius: 8px; margin: 20px 0;">
     <div style="background: #0a0a0a; padding: 20px; border-radius: 7px;">
-        <p style="color: #60efff; margin: 0;"><strong>⚡ Powered by Brev</strong> | Converted from <a href="{upstream_url}" style="color: #00ff87;">Unsloth Notebook</a></p>
+        <p style="color: #60efff; margin: 0;"><strong>⚡ Powered by Brev</strong> | Converted from <a href="{github_url}" style="color: #00ff87;">Unsloth Notebook</a></p>
     </div>
 </div>
 

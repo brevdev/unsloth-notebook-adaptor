@@ -2,18 +2,28 @@
 
 Fine-tune {{ model_name }} with Unsloth on NVIDIA GPUs using Brev.
 
-🔗 **Original Notebook:** [Unsloth Colab Notebook]({{ upstream_url }})
+🔗 **Original Notebook:** [View on GitHub]({% if 'colab.research.google.com' in upstream_url %}https://github.com/{{ upstream_url.split('/github/')[1] if '/github/' in upstream_url else upstream_url }}{% else %}{{ upstream_url }}{% endif %})
 
-## 🚀 Quick Start (Brev Console)
+## 🤙 Quick Start with NVIDIA Brev
 
-1. **Launch on Brev:**
-   ```bash
-   brev launch {{ launchable_name }}
-   ```
+NVIDIA Brev provides streamlined access to NVIDIA GPU instances, automatic environment setup, and flexible deployment options.
 
-2. **Open Jupyter Lab:**
-   - Navigate to the provided URL (port 8888)
-   - Open the notebook and start training
+### Provision
+Brev provisions a GPU for you - no need to set up cloud accounts. We have solid GPU supply.
+
+### Configure
+Brev configures your GPU with the right drivers and libraries. Advanced options available for Docker containers.
+
+### Connect
+```bash
+# Open in your preferred editor
+brev open {{ launchable_name }}
+
+# Or SSH directly
+ssh {{ launchable_name }}
+```
+
+**Deploy this notebook:** [Click here to deploy on Brev Console](https://brev.nvidia.com)
 
 ## 📊 Requirements
 

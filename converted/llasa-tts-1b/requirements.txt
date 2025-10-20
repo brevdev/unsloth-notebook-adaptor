@@ -1,5 +1,5 @@
 # Requirements for Llasa Tts (1B)
-# Generated: 2025-10-20T17:25:25.274878+00:00
+# Generated: 2025-10-20T17:55:04.556348+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

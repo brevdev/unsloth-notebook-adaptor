@@ -2,18 +2,28 @@
 
 Fine-tune Kaggle Deepseek R1 0528 Qwen3 (8B) Grpo with Unsloth on NVIDIA GPUs using Brev.
 
-🔗 **Original Notebook:** [Unsloth Colab Notebook](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-DeepSeek_R1_0528_Qwen3_(8B)_GRPO.ipynb)
+🔗 **Original Notebook:** [View on GitHub](https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-DeepSeek_R1_0528_Qwen3_(8B)_GRPO.ipynb)
 
-## 🚀 Quick Start (Brev Console)
+## 🤙 Quick Start with NVIDIA Brev
 
-1. **Launch on Brev:**
-   ```bash
-   brev launch kaggle-deepseek-r1-0528-qwen3-8b
-   ```
+NVIDIA Brev provides streamlined access to NVIDIA GPU instances, automatic environment setup, and flexible deployment options.
 
-2. **Open Jupyter Lab:**
-   - Navigate to the provided URL (port 8888)
-   - Open the notebook and start training
+### Provision
+Brev provisions a GPU for you - no need to set up cloud accounts. We have solid GPU supply.
+
+### Configure
+Brev configures your GPU with the right drivers and libraries. Advanced options available for Docker containers.
+
+### Connect
+```bash
+# Open in your preferred editor
+brev open kaggle-deepseek-r1-0528-qwen3-8b
+
+# Or SSH directly
+ssh kaggle-deepseek-r1-0528-qwen3-8b
+```
+
+**Deploy this notebook:** [Click here to deploy on Brev Console](https://brev.nvidia.com)
 
 ## 📊 Requirements
 

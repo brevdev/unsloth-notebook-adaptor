@@ -1,5 +1,5 @@
 # Requirements for Whisper Large V3
-# Generated: 2025-10-20T17:25:21.189241+00:00
+# Generated: 2025-10-20T17:55:01.594199+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

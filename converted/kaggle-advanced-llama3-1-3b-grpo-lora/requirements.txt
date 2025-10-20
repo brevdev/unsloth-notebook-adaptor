@@ -1,5 +1,5 @@
 # Requirements for Kaggle Advanced Llama3 1 (3B) Grpo Lora
-# Generated: 2025-10-20T17:25:21.101418+00:00
+# Generated: 2025-10-20T17:55:03.544533+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

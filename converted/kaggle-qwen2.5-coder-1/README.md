@@ -2,18 +2,28 @@
 
 Fine-tune Kaggle Qwen2.5 Coder (1 with Unsloth on NVIDIA GPUs using Brev.
 
-🔗 **Original Notebook:** [Unsloth Colab Notebook](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Qwen2.5_Coder_(1.ipynb)
+🔗 **Original Notebook:** [View on GitHub](https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Qwen2.5_Coder_(1.ipynb)
 
-## 🚀 Quick Start (Brev Console)
+## 🤙 Quick Start with NVIDIA Brev
 
-1. **Launch on Brev:**
-   ```bash
-   brev launch kaggle-qwen2.5-coder-1
-   ```
+NVIDIA Brev provides streamlined access to NVIDIA GPU instances, automatic environment setup, and flexible deployment options.
 
-2. **Open Jupyter Lab:**
-   - Navigate to the provided URL (port 8888)
-   - Open the notebook and start training
+### Provision
+Brev provisions a GPU for you - no need to set up cloud accounts. We have solid GPU supply.
+
+### Configure
+Brev configures your GPU with the right drivers and libraries. Advanced options available for Docker containers.
+
+### Connect
+```bash
+# Open in your preferred editor
+brev open kaggle-qwen2.5-coder-1
+
+# Or SSH directly
+ssh kaggle-qwen2.5-coder-1
+```
+
+**Deploy this notebook:** [Click here to deploy on Brev Console](https://brev.nvidia.com)
 
 ## 📊 Requirements
 
