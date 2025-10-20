@@ -54,6 +54,7 @@ Below are **181 Unsloth notebooks** organized into **129 launchables** for NVIDI
 | **Kaggle Gemma3N (2B) Inference** | Inference | L4 (16GB) | [View Notebook](converted/kaggle-gemma3n-2b/Kaggle-Gemma3N_(2B)-Inference.ipynb) |
 | **Kaggle Gemma3N (4B) Audio** | Fine-tuning | L4 (16GB) | [View Notebook](converted/kaggle-gemma3n-4b-audio/Kaggle-Gemma3N_(4B)-Audio.ipynb) |
 | **Kaggle Gemma3N (4B) Conversational** | Conversational | L4 (16GB) | [View Notebook](converted/kaggle-gemma3n-4b/Kaggle-Gemma3N_(4B)-Conversational.ipynb) |
+| **Kaggle Llama3** | Conversational | L4 (16GB) | [View Notebook](converted/kaggle-llama3/Kaggle-Llama3.2_(1B_and_3B)-Conversational.ipynb) |
 | **Kaggle Llama3 (8B) Conversational** | Alpaca | L4 (16GB) | [View Notebook](converted/kaggle-llama3-8b/Kaggle-Llama3_(8B)-Alpaca.ipynb) |
 | **Kaggle Llama3 (8B) Ollama** | Fine-tuning | L4 (16GB) | [View Notebook](converted/kaggle-llama3-8b-ollama/Kaggle-Llama3_(8B)-Ollama.ipynb) |
 | **Kaggle Llama3 (8B) Orpo** | ORPO | L4 (16GB) | [View Notebook](converted/kaggle-llama3-8b-orpo/Kaggle-Llama3_(8B)-ORPO.ipynb) |
@@ -62,19 +63,18 @@ Below are **181 Unsloth notebooks** organized into **129 launchables** for NVIDI
 | **Kaggle Mistral (7B) Text Completion** | Fine-tuning | L4 (16GB) | [View Notebook](converted/kaggle-mistral-7b-text-completion/Kaggle-Mistral_(7B)-Text_Completion.ipynb) |
 | **Kaggle Mistral Nemo (12B) Alpaca** | Alpaca | L4 (16GB) | [View Notebook](converted/kaggle-mistral-nemo-12b/Kaggle-Mistral_Nemo_(12B)-Alpaca.ipynb) |
 | **Kaggle Mistral Small (22B) Alpaca** | Alpaca | L4 (16GB) | [View Notebook](converted/kaggle-mistral-small-22b/Kaggle-Mistral_Small_(22B)-Alpaca.ipynb) |
-| **Kaggle Mistral V0** | Conversational | L4 (16GB) | [View Notebook](converted/kaggle-mistral-v0/Kaggle-Mistral_v0.3_(7B)-Conversational.ipynb) |
+| **Kaggle Mistral V0** | Alpaca | L4 (16GB) | [View Notebook](converted/kaggle-mistral-v0/Kaggle-Mistral_v0.3_(7B)-Alpaca.ipynb) |
 | **Kaggle Phi 3** | Conversational | L4 (16GB) | [View Notebook](converted/kaggle-phi-3/Kaggle-Phi_3.5_Mini-Conversational.ipynb) |
 | **Kaggle Phi 3 Medium Conversational** | Conversational | L4 (16GB) | [View Notebook](converted/kaggle-phi-3-medium/Kaggle-Phi_3_Medium-Conversational.ipynb) |
 | **Kaggle Phi 4 Conversational** | Conversational | L4 (16GB) | [View Notebook](converted/kaggle-phi-4/Kaggle-Phi_4-Conversational.ipynb) |
-| **Kaggle Qwen2** | Alpaca | L4 (16GB) | [View Notebook](converted/kaggle-qwen2/Kaggle-Qwen2.5_(7B)-Alpaca.ipynb) |
+| **Kaggle Qwen2** | Conversational | L4 (16GB) | [View Notebook](converted/kaggle-qwen2/Kaggle-Qwen2.5_Coder_(14B)-Conversational.ipynb) |
 | **Kaggle Qwen2 (7B) Alpaca** | Alpaca | L4 (16GB) | [View Notebook](converted/kaggle-qwen2-7b/Kaggle-Qwen2_(7B)-Alpaca.ipynb) |
 | **Kaggle Qwen2.5 Coder (1** | Fine-tuning | L4 (16GB) | [View Notebook](converted/kaggle-qwen2.5-coder-1/Kaggle-Qwen2.5_Coder_(1.5B)-Tool_Calling.ipynb) |
 | **Kaggle Qwen3 (32B) A100 Reasoning Conversational** | Conversational | L4 (16GB) | [View Notebook](converted/kaggle-qwen3-32b-a100-reasoning/Kaggle-Qwen3_(32B)_A100-Reasoning-Conversational.ipynb) |
 | **Kaggle Qwen3 (4B) Instruct** | Instruct | L4 (16GB) | [View Notebook](converted/kaggle-qwen3-4b-instruct/Kaggle-Qwen3_(4B)-Instruct.ipynb) |
 | **Kaggle Qwen3 (4B) Thinking** | Thinking | L4 (16GB) | [View Notebook](converted/kaggle-qwen3-4b-thinking/Kaggle-Qwen3_(4B)-Thinking.ipynb) |
 | **Kaggle Tinyllama (1** | Alpaca | L4 (16GB) | [View Notebook](converted/kaggle-tinyllama-1/Kaggle-TinyLlama_(1.1B)-Alpaca.ipynb) |
-| **Llama3** | Conversational | L4 (16GB) | [View Notebook](converted/llama3/Llama3.3_(70B)_A100-Conversational.ipynb) |
-| **Llama3 (8B) Conversational** | Alpaca | L4 (16GB) | [View Notebook](converted/llama3-8b/Llama3_(8B)-Alpaca.ipynb) |
+| **Llama3 (8B) Alpaca** | Conversational | L4 (16GB) | [View Notebook](converted/llama3-8b/Llama3_(8B)-Conversational.ipynb) |
 | **Llama3 (8B) Ollama** | Fine-tuning | L4 (16GB) | [View Notebook](converted/llama3-8b-ollama/Llama3_(8B)-Ollama.ipynb) |
 | **Llama3 (8B) Orpo** | ORPO | L4 (16GB) | [View Notebook](converted/llama3-8b-orpo/Llama3_(8B)-ORPO.ipynb) |
 | **Meta Synthetic Data Llama3** | Synthetic Data | L4 (16GB) | [View Notebook](converted/meta-synthetic-data-llama3/Meta-Synthetic-Data-Llama3.1_(8B).ipynb) |
@@ -85,6 +85,7 @@ Below are **181 Unsloth notebooks** organized into **129 launchables** for NVIDI
 | **Mistral V0** | Conversational | L4 (16GB) | [View Notebook](converted/mistral-v0/Mistral_v0.3_(7B)-Conversational.ipynb) |
 | **Phi 3** | Conversational | L4 (16GB) | [View Notebook](converted/phi-3/Phi_3.5_Mini-Conversational.ipynb) |
 | **Phi 3 Medium Conversational** | Conversational | L4 (16GB) | [View Notebook](converted/phi-3-medium/Phi_3_Medium-Conversational.ipynb) |
+| **Phi-4 (14B)** | Conversational | A100-40GB (24GB) | [View Notebook](converted/phi-4-14b-fine-tuning/Phi_4-Conversational.ipynb) |
 | **Qwen2 (7B) Alpaca** | Alpaca | L4 (16GB) | [View Notebook](converted/qwen2-7b/Qwen2_(7B)-Alpaca.ipynb) |
 | **Qwen2.5 Coder (1** | Fine-tuning | L4 (16GB) | [View Notebook](converted/qwen2.5-coder-1/Qwen2.5_Coder_(1.5B)-Tool_Calling.ipynb) |
 | **Qwen3 (14B)** | Fine-tuning | A100-40GB (24GB) | [View Notebook](converted/qwen3-14b-fine-tuning/Qwen3_(14B).ipynb) |
@@ -104,15 +105,17 @@ Below are **181 Unsloth notebooks** organized into **129 launchables** for NVIDI
 | **Kaggle Gemma3N (4B) Vision** | Vision | L4 (16GB) | [View Notebook](converted/kaggle-gemma3n-4b-vision/Kaggle-Gemma3N_(4B)-Vision.ipynb) |
 | **Kaggle Pixtral (12B) Vision** | Vision | L4 (16GB) | [View Notebook](converted/kaggle-pixtral-12b-vision/Kaggle-Pixtral_(12B)-Vision.ipynb) |
 | **Kaggle Qwen2 Vl (7B) Vision** | Vision | L4 (16GB) | [View Notebook](converted/kaggle-qwen2-vl-7b-vision/Kaggle-Qwen2_VL_(7B)-Vision.ipynb) |
+| **Llama3** | Vision | L4 (16GB) | [View Notebook](converted/llama3/Llama3.2_(11B)-Vision.ipynb) |
 | **Pixtral (12B) Vision** | Vision | L4 (16GB) | [View Notebook](converted/pixtral-12b-vision/Pixtral_(12B)-Vision.ipynb) |
+| **Qwen2** | Vision | L4 (16GB) | [View Notebook](converted/qwen2/Qwen2.5_VL_(7B)-Vision.ipynb) |
 | **Qwen2 Vl (7B) Vision** | Vision | L4 (16GB) | [View Notebook](converted/qwen2-vl-7b-vision/Qwen2_VL_(7B)-Vision.ipynb) |
-| **Qwen3-VL (8B)** | Vision | A100-40GB (24GB) | [View Notebook](converted/qwen3-vl-8b-vision/Qwen3_VL_(8B)-Vision-GRPO.ipynb) |
+| **Qwen3-VL (8B)** | Vision | A100-40GB (24GB) | [View Notebook](converted/qwen3-vl-8b-vision/Kaggle-Qwen3_VL_(8B)-Vision.ipynb) |
 
 ### Text-to-Speech (TTS) Notebooks
 
 | Model | Type | GPU Requirements | Notebook Link |
 |-------|------|------------------|---------------|
-| **Sesame-CSM (1B)** | TTS | T4 (12GB) | [View Notebook](converted/sesame-csm-1b-tts/Sesame_CSM_(1B)-TTS.ipynb) |
+| **Sesame-CSM (1B)** | TTS | T4 (12GB) | [View Notebook](converted/sesame-csm-1b-tts/Kaggle-Sesame_CSM_(1B)-TTS.ipynb) |
 
 ### Speech-to-Text (STT) Notebooks
 
@@ -142,14 +145,10 @@ Below are **181 Unsloth notebooks** organized into **129 launchables** for NVIDI
 | **Kaggle Advanced Llama3 2 (3B) Grpo Lora** | GRPO | L4 (16GB) | [View Notebook](converted/kaggle-advanced-llama3-2-3b-grpo-lora/Kaggle-Advanced_Llama3_2_(3B)_GRPO_LoRA.ipynb) |
 | **Kaggle Deepseek R1 0528 Qwen3 (8B) Grpo** | GRPO | L4 (16GB) | [View Notebook](converted/kaggle-deepseek-r1-0528-qwen3-8b/Kaggle-DeepSeek_R1_0528_Qwen3_(8B)_GRPO.ipynb) |
 | **Kaggle Gemma3 (1B) Grpo** | GRPO | L4 (16GB) | [View Notebook](converted/kaggle-gemma3-1b/Kaggle-Gemma3_(1B)-GRPO.ipynb) |
-| **Kaggle Llama3** | GRPO | L4 (16GB) | [View Notebook](converted/kaggle-llama3/Kaggle-Llama3.1_(8B)-GRPO.ipynb) |
 | **Kaggle Qwen2 5 7B Vl Grpo** | GRPO | L4 (16GB) | [View Notebook](converted/kaggle-qwen2-5-7b-vl/Kaggle-Qwen2_5_7B_VL_GRPO.ipynb) |
 | **Kaggle Qwen3 (4B) Grpo** | GRPO | L4 (16GB) | [View Notebook](converted/kaggle-qwen3-4b/Kaggle-Qwen3_(4B)-GRPO.ipynb) |
-| **Phi-4 (14B)** | GRPO | A100-40GB (24GB) | [View Notebook](converted/phi-4-14b-fine-tuning/HuggingFace Course-Phi_4_(14B)-GRPO.ipynb) |
-| **Qwen2** | GRPO | L4 (16GB) | [View Notebook](converted/qwen2/Qwen2.5_(3B)-GRPO.ipynb) |
 | **Qwen2 5 7B Vl Grpo** | GRPO | L4 (16GB) | [View Notebook](converted/qwen2-5-7b-vl/Qwen2_5_7B_VL_GRPO.ipynb) |
 | **Qwen3 (4B) GRPO** | GRPO | L4 (16GB) | [View Notebook](converted/qwen3-4b-grpo-rl/Qwen3_(4B)-GRPO.ipynb) |
-| **gpt-oss-20b** | GRPO | A100-40GB (24GB) | [View Notebook](converted/gpt-oss-20b-fine-tuning/gpt-oss-(20B)_A100-GRPO.ipynb) |
 | **gpt-oss-20b-GRPO** | GRPO | A100-80GB (40GB) | [View Notebook](converted/gpt-oss-20b-grpo-rl/gpt_oss_(20B)_GRPO_BF16.ipynb) |
 
 ### Other Notebooks
@@ -189,7 +188,8 @@ Below are **181 Unsloth notebooks** organized into **129 launchables** for NVIDI
 | **Synthetic Data Hackathon** | Synthetic Data | L4 (16GB) | [View Notebook](converted/synthetic-data-hackathon/Synthetic_Data_Hackathon.ipynb) |
 | **Unsloth Studio** | Fine-tuning | L4 (16GB) | [View Notebook](converted/unsloth-studio/Unsloth_Studio.ipynb) |
 | **Zephyr (7B) Dpo** | DPO | L4 (16GB) | [View Notebook](converted/zephyr-7b-dpo/Zephyr_(7B)-DPO.ipynb) |
-| **gpt-oss-120b** | Fine-tuning | A100-80GB (80GB) | [View Notebook](converted/gpt-oss-120b-fine-tuning/gpt-oss-(120B)_A100-Fine-tuning.ipynb) |
+| **gpt-oss-120b** | Fine-tuning | A100-80GB (80GB) | [View Notebook](converted/gpt-oss-120b-fine-tuning/Kaggle-gpt-oss-(120B)_A100-Fine-tuning.ipynb) |
+| **gpt-oss-20b** | Fine-tuning | A100-40GB (24GB) | [View Notebook](converted/gpt-oss-20b-fine-tuning/Kaggle-gpt-oss-(20B)-Fine-tuning.ipynb) |
 <!-- LAUNCHABLES_TABLE_END -->
 
 **Note:** Deploy buttons will be added by the Brev team as Launchables are created on the platform.

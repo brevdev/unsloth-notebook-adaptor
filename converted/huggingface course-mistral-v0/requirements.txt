@@ -1,5 +1,5 @@
 # Requirements for Huggingface Course Mistral V0
-# Generated: 2025-10-20T17:55:05.135840+00:00
+# Generated: 2025-10-20T17:56:48.730166+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

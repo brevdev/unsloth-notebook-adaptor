@@ -1,6 +1,6 @@
 {
-  "name": "Llama3 (8B) Conversational",
-  "description": "Fine-tune Llama3 (8B) Conversational with Unsloth on NVIDIA GPUs",
+  "name": "Llama3 (8B) Alpaca",
+  "description": "Fine-tune Llama3 (8B) Alpaca with Unsloth on NVIDIA GPUs",
   "version": "1.0.0",
   "gpu": {
     "tier": "L4",
@@ -20,7 +20,7 @@
   ],
   "upstream": {
     "source": "unslothai/notebooks",
-    "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama3_(8B)-Conversational.ipynb",
-    "last_synced": "2025-10-20T17:55:03.840584+00:00"
+    "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama3_(8B)-Alpaca.ipynb",
+    "last_synced": "2025-10-20T17:56:52.020599+00:00"
   }
 }

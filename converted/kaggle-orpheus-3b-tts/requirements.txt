@@ -1,5 +1,5 @@
 # Requirements for Kaggle Orpheus (3B) Tts
-# Generated: 2025-10-20T17:55:05.162859+00:00
+# Generated: 2025-10-20T17:56:48.525959+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
