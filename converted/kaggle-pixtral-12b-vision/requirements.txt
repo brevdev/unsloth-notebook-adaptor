@@ -1,5 +1,5 @@
 # Requirements for Kaggle Pixtral (12B) Vision
-# Generated: 2025-10-20T17:19:23.562288+00:00
+# Generated: 2025-10-20T17:25:20.475432+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
