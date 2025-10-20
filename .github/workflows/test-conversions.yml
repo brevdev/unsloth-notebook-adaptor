@@ -9,8 +9,11 @@ on:
       - main
     paths:
       - 'adapters/**'
+      - 'scripts/**'
+      - 'templates/**'
       - 'tests/**'
       - 'requirements.txt'
+      - '.github/workflows/test-conversions.yml'
 
 jobs:
   test:
@@ -33,10 +36,10 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          pip install pytest pytest-cov flake8
       
       - name: Run linting
         run: |
-          pip install flake8
           # Stop the build if there are Python syntax errors or undefined names
           flake8 adapters/ scripts/ --count --select=E9,F63,F7,F82 --show-source --statistics
           # Exit-zero treats all errors as warnings
@@ -44,7 +47,7 @@ jobs:
       
       - name: Run tests with coverage
         run: |
-          pytest tests/ -v --tb=short --cov=adapters --cov-report=term --cov-report=xml
+          pytest tests/ -v --tb=short --cov=adapters --cov=scripts --cov-report=term --cov-report=xml
       
       - name: Upload coverage reports
         uses: codecov/codecov-action@v3
