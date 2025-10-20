@@ -1,5 +1,5 @@
 # Requirements for Gpt Oss Mxfp4 (20B) Inference
-# Generated: 2025-10-20T22:19:45.060485+00:00
+# Generated: 2025-10-20T22:25:50.937023+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

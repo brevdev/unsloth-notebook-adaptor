@@ -88,8 +88,8 @@ subprocess.check_call([
             Cleaned code
         """
         # Check if this is a Colab conditional installation cell
-        # (Has %%capture, COLAB_ check, and complex installation logic)
-        if '%%capture' in code and 'COLAB_' in code and 'if "COLAB_"' in code:
+        # (Has %%capture and COLAB_ environment check)
+        if '%%capture' in code and 'COLAB_' in code:
             logger.debug("Removing Colab conditional installation block")
             # Replace entire cell with simple Brev installation
             return '''# Install dependencies for Brev
@@ -101,6 +101,11 @@ subprocess.check_call([sys.executable, "-m", "pip", "install", "unsloth"])
 # Install transformers and trl with specific versions
 subprocess.check_call([sys.executable, "-m", "pip", "install", "transformers==4.56.2"])
 subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-deps", "trl==0.22.2"])'''
+        
+        # Remove standalone %%capture magic commands (won't work outside IPython)
+        if '%%capture' in code:
+            logger.debug("Removing standalone %%capture magic command")
+            code = re.sub(r'%%capture\s*\n', '', code)
         
         return code
 
