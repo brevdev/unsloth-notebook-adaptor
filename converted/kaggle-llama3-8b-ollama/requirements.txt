@@ -1,5 +1,5 @@
 # Requirements for Kaggle Llama3 (8B) Ollama
-# Generated: 2025-10-20T16:36:04.271244+00:00
+# Generated: 2025-10-20T17:19:25.203270+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

@@ -2,7 +2,7 @@
 set -e
 
 echo "=========================================="
-echo "Setting up Llama3 (8B) Conversational Environment"
+echo "Setting up Llama3 (8B) Alpaca Environment"
 echo "=========================================="
 
 # Update system packages

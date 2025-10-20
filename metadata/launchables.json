@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2025-10-20T16:36:16.365553+00:00",
+  "generated_at": "2025-10-20T17:19:28.878303+00:00",
   "total_launchables": 129,
   "launchables": [
     {
@@ -22,15 +22,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Advanced_Llama3_1_(3B)_GRPO_LoRA.ipynb",
-        "last_synced": "2025-10-20T16:36:05.906456+00:00"
+        "last_synced": "2025-10-20T17:19:23.607296+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
         "Advanced_Llama3_1_(3B)_GRPO_LoRA.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -52,15 +52,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Advanced_Llama3_2_(3B)_GRPO_LoRA.ipynb",
-        "last_synced": "2025-10-20T16:36:03.431974+00:00"
+        "last_synced": "2025-10-20T17:19:22.934224+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Advanced_Llama3_2_(3B)_GRPO_LoRA.ipynb",
         "README.md",
+        "Advanced_Llama3_2_(3B)_GRPO_LoRA.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -82,15 +82,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/bert_classification.ipynb",
-        "last_synced": "2025-10-20T16:36:06.305267+00:00"
+        "last_synced": "2025-10-20T17:19:25.875798+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
-        "docker-compose.yml",
+        ".brevconfig.json",
+        "setup.sh",
         "bert_classification.ipynb",
-        ".brevconfig.json"
+        "docker-compose.yml",
+        "requirements.txt"
       ]
     },
     {
@@ -112,15 +112,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/CodeForces-cot-Finetune_for_Reasoning_on_CodeForces.ipynb",
-        "last_synced": "2025-10-20T16:36:05.586143+00:00"
+        "last_synced": "2025-10-20T17:19:24.430161+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
         "CodeForces-cot-Finetune_for_Reasoning_on_CodeForces.ipynb",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -142,15 +142,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/CodeGemma_(7B)-Conversational.ipynb",
-        "last_synced": "2025-10-20T16:36:04.851803+00:00"
+        "last_synced": "2025-10-20T17:19:26.524266+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
-        "CodeGemma_(7B)-Conversational.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "CodeGemma_(7B)-Conversational.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -172,15 +172,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/DeepSeek_R1_0528_Qwen3_(8B)_GRPO.ipynb",
-        "last_synced": "2025-10-20T16:36:04.992111+00:00"
+        "last_synced": "2025-10-20T17:19:22.409358+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "README.md",
         "DeepSeek_R1_0528_Qwen3_(8B)_GRPO.ipynb",
+        "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -202,15 +202,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Falcon_H1_(0.ipynb",
-        "last_synced": "2025-10-20T16:36:02.940268+00:00"
+        "last_synced": "2025-10-20T17:19:25.891381+00:00"
       },
       "files": [
+        "README.md",
+        ".brevconfig.json",
         "setup.sh",
         "Falcon_H1_(0.5B)-Alpaca.ipynb",
-        "requirements.txt",
-        "README.md",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -232,15 +232,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Falcon_H1-Alpaca.ipynb",
-        "last_synced": "2025-10-20T16:36:02.378874+00:00"
+        "last_synced": "2025-10-20T17:19:27.047020+00:00"
       },
       "files": [
-        "setup.sh",
-        "Falcon_H1-Alpaca.ipynb",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Falcon_H1-Alpaca.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -262,15 +262,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma2_(2B)-Alpaca.ipynb",
-        "last_synced": "2025-10-20T16:36:02.435518+00:00"
+        "last_synced": "2025-10-20T17:19:27.198181+00:00"
       },
       "files": [
-        "setup.sh",
-        "Gemma2_(2B)-Alpaca.ipynb",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Gemma2_(2B)-Alpaca.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -292,15 +292,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma2_(9B)-Alpaca.ipynb",
-        "last_synced": "2025-10-20T16:36:03.557818+00:00"
+        "last_synced": "2025-10-20T17:19:22.576079+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "Gemma2_(9B)-Alpaca.ipynb",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -322,15 +322,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma3_(1B)-GRPO.ipynb",
-        "last_synced": "2025-10-20T16:36:04.208122+00:00"
+        "last_synced": "2025-10-20T17:19:28.086142+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Gemma3_(1B)-GRPO.ipynb",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Gemma3_(1B)-GRPO.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -352,15 +352,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma3_(270M).ipynb",
-        "last_synced": "2025-10-20T16:36:04.778226+00:00"
+        "last_synced": "2025-10-20T17:19:22.317641+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "README.md",
         "Gemma3_(270M).ipynb",
+        "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -382,15 +382,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma3_(27B)_A100-Conversational.ipynb",
-        "last_synced": "2025-10-20T16:36:03.354577+00:00"
+        "last_synced": "2025-10-20T17:19:23.776653+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Gemma3_(27B)_A100-Conversational.ipynb",
         "README.md",
+        "Gemma3_(27B)_A100-Conversational.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -412,15 +412,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma3_(4B).ipynb",
-        "last_synced": "2025-10-20T16:36:02.597393+00:00"
+        "last_synced": "2025-10-20T17:19:23.421664+00:00"
       },
       "files": [
-        "setup.sh",
-        "Gemma3_(4B).ipynb",
-        "requirements.txt",
         "README.md",
+        "Gemma3_(4B).ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -442,16 +442,16 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma3_(4B)-Vision-GRPO.ipynb",
-        "last_synced": "2025-10-20T16:36:05.135489+00:00"
+        "last_synced": "2025-10-20T17:19:25.837054+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Gemma3_(4B)-Vision.ipynb",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
+        "Gemma3_(4B)-Vision.ipynb",
         "Gemma3_(4B)-Vision-GRPO.ipynb",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -473,15 +473,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma3N_(2B)-Inference.ipynb",
-        "last_synced": "2025-10-20T16:36:02.706030+00:00"
+        "last_synced": "2025-10-20T17:19:24.661740+00:00"
       },
       "files": [
+        "README.md",
+        ".brevconfig.json",
         "setup.sh",
         "Gemma3N_(2B)-Inference.ipynb",
-        "requirements.txt",
-        "README.md",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -503,15 +503,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma3N_(4B)-Audio.ipynb",
-        "last_synced": "2025-10-20T16:36:04.833641+00:00"
+        "last_synced": "2025-10-20T17:19:23.315715+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
         "Gemma3N_(4B)-Audio.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -533,15 +533,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma3N_(4B)-Conversational.ipynb",
-        "last_synced": "2025-10-20T16:36:02.804974+00:00"
+        "last_synced": "2025-10-20T17:19:28.012852+00:00"
       },
       "files": [
-        "setup.sh",
-        "Gemma3N_(4B)-Conversational.ipynb",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Gemma3N_(4B)-Conversational.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -563,15 +563,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma3N_(4B)-Vision.ipynb",
-        "last_synced": "2025-10-20T16:36:05.161505+00:00"
+        "last_synced": "2025-10-20T17:19:27.387505+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
-        "Gemma3N_(4B)-Vision.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Gemma3N_(4B)-Vision.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -593,15 +593,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/GPT_OSS_BNB_(20B)-Inference.ipynb",
-        "last_synced": "2025-10-20T16:36:04.225576+00:00"
+        "last_synced": "2025-10-20T17:19:24.642300+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "GPT_OSS_BNB_(20B)-Inference.ipynb",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
+        "GPT_OSS_BNB_(20B)-Inference.ipynb",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -623,15 +623,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/GPT_OSS_MXFP4_(20B)-Inference.ipynb",
-        "last_synced": "2025-10-20T16:36:05.939334+00:00"
+        "last_synced": "2025-10-20T17:19:25.386781+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
-        "docker-compose.yml",
+        ".brevconfig.json",
+        "setup.sh",
         "GPT_OSS_MXFP4_(20B)-Inference.ipynb",
-        ".brevconfig.json"
+        "docker-compose.yml",
+        "requirements.txt"
       ]
     },
     {
@@ -653,15 +653,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Granite4.ipynb",
-        "last_synced": "2025-10-20T16:36:02.862015+00:00"
+        "last_synced": "2025-10-20T17:19:25.146536+00:00"
       },
       "files": [
+        "README.md",
+        ".brevconfig.json",
         "setup.sh",
         "Granite4.0.ipynb",
-        "requirements.txt",
-        "README.md",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -683,15 +683,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/HuggingFace Course-Advanced_Llama3_1_(3B)_GRPO_LoRA.ipynb",
-        "last_synced": "2025-10-20T16:36:03.321216+00:00"
+        "last_synced": "2025-10-20T17:19:26.361734+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "HuggingFace Course-Advanced_Llama3_1_(3B)_GRPO_LoRA.ipynb",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "HuggingFace Course-Advanced_Llama3_1_(3B)_GRPO_LoRA.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -713,15 +713,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/HuggingFace Course-Advanced_Llama3_2_(3B)_GRPO_LoRA.ipynb",
-        "last_synced": "2025-10-20T16:36:05.829260+00:00"
+        "last_synced": "2025-10-20T17:19:23.923729+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
         "HuggingFace Course-Advanced_Llama3_2_(3B)_GRPO_LoRA.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -743,15 +743,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/HuggingFace Course-DeepSeek_R1_0528_Qwen3_(8B)_GRPO.ipynb",
-        "last_synced": "2025-10-20T16:36:03.979064+00:00"
+        "last_synced": "2025-10-20T17:19:26.220208+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "HuggingFace Course-DeepSeek_R1_0528_Qwen3_(8B)_GRPO.ipynb",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "HuggingFace Course-DeepSeek_R1_0528_Qwen3_(8B)_GRPO.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -773,15 +773,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/HuggingFace Course-Gemma3_(1B)-GRPO.ipynb",
-        "last_synced": "2025-10-20T16:36:05.265264+00:00"
+        "last_synced": "2025-10-20T17:19:26.475299+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
-        "HuggingFace Course-Gemma3_(1B)-GRPO.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "HuggingFace Course-Gemma3_(1B)-GRPO.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -803,15 +803,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/HuggingFace Course-Gemma3_(4B)-Vision-GRPO.ipynb",
-        "last_synced": "2025-10-20T16:36:02.486320+00:00"
+        "last_synced": "2025-10-20T17:19:25.709061+00:00"
       },
       "files": [
+        "README.md",
+        ".brevconfig.json",
         "setup.sh",
         "HuggingFace Course-Gemma3_(4B)-Vision-GRPO.ipynb",
-        "requirements.txt",
-        "README.md",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -833,15 +833,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/HuggingFace Course-Llama3.ipynb",
-        "last_synced": "2025-10-20T16:36:02.285459+00:00"
+        "last_synced": "2025-10-20T17:19:28.235993+00:00"
       },
       "files": [
-        "setup.sh",
-        "HuggingFace Course-Llama3.1_(8B)-GRPO.ipynb",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "HuggingFace Course-Llama3.1_(8B)-GRPO.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -863,15 +863,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/HuggingFace Course-Mistral_v0.ipynb",
-        "last_synced": "2025-10-20T16:36:06.379283+00:00"
+        "last_synced": "2025-10-20T17:19:25.600400+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
-        "docker-compose.yml",
+        ".brevconfig.json",
+        "setup.sh",
         "HuggingFace Course-Mistral_v0.3_(7B)-GRPO.ipynb",
-        ".brevconfig.json"
+        "docker-compose.yml",
+        "requirements.txt"
       ]
     },
     {
@@ -893,15 +893,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/HuggingFace Course-Qwen2.ipynb",
-        "last_synced": "2025-10-20T16:36:05.190346+00:00"
+        "last_synced": "2025-10-20T17:19:25.046420+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "HuggingFace Course-Qwen2.5_(3B)-GRPO.ipynb",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -923,15 +923,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/HuggingFace Course-Qwen2_5_7B_VL_GRPO.ipynb",
-        "last_synced": "2025-10-20T16:36:06.261398+00:00"
+        "last_synced": "2025-10-20T17:19:24.832234+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
-        "docker-compose.yml",
+        ".brevconfig.json",
+        "setup.sh",
         "HuggingFace Course-Qwen2_5_7B_VL_GRPO.ipynb",
-        ".brevconfig.json"
+        "docker-compose.yml",
+        "requirements.txt"
       ]
     },
     {
@@ -953,15 +953,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/HuggingFace Course-Qwen3_(4B)-GRPO.ipynb",
-        "last_synced": "2025-10-20T16:36:05.304925+00:00"
+        "last_synced": "2025-10-20T17:19:26.623999+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
-        "HuggingFace Course-Qwen3_(4B)-GRPO.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "HuggingFace Course-Qwen3_(4B)-GRPO.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -983,15 +983,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Advanced_Llama3_1_(3B)_GRPO_LoRA.ipynb",
-        "last_synced": "2025-10-20T16:36:04.806086+00:00"
+        "last_synced": "2025-10-20T17:19:24.171484+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
         "Kaggle-Advanced_Llama3_1_(3B)_GRPO_LoRA.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -1013,15 +1013,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Advanced_Llama3_2_(3B)_GRPO_LoRA.ipynb",
-        "last_synced": "2025-10-20T16:36:04.076089+00:00"
+        "last_synced": "2025-10-20T17:19:27.777764+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Kaggle-Advanced_Llama3_2_(3B)_GRPO_LoRA.ipynb",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Kaggle-Advanced_Llama3_2_(3B)_GRPO_LoRA.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -1043,15 +1043,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-bert_classification.ipynb",
-        "last_synced": "2025-10-20T16:36:03.919581+00:00"
+        "last_synced": "2025-10-20T17:19:23.895072+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Kaggle-bert_classification.ipynb",
         "README.md",
+        "Kaggle-bert_classification.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -1073,15 +1073,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-CodeForces-cot-Finetune_for_Reasoning_on_CodeForces.ipynb",
-        "last_synced": "2025-10-20T16:36:04.245161+00:00"
+        "last_synced": "2025-10-20T17:19:23.348724+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Kaggle-CodeForces-cot-Finetune_for_Reasoning_on_CodeForces.ipynb",
         "README.md",
+        "Kaggle-CodeForces-cot-Finetune_for_Reasoning_on_CodeForces.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -1103,15 +1103,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-CodeGemma_(7B)-Conversational.ipynb",
-        "last_synced": "2025-10-20T16:36:05.886869+00:00"
+        "last_synced": "2025-10-20T17:19:27.370828+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
-        "Kaggle-CodeGemma_(7B)-Conversational.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Kaggle-CodeGemma_(7B)-Conversational.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -1133,15 +1133,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-DeepSeek_R1_0528_Qwen3_(8B)_GRPO.ipynb",
-        "last_synced": "2025-10-20T16:36:05.679180+00:00"
+        "last_synced": "2025-10-20T17:19:25.289014+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "Kaggle-DeepSeek_R1_0528_Qwen3_(8B)_GRPO.ipynb",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -1163,15 +1163,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Falcon_H1_(0.ipynb",
-        "last_synced": "2025-10-20T16:36:03.232476+00:00"
+        "last_synced": "2025-10-20T17:19:24.566190+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Kaggle-Falcon_H1_(0.5B)-Alpaca.ipynb",
         "README.md",
+        ".brevconfig.json",
+        "Kaggle-Falcon_H1_(0.5B)-Alpaca.ipynb",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -1193,15 +1193,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Gemma2_(2B)-Alpaca.ipynb",
-        "last_synced": "2025-10-20T16:36:04.317788+00:00"
+        "last_synced": "2025-10-20T17:19:27.135279+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Kaggle-Gemma2_(2B)-Alpaca.ipynb",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Kaggle-Gemma2_(2B)-Alpaca.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -1223,15 +1223,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Gemma2_(9B)-Alpaca.ipynb",
-        "last_synced": "2025-10-20T16:36:03.121379+00:00"
+        "last_synced": "2025-10-20T17:19:24.796842+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Kaggle-Gemma2_(9B)-Alpaca.ipynb",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
+        "Kaggle-Gemma2_(9B)-Alpaca.ipynb",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -1253,15 +1253,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3_(1B)-GRPO.ipynb",
-        "last_synced": "2025-10-20T16:36:01.961808+00:00"
+        "last_synced": "2025-10-20T17:19:25.172017+00:00"
       },
       "files": [
+        "README.md",
+        ".brevconfig.json",
         "setup.sh",
         "Kaggle-Gemma3_(1B)-GRPO.ipynb",
-        "requirements.txt",
-        "README.md",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -1283,15 +1283,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3_(270M).ipynb",
-        "last_synced": "2025-10-20T16:36:03.454702+00:00"
+        "last_synced": "2025-10-20T17:19:26.102157+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Kaggle-Gemma3_(270M).ipynb",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
+        "Kaggle-Gemma3_(270M).ipynb",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -1313,15 +1313,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3_(27B)_A100-Conversational.ipynb",
-        "last_synced": "2025-10-20T16:36:04.172709+00:00"
+        "last_synced": "2025-10-20T17:19:24.238588+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Kaggle-Gemma3_(27B)_A100-Conversational.ipynb",
         "README.md",
+        "Kaggle-Gemma3_(27B)_A100-Conversational.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -1343,15 +1343,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3_(4B).ipynb",
-        "last_synced": "2025-10-20T16:36:03.509714+00:00"
+        "last_synced": "2025-10-20T17:19:26.839601+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Kaggle-Gemma3_(4B).ipynb",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Kaggle-Gemma3_(4B).ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -1373,16 +1373,16 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3_(4B)-Vision-GRPO.ipynb",
-        "last_synced": "2025-10-20T16:36:05.613377+00:00"
+        "last_synced": "2025-10-20T17:19:25.909848+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Kaggle-Gemma3_(4B)-Vision.ipynb",
         "README.md",
+        "Kaggle-Gemma3_(4B)-Vision.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "Kaggle-Gemma3_(4B)-Vision-GRPO.ipynb",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -1404,15 +1404,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3N_(2B)-Inference.ipynb",
-        "last_synced": "2025-10-20T16:36:02.036380+00:00"
+        "last_synced": "2025-10-20T17:19:23.509135+00:00"
       },
       "files": [
-        "setup.sh",
-        "Kaggle-Gemma3N_(2B)-Inference.ipynb",
-        "requirements.txt",
         "README.md",
+        "Kaggle-Gemma3N_(2B)-Inference.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -1434,15 +1434,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3N_(4B)-Audio.ipynb",
-        "last_synced": "2025-10-20T16:36:06.570057+00:00"
+        "last_synced": "2025-10-20T17:19:27.743762+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
         "Kaggle-Gemma3N_(4B)-Audio.ipynb",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -1464,15 +1464,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3N_(4B)-Conversational.ipynb",
-        "last_synced": "2025-10-20T16:36:04.475894+00:00"
+        "last_synced": "2025-10-20T17:19:24.753997+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Kaggle-Gemma3N_(4B)-Conversational.ipynb",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
+        "Kaggle-Gemma3N_(4B)-Conversational.ipynb",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -1494,15 +1494,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3N_(4B)-Vision.ipynb",
-        "last_synced": "2025-10-20T16:36:02.650652+00:00"
+        "last_synced": "2025-10-20T17:19:28.682006+00:00"
       },
       "files": [
-        "setup.sh",
-        "Kaggle-Gemma3N_(4B)-Vision.ipynb",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Kaggle-Gemma3N_(4B)-Vision.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -1524,15 +1524,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-GPT_OSS_BNB_(20B)-Inference.ipynb",
-        "last_synced": "2025-10-20T16:36:06.116104+00:00"
+        "last_synced": "2025-10-20T17:19:27.680478+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
         "Kaggle-GPT_OSS_BNB_(20B)-Inference.ipynb",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -1554,15 +1554,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-GPT_OSS_MXFP4_(20B)-Inference.ipynb",
-        "last_synced": "2025-10-20T16:36:06.518273+00:00"
+        "last_synced": "2025-10-20T17:19:27.416146+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
         "Kaggle-GPT_OSS_MXFP4_(20B)-Inference.ipynb",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -1584,15 +1584,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Granite4.ipynb",
-        "last_synced": "2025-10-20T16:36:02.054351+00:00"
+        "last_synced": "2025-10-20T17:19:26.175598+00:00"
       },
       "files": [
+        "README.md",
+        ".brevconfig.json",
         "setup.sh",
         "Kaggle-Granite4.0.ipynb",
-        "requirements.txt",
-        "README.md",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -1614,22 +1614,22 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Liquid_LFM2_(1.ipynb",
-        "last_synced": "2025-10-20T16:36:06.472710+00:00"
+        "last_synced": "2025-10-20T17:19:27.229183+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
         "Kaggle-Liquid_LFM2_(1.2B)-Conversational.ipynb",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
       "id": "kaggle-llama3",
       "name": "Kaggle Llama3",
       "description": "Fine-tune Kaggle Llama3 with Unsloth on NVIDIA GPUs",
-      "notebook": "Kaggle-Llama3.1_(8B)-GRPO.ipynb",
+      "notebook": "Kaggle-Llama3.2_(1B_and_3B)-Conversational.ipynb",
       "path": "kaggle-llama3",
       "gpu": {
         "tier": "L4",
@@ -1644,21 +1644,21 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Llama3.ipynb",
-        "last_synced": "2025-10-20T16:36:05.873227+00:00"
+        "last_synced": "2025-10-20T17:19:27.876458+00:00"
       },
       "files": [
-        "setup.sh",
-        "Kaggle-Llama3.1_(8B)-GRPO.ipynb",
-        "Kaggle-Llama3.1_(8B)-Alpaca.ipynb",
-        "requirements.txt",
-        "Kaggle-Llama3.3_(70B)_A100-Conversational.ipynb",
-        "Kaggle-Llama3.1_(8B)-Inference.ipynb",
-        "Kaggle-Llama3.2_(11B)-Vision.ipynb",
         "Kaggle-Llama3.2_(1B_and_3B)-Conversational.ipynb",
         "README.md",
-        "Kaggle-Llama3.2_(1B)-RAFT.ipynb",
+        "Kaggle-Llama3.3_(70B)_A100-Conversational.ipynb",
+        "Kaggle-Llama3.1_(8B)-Alpaca.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
+        "Kaggle-Llama3.2_(11B)-Vision.ipynb",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Kaggle-Llama3.1_(8B)-GRPO.ipynb",
+        "Kaggle-Llama3.1_(8B)-Inference.ipynb",
+        "Kaggle-Llama3.2_(1B)-RAFT.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -1680,16 +1680,16 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Llama3_(8B)-Conversational.ipynb",
-        "last_synced": "2025-10-20T16:36:06.160517+00:00"
+        "last_synced": "2025-10-20T17:19:27.087179+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Kaggle-Llama3_(8B)-Alpaca.ipynb",
         "README.md",
+        "Kaggle-Llama3_(8B)-Alpaca.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
         "Kaggle-Llama3_(8B)-Conversational.ipynb",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -1711,15 +1711,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Llama3_(8B)-Ollama.ipynb",
-        "last_synced": "2025-10-20T16:36:04.273003+00:00"
+        "last_synced": "2025-10-20T17:19:25.206977+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Kaggle-Llama3_(8B)-Ollama.ipynb",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
+        "Kaggle-Llama3_(8B)-Ollama.ipynb",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -1741,15 +1741,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Llama3_(8B)-ORPO.ipynb",
-        "last_synced": "2025-10-20T16:36:06.537689+00:00"
+        "last_synced": "2025-10-20T17:19:27.981271+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
         "Kaggle-Llama3_(8B)-ORPO.ipynb",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -1771,15 +1771,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Llasa_TTS_(1B).ipynb",
-        "last_synced": "2025-10-20T16:36:04.191659+00:00"
+        "last_synced": "2025-10-20T17:19:26.505721+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Kaggle-Llasa_TTS_(1B).ipynb",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Kaggle-Llasa_TTS_(1B).ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -1801,15 +1801,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Llasa_TTS_(3B).ipynb",
-        "last_synced": "2025-10-20T16:36:02.145529+00:00"
+        "last_synced": "2025-10-20T17:19:25.126120+00:00"
       },
       "files": [
+        "README.md",
+        ".brevconfig.json",
         "setup.sh",
         "Kaggle-Llasa_TTS_(3B).ipynb",
-        "requirements.txt",
-        "README.md",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -1831,15 +1831,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Magistral_(24B)-Reasoning-Conversational.ipynb",
-        "last_synced": "2025-10-20T16:36:05.723848+00:00"
+        "last_synced": "2025-10-20T17:19:27.164797+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
-        "Kaggle-Magistral_(24B)-Reasoning-Conversational.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Kaggle-Magistral_(24B)-Reasoning-Conversational.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -1861,15 +1861,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Meta-Synthetic-Data-Llama3.ipynb",
-        "last_synced": "2025-10-20T16:36:02.770236+00:00"
+        "last_synced": "2025-10-20T17:19:23.229364+00:00"
       },
       "files": [
-        "setup.sh",
-        "Kaggle-Meta-Synthetic-Data-Llama3.1_(8B).ipynb",
-        "requirements.txt",
         "README.md",
+        "Kaggle-Meta-Synthetic-Data-Llama3.1_(8B).ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -1891,15 +1891,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Meta_Synthetic_Data_Llama3_2_(3B).ipynb",
-        "last_synced": "2025-10-20T16:36:02.309924+00:00"
+        "last_synced": "2025-10-20T17:19:26.888907+00:00"
       },
       "files": [
-        "setup.sh",
-        "Kaggle-Meta_Synthetic_Data_Llama3_2_(3B).ipynb",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Kaggle-Meta_Synthetic_Data_Llama3_2_(3B).ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -1921,15 +1921,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Mistral_(7B)-Text_Completion.ipynb",
-        "last_synced": "2025-10-20T16:36:03.532700+00:00"
+        "last_synced": "2025-10-20T17:19:24.716759+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Kaggle-Mistral_(7B)-Text_Completion.ipynb",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
+        "Kaggle-Mistral_(7B)-Text_Completion.ipynb",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -1951,15 +1951,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Mistral_Nemo_(12B)-Alpaca.ipynb",
-        "last_synced": "2025-10-20T16:36:04.729020+00:00"
+        "last_synced": "2025-10-20T17:19:24.392673+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
         "Kaggle-Mistral_Nemo_(12B)-Alpaca.ipynb",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -1981,22 +1981,22 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Mistral_Small_(22B)-Alpaca.ipynb",
-        "last_synced": "2025-10-20T16:36:06.180681+00:00"
+        "last_synced": "2025-10-20T17:19:27.842624+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
         "Kaggle-Mistral_Small_(22B)-Alpaca.ipynb",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
       "id": "kaggle-mistral-v0",
       "name": "Kaggle Mistral V0",
       "description": "Fine-tune Kaggle Mistral V0 with Unsloth on NVIDIA GPUs",
-      "notebook": "Kaggle-Mistral_v0.3_(7B)-Conversational.ipynb",
+      "notebook": "Kaggle-Mistral_v0.3_(7B)-Alpaca.ipynb",
       "path": "kaggle-mistral-v0",
       "gpu": {
         "tier": "L4",
@@ -2011,18 +2011,18 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Mistral_v0.ipynb",
-        "last_synced": "2025-10-20T16:36:06.455814+00:00"
+        "last_synced": "2025-10-20T17:19:27.292740+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
+        "Kaggle-Mistral_v0.3_(7B)-Alpaca.ipynb",
         "Kaggle-Mistral_v0.3_(7B)-Conversational.ipynb",
         "README.md",
-        "Kaggle-Mistral_v0.3_(7B)-GRPO.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        "Kaggle-Mistral_v0.3_(7B)-Alpaca.ipynb",
         "Kaggle-Mistral_v0.3_(7B)-CPT.ipynb",
-        ".brevconfig.json"
+        "Kaggle-Mistral_v0.3_(7B)-GRPO.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -2044,15 +2044,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Orpheus_(3B)-TTS.ipynb",
-        "last_synced": "2025-10-20T16:36:06.407542+00:00"
+        "last_synced": "2025-10-20T17:19:25.412724+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
-        "docker-compose.yml",
+        ".brevconfig.json",
+        "setup.sh",
         "Kaggle-Orpheus_(3B)-TTS.ipynb",
-        ".brevconfig.json"
+        "docker-compose.yml",
+        "requirements.txt"
       ]
     },
     {
@@ -2074,15 +2074,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Oute_TTS_(1B).ipynb",
-        "last_synced": "2025-10-20T16:36:02.010005+00:00"
+        "last_synced": "2025-10-20T17:19:27.813722+00:00"
       },
       "files": [
-        "setup.sh",
-        "Kaggle-Oute_TTS_(1B).ipynb",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Kaggle-Oute_TTS_(1B).ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -2104,15 +2104,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Phi_3.ipynb",
-        "last_synced": "2025-10-20T16:36:05.378578+00:00"
+        "last_synced": "2025-10-20T17:19:28.055666+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
-        "Kaggle-Phi_3.5_Mini-Conversational.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Kaggle-Phi_3.5_Mini-Conversational.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -2134,15 +2134,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Phi_3_Medium-Conversational.ipynb",
-        "last_synced": "2025-10-20T16:36:03.383856+00:00"
+        "last_synced": "2025-10-20T17:19:23.193477+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Kaggle-Phi_3_Medium-Conversational.ipynb",
         "README.md",
+        "Kaggle-Phi_3_Medium-Conversational.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -2164,15 +2164,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Phi_4-Conversational.ipynb",
-        "last_synced": "2025-10-20T16:36:03.039568+00:00"
+        "last_synced": "2025-10-20T17:19:28.379762+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Kaggle-Phi_4-Conversational.ipynb",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Kaggle-Phi_4-Conversational.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -2194,22 +2194,22 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Pixtral_(12B)-Vision.ipynb",
-        "last_synced": "2025-10-20T16:36:04.682590+00:00"
+        "last_synced": "2025-10-20T17:19:23.565992+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
         "Kaggle-Pixtral_(12B)-Vision.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
       "id": "kaggle-qwen2",
       "name": "Kaggle Qwen2",
       "description": "Fine-tune Kaggle Qwen2 with Unsloth on NVIDIA GPUs",
-      "notebook": "Kaggle-Qwen2.5_(7B)-Alpaca.ipynb",
+      "notebook": "Kaggle-Qwen2.5_Coder_(14B)-Conversational.ipynb",
       "path": "kaggle-qwen2",
       "gpu": {
         "tier": "L4",
@@ -2224,18 +2224,18 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Qwen2.ipynb",
-        "last_synced": "2025-10-20T16:36:05.448817+00:00"
+        "last_synced": "2025-10-20T17:19:28.332738+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Kaggle-Qwen2.5_(7B)-Alpaca.ipynb",
         "README.md",
-        "Kaggle-Qwen2.5_(3B)-GRPO.ipynb",
         "Kaggle-Qwen2.5_Coder_(14B)-Conversational.ipynb",
+        "Kaggle-Qwen2.5_(7B)-Alpaca.ipynb",
+        ".brevconfig.json",
         "Kaggle-Qwen2.5_VL_(7B)-Vision.ipynb",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Kaggle-Qwen2.5_(3B)-GRPO.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -2257,15 +2257,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Qwen2_(7B)-Alpaca.ipynb",
-        "last_synced": "2025-10-20T16:36:04.394898+00:00"
+        "last_synced": "2025-10-20T17:19:28.571732+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Kaggle-Qwen2_(7B)-Alpaca.ipynb",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Kaggle-Qwen2_(7B)-Alpaca.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -2287,15 +2287,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Qwen2_5_7B_VL_GRPO.ipynb",
-        "last_synced": "2025-10-20T16:36:06.009980+00:00"
+        "last_synced": "2025-10-20T17:19:23.261821+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
-        "docker-compose.yml",
         "Kaggle-Qwen2_5_7B_VL_GRPO.ipynb",
-        ".brevconfig.json"
+        ".brevconfig.json",
+        "setup.sh",
+        "docker-compose.yml",
+        "requirements.txt"
       ]
     },
     {
@@ -2317,15 +2317,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Qwen2_VL_(7B)-Vision.ipynb",
-        "last_synced": "2025-10-20T16:36:01.937223+00:00"
+        "last_synced": "2025-10-20T17:19:23.157725+00:00"
       },
       "files": [
-        "Kaggle-Qwen2_VL_(7B)-Vision.ipynb",
-        "setup.sh",
-        "requirements.txt",
         "README.md",
+        "Kaggle-Qwen2_VL_(7B)-Vision.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -2347,15 +2347,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Qwen2.5_Coder_(1.ipynb",
-        "last_synced": "2025-10-20T16:36:05.110695+00:00"
+        "last_synced": "2025-10-20T17:19:24.947651+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "Kaggle-Qwen2.5_Coder_(1.5B)-Tool_Calling.ipynb",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -2377,15 +2377,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Qwen3_(32B)_A100-Reasoning-Conversational.ipynb",
-        "last_synced": "2025-10-20T16:36:03.939062+00:00"
+        "last_synced": "2025-10-20T17:19:26.971276+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Kaggle-Qwen3_(32B)_A100-Reasoning-Conversational.ipynb",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Kaggle-Qwen3_(32B)_A100-Reasoning-Conversational.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -2407,15 +2407,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Qwen3_(4B)-GRPO.ipynb",
-        "last_synced": "2025-10-20T16:36:04.112524+00:00"
+        "last_synced": "2025-10-20T17:19:23.801891+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Kaggle-Qwen3_(4B)-GRPO.ipynb",
         "README.md",
+        "Kaggle-Qwen3_(4B)-GRPO.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -2437,15 +2437,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Qwen3_(4B)-Instruct.ipynb",
-        "last_synced": "2025-10-20T16:36:05.355344+00:00"
+        "last_synced": "2025-10-20T17:19:26.728929+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
-        "Kaggle-Qwen3_(4B)-Instruct.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Kaggle-Qwen3_(4B)-Instruct.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -2467,15 +2467,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Qwen3_(4B)-Thinking.ipynb",
-        "last_synced": "2025-10-20T16:36:02.194342+00:00"
+        "last_synced": "2025-10-20T17:19:26.541827+00:00"
       },
       "files": [
-        "setup.sh",
-        "Kaggle-Qwen3_(4B)-Thinking.ipynb",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Kaggle-Qwen3_(4B)-Thinking.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -2497,15 +2497,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Spark_TTS_(0_5B).ipynb",
-        "last_synced": "2025-10-20T16:36:03.478345+00:00"
+        "last_synced": "2025-10-20T17:19:23.456441+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Kaggle-Spark_TTS_(0_5B).ipynb",
         "README.md",
+        "Kaggle-Spark_TTS_(0_5B).ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -2527,15 +2527,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-TinyLlama_(1.ipynb",
-        "last_synced": "2025-10-20T16:36:02.896823+00:00"
+        "last_synced": "2025-10-20T17:19:26.071031+00:00"
       },
       "files": [
+        "README.md",
+        ".brevconfig.json",
         "setup.sh",
         "Kaggle-TinyLlama_(1.1B)-Alpaca.ipynb",
-        "requirements.txt",
-        "README.md",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -2557,15 +2557,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Unsloth_Studio.ipynb",
-        "last_synced": "2025-10-20T16:36:06.104349+00:00"
+        "last_synced": "2025-10-20T17:19:25.434570+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
-        "docker-compose.yml",
+        ".brevconfig.json",
+        "setup.sh",
         "Kaggle-Unsloth_Studio.ipynb",
-        ".brevconfig.json"
+        "docker-compose.yml",
+        "requirements.txt"
       ]
     },
     {
@@ -2587,15 +2587,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Whisper.ipynb",
-        "last_synced": "2025-10-20T16:36:03.830712+00:00"
+        "last_synced": "2025-10-20T17:19:24.509870+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Kaggle-Whisper.ipynb",
         "README.md",
+        ".brevconfig.json",
+        "Kaggle-Whisper.ipynb",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -2617,15 +2617,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Zephyr_(7B)-DPO.ipynb",
-        "last_synced": "2025-10-20T16:36:05.220639+00:00"
+        "last_synced": "2025-10-20T17:19:24.198694+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
         "Kaggle-Zephyr_(7B)-DPO.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -2647,15 +2647,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Liquid_LFM2_(1.ipynb",
-        "last_synced": "2025-10-20T16:36:03.405971+00:00"
+        "last_synced": "2025-10-20T17:19:23.531720+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Liquid_LFM2_(1.2B)-Conversational.ipynb",
         "README.md",
+        "Liquid_LFM2_(1.2B)-Conversational.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -2677,22 +2677,22 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Liquid_LFM2-Conversational.ipynb",
-        "last_synced": "2025-10-20T16:36:04.554980+00:00"
+        "last_synced": "2025-10-20T17:19:27.443228+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Liquid_LFM2-Conversational.ipynb",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Liquid_LFM2-Conversational.ipynb",
+        "requirements.txt"
       ]
     },
     {
       "id": "llama3",
       "name": "Llama3",
       "description": "Fine-tune Llama3 with Unsloth on NVIDIA GPUs",
-      "notebook": "Llama3.3_(70B)_A100-Conversational.ipynb",
+      "notebook": "Llama3.2_(11B)-Vision.ipynb",
       "path": "llama3",
       "gpu": {
         "tier": "L4",
@@ -2707,28 +2707,28 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama3.ipynb",
-        "last_synced": "2025-10-20T16:36:06.289150+00:00"
+        "last_synced": "2025-10-20T17:19:28.501068+00:00"
       },
       "files": [
+        "Llama3.2_(11B)-Vision.ipynb",
+        "README.md",
+        ".brevconfig.json",
+        "Llama3.1_(8B)-Alpaca.ipynb",
         "setup.sh",
-        "Llama3.3_(70B)_A100-Conversational.ipynb",
-        "requirements.txt",
         "Llama3.2_(1B_and_3B)-Conversational.ipynb",
+        "Llama3.2_(1B)-RAFT.ipynb",
+        "docker-compose.yml",
         "Llama3.1_(8B)-Inference.ipynb",
         "Llama3.1_(8B)-GRPO.ipynb",
-        "README.md",
-        "Llama3.1_(8B)-Alpaca.ipynb",
-        "docker-compose.yml",
-        "Llama3.2_(11B)-Vision.ipynb",
-        "Llama3.2_(1B)-RAFT.ipynb",
-        ".brevconfig.json"
+        "Llama3.3_(70B)_A100-Conversational.ipynb",
+        "requirements.txt"
       ]
     },
     {
       "id": "llama3-8b",
-      "name": "Llama3 (8B) Conversational",
-      "description": "Fine-tune Llama3 (8B) Conversational with Unsloth on NVIDIA GPUs",
-      "notebook": "Llama3_(8B)-Alpaca.ipynb",
+      "name": "Llama3 (8B) Alpaca",
+      "description": "Fine-tune Llama3 (8B) Alpaca with Unsloth on NVIDIA GPUs",
+      "notebook": "Llama3_(8B)-Conversational.ipynb",
       "path": "llama3-8b",
       "gpu": {
         "tier": "L4",
@@ -2742,17 +2742,17 @@
       ],
       "upstream": {
         "source": "unslothai/notebooks",
-        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama3_(8B)-Conversational.ipynb",
-        "last_synced": "2025-10-20T16:36:05.088635+00:00"
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama3_(8B)-Alpaca.ipynb",
+        "last_synced": "2025-10-20T17:19:28.542622+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Llama3_(8B)-Alpaca.ipynb",
         "README.md",
-        "Llama3_(8B)-Conversational.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Llama3_(8B)-Conversational.ipynb",
+        "Llama3_(8B)-Alpaca.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -2774,15 +2774,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama3_(8B)-Ollama.ipynb",
-        "last_synced": "2025-10-20T16:36:02.537105+00:00"
+        "last_synced": "2025-10-20T17:19:27.477970+00:00"
       },
       "files": [
-        "setup.sh",
-        "Llama3_(8B)-Ollama.ipynb",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Llama3_(8B)-Ollama.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -2804,15 +2804,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama3_(8B)-ORPO.ipynb",
-        "last_synced": "2025-10-20T16:36:04.575646+00:00"
+        "last_synced": "2025-10-20T17:19:24.582809+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "Llama3_(8B)-ORPO.ipynb",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -2834,15 +2834,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llasa_TTS_(1B).ipynb",
-        "last_synced": "2025-10-20T16:36:05.805176+00:00"
+        "last_synced": "2025-10-20T17:19:28.210636+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
-        "Llasa_TTS_(1B).ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Llasa_TTS_(1B).ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -2864,15 +2864,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llasa_TTS_(3B).ipynb",
-        "last_synced": "2025-10-20T16:36:06.349119+00:00"
+        "last_synced": "2025-10-20T17:19:24.884635+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
-        "docker-compose.yml",
+        ".brevconfig.json",
+        "setup.sh",
         "Llasa_TTS_(3B).ipynb",
-        ".brevconfig.json"
+        "docker-compose.yml",
+        "requirements.txt"
       ]
     },
     {
@@ -2894,15 +2894,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Magistral_(24B)-Reasoning-Conversational.ipynb",
-        "last_synced": "2025-10-20T16:36:02.743854+00:00"
+        "last_synced": "2025-10-20T17:19:23.069697+00:00"
       },
       "files": [
-        "setup.sh",
-        "Magistral_(24B)-Reasoning-Conversational.ipynb",
-        "requirements.txt",
         "README.md",
+        "Magistral_(24B)-Reasoning-Conversational.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -2924,15 +2924,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Meta-Synthetic-Data-Llama3.ipynb",
-        "last_synced": "2025-10-20T16:36:04.530188+00:00"
+        "last_synced": "2025-10-20T17:19:27.061406+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Meta-Synthetic-Data-Llama3.1_(8B).ipynb",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Meta-Synthetic-Data-Llama3.1_(8B).ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -2954,15 +2954,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Meta_Synthetic_Data_Llama3_2_(3B).ipynb",
-        "last_synced": "2025-10-20T16:36:05.398106+00:00"
+        "last_synced": "2025-10-20T17:19:24.684412+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "Meta_Synthetic_Data_Llama3_2_(3B).ipynb",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -2984,15 +2984,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Mistral_(7B)-Text_Completion.ipynb",
-        "last_synced": "2025-10-20T16:36:05.850130+00:00"
+        "last_synced": "2025-10-20T17:19:23.631930+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
         "Mistral_(7B)-Text_Completion.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -3014,15 +3014,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Mistral_Nemo_(12B)-Alpaca.ipynb",
-        "last_synced": "2025-10-20T16:36:05.558930+00:00"
+        "last_synced": "2025-10-20T17:19:26.581325+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
-        "Mistral_Nemo_(12B)-Alpaca.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Mistral_Nemo_(12B)-Alpaca.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -3044,15 +3044,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Mistral_Small_(22B)-Alpaca.ipynb",
-        "last_synced": "2025-10-20T16:36:04.934305+00:00"
+        "last_synced": "2025-10-20T17:19:23.105220+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
         "Mistral_Small_(22B)-Alpaca.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -3074,18 +3074,18 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Mistral_v0.ipynb",
-        "last_synced": "2025-10-20T16:36:05.476434+00:00"
+        "last_synced": "2025-10-20T17:19:28.709652+00:00"
       },
       "files": [
-        "setup.sh",
-        "Mistral_v0.3_(7B)-Conversational.ipynb",
-        "requirements.txt",
-        "Mistral_v0.3_(7B)-CPT.ipynb",
         "README.md",
-        "Mistral_v0.3_(7B)-Alpaca.ipynb",
+        "Mistral_v0.3_(7B)-Conversational.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "Mistral_v0.3_(7B)-GRPO.ipynb",
+        "Mistral_v0.3_(7B)-Alpaca.ipynb",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Mistral_v0.3_(7B)-CPT.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -3107,15 +3107,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Orpheus_(3B)-TTS.ipynb",
-        "last_synced": "2025-10-20T16:36:04.709452+00:00"
+        "last_synced": "2025-10-20T17:19:23.023999+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
         "Orpheus_(3B)-TTS.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -3137,15 +3137,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Oute_TTS_(1B).ipynb",
-        "last_synced": "2025-10-20T16:36:06.091962+00:00"
+        "last_synced": "2025-10-20T17:19:27.954306+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
         "Oute_TTS_(1B).ipynb",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -3167,15 +3167,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Phi_3.ipynb",
-        "last_synced": "2025-10-20T16:36:02.113392+00:00"
+        "last_synced": "2025-10-20T17:19:28.652562+00:00"
       },
       "files": [
-        "setup.sh",
-        "Phi_3.5_Mini-Conversational.ipynb",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Phi_3.5_Mini-Conversational.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -3197,22 +3197,22 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Phi_3_Medium-Conversational.ipynb",
-        "last_synced": "2025-10-20T16:36:06.495395+00:00"
+        "last_synced": "2025-10-20T17:19:27.015691+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
         "Phi_3_Medium-Conversational.ipynb",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
       "id": "phi-4-14b-fine-tuning",
       "name": "Phi-4 (14B)",
       "description": "Fine-tune Phi-4 (14B) with Unsloth on NVIDIA GPUs",
-      "notebook": "HuggingFace Course-Phi_4_(14B)-GRPO.ipynb",
+      "notebook": "Phi_4-Conversational.ipynb",
       "path": "phi-4-14b-fine-tuning",
       "gpu": {
         "tier": "A100-40GB",
@@ -3229,18 +3229,18 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Phi-4_(14B).ipynb",
-        "last_synced": "2025-10-20T16:36:05.924511+00:00"
+        "last_synced": "2025-10-20T17:19:28.190117+00:00"
       },
       "files": [
-        "setup.sh",
-        "HuggingFace Course-Phi_4_(14B)-GRPO.ipynb",
-        "requirements.txt",
         "README.md",
-        "Kaggle-Phi_4_(14B)-GRPO.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "Phi_4-Conversational.ipynb",
+        "Kaggle-Phi_4_(14B)-GRPO.ipynb",
         "docker-compose.yml",
+        "HuggingFace Course-Phi_4_(14B)-GRPO.ipynb",
         "Phi_4_(14B)-GRPO.ipynb",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -3262,22 +3262,22 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Pixtral_(12B)-Vision.ipynb",
-        "last_synced": "2025-10-20T16:36:02.254986+00:00"
+        "last_synced": "2025-10-20T17:19:22.815415+00:00"
       },
       "files": [
-        "setup.sh",
-        "Pixtral_(12B)-Vision.ipynb",
-        "requirements.txt",
         "README.md",
+        "Pixtral_(12B)-Vision.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
       "id": "qwen2",
       "name": "Qwen2",
       "description": "Fine-tune Qwen2 with Unsloth on NVIDIA GPUs",
-      "notebook": "Qwen2.5_(3B)-GRPO.ipynb",
+      "notebook": "Qwen2.5_VL_(7B)-Vision.ipynb",
       "path": "qwen2",
       "gpu": {
         "tier": "L4",
@@ -3292,18 +3292,18 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen2.ipynb",
-        "last_synced": "2025-10-20T16:36:06.655477+00:00"
+        "last_synced": "2025-10-20T17:19:28.607461+00:00"
       },
       "files": [
-        "setup.sh",
-        "Qwen2.5_(3B)-GRPO.ipynb",
-        "requirements.txt",
-        "README.md",
         "Qwen2.5_VL_(7B)-Vision.ipynb",
-        "Qwen2.5_Coder_(14B)-Conversational.ipynb",
-        "docker-compose.yml",
+        "README.md",
         ".brevconfig.json",
-        "Qwen2.5_(7B)-Alpaca.ipynb"
+        "setup.sh",
+        "Qwen2.5_(7B)-Alpaca.ipynb",
+        "docker-compose.yml",
+        "Qwen2.5_Coder_(14B)-Conversational.ipynb",
+        "Qwen2.5_(3B)-GRPO.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -3325,15 +3325,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen2_(7B)-Alpaca.ipynb",
-        "last_synced": "2025-10-20T16:36:06.321308+00:00"
+        "last_synced": "2025-10-20T17:19:26.918333+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
         "Qwen2_(7B)-Alpaca.ipynb",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -3355,15 +3355,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen2_5_7B_VL_GRPO.ipynb",
-        "last_synced": "2025-10-20T16:36:05.506499+00:00"
+        "last_synced": "2025-10-20T17:19:27.899432+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
-        "Qwen2_5_7B_VL_GRPO.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Qwen2_5_7B_VL_GRPO.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -3385,15 +3385,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen2_VL_(7B)-Vision.ipynb",
-        "last_synced": "2025-10-20T16:36:04.500530+00:00"
+        "last_synced": "2025-10-20T17:19:22.543026+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "Qwen2_VL_(7B)-Vision.ipynb",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -3415,15 +3415,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen2.5_Coder_(1.ipynb",
-        "last_synced": "2025-10-20T16:36:03.211372+00:00"
+        "last_synced": "2025-10-20T17:19:27.336621+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Qwen2.5_Coder_(1.5B)-Tool_Calling.ipynb",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Qwen2.5_Coder_(1.5B)-Tool_Calling.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -3446,20 +3446,20 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3_(14B).ipynb",
-        "last_synced": "2025-10-20T16:36:06.618338+00:00"
+        "last_synced": "2025-10-20T17:19:28.725918+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Qwen3_(14B).ipynb",
-        "Qwen3_(14B)-Reasoning-Conversational.ipynb",
-        "Kaggle-Qwen3_(14B)-Reasoning-Conversational.ipynb",
-        "Kaggle-Qwen3_(14B).ipynb",
         "README.md",
-        "Kaggle-Qwen3_(14B)-Alpaca.ipynb",
-        "docker-compose.yml",
         ".brevconfig.json",
-        "Qwen3_(14B)-Alpaca.ipynb"
+        "setup.sh",
+        "Qwen3_(14B).ipynb",
+        "Qwen3_(14B)-Alpaca.ipynb",
+        "docker-compose.yml",
+        "Kaggle-Qwen3_(14B)-Alpaca.ipynb",
+        "Kaggle-Qwen3_(14B)-Reasoning-Conversational.ipynb",
+        "Qwen3_(14B)-Reasoning-Conversational.ipynb",
+        "Kaggle-Qwen3_(14B).ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -3481,15 +3481,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3_(32B)_A100-Reasoning-Conversational.ipynb",
-        "last_synced": "2025-10-20T16:36:06.137003+00:00"
+        "last_synced": "2025-10-20T17:19:26.682935+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
         "Qwen3_(32B)_A100-Reasoning-Conversational.ipynb",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -3513,15 +3513,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3_(4B)_grpo.ipynb",
-        "last_synced": "2025-10-20T16:36:04.882939+00:00"
+        "last_synced": "2025-10-20T17:19:23.999177+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
         "Qwen3_(4B)-GRPO.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -3543,15 +3543,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3_(4B)-Instruct.ipynb",
-        "last_synced": "2025-10-20T16:36:02.511619+00:00"
+        "last_synced": "2025-10-20T17:19:28.454857+00:00"
       },
       "files": [
-        "setup.sh",
-        "Qwen3_(4B)-Instruct.ipynb",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "Qwen3_(4B)-Instruct.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -3573,22 +3573,22 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3_(4B)-Thinking.ipynb",
-        "last_synced": "2025-10-20T16:36:05.640659+00:00"
+        "last_synced": "2025-10-20T17:19:22.772322+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
         "Qwen3_(4B)-Thinking.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
       "id": "qwen3-vl-8b-vision",
       "name": "Qwen3-VL (8B)",
       "description": "Fine-tune Qwen3-VL (8B) with Unsloth on NVIDIA GPUs",
-      "notebook": "Qwen3_VL_(8B)-Vision-GRPO.ipynb",
+      "notebook": "Kaggle-Qwen3_VL_(8B)-Vision.ipynb",
       "path": "qwen3-vl-8b-vision",
       "gpu": {
         "tier": "A100-40GB",
@@ -3605,26 +3605,26 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3-VL_(8B).ipynb",
-        "last_synced": "2025-10-20T16:36:05.986349+00:00"
+        "last_synced": "2025-10-20T17:19:28.279918+00:00"
       },
       "files": [
-        "setup.sh",
-        "Qwen3_VL_(8B)-Vision-GRPO.ipynb",
-        "requirements.txt",
-        "Kaggle-Qwen3_VL_(8B)-Vision-GRPO.ipynb",
-        "Kaggle-Qwen3_VL_(8B)-Vision.ipynb",
-        "HuggingFace Course-Qwen3_VL_(8B)-Vision-GRPO.ipynb",
         "README.md",
-        "docker-compose.yml",
+        "Kaggle-Qwen3_VL_(8B)-Vision.ipynb",
         "Qwen3_VL_(8B)-Vision.ipynb",
-        ".brevconfig.json"
+        ".brevconfig.json",
+        "setup.sh",
+        "docker-compose.yml",
+        "HuggingFace Course-Qwen3_VL_(8B)-Vision-GRPO.ipynb",
+        "Qwen3_VL_(8B)-Vision-GRPO.ipynb",
+        "Kaggle-Qwen3_VL_(8B)-Vision-GRPO.ipynb",
+        "requirements.txt"
       ]
     },
     {
       "id": "sesame-csm-1b-tts",
       "name": "Sesame-CSM (1B)",
       "description": "Fine-tune Sesame-CSM (1B) with Unsloth on NVIDIA GPUs",
-      "notebook": "Sesame_CSM_(1B)-TTS.ipynb",
+      "notebook": "Kaggle-Sesame_CSM_(1B)-TTS.ipynb",
       "path": "sesame-csm-1b-tts",
       "gpu": {
         "tier": "T4",
@@ -3641,16 +3641,16 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Sesame-CSM_(1B).ipynb",
-        "last_synced": "2025-10-20T16:36:06.225550+00:00"
+        "last_synced": "2025-10-20T17:19:27.260618+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Sesame_CSM_(1B)-TTS.ipynb",
         "README.md",
-        "docker-compose.yml",
         "Kaggle-Sesame_CSM_(1B)-TTS.ipynb",
-        ".brevconfig.json"
+        ".brevconfig.json",
+        "setup.sh",
+        "docker-compose.yml",
+        "Sesame_CSM_(1B)-TTS.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -3672,15 +3672,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Spark_TTS_(0_5B).ipynb",
-        "last_synced": "2025-10-20T16:36:02.726154+00:00"
+        "last_synced": "2025-10-20T17:19:25.020935+00:00"
       },
       "files": [
+        "README.md",
+        ".brevconfig.json",
         "setup.sh",
         "Spark_TTS_(0_5B).ipynb",
-        "requirements.txt",
-        "README.md",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -3702,15 +3702,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Synthetic_Data_Hackathon.ipynb",
-        "last_synced": "2025-10-20T16:36:06.637826+00:00"
+        "last_synced": "2025-10-20T17:19:25.768400+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
-        "docker-compose.yml",
         ".brevconfig.json",
-        "Synthetic_Data_Hackathon.ipynb"
+        "setup.sh",
+        "Synthetic_Data_Hackathon.ipynb",
+        "docker-compose.yml",
+        "requirements.txt"
       ]
     },
     {
@@ -3732,15 +3732,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/TinyLlama_(1.ipynb",
-        "last_synced": "2025-10-20T16:36:03.247320+00:00"
+        "last_synced": "2025-10-20T17:19:25.097853+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "TinyLlama_(1.1B)-Alpaca.ipynb",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
+        "TinyLlama_(1.1B)-Alpaca.ipynb",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -3762,15 +3762,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Unsloth_Studio.ipynb",
-        "last_synced": "2025-10-20T16:36:01.880138+00:00"
+        "last_synced": "2025-10-20T17:19:22.600929+00:00"
       },
       "files": [
         "Unsloth_Studio.ipynb",
-        "setup.sh",
-        "requirements.txt",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -3794,15 +3794,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Whisper_Large_V3.ipynb",
-        "last_synced": "2025-10-20T16:36:02.839041+00:00"
+        "last_synced": "2025-10-20T17:19:24.257176+00:00"
       },
       "files": [
-        "setup.sh",
-        "Whisper.ipynb",
-        "requirements.txt",
         "README.md",
+        "Whisper.ipynb",
+        ".brevconfig.json",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
@@ -3824,22 +3824,22 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Zephyr_(7B)-DPO.ipynb",
-        "last_synced": "2025-10-20T16:36:03.609879+00:00"
+        "last_synced": "2025-10-20T17:19:25.503716+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "Zephyr_(7B)-DPO.ipynb",
         "README.md",
+        ".brevconfig.json",
+        "setup.sh",
+        "Zephyr_(7B)-DPO.ipynb",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     },
     {
       "id": "gpt-oss-120b-fine-tuning",
       "name": "gpt-oss-120b",
       "description": "Fine-tune gpt-oss-120b with Unsloth on NVIDIA GPUs",
-      "notebook": "gpt-oss-(120B)_A100-Fine-tuning.ipynb",
+      "notebook": "Kaggle-gpt-oss-(120B)_A100-Fine-tuning.ipynb",
       "path": "gpt-oss-120b-fine-tuning",
       "gpu": {
         "tier": "A100-80GB",
@@ -3856,23 +3856,23 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/gpt-oss-120b.ipynb",
-        "last_synced": "2025-10-20T16:36:05.961602+00:00"
+        "last_synced": "2025-10-20T17:19:26.425999+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
         "README.md",
-        "gpt-oss-(120B)_A100-Fine-tuning.ipynb",
-        "docker-compose.yml",
+        ".brevconfig.json",
+        "setup.sh",
         "Kaggle-gpt-oss-(120B)_A100-Fine-tuning.ipynb",
-        ".brevconfig.json"
+        "docker-compose.yml",
+        "gpt-oss-(120B)_A100-Fine-tuning.ipynb",
+        "requirements.txt"
       ]
     },
     {
       "id": "gpt-oss-20b-fine-tuning",
       "name": "gpt-oss-20b",
       "description": "Fine-tune gpt-oss-20b with Unsloth on NVIDIA GPUs",
-      "notebook": "gpt-oss-(20B)_A100-GRPO.ipynb",
+      "notebook": "Kaggle-gpt-oss-(20B)-Fine-tuning.ipynb",
       "path": "gpt-oss-20b-fine-tuning",
       "gpu": {
         "tier": "A100-40GB",
@@ -3889,25 +3889,25 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/gpt-oss-20b.ipynb",
-        "last_synced": "2025-10-20T16:36:06.594033+00:00"
+        "last_synced": "2025-10-20T17:19:28.418622+00:00"
       },
       "files": [
+        "Kaggle-gpt-oss-(20B)-Fine-tuning.ipynb",
+        "README.md",
+        "Kaggle-gpt-oss-(20B)-GRPO.ipynb",
+        "HuggingFace Course-gpt-oss-(20B)_A100-GRPO.ipynb",
+        "gpt-oss-(20B)-GRPO.ipynb",
+        "gpt_oss_(20B)_Reinforcement_Learning_2048_Game_DGX_Spark.ipynb",
+        ".brevconfig.json",
+        "gpt_oss_(20B)_Reinforcement_Learning_2048_Game_BF16.ipynb",
         "setup.sh",
         "gpt-oss-(20B)_A100-GRPO.ipynb",
-        "requirements.txt",
         "Kaggle-gpt-oss-(20B)_A100-GRPO.ipynb",
-        "gpt-oss-(20B)-Fine-tuning.ipynb",
-        "Kaggle-gpt-oss-(20B)-Fine-tuning.ipynb",
         "gpt_oss_(20B)_Reinforcement_Learning_2048_Game.ipynb",
-        "gpt-oss-(20B)-GRPO.ipynb",
-        "README.md",
-        "HuggingFace Course-gpt-oss-(20B)_A100-GRPO.ipynb",
-        "gpt_oss_(20B)_Reinforcement_Learning_2048_Game_BF16.ipynb",
-        "gpt_oss_(20B)_Reinforcement_Learning_2048_Game_DGX_Spark.ipynb",
         "docker-compose.yml",
-        "Kaggle-gpt-oss-(20B)-GRPO.ipynb",
         "HuggingFace Course-gpt-oss-(20B)-GRPO.ipynb",
-        ".brevconfig.json"
+        "gpt-oss-(20B)-Fine-tuning.ipynb",
+        "requirements.txt"
       ]
     },
     {
@@ -3931,15 +3931,15 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/gpt-oss-20b-grpo.ipynb",
-        "last_synced": "2025-10-20T16:36:03.675614+00:00"
+        "last_synced": "2025-10-20T17:19:24.352565+00:00"
       },
       "files": [
-        "setup.sh",
-        "requirements.txt",
-        "gpt_oss_(20B)_GRPO_BF16.ipynb",
         "README.md",
+        ".brevconfig.json",
+        "gpt_oss_(20B)_GRPO_BF16.ipynb",
+        "setup.sh",
         "docker-compose.yml",
-        ".brevconfig.json"
+        "requirements.txt"
       ]
     }
   ]

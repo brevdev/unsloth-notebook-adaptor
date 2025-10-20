@@ -1,5 +1,5 @@
 # Requirements for Kaggle Qwen3 (32B) A100 Reasoning Conversational
-# Generated: 2025-10-20T16:36:03.937199+00:00
+# Generated: 2025-10-20T17:19:26.967630+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

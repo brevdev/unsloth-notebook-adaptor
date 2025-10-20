@@ -1,5 +1,5 @@
 # Requirements for Qwen3 (4B) GRPO
-# Generated: 2025-10-20T16:36:04.881255+00:00
+# Generated: 2025-10-20T17:19:23.995547+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
