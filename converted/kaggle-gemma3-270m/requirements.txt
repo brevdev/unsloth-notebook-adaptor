@@ -1,5 +1,5 @@
 # Requirements for Kaggle Gemma3 (270M)
-# Generated: 2025-10-20T22:25:49.053409+00:00
+# Generated: 2025-10-20T22:29:02.865682+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

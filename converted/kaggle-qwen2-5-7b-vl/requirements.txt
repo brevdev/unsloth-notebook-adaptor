@@ -1,5 +1,5 @@
 # Requirements for Kaggle Qwen2 5 7B Vl Grpo
-# Generated: 2025-10-20T22:25:50.997195+00:00
+# Generated: 2025-10-20T22:29:01.619067+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

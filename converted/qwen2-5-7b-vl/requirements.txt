@@ -1,5 +1,5 @@
 # Requirements for Qwen2 5 7B Vl Grpo
-# Generated: 2025-10-20T22:25:50.611477+00:00
+# Generated: 2025-10-20T22:28:57.602929+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

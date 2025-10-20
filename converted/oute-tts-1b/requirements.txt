@@ -1,5 +1,5 @@
 # Requirements for Oute Tts (1B)
-# Generated: 2025-10-20T22:25:51.066095+00:00
+# Generated: 2025-10-20T22:28:57.706147+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
