@@ -220,10 +220,10 @@ def generate_table(launchables: List[Dict]) -> str:
             min_vram = gpu_info.get('min_vram_gb', 16)
             gpu_req = f"{gpu_tier} ({min_vram}GB)"
             
-            # Get launchable path
-            launchable_name = launchable.get('launchable_name', name.lower().replace(' ', '-'))
+            # Get launchable path (use 'path' or 'id' which matches directory name)
+            launchable_path = launchable.get('path', launchable.get('id', name.lower().replace(' ', '-')))
             notebook_name = launchable.get('notebook', 'notebook.ipynb')
-            github_path = f"converted/{launchable_name}/{notebook_name}"
+            github_path = f"converted/{launchable_path}/{notebook_name}"
             
             # Create link to the notebook in the repo
             notebook_link = f"[View Notebook]({github_path})"
