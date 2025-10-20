@@ -1,8 +1,8 @@
-# Llama3 (8B) Conversational - NVIDIA Brev Launchable
+# Llama3 (8B) Alpaca - NVIDIA Brev Launchable
 
-Fine-tune Llama3 (8B) Conversational with Unsloth on NVIDIA GPUs using Brev.
+Fine-tune Llama3 (8B) Alpaca with Unsloth on NVIDIA GPUs using Brev.
 
-🔗 **Original Notebook:** [View on GitHub](https://github.com/unslothai/notebooks/blob/main/nb/Llama3_(8B)-Conversational.ipynb)
+🔗 **Original Notebook:** [View on GitHub](https://github.com/unslothai/notebooks/blob/main/nb/Llama3_(8B)-Alpaca.ipynb)
 
 ## 🤙 Quick Start with NVIDIA Brev
 
@@ -79,7 +79,7 @@ This notebook has been adapted from the original Unsloth Colab version with the 
 
 - [Unsloth Documentation](https://docs.unsloth.ai/)
 - [Brev Documentation](https://docs.nvidia.com/brev)
-- [Original Notebook](https://github.com/unslothai/notebooks/blob/main/nb/Llama3_(8B)-Conversational.ipynb)
+- [Original Notebook](https://github.com/unslothai/notebooks/blob/main/nb/Llama3_(8B)-Alpaca.ipynb)
 - [Report Issues](https://github.com/brevdev/unsloth-notebook-adaptor/issues)
 
 ## 📄 License

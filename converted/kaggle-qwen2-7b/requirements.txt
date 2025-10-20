@@ -1,5 +1,5 @@
 # Requirements for Kaggle Qwen2 (7B) Alpaca
-# Generated: 2025-10-20T21:47:27.498201+00:00
+# Generated: 2025-10-20T22:04:50.015817+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

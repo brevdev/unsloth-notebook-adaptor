@@ -1,5 +1,5 @@
 # Requirements for gpt-oss-120b
-# Generated: 2025-10-20T21:47:31.925499+00:00
+# Generated: 2025-10-20T22:04:47.796964+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

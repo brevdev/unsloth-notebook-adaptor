@@ -1,5 +1,5 @@
 # Requirements for Kaggle Gemma3N (4B) Vision
-# Generated: 2025-10-20T21:47:27.922788+00:00
+# Generated: 2025-10-20T22:04:50.131394+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
