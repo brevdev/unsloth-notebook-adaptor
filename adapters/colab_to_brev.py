@@ -7,7 +7,7 @@ Converts Google Colab notebooks with Unsloth to NVIDIA Brev-compatible notebooks
 import json
 import logging
 import re
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict
 
@@ -234,7 +234,7 @@ print("=" * 60)
         template = self.jinja_env.get_template('requirements.txt.jinja2')
         return template.render(
             model_name=config.get('model_name', 'Unknown'),
-            timestamp=datetime.utcnow().isoformat(),
+            timestamp=datetime.now(timezone.utc).isoformat(),
             categories=config.get('categories', []),
             has_vision='vision' in config.get('categories', []),
             has_audio='audio' in config.get('categories', [])
@@ -290,7 +290,7 @@ print("=" * 60)
             "upstream": {
                 "source": "unslothai/notebooks",
                 "notebook_url": config.get('upstream_notebook_url', '#'),
-                "last_synced": datetime.utcnow().isoformat() + "Z"
+                "last_synced": datetime.now(timezone.utc).isoformat()
             }
         }
         return json.dumps(brev_config, indent=2)

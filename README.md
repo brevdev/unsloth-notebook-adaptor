@@ -27,7 +27,137 @@ This adapter transforms Unsloth Colab notebooks for seamless use on NVIDIA Brev 
 ## 🚀 Available Launchables
 
 <!-- LAUNCHABLES_TABLE_START -->
-*Launchables table will be auto-generated here after first sync*
+| Model | Description | GPU | VRAM | Categories | Deploy |
+|-------|-------------|-----|------|------------|--------|
+| Sesame-CSM (1B) | Fine-tune Sesame-CSM (1B) with Unsloth on NVIDIA GPUs | T4 | 12GB | audio, text-to-speech |  |
+| Whisper Large V3 | Fine-tune Whisper Large V3 with Unsloth on NVIDIA GPUs | L4 | 16GB | audio, speech-to-text |  |
+| gpt-oss-120b | Fine-tune gpt-oss-120b with Unsloth on NVIDIA GPUs | A100-80GB | 80GB | reasoning, large-model |  |
+| gpt-oss-20b | Fine-tune gpt-oss-20b with Unsloth on NVIDIA GPUs | A100-40GB | 24GB | reasoning, large-model |  |
+| gpt-oss-20b-GRPO | Fine-tune gpt-oss-20b-GRPO with Unsloth on NVIDIA GPUs | A100-80GB | 40GB | reasoning, reinforcement-learning, grpo |  |
+| Qwen3 (4B) GRPO | Fine-tune Qwen3 (4B) GRPO with Unsloth on NVIDIA GPUs | L4 | 16GB | reinforcement-learning, grpo, reasoning |  |
+| Phi-4 (14B) | Fine-tune Phi-4 (14B) with Unsloth on NVIDIA GPUs | A100-40GB | 24GB | text-generation, reasoning |  |
+| Qwen3 (14B) | Fine-tune Qwen3 (14B) with Unsloth on NVIDIA GPUs | A100-40GB | 24GB | text-generation |  |
+| Qwen3-VL (8B) | Fine-tune Qwen3-VL (8B) with Unsloth on NVIDIA GPUs | A100-40GB | 24GB | vision, multimodal |  |
+| Advanced Llama3 1 (3B) Grpo Lora | Fine-tune Advanced Llama3 1 (3B) Grpo Lora with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Advanced Llama3 2 (3B) Grpo Lora | Fine-tune Advanced Llama3 2 (3B) Grpo Lora with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Bert Classification | Fine-tune Bert Classification with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Codeforces Cot Finetune For Reasoning On Codeforces | Fine-tune Codeforces Cot Finetune For Reasoning On Codeforces with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Codegemma (7B) Conversational | Fine-tune Codegemma (7B) Conversational with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Deepseek R1 0528 Qwen3 (8B) Grpo | Fine-tune Deepseek R1 0528 Qwen3 (8B) Grpo with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Falcon H1 (0 | Fine-tune Falcon H1 (0 with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Falcon H1 Alpaca | Fine-tune Falcon H1 Alpaca with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Gemma2 (2B) Alpaca | Fine-tune Gemma2 (2B) Alpaca with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Gemma2 (9B) Alpaca | Fine-tune Gemma2 (9B) Alpaca with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Gemma3 (1B) Grpo | Fine-tune Gemma3 (1B) Grpo with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Gemma3 (270M) | Fine-tune Gemma3 (270M) with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Gemma3 (27B) A100 Conversational | Fine-tune Gemma3 (27B) A100 Conversational with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Gemma3 (4B) | Fine-tune Gemma3 (4B) with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Gemma3 (4B) Vision Grpo | Fine-tune Gemma3 (4B) Vision Grpo with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Gemma3N (2B) Inference | Fine-tune Gemma3N (2B) Inference with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Gemma3N (4B) Audio | Fine-tune Gemma3N (4B) Audio with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Gemma3N (4B) Conversational | Fine-tune Gemma3N (4B) Conversational with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Gemma3N (4B) Vision | Fine-tune Gemma3N (4B) Vision with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Gpt Oss Bnb (20B) Inference | Fine-tune Gpt Oss Bnb (20B) Inference with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Gpt Oss Mxfp4 (20B) Inference | Fine-tune Gpt Oss Mxfp4 (20B) Inference with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Granite4 | Fine-tune Granite4 with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Huggingface Course Advanced Llama3 1 (3B) Grpo Lora | Fine-tune Huggingface Course Advanced Llama3 1 (3B) Grpo Lora with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Huggingface Course Advanced Llama3 2 (3B) Grpo Lora | Fine-tune Huggingface Course Advanced Llama3 2 (3B) Grpo Lora with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Huggingface Course Deepseek R1 0528 Qwen3 (8B) Grpo | Fine-tune Huggingface Course Deepseek R1 0528 Qwen3 (8B) Grpo with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Huggingface Course Gemma3 (1B) Grpo | Fine-tune Huggingface Course Gemma3 (1B) Grpo with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Huggingface Course Gemma3 (4B) Vision Grpo | Fine-tune Huggingface Course Gemma3 (4B) Vision Grpo with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Huggingface Course Llama3 | Fine-tune Huggingface Course Llama3 with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Huggingface Course Mistral V0 | Fine-tune Huggingface Course Mistral V0 with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Huggingface Course Qwen2 | Fine-tune Huggingface Course Qwen2 with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Huggingface Course Qwen2 5 7B Vl Grpo | Fine-tune Huggingface Course Qwen2 5 7B Vl Grpo with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Huggingface Course Qwen3 (4B) Grpo | Fine-tune Huggingface Course Qwen3 (4B) Grpo with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Advanced Llama3 1 (3B) Grpo Lora | Fine-tune Kaggle Advanced Llama3 1 (3B) Grpo Lora with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Advanced Llama3 2 (3B) Grpo Lora | Fine-tune Kaggle Advanced Llama3 2 (3B) Grpo Lora with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Bert Classification | Fine-tune Kaggle Bert Classification with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Codeforces Cot Finetune For Reasoning On Codeforces | Fine-tune Kaggle Codeforces Cot Finetune For Reasoning On Codeforces with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Codegemma (7B) Conversational | Fine-tune Kaggle Codegemma (7B) Conversational with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Deepseek R1 0528 Qwen3 (8B) Grpo | Fine-tune Kaggle Deepseek R1 0528 Qwen3 (8B) Grpo with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Falcon H1 (0 | Fine-tune Kaggle Falcon H1 (0 with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Gemma2 (2B) Alpaca | Fine-tune Kaggle Gemma2 (2B) Alpaca with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Gemma2 (9B) Alpaca | Fine-tune Kaggle Gemma2 (9B) Alpaca with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Gemma3 (1B) Grpo | Fine-tune Kaggle Gemma3 (1B) Grpo with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Gemma3 (270M) | Fine-tune Kaggle Gemma3 (270M) with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Gemma3 (27B) A100 Conversational | Fine-tune Kaggle Gemma3 (27B) A100 Conversational with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Gemma3 (4B) | Fine-tune Kaggle Gemma3 (4B) with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Gemma3 (4B) Vision Grpo | Fine-tune Kaggle Gemma3 (4B) Vision Grpo with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Gemma3N (2B) Inference | Fine-tune Kaggle Gemma3N (2B) Inference with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Gemma3N (4B) Audio | Fine-tune Kaggle Gemma3N (4B) Audio with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Gemma3N (4B) Conversational | Fine-tune Kaggle Gemma3N (4B) Conversational with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Gemma3N (4B) Vision | Fine-tune Kaggle Gemma3N (4B) Vision with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Gpt Oss Bnb (20B) Inference | Fine-tune Kaggle Gpt Oss Bnb (20B) Inference with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Gpt Oss Mxfp4 (20B) Inference | Fine-tune Kaggle Gpt Oss Mxfp4 (20B) Inference with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Granite4 | Fine-tune Kaggle Granite4 with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Liquid Lfm2 (1 | Fine-tune Kaggle Liquid Lfm2 (1 with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Llama3 | Fine-tune Kaggle Llama3 with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Llama3 (8B) Conversational | Fine-tune Kaggle Llama3 (8B) Conversational with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Llama3 (8B) Ollama | Fine-tune Kaggle Llama3 (8B) Ollama with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Llama3 (8B) Orpo | Fine-tune Kaggle Llama3 (8B) Orpo with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Llasa Tts (1B) | Fine-tune Kaggle Llasa Tts (1B) with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Llasa Tts (3B) | Fine-tune Kaggle Llasa Tts (3B) with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Magistral (24B) Reasoning Conversational | Fine-tune Kaggle Magistral (24B) Reasoning Conversational with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Meta Synthetic Data Llama3 | Fine-tune Kaggle Meta Synthetic Data Llama3 with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Meta Synthetic Data Llama3 2 (3B) | Fine-tune Kaggle Meta Synthetic Data Llama3 2 (3B) with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Mistral (7B) Text Completion | Fine-tune Kaggle Mistral (7B) Text Completion with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Mistral Nemo (12B) Alpaca | Fine-tune Kaggle Mistral Nemo (12B) Alpaca with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Mistral Small (22B) Alpaca | Fine-tune Kaggle Mistral Small (22B) Alpaca with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Mistral V0 | Fine-tune Kaggle Mistral V0 with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Orpheus (3B) Tts | Fine-tune Kaggle Orpheus (3B) Tts with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Oute Tts (1B) | Fine-tune Kaggle Oute Tts (1B) with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Phi 3 | Fine-tune Kaggle Phi 3 with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Phi 3 Medium Conversational | Fine-tune Kaggle Phi 3 Medium Conversational with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Phi 4 Conversational | Fine-tune Kaggle Phi 4 Conversational with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Pixtral (12B) Vision | Fine-tune Kaggle Pixtral (12B) Vision with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Qwen2 | Fine-tune Kaggle Qwen2 with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Qwen2 (7B) Alpaca | Fine-tune Kaggle Qwen2 (7B) Alpaca with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Qwen2 5 7B Vl Grpo | Fine-tune Kaggle Qwen2 5 7B Vl Grpo with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Qwen2 Vl (7B) Vision | Fine-tune Kaggle Qwen2 Vl (7B) Vision with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Qwen2.5 Coder (1 | Fine-tune Kaggle Qwen2.5 Coder (1 with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Qwen3 (32B) A100 Reasoning Conversational | Fine-tune Kaggle Qwen3 (32B) A100 Reasoning Conversational with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Qwen3 (4B) Grpo | Fine-tune Kaggle Qwen3 (4B) Grpo with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Qwen3 (4B) Instruct | Fine-tune Kaggle Qwen3 (4B) Instruct with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Qwen3 (4B) Thinking | Fine-tune Kaggle Qwen3 (4B) Thinking with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Spark Tts (0 5B) | Fine-tune Kaggle Spark Tts (0 5B) with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Tinyllama (1 | Fine-tune Kaggle Tinyllama (1 with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Unsloth Studio | Fine-tune Kaggle Unsloth Studio with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Whisper | Fine-tune Kaggle Whisper with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Kaggle Zephyr (7B) Dpo | Fine-tune Kaggle Zephyr (7B) Dpo with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Liquid Lfm2 (1 | Fine-tune Liquid Lfm2 (1 with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Liquid Lfm2 Conversational | Fine-tune Liquid Lfm2 Conversational with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Llama3 | Fine-tune Llama3 with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Llama3 (8B) Conversational | Fine-tune Llama3 (8B) Conversational with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Llama3 (8B) Ollama | Fine-tune Llama3 (8B) Ollama with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Llama3 (8B) Orpo | Fine-tune Llama3 (8B) Orpo with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Llasa Tts (1B) | Fine-tune Llasa Tts (1B) with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Llasa Tts (3B) | Fine-tune Llasa Tts (3B) with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Magistral (24B) Reasoning Conversational | Fine-tune Magistral (24B) Reasoning Conversational with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Meta Synthetic Data Llama3 | Fine-tune Meta Synthetic Data Llama3 with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Meta Synthetic Data Llama3 2 (3B) | Fine-tune Meta Synthetic Data Llama3 2 (3B) with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Mistral (7B) Text Completion | Fine-tune Mistral (7B) Text Completion with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Mistral Nemo (12B) Alpaca | Fine-tune Mistral Nemo (12B) Alpaca with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Mistral Small (22B) Alpaca | Fine-tune Mistral Small (22B) Alpaca with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Mistral V0 | Fine-tune Mistral V0 with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Orpheus (3B) Tts | Fine-tune Orpheus (3B) Tts with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Oute Tts (1B) | Fine-tune Oute Tts (1B) with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Phi 3 | Fine-tune Phi 3 with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Phi 3 Medium Conversational | Fine-tune Phi 3 Medium Conversational with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Pixtral (12B) Vision | Fine-tune Pixtral (12B) Vision with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Qwen2 | Fine-tune Qwen2 with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Qwen2 (7B) Alpaca | Fine-tune Qwen2 (7B) Alpaca with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Qwen2 5 7B Vl Grpo | Fine-tune Qwen2 5 7B Vl Grpo with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Qwen2 Vl (7B) Vision | Fine-tune Qwen2 Vl (7B) Vision with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Qwen2.5 Coder (1 | Fine-tune Qwen2.5 Coder (1 with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Qwen3 (32B) A100 Reasoning Conversational | Fine-tune Qwen3 (32B) A100 Reasoning Conversational with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Qwen3 (4B) Instruct | Fine-tune Qwen3 (4B) Instruct with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Qwen3 (4B) Thinking | Fine-tune Qwen3 (4B) Thinking with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Spark Tts (0 5B) | Fine-tune Spark Tts (0 5B) with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Synthetic Data Hackathon | Fine-tune Synthetic Data Hackathon with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Tinyllama (1 | Fine-tune Tinyllama (1 with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Unsloth Studio | Fine-tune Unsloth Studio with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
+| Zephyr (7B) Dpo | Fine-tune Zephyr (7B) Dpo with Unsloth on NVIDIA GPUs | L4 | 16GB | General |  |
 <!-- LAUNCHABLES_TABLE_END -->
 
 **Note:** Deploy buttons will be added by the Brev team as Launchables are created on the platform.
@@ -46,7 +176,7 @@ To deploy any converted notebook to Brev:
 4. **Deploy**: Click Deploy and access Jupyter at the provided URL
 
 All converted notebooks include:
-- `notebook.ipynb` - Main training notebook
+- Original notebook file (`.ipynb`) - Main training notebook
 - `requirements.txt` - Python dependencies  
 - `setup.sh` - Environment setup script
 - `docker-compose.yml` - Local Docker configuration
@@ -75,10 +205,16 @@ All converted notebooks are in the `converted/` directory, organized by model na
 
 ### Local Setup
 
+**Important**: Use a virtual environment to avoid system package conflicts (especially on macOS).
+
 ```bash
 # Clone the repository
 git clone git@github.com:brevdev/unsloth-notebook-adaptor.git
 cd unsloth-notebook-adaptor
+
+# Create and activate virtual environment
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt

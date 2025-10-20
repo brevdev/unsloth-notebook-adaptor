@@ -1,0 +1,28 @@
+{
+  "name": "gpt-oss-120b",
+  "description": "Fine-tune gpt-oss-120b with Unsloth on NVIDIA GPUs",
+  "version": "1.0.0",
+  "gpu": {
+    "tier": "A100-80GB",
+    "min_vram_gb": 80,
+    "multi_gpu": true
+  },
+  "ports": [
+    8888
+  ],
+  "environment": {
+    "JUPYTER_ENABLE_LAB": "yes"
+  },
+  "tags": [
+    "unsloth",
+    "fine-tuning",
+    "reasoning",
+    "fine-tuning",
+    "large-model"
+  ],
+  "upstream": {
+    "source": "unslothai/notebooks",
+    "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/gpt-oss-120b.ipynb",
+    "last_synced": "2025-10-20T15:53:23.655692+00:00"
+  }
+}

@@ -61,8 +61,8 @@ def convert_single_notebook(
         launchable_dir = output_dir / config['launchable_name']
         launchable_dir.mkdir(parents=True, exist_ok=True)
         
-        # Save adapted notebook
-        notebook_output = launchable_dir / 'notebook.ipynb'
+        # Save adapted notebook with original filename
+        notebook_output = launchable_dir / notebook_path.name
         with open(notebook_output, 'w', encoding='utf-8') as f:
             nbformat.write(adapted_notebook, f)
         logger.info(f"Saved notebook to: {notebook_output}")

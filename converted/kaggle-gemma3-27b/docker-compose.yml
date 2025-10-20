@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  kaggle-gemma3-27b:
+    image: nvidia/cuda:12.1.0-devel-ubuntu22.04
+    runtime: nvidia
+    container_name: kaggle-gemma3-27b
+    
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - NVIDIA_VISIBLE_DEVICES=all
+      - CUDA_VISIBLE_DEVICES=0
+    
+    volumes:
+      - ./:/workspace
+      - models:/workspace/models
+      - outputs:/workspace/outputs
+      - checkpoints:/workspace/checkpoints
+    
+    ports:
+      - "8888:8888"
+    
+    working_dir: /workspace
+    
+    command: >
+      bash -c "
+        apt-get update && 
+        apt-get install -y python3 python3-pip git wget curl &&
+        pip3 install --upgrade pip &&
+        bash setup.sh &&
+        jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token=''
+      "
+    
+    stdin_open: true
+    tty: true
+
+volumes:
+  models:
+  outputs:
+  checkpoints:

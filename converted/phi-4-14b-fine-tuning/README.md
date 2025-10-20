@@ -1,0 +1,81 @@
+# Phi-4 (14B) - NVIDIA Brev Launchable
+
+Fine-tune Phi-4 (14B) with Unsloth on NVIDIA GPUs using Brev.
+
+🔗 **Original Notebook:** [Unsloth Colab Notebook](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Phi-4_(14B).ipynb)
+
+## 🚀 Quick Start (Brev Console)
+
+1. **Launch on Brev:**
+   ```bash
+   brev launch phi-4-14b-fine-tuning
+   ```
+
+2. **Open Jupyter Lab:**
+   - Navigate to the provided URL (port 8888)
+   - Open the notebook and start training
+
+## 📊 Requirements
+
+| Requirement | Value |
+|------------|-------|
+| **Recommended GPU** | A100-40GB |
+| **Minimum VRAM** | 24 GB |
+| **Batch Size** | 2 |
+| **Difficulty** | intermediate |
+| **Categories** | text-generation, fine-tuning, reasoning |
+
+## 🛠️ Local Setup (Optional)
+
+If you want to run this locally with Docker:
+
+```bash
+# Clone the repository
+git clone <repo-url>
+cd phi-4-14b-fine-tuning
+
+# Start with Docker Compose
+docker-compose up
+
+# Access Jupyter Lab at http://localhost:8888
+```
+
+### Prerequisites
+
+- Docker with NVIDIA GPU support
+- NVIDIA drivers installed
+- CUDA 12.1+
+
+## 📝 What's Included
+
+- Original notebook file (`.ipynb`) - Main training notebook (converted from Colab)
+- `requirements.txt` - Python dependencies
+- `setup.sh` - Environment setup script
+- `docker-compose.yml` - Docker configuration
+- `.brevconfig.json` - Brev metadata
+
+## 🔧 Key Adaptations
+
+This notebook has been adapted from the original Unsloth Colab version with the following changes:
+
+- ✅ Replaced Colab-specific installation with conda variant
+- ✅ Converted magic commands to subprocess calls
+- ✅ Removed Google Drive dependencies
+- ✅ Updated paths from `/content/` to `/workspace/`
+- ✅ Added `device_map="auto"` for multi-GPU support
+- ✅ Optimized batch sizes for NVIDIA GPUs
+
+## 📚 Links
+
+- [Unsloth Documentation](https://docs.unsloth.ai/)
+- [Brev Documentation](https://docs.nvidia.com/brev)
+- [Original Notebook](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Phi-4_(14B).ipynb)
+- [Report Issues](https://github.com/brevdev/unsloth-notebook-adaptor/issues)
+
+## 📄 License
+
+This adaptation maintains the original license from Unsloth. See the upstream repository for details.
+
+---
+
+**Powered by [Unsloth](https://unsloth.ai/) 🦥 + [Brev](https://developer.nvidia.com/brev) ⚡**

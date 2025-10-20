@@ -1,0 +1,3946 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2025-10-20T15:53:47.378708+00:00",
+  "total_launchables": 129,
+  "launchables": [
+    {
+      "id": "advanced-llama3-1-3b-grpo-lora",
+      "name": "Advanced Llama3 1 (3B) Grpo Lora",
+      "description": "Fine-tune Advanced Llama3 1 (3B) Grpo Lora with Unsloth on NVIDIA GPUs",
+      "notebook": "Advanced_Llama3_1_(3B)_GRPO_LoRA.ipynb",
+      "path": "advanced-llama3-1-3b-grpo-lora",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Advanced_Llama3_1_(3B)_GRPO_LoRA.ipynb",
+        "last_synced": "2025-10-20T15:53:23.590070+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "Advanced_Llama3_1_(3B)_GRPO_LoRA.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "advanced-llama3-2-3b-grpo-lora",
+      "name": "Advanced Llama3 2 (3B) Grpo Lora",
+      "description": "Fine-tune Advanced Llama3 2 (3B) Grpo Lora with Unsloth on NVIDIA GPUs",
+      "notebook": "Advanced_Llama3_2_(3B)_GRPO_LoRA.ipynb",
+      "path": "advanced-llama3-2-3b-grpo-lora",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Advanced_Llama3_2_(3B)_GRPO_LoRA.ipynb",
+        "last_synced": "2025-10-20T15:53:21.021583+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Advanced_Llama3_2_(3B)_GRPO_LoRA.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "bert-classification",
+      "name": "Bert Classification",
+      "description": "Fine-tune Bert Classification with Unsloth on NVIDIA GPUs",
+      "notebook": "bert_classification.ipynb",
+      "path": "bert-classification",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/bert_classification.ipynb",
+        "last_synced": "2025-10-20T15:53:24.067033+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        "bert_classification.ipynb",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "codeforces-cot-finetune-for-reasoning-on-codeforces",
+      "name": "Codeforces Cot Finetune For Reasoning On Codeforces",
+      "description": "Fine-tune Codeforces Cot Finetune For Reasoning On Codeforces with Unsloth on NVIDIA GPUs",
+      "notebook": "CodeForces-cot-Finetune_for_Reasoning_on_CodeForces.ipynb",
+      "path": "codeforces-cot-finetune-for-reasoning-on-codeforces",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/CodeForces-cot-Finetune_for_Reasoning_on_CodeForces.ipynb",
+        "last_synced": "2025-10-20T15:53:23.276049+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "CodeForces-cot-Finetune_for_Reasoning_on_CodeForces.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "codegemma-7b",
+      "name": "Codegemma (7B) Conversational",
+      "description": "Fine-tune Codegemma (7B) Conversational with Unsloth on NVIDIA GPUs",
+      "notebook": "CodeGemma_(7B)-Conversational.ipynb",
+      "path": "codegemma-7b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/CodeGemma_(7B)-Conversational.ipynb",
+        "last_synced": "2025-10-20T15:53:22.461518+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "CodeGemma_(7B)-Conversational.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "deepseek-r1-0528-qwen3-8b",
+      "name": "Deepseek R1 0528 Qwen3 (8B) Grpo",
+      "description": "Fine-tune Deepseek R1 0528 Qwen3 (8B) Grpo with Unsloth on NVIDIA GPUs",
+      "notebook": "DeepSeek_R1_0528_Qwen3_(8B)_GRPO.ipynb",
+      "path": "deepseek-r1-0528-qwen3-8b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/DeepSeek_R1_0528_Qwen3_(8B)_GRPO.ipynb",
+        "last_synced": "2025-10-20T15:53:22.613277+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "DeepSeek_R1_0528_Qwen3_(8B)_GRPO.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "falcon-h1-0",
+      "name": "Falcon H1 (0",
+      "description": "Fine-tune Falcon H1 (0 with Unsloth on NVIDIA GPUs",
+      "notebook": "Falcon_H1_(0.5B)-Alpaca.ipynb",
+      "path": "falcon-h1-0",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Falcon_H1_(0.ipynb",
+        "last_synced": "2025-10-20T15:53:20.529299+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Falcon_H1_(0.5B)-Alpaca.ipynb",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "falcon-h1",
+      "name": "Falcon H1 Alpaca",
+      "description": "Fine-tune Falcon H1 Alpaca with Unsloth on NVIDIA GPUs",
+      "notebook": "Falcon_H1-Alpaca.ipynb",
+      "path": "falcon-h1",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Falcon_H1-Alpaca.ipynb",
+        "last_synced": "2025-10-20T15:53:19.903927+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Falcon_H1-Alpaca.ipynb",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "gemma2-2b",
+      "name": "Gemma2 (2B) Alpaca",
+      "description": "Fine-tune Gemma2 (2B) Alpaca with Unsloth on NVIDIA GPUs",
+      "notebook": "Gemma2_(2B)-Alpaca.ipynb",
+      "path": "gemma2-2b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma2_(2B)-Alpaca.ipynb",
+        "last_synced": "2025-10-20T15:53:19.927948+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Gemma2_(2B)-Alpaca.ipynb",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "gemma2-9b",
+      "name": "Gemma2 (9B) Alpaca",
+      "description": "Fine-tune Gemma2 (9B) Alpaca with Unsloth on NVIDIA GPUs",
+      "notebook": "Gemma2_(9B)-Alpaca.ipynb",
+      "path": "gemma2-9b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma2_(9B)-Alpaca.ipynb",
+        "last_synced": "2025-10-20T15:53:21.143158+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Gemma2_(9B)-Alpaca.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "gemma3-1b",
+      "name": "Gemma3 (1B) Grpo",
+      "description": "Fine-tune Gemma3 (1B) Grpo with Unsloth on NVIDIA GPUs",
+      "notebook": "Gemma3_(1B)-GRPO.ipynb",
+      "path": "gemma3-1b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma3_(1B)-GRPO.ipynb",
+        "last_synced": "2025-10-20T15:53:21.834159+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Gemma3_(1B)-GRPO.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "gemma3-270m",
+      "name": "Gemma3 (270M)",
+      "description": "Fine-tune Gemma3 (270M) with Unsloth on NVIDIA GPUs",
+      "notebook": "Gemma3_(270M).ipynb",
+      "path": "gemma3-270m",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma3_(270M).ipynb",
+        "last_synced": "2025-10-20T15:53:22.399142+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "Gemma3_(270M).ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "gemma3-27b",
+      "name": "Gemma3 (27B) A100 Conversational",
+      "description": "Fine-tune Gemma3 (27B) A100 Conversational with Unsloth on NVIDIA GPUs",
+      "notebook": "Gemma3_(27B)_A100-Conversational.ipynb",
+      "path": "gemma3-27b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma3_(27B)_A100-Conversational.ipynb",
+        "last_synced": "2025-10-20T15:53:20.941497+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Gemma3_(27B)_A100-Conversational.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "gemma3-4b",
+      "name": "Gemma3 (4B)",
+      "description": "Fine-tune Gemma3 (4B) with Unsloth on NVIDIA GPUs",
+      "notebook": "Gemma3_(4B).ipynb",
+      "path": "gemma3-4b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma3_(4B).ipynb",
+        "last_synced": "2025-10-20T15:53:20.100130+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Gemma3_(4B).ipynb",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "gemma3-4b-vision",
+      "name": "Gemma3 (4B) Vision Grpo",
+      "description": "Fine-tune Gemma3 (4B) Vision Grpo with Unsloth on NVIDIA GPUs",
+      "notebook": "Gemma3_(4B)-Vision.ipynb",
+      "path": "gemma3-4b-vision",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma3_(4B)-Vision-GRPO.ipynb",
+        "last_synced": "2025-10-20T15:53:22.839842+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Gemma3_(4B)-Vision.ipynb",
+        "README.md",
+        "Gemma3_(4B)-Vision-GRPO.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "gemma3n-2b",
+      "name": "Gemma3N (2B) Inference",
+      "description": "Fine-tune Gemma3N (2B) Inference with Unsloth on NVIDIA GPUs",
+      "notebook": "Gemma3N_(2B)-Inference.ipynb",
+      "path": "gemma3n-2b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma3N_(2B)-Inference.ipynb",
+        "last_synced": "2025-10-20T15:53:20.210731+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Gemma3N_(2B)-Inference.ipynb",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "gemma3n-4b-audio",
+      "name": "Gemma3N (4B) Audio",
+      "description": "Fine-tune Gemma3N (4B) Audio with Unsloth on NVIDIA GPUs",
+      "notebook": "Gemma3N_(4B)-Audio.ipynb",
+      "path": "gemma3n-4b-audio",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma3N_(4B)-Audio.ipynb",
+        "last_synced": "2025-10-20T15:53:22.441039+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "Gemma3N_(4B)-Audio.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "gemma3n-4b",
+      "name": "Gemma3N (4B) Conversational",
+      "description": "Fine-tune Gemma3N (4B) Conversational with Unsloth on NVIDIA GPUs",
+      "notebook": "Gemma3N_(4B)-Conversational.ipynb",
+      "path": "gemma3n-4b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma3N_(4B)-Conversational.ipynb",
+        "last_synced": "2025-10-20T15:53:20.322105+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Gemma3N_(4B)-Conversational.ipynb",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "gemma3n-4b-vision",
+      "name": "Gemma3N (4B) Vision",
+      "description": "Fine-tune Gemma3N (4B) Vision with Unsloth on NVIDIA GPUs",
+      "notebook": "Gemma3N_(4B)-Vision.ipynb",
+      "path": "gemma3n-4b-vision",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma3N_(4B)-Vision.ipynb",
+        "last_synced": "2025-10-20T15:53:22.864223+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "Gemma3N_(4B)-Vision.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "gpt-oss-bnb-20b",
+      "name": "Gpt Oss Bnb (20B) Inference",
+      "description": "Fine-tune Gpt Oss Bnb (20B) Inference with Unsloth on NVIDIA GPUs",
+      "notebook": "GPT_OSS_BNB_(20B)-Inference.ipynb",
+      "path": "gpt-oss-bnb-20b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/GPT_OSS_BNB_(20B)-Inference.ipynb",
+        "last_synced": "2025-10-20T15:53:21.857255+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "GPT_OSS_BNB_(20B)-Inference.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "gpt-oss-mxfp4-20b",
+      "name": "Gpt Oss Mxfp4 (20B) Inference",
+      "description": "Fine-tune Gpt Oss Mxfp4 (20B) Inference with Unsloth on NVIDIA GPUs",
+      "notebook": "GPT_OSS_MXFP4_(20B)-Inference.ipynb",
+      "path": "gpt-oss-mxfp4-20b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/GPT_OSS_MXFP4_(20B)-Inference.ipynb",
+        "last_synced": "2025-10-20T15:53:23.626795+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        "GPT_OSS_MXFP4_(20B)-Inference.ipynb",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "granite4",
+      "name": "Granite4",
+      "description": "Fine-tune Granite4 with Unsloth on NVIDIA GPUs",
+      "notebook": "Granite4.0.ipynb",
+      "path": "granite4",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Granite4.ipynb",
+        "last_synced": "2025-10-20T15:53:20.398342+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Granite4.0.ipynb",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "huggingface course-advanced-llama3-1-3b-grpo-lora",
+      "name": "Huggingface Course Advanced Llama3 1 (3B) Grpo Lora",
+      "description": "Fine-tune Huggingface Course Advanced Llama3 1 (3B) Grpo Lora with Unsloth on NVIDIA GPUs",
+      "notebook": "HuggingFace Course-Advanced_Llama3_1_(3B)_GRPO_LoRA.ipynb",
+      "path": "huggingface course-advanced-llama3-1-3b-grpo-lora",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/HuggingFace Course-Advanced_Llama3_1_(3B)_GRPO_LoRA.ipynb",
+        "last_synced": "2025-10-20T15:53:20.907729+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "HuggingFace Course-Advanced_Llama3_1_(3B)_GRPO_LoRA.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "huggingface course-advanced-llama3-2-3b-grpo-lora",
+      "name": "Huggingface Course Advanced Llama3 2 (3B) Grpo Lora",
+      "description": "Fine-tune Huggingface Course Advanced Llama3 2 (3B) Grpo Lora with Unsloth on NVIDIA GPUs",
+      "notebook": "HuggingFace Course-Advanced_Llama3_2_(3B)_GRPO_LoRA.ipynb",
+      "path": "huggingface course-advanced-llama3-2-3b-grpo-lora",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/HuggingFace Course-Advanced_Llama3_2_(3B)_GRPO_LoRA.ipynb",
+        "last_synced": "2025-10-20T15:53:23.510485+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "HuggingFace Course-Advanced_Llama3_2_(3B)_GRPO_LoRA.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "huggingface course-deepseek-r1-0528-qwen3-8b",
+      "name": "Huggingface Course Deepseek R1 0528 Qwen3 (8B) Grpo",
+      "description": "Fine-tune Huggingface Course Deepseek R1 0528 Qwen3 (8B) Grpo with Unsloth on NVIDIA GPUs",
+      "notebook": "HuggingFace Course-DeepSeek_R1_0528_Qwen3_(8B)_GRPO.ipynb",
+      "path": "huggingface course-deepseek-r1-0528-qwen3-8b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/HuggingFace Course-DeepSeek_R1_0528_Qwen3_(8B)_GRPO.ipynb",
+        "last_synced": "2025-10-20T15:53:21.489941+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "HuggingFace Course-DeepSeek_R1_0528_Qwen3_(8B)_GRPO.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "huggingface course-gemma3-1b",
+      "name": "Huggingface Course Gemma3 (1B) Grpo",
+      "description": "Fine-tune Huggingface Course Gemma3 (1B) Grpo with Unsloth on NVIDIA GPUs",
+      "notebook": "HuggingFace Course-Gemma3_(1B)-GRPO.ipynb",
+      "path": "huggingface course-gemma3-1b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/HuggingFace Course-Gemma3_(1B)-GRPO.ipynb",
+        "last_synced": "2025-10-20T15:53:22.967393+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "HuggingFace Course-Gemma3_(1B)-GRPO.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "huggingface course-gemma3-4b-vision",
+      "name": "Huggingface Course Gemma3 (4B) Vision Grpo",
+      "description": "Fine-tune Huggingface Course Gemma3 (4B) Vision Grpo with Unsloth on NVIDIA GPUs",
+      "notebook": "HuggingFace Course-Gemma3_(4B)-Vision-GRPO.ipynb",
+      "path": "huggingface course-gemma3-4b-vision",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/HuggingFace Course-Gemma3_(4B)-Vision-GRPO.ipynb",
+        "last_synced": "2025-10-20T15:53:19.968862+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "HuggingFace Course-Gemma3_(4B)-Vision-GRPO.ipynb",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "huggingface course-llama3",
+      "name": "Huggingface Course Llama3",
+      "description": "Fine-tune Huggingface Course Llama3 with Unsloth on NVIDIA GPUs",
+      "notebook": "HuggingFace Course-Llama3.1_(8B)-GRPO.ipynb",
+      "path": "huggingface course-llama3",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/HuggingFace Course-Llama3.ipynb",
+        "last_synced": "2025-10-20T15:53:19.837939+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "HuggingFace Course-Llama3.1_(8B)-GRPO.ipynb",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "huggingface course-mistral-v0",
+      "name": "Huggingface Course Mistral V0",
+      "description": "Fine-tune Huggingface Course Mistral V0 with Unsloth on NVIDIA GPUs",
+      "notebook": "HuggingFace Course-Mistral_v0.3_(7B)-GRPO.ipynb",
+      "path": "huggingface course-mistral-v0",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/HuggingFace Course-Mistral_v0.ipynb",
+        "last_synced": "2025-10-20T15:53:24.130737+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        "HuggingFace Course-Mistral_v0.3_(7B)-GRPO.ipynb",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "huggingface course-qwen2",
+      "name": "Huggingface Course Qwen2",
+      "description": "Fine-tune Huggingface Course Qwen2 with Unsloth on NVIDIA GPUs",
+      "notebook": "HuggingFace Course-Qwen2.5_(3B)-GRPO.ipynb",
+      "path": "huggingface course-qwen2",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/HuggingFace Course-Qwen2.ipynb",
+        "last_synced": "2025-10-20T15:53:22.894063+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "HuggingFace Course-Qwen2.5_(3B)-GRPO.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "huggingface course-qwen2-5-7b-vl",
+      "name": "Huggingface Course Qwen2 5 7B Vl Grpo",
+      "description": "Fine-tune Huggingface Course Qwen2 5 7B Vl Grpo with Unsloth on NVIDIA GPUs",
+      "notebook": "HuggingFace Course-Qwen2_5_7B_VL_GRPO.ipynb",
+      "path": "huggingface course-qwen2-5-7b-vl",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/HuggingFace Course-Qwen2_5_7B_VL_GRPO.ipynb",
+        "last_synced": "2025-10-20T15:53:24.024919+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        "HuggingFace Course-Qwen2_5_7B_VL_GRPO.ipynb",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "huggingface course-qwen3-4b",
+      "name": "Huggingface Course Qwen3 (4B) Grpo",
+      "description": "Fine-tune Huggingface Course Qwen3 (4B) Grpo with Unsloth on NVIDIA GPUs",
+      "notebook": "HuggingFace Course-Qwen3_(4B)-GRPO.ipynb",
+      "path": "huggingface course-qwen3-4b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/HuggingFace Course-Qwen3_(4B)-GRPO.ipynb",
+        "last_synced": "2025-10-20T15:53:23.003615+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "HuggingFace Course-Qwen3_(4B)-GRPO.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-advanced-llama3-1-3b-grpo-lora",
+      "name": "Kaggle Advanced Llama3 1 (3B) Grpo Lora",
+      "description": "Fine-tune Kaggle Advanced Llama3 1 (3B) Grpo Lora with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Advanced_Llama3_1_(3B)_GRPO_LoRA.ipynb",
+      "path": "kaggle-advanced-llama3-1-3b-grpo-lora",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Advanced_Llama3_1_(3B)_GRPO_LoRA.ipynb",
+        "last_synced": "2025-10-20T15:53:22.428968+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "Kaggle-Advanced_Llama3_1_(3B)_GRPO_LoRA.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-advanced-llama3-2-3b-grpo-lora",
+      "name": "Kaggle Advanced Llama3 2 (3B) Grpo Lora",
+      "description": "Fine-tune Kaggle Advanced Llama3 2 (3B) Grpo Lora with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Advanced_Llama3_2_(3B)_GRPO_LoRA.ipynb",
+      "path": "kaggle-advanced-llama3-2-3b-grpo-lora",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Advanced_Llama3_2_(3B)_GRPO_LoRA.ipynb",
+        "last_synced": "2025-10-20T15:53:21.591835+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Kaggle-Advanced_Llama3_2_(3B)_GRPO_LoRA.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-bert-classification",
+      "name": "Kaggle Bert Classification",
+      "description": "Fine-tune Kaggle Bert Classification with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-bert_classification.ipynb",
+      "path": "kaggle-bert-classification",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-bert_classification.ipynb",
+        "last_synced": "2025-10-20T15:53:21.428740+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Kaggle-bert_classification.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-codeforces-cot-finetune-for-reasoning-on-codeforces",
+      "name": "Kaggle Codeforces Cot Finetune For Reasoning On Codeforces",
+      "description": "Fine-tune Kaggle Codeforces Cot Finetune For Reasoning On Codeforces with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-CodeForces-cot-Finetune_for_Reasoning_on_CodeForces.ipynb",
+      "path": "kaggle-codeforces-cot-finetune-for-reasoning-on-codeforces",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-CodeForces-cot-Finetune_for_Reasoning_on_CodeForces.ipynb",
+        "last_synced": "2025-10-20T15:53:21.877298+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Kaggle-CodeForces-cot-Finetune_for_Reasoning_on_CodeForces.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-codegemma-7b",
+      "name": "Kaggle Codegemma (7B) Conversational",
+      "description": "Fine-tune Kaggle Codegemma (7B) Conversational with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-CodeGemma_(7B)-Conversational.ipynb",
+      "path": "kaggle-codegemma-7b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-CodeGemma_(7B)-Conversational.ipynb",
+        "last_synced": "2025-10-20T15:53:23.569393+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "Kaggle-CodeGemma_(7B)-Conversational.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-deepseek-r1-0528-qwen3-8b",
+      "name": "Kaggle Deepseek R1 0528 Qwen3 (8B) Grpo",
+      "description": "Fine-tune Kaggle Deepseek R1 0528 Qwen3 (8B) Grpo with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-DeepSeek_R1_0528_Qwen3_(8B)_GRPO.ipynb",
+      "path": "kaggle-deepseek-r1-0528-qwen3-8b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-DeepSeek_R1_0528_Qwen3_(8B)_GRPO.ipynb",
+        "last_synced": "2025-10-20T15:53:23.368605+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "Kaggle-DeepSeek_R1_0528_Qwen3_(8B)_GRPO.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-falcon-h1-0",
+      "name": "Kaggle Falcon H1 (0",
+      "description": "Fine-tune Kaggle Falcon H1 (0 with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Falcon_H1_(0.5B)-Alpaca.ipynb",
+      "path": "kaggle-falcon-h1-0",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Falcon_H1_(0.ipynb",
+        "last_synced": "2025-10-20T15:53:20.811994+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Kaggle-Falcon_H1_(0.5B)-Alpaca.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-gemma2-2b",
+      "name": "Kaggle Gemma2 (2B) Alpaca",
+      "description": "Fine-tune Kaggle Gemma2 (2B) Alpaca with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Gemma2_(2B)-Alpaca.ipynb",
+      "path": "kaggle-gemma2-2b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Gemma2_(2B)-Alpaca.ipynb",
+        "last_synced": "2025-10-20T15:53:21.951572+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Kaggle-Gemma2_(2B)-Alpaca.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-gemma2-9b",
+      "name": "Kaggle Gemma2 (9B) Alpaca",
+      "description": "Fine-tune Kaggle Gemma2 (9B) Alpaca with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Gemma2_(9B)-Alpaca.ipynb",
+      "path": "kaggle-gemma2-9b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Gemma2_(9B)-Alpaca.ipynb",
+        "last_synced": "2025-10-20T15:53:20.708278+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Kaggle-Gemma2_(9B)-Alpaca.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-gemma3-1b",
+      "name": "Kaggle Gemma3 (1B) Grpo",
+      "description": "Fine-tune Kaggle Gemma3 (1B) Grpo with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Gemma3_(1B)-GRPO.ipynb",
+      "path": "kaggle-gemma3-1b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3_(1B)-GRPO.ipynb",
+        "last_synced": "2025-10-20T15:53:19.539398+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Kaggle-Gemma3_(1B)-GRPO.ipynb",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-gemma3-270m",
+      "name": "Kaggle Gemma3 (270M)",
+      "description": "Fine-tune Kaggle Gemma3 (270M) with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Gemma3_(270M).ipynb",
+      "path": "kaggle-gemma3-270m",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3_(270M).ipynb",
+        "last_synced": "2025-10-20T15:53:21.044449+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Kaggle-Gemma3_(270M).ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-gemma3-27b",
+      "name": "Kaggle Gemma3 (27B) A100 Conversational",
+      "description": "Fine-tune Kaggle Gemma3 (27B) A100 Conversational with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Gemma3_(27B)_A100-Conversational.ipynb",
+      "path": "kaggle-gemma3-27b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3_(27B)_A100-Conversational.ipynb",
+        "last_synced": "2025-10-20T15:53:21.726587+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Kaggle-Gemma3_(27B)_A100-Conversational.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-gemma3-4b",
+      "name": "Kaggle Gemma3 (4B)",
+      "description": "Fine-tune Kaggle Gemma3 (4B) with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Gemma3_(4B).ipynb",
+      "path": "kaggle-gemma3-4b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3_(4B).ipynb",
+        "last_synced": "2025-10-20T15:53:21.100766+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Kaggle-Gemma3_(4B).ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-gemma3-4b-vision",
+      "name": "Kaggle Gemma3 (4B) Vision Grpo",
+      "description": "Fine-tune Kaggle Gemma3 (4B) Vision Grpo with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Gemma3_(4B)-Vision.ipynb",
+      "path": "kaggle-gemma3-4b-vision",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3_(4B)-Vision-GRPO.ipynb",
+        "last_synced": "2025-10-20T15:53:23.303108+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Kaggle-Gemma3_(4B)-Vision.ipynb",
+        "README.md",
+        "Kaggle-Gemma3_(4B)-Vision-GRPO.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-gemma3n-2b",
+      "name": "Kaggle Gemma3N (2B) Inference",
+      "description": "Fine-tune Kaggle Gemma3N (2B) Inference with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Gemma3N_(2B)-Inference.ipynb",
+      "path": "kaggle-gemma3n-2b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3N_(2B)-Inference.ipynb",
+        "last_synced": "2025-10-20T15:53:19.611482+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Kaggle-Gemma3N_(2B)-Inference.ipynb",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-gemma3n-4b-audio",
+      "name": "Kaggle Gemma3N (4B) Audio",
+      "description": "Fine-tune Kaggle Gemma3N (4B) Audio with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Gemma3N_(4B)-Audio.ipynb",
+      "path": "kaggle-gemma3n-4b-audio",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3N_(4B)-Audio.ipynb",
+        "last_synced": "2025-10-20T15:53:24.303473+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        "Kaggle-Gemma3N_(4B)-Audio.ipynb",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-gemma3n-4b",
+      "name": "Kaggle Gemma3N (4B) Conversational",
+      "description": "Fine-tune Kaggle Gemma3N (4B) Conversational with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Gemma3N_(4B)-Conversational.ipynb",
+      "path": "kaggle-gemma3n-4b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3N_(4B)-Conversational.ipynb",
+        "last_synced": "2025-10-20T15:53:22.103648+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Kaggle-Gemma3N_(4B)-Conversational.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-gemma3n-4b-vision",
+      "name": "Kaggle Gemma3N (4B) Vision",
+      "description": "Fine-tune Kaggle Gemma3N (4B) Vision with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Gemma3N_(4B)-Vision.ipynb",
+      "path": "kaggle-gemma3n-4b-vision",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3N_(4B)-Vision.ipynb",
+        "last_synced": "2025-10-20T15:53:20.155903+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Kaggle-Gemma3N_(4B)-Vision.ipynb",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-gpt-oss-bnb-20b",
+      "name": "Kaggle Gpt Oss Bnb (20B) Inference",
+      "description": "Fine-tune Kaggle Gpt Oss Bnb (20B) Inference with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-GPT_OSS_BNB_(20B)-Inference.ipynb",
+      "path": "kaggle-gpt-oss-bnb-20b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-GPT_OSS_BNB_(20B)-Inference.ipynb",
+        "last_synced": "2025-10-20T15:53:23.813695+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        "Kaggle-GPT_OSS_BNB_(20B)-Inference.ipynb",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-gpt-oss-mxfp4-20b",
+      "name": "Kaggle Gpt Oss Mxfp4 (20B) Inference",
+      "description": "Fine-tune Kaggle Gpt Oss Mxfp4 (20B) Inference with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-GPT_OSS_MXFP4_(20B)-Inference.ipynb",
+      "path": "kaggle-gpt-oss-mxfp4-20b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-GPT_OSS_MXFP4_(20B)-Inference.ipynb",
+        "last_synced": "2025-10-20T15:53:24.256382+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        "Kaggle-GPT_OSS_MXFP4_(20B)-Inference.ipynb",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-granite4",
+      "name": "Kaggle Granite4",
+      "description": "Fine-tune Kaggle Granite4 with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Granite4.0.ipynb",
+      "path": "kaggle-granite4",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Granite4.ipynb",
+        "last_synced": "2025-10-20T15:53:19.627793+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Kaggle-Granite4.0.ipynb",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-liquid-lfm2-1",
+      "name": "Kaggle Liquid Lfm2 (1",
+      "description": "Fine-tune Kaggle Liquid Lfm2 (1 with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Liquid_LFM2_(1.2B)-Conversational.ipynb",
+      "path": "kaggle-liquid-lfm2-1",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Liquid_LFM2_(1.ipynb",
+        "last_synced": "2025-10-20T15:53:24.213396+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        "Kaggle-Liquid_LFM2_(1.2B)-Conversational.ipynb",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-llama3",
+      "name": "Kaggle Llama3",
+      "description": "Fine-tune Kaggle Llama3 with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Llama3.1_(8B)-GRPO.ipynb",
+      "path": "kaggle-llama3",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Llama3.ipynb",
+        "last_synced": "2025-10-20T15:53:23.556439+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Kaggle-Llama3.1_(8B)-GRPO.ipynb",
+        "Kaggle-Llama3.1_(8B)-Alpaca.ipynb",
+        "requirements.txt",
+        "Kaggle-Llama3.3_(70B)_A100-Conversational.ipynb",
+        "Kaggle-Llama3.1_(8B)-Inference.ipynb",
+        "Kaggle-Llama3.2_(11B)-Vision.ipynb",
+        "Kaggle-Llama3.2_(1B_and_3B)-Conversational.ipynb",
+        "README.md",
+        "Kaggle-Llama3.2_(1B)-RAFT.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-llama3-8b",
+      "name": "Kaggle Llama3 (8B) Conversational",
+      "description": "Fine-tune Kaggle Llama3 (8B) Conversational with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Llama3_(8B)-Alpaca.ipynb",
+      "path": "kaggle-llama3-8b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Llama3_(8B)-Conversational.ipynb",
+        "last_synced": "2025-10-20T15:53:23.908118+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Kaggle-Llama3_(8B)-Alpaca.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        "Kaggle-Llama3_(8B)-Conversational.ipynb",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-llama3-8b-ollama",
+      "name": "Kaggle Llama3 (8B) Ollama",
+      "description": "Fine-tune Kaggle Llama3 (8B) Ollama with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Llama3_(8B)-Ollama.ipynb",
+      "path": "kaggle-llama3-8b-ollama",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Llama3_(8B)-Ollama.ipynb",
+        "last_synced": "2025-10-20T15:53:21.907479+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Kaggle-Llama3_(8B)-Ollama.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-llama3-8b-orpo",
+      "name": "Kaggle Llama3 (8B) Orpo",
+      "description": "Fine-tune Kaggle Llama3 (8B) Orpo with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Llama3_(8B)-ORPO.ipynb",
+      "path": "kaggle-llama3-8b-orpo",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Llama3_(8B)-ORPO.ipynb",
+        "last_synced": "2025-10-20T15:53:24.274597+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        "Kaggle-Llama3_(8B)-ORPO.ipynb",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-llasa-tts-1b",
+      "name": "Kaggle Llasa Tts (1B)",
+      "description": "Fine-tune Kaggle Llasa Tts (1B) with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Llasa_TTS_(1B).ipynb",
+      "path": "kaggle-llasa-tts-1b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Llasa_TTS_(1B).ipynb",
+        "last_synced": "2025-10-20T15:53:21.753190+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Kaggle-Llasa_TTS_(1B).ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-llasa-tts-3b",
+      "name": "Kaggle Llasa Tts (3B)",
+      "description": "Fine-tune Kaggle Llasa Tts (3B) with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Llasa_TTS_(3B).ipynb",
+      "path": "kaggle-llasa-tts-3b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Llasa_TTS_(3B).ipynb",
+        "last_synced": "2025-10-20T15:53:19.679910+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Kaggle-Llasa_TTS_(3B).ipynb",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-magistral-24b-reasoning",
+      "name": "Kaggle Magistral (24B) Reasoning Conversational",
+      "description": "Fine-tune Kaggle Magistral (24B) Reasoning Conversational with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Magistral_(24B)-Reasoning-Conversational.ipynb",
+      "path": "kaggle-magistral-24b-reasoning",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Magistral_(24B)-Reasoning-Conversational.ipynb",
+        "last_synced": "2025-10-20T15:53:23.412811+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "Kaggle-Magistral_(24B)-Reasoning-Conversational.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-meta-synthetic-data-llama3",
+      "name": "Kaggle Meta Synthetic Data Llama3",
+      "description": "Fine-tune Kaggle Meta Synthetic Data Llama3 with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Meta-Synthetic-Data-Llama3.1_(8B).ipynb",
+      "path": "kaggle-meta-synthetic-data-llama3",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Meta-Synthetic-Data-Llama3.ipynb",
+        "last_synced": "2025-10-20T15:53:20.291405+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Kaggle-Meta-Synthetic-Data-Llama3.1_(8B).ipynb",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-meta-synthetic-data-llama3-2-3b",
+      "name": "Kaggle Meta Synthetic Data Llama3 2 (3B)",
+      "description": "Fine-tune Kaggle Meta Synthetic Data Llama3 2 (3B) with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Meta_Synthetic_Data_Llama3_2_(3B).ipynb",
+      "path": "kaggle-meta-synthetic-data-llama3-2-3b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Meta_Synthetic_Data_Llama3_2_(3B).ipynb",
+        "last_synced": "2025-10-20T15:53:19.863246+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Kaggle-Meta_Synthetic_Data_Llama3_2_(3B).ipynb",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-mistral-7b-text-completion",
+      "name": "Kaggle Mistral (7B) Text Completion",
+      "description": "Fine-tune Kaggle Mistral (7B) Text Completion with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Mistral_(7B)-Text_Completion.ipynb",
+      "path": "kaggle-mistral-7b-text-completion",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Mistral_(7B)-Text_Completion.ipynb",
+        "last_synced": "2025-10-20T15:53:21.123168+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Kaggle-Mistral_(7B)-Text_Completion.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-mistral-nemo-12b",
+      "name": "Kaggle Mistral Nemo (12B) Alpaca",
+      "description": "Fine-tune Kaggle Mistral Nemo (12B) Alpaca with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Mistral_Nemo_(12B)-Alpaca.ipynb",
+      "path": "kaggle-mistral-nemo-12b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Mistral_Nemo_(12B)-Alpaca.ipynb",
+        "last_synced": "2025-10-20T15:53:22.350366+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "Kaggle-Mistral_Nemo_(12B)-Alpaca.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-mistral-small-22b",
+      "name": "Kaggle Mistral Small (22B) Alpaca",
+      "description": "Fine-tune Kaggle Mistral Small (22B) Alpaca with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Mistral_Small_(22B)-Alpaca.ipynb",
+      "path": "kaggle-mistral-small-22b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Mistral_Small_(22B)-Alpaca.ipynb",
+        "last_synced": "2025-10-20T15:53:23.935404+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        "Kaggle-Mistral_Small_(22B)-Alpaca.ipynb",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-mistral-v0",
+      "name": "Kaggle Mistral V0",
+      "description": "Fine-tune Kaggle Mistral V0 with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Mistral_v0.3_(7B)-Conversational.ipynb",
+      "path": "kaggle-mistral-v0",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Mistral_v0.ipynb",
+        "last_synced": "2025-10-20T15:53:24.198044+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Kaggle-Mistral_v0.3_(7B)-Conversational.ipynb",
+        "README.md",
+        "Kaggle-Mistral_v0.3_(7B)-GRPO.ipynb",
+        "docker-compose.yml",
+        "Kaggle-Mistral_v0.3_(7B)-Alpaca.ipynb",
+        "Kaggle-Mistral_v0.3_(7B)-CPT.ipynb",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-orpheus-3b-tts",
+      "name": "Kaggle Orpheus (3B) Tts",
+      "description": "Fine-tune Kaggle Orpheus (3B) Tts with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Orpheus_(3B)-TTS.ipynb",
+      "path": "kaggle-orpheus-3b-tts",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Orpheus_(3B)-TTS.ipynb",
+        "last_synced": "2025-10-20T15:53:24.157212+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        "Kaggle-Orpheus_(3B)-TTS.ipynb",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-oute-tts-1b",
+      "name": "Kaggle Oute Tts (1B)",
+      "description": "Fine-tune Kaggle Oute Tts (1B) with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Oute_TTS_(1B).ipynb",
+      "path": "kaggle-oute-tts-1b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Oute_TTS_(1B).ipynb",
+        "last_synced": "2025-10-20T15:53:19.586008+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Kaggle-Oute_TTS_(1B).ipynb",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-phi-3",
+      "name": "Kaggle Phi 3",
+      "description": "Fine-tune Kaggle Phi 3 with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Phi_3.5_Mini-Conversational.ipynb",
+      "path": "kaggle-phi-3",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Phi_3.ipynb",
+        "last_synced": "2025-10-20T15:53:23.079602+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "Kaggle-Phi_3.5_Mini-Conversational.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-phi-3-medium",
+      "name": "Kaggle Phi 3 Medium Conversational",
+      "description": "Fine-tune Kaggle Phi 3 Medium Conversational with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Phi_3_Medium-Conversational.ipynb",
+      "path": "kaggle-phi-3-medium",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Phi_3_Medium-Conversational.ipynb",
+        "last_synced": "2025-10-20T15:53:20.970943+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Kaggle-Phi_3_Medium-Conversational.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-phi-4",
+      "name": "Kaggle Phi 4 Conversational",
+      "description": "Fine-tune Kaggle Phi 4 Conversational with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Phi_4-Conversational.ipynb",
+      "path": "kaggle-phi-4",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Phi_4-Conversational.ipynb",
+        "last_synced": "2025-10-20T15:53:20.628824+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Kaggle-Phi_4-Conversational.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-pixtral-12b-vision",
+      "name": "Kaggle Pixtral (12B) Vision",
+      "description": "Fine-tune Kaggle Pixtral (12B) Vision with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Pixtral_(12B)-Vision.ipynb",
+      "path": "kaggle-pixtral-12b-vision",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Pixtral_(12B)-Vision.ipynb",
+        "last_synced": "2025-10-20T15:53:22.300915+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "Kaggle-Pixtral_(12B)-Vision.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-qwen2",
+      "name": "Kaggle Qwen2",
+      "description": "Fine-tune Kaggle Qwen2 with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Qwen2.5_(7B)-Alpaca.ipynb",
+      "path": "kaggle-qwen2",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Qwen2.ipynb",
+        "last_synced": "2025-10-20T15:53:23.149071+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Kaggle-Qwen2.5_(7B)-Alpaca.ipynb",
+        "README.md",
+        "Kaggle-Qwen2.5_(3B)-GRPO.ipynb",
+        "Kaggle-Qwen2.5_Coder_(14B)-Conversational.ipynb",
+        "Kaggle-Qwen2.5_VL_(7B)-Vision.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-qwen2-7b",
+      "name": "Kaggle Qwen2 (7B) Alpaca",
+      "description": "Fine-tune Kaggle Qwen2 (7B) Alpaca with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Qwen2_(7B)-Alpaca.ipynb",
+      "path": "kaggle-qwen2-7b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Qwen2_(7B)-Alpaca.ipynb",
+        "last_synced": "2025-10-20T15:53:22.026470+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Kaggle-Qwen2_(7B)-Alpaca.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-qwen2-5-7b-vl",
+      "name": "Kaggle Qwen2 5 7B Vl Grpo",
+      "description": "Fine-tune Kaggle Qwen2 5 7B Vl Grpo with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Qwen2_5_7B_VL_GRPO.ipynb",
+      "path": "kaggle-qwen2-5-7b-vl",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Qwen2_5_7B_VL_GRPO.ipynb",
+        "last_synced": "2025-10-20T15:53:23.704641+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        "Kaggle-Qwen2_5_7B_VL_GRPO.ipynb",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-qwen2-vl-7b-vision",
+      "name": "Kaggle Qwen2 Vl (7B) Vision",
+      "description": "Fine-tune Kaggle Qwen2 Vl (7B) Vision with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Qwen2_VL_(7B)-Vision.ipynb",
+      "path": "kaggle-qwen2-vl-7b-vision",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Qwen2_VL_(7B)-Vision.ipynb",
+        "last_synced": "2025-10-20T15:53:19.518348+00:00"
+      },
+      "files": [
+        "Kaggle-Qwen2_VL_(7B)-Vision.ipynb",
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-qwen2.5-coder-1",
+      "name": "Kaggle Qwen2.5 Coder (1",
+      "description": "Fine-tune Kaggle Qwen2.5 Coder (1 with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Qwen2.5_Coder_(1.5B)-Tool_Calling.ipynb",
+      "path": "kaggle-qwen2.5-coder-1",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Qwen2.5_Coder_(1.ipynb",
+        "last_synced": "2025-10-20T15:53:22.812714+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "Kaggle-Qwen2.5_Coder_(1.5B)-Tool_Calling.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-qwen3-32b-a100-reasoning",
+      "name": "Kaggle Qwen3 (32B) A100 Reasoning Conversational",
+      "description": "Fine-tune Kaggle Qwen3 (32B) A100 Reasoning Conversational with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Qwen3_(32B)_A100-Reasoning-Conversational.ipynb",
+      "path": "kaggle-qwen3-32b-a100-reasoning",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Qwen3_(32B)_A100-Reasoning-Conversational.ipynb",
+        "last_synced": "2025-10-20T15:53:21.448583+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Kaggle-Qwen3_(32B)_A100-Reasoning-Conversational.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-qwen3-4b",
+      "name": "Kaggle Qwen3 (4B) Grpo",
+      "description": "Fine-tune Kaggle Qwen3 (4B) Grpo with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Qwen3_(4B)-GRPO.ipynb",
+      "path": "kaggle-qwen3-4b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Qwen3_(4B)-GRPO.ipynb",
+        "last_synced": "2025-10-20T15:53:21.652687+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Kaggle-Qwen3_(4B)-GRPO.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-qwen3-4b-instruct",
+      "name": "Kaggle Qwen3 (4B) Instruct",
+      "description": "Fine-tune Kaggle Qwen3 (4B) Instruct with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Qwen3_(4B)-Instruct.ipynb",
+      "path": "kaggle-qwen3-4b-instruct",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Qwen3_(4B)-Instruct.ipynb",
+        "last_synced": "2025-10-20T15:53:23.057731+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "Kaggle-Qwen3_(4B)-Instruct.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-qwen3-4b-thinking",
+      "name": "Kaggle Qwen3 (4B) Thinking",
+      "description": "Fine-tune Kaggle Qwen3 (4B) Thinking with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Qwen3_(4B)-Thinking.ipynb",
+      "path": "kaggle-qwen3-4b-thinking",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Qwen3_(4B)-Thinking.ipynb",
+        "last_synced": "2025-10-20T15:53:19.722769+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Kaggle-Qwen3_(4B)-Thinking.ipynb",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-spark-tts-0-5b",
+      "name": "Kaggle Spark Tts (0 5B)",
+      "description": "Fine-tune Kaggle Spark Tts (0 5B) with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Spark_TTS_(0_5B).ipynb",
+      "path": "kaggle-spark-tts-0-5b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Spark_TTS_(0_5B).ipynb",
+        "last_synced": "2025-10-20T15:53:21.069646+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Kaggle-Spark_TTS_(0_5B).ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-tinyllama-1",
+      "name": "Kaggle Tinyllama (1",
+      "description": "Fine-tune Kaggle Tinyllama (1 with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-TinyLlama_(1.1B)-Alpaca.ipynb",
+      "path": "kaggle-tinyllama-1",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-TinyLlama_(1.ipynb",
+        "last_synced": "2025-10-20T15:53:20.468615+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Kaggle-TinyLlama_(1.1B)-Alpaca.ipynb",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-unsloth-studio",
+      "name": "Kaggle Unsloth Studio",
+      "description": "Fine-tune Kaggle Unsloth Studio with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Unsloth_Studio.ipynb",
+      "path": "kaggle-unsloth-studio",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Unsloth_Studio.ipynb",
+        "last_synced": "2025-10-20T15:53:23.802119+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        "Kaggle-Unsloth_Studio.ipynb",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-whisper",
+      "name": "Kaggle Whisper",
+      "description": "Fine-tune Kaggle Whisper with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Whisper.ipynb",
+      "path": "kaggle-whisper",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Whisper.ipynb",
+        "last_synced": "2025-10-20T15:53:21.408842+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Kaggle-Whisper.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "kaggle-zephyr-7b-dpo",
+      "name": "Kaggle Zephyr (7B) Dpo",
+      "description": "Fine-tune Kaggle Zephyr (7B) Dpo with Unsloth on NVIDIA GPUs",
+      "notebook": "Kaggle-Zephyr_(7B)-DPO.ipynb",
+      "path": "kaggle-zephyr-7b-dpo",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Zephyr_(7B)-DPO.ipynb",
+        "last_synced": "2025-10-20T15:53:22.924603+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "Kaggle-Zephyr_(7B)-DPO.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "liquid-lfm2-1",
+      "name": "Liquid Lfm2 (1",
+      "description": "Fine-tune Liquid Lfm2 (1 with Unsloth on NVIDIA GPUs",
+      "notebook": "Liquid_LFM2_(1.2B)-Conversational.ipynb",
+      "path": "liquid-lfm2-1",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Liquid_LFM2_(1.ipynb",
+        "last_synced": "2025-10-20T15:53:20.993516+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Liquid_LFM2_(1.2B)-Conversational.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "liquid-lfm2",
+      "name": "Liquid Lfm2 Conversational",
+      "description": "Fine-tune Liquid Lfm2 Conversational with Unsloth on NVIDIA GPUs",
+      "notebook": "Liquid_LFM2-Conversational.ipynb",
+      "path": "liquid-lfm2",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Liquid_LFM2-Conversational.ipynb",
+        "last_synced": "2025-10-20T15:53:22.172665+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Liquid_LFM2-Conversational.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "llama3",
+      "name": "Llama3",
+      "description": "Fine-tune Llama3 with Unsloth on NVIDIA GPUs",
+      "notebook": "Llama3.3_(70B)_A100-Conversational.ipynb",
+      "path": "llama3",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama3.ipynb",
+        "last_synced": "2025-10-20T15:53:24.053842+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Llama3.3_(70B)_A100-Conversational.ipynb",
+        "requirements.txt",
+        "Llama3.2_(1B_and_3B)-Conversational.ipynb",
+        "Llama3.1_(8B)-Inference.ipynb",
+        "Llama3.1_(8B)-GRPO.ipynb",
+        "README.md",
+        "Llama3.1_(8B)-Alpaca.ipynb",
+        "docker-compose.yml",
+        "Llama3.2_(11B)-Vision.ipynb",
+        "Llama3.2_(1B)-RAFT.ipynb",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "llama3-8b",
+      "name": "Llama3 (8B) Conversational",
+      "description": "Fine-tune Llama3 (8B) Conversational with Unsloth on NVIDIA GPUs",
+      "notebook": "Llama3_(8B)-Alpaca.ipynb",
+      "path": "llama3-8b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama3_(8B)-Conversational.ipynb",
+        "last_synced": "2025-10-20T15:53:22.770900+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Llama3_(8B)-Alpaca.ipynb",
+        "README.md",
+        "Llama3_(8B)-Conversational.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "llama3-8b-ollama",
+      "name": "Llama3 (8B) Ollama",
+      "description": "Fine-tune Llama3 (8B) Ollama with Unsloth on NVIDIA GPUs",
+      "notebook": "Llama3_(8B)-Ollama.ipynb",
+      "path": "llama3-8b-ollama",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama3_(8B)-Ollama.ipynb",
+        "last_synced": "2025-10-20T15:53:20.028486+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Llama3_(8B)-Ollama.ipynb",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "llama3-8b-orpo",
+      "name": "Llama3 (8B) Orpo",
+      "description": "Fine-tune Llama3 (8B) Orpo with Unsloth on NVIDIA GPUs",
+      "notebook": "Llama3_(8B)-ORPO.ipynb",
+      "path": "llama3-8b-orpo",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama3_(8B)-ORPO.ipynb",
+        "last_synced": "2025-10-20T15:53:22.192314+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "Llama3_(8B)-ORPO.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "llasa-tts-1b",
+      "name": "Llasa Tts (1B)",
+      "description": "Fine-tune Llasa Tts (1B) with Unsloth on NVIDIA GPUs",
+      "notebook": "Llasa_TTS_(1B).ipynb",
+      "path": "llasa-tts-1b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llasa_TTS_(1B).ipynb",
+        "last_synced": "2025-10-20T15:53:23.486600+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "Llasa_TTS_(1B).ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "llasa-tts-3b",
+      "name": "Llasa Tts (3B)",
+      "description": "Fine-tune Llasa Tts (3B) with Unsloth on NVIDIA GPUs",
+      "notebook": "Llasa_TTS_(3B).ipynb",
+      "path": "llasa-tts-3b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llasa_TTS_(3B).ipynb",
+        "last_synced": "2025-10-20T15:53:24.107010+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        "Llasa_TTS_(3B).ipynb",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "magistral-24b-reasoning",
+      "name": "Magistral (24B) Reasoning Conversational",
+      "description": "Fine-tune Magistral (24B) Reasoning Conversational with Unsloth on NVIDIA GPUs",
+      "notebook": "Magistral_(24B)-Reasoning-Conversational.ipynb",
+      "path": "magistral-24b-reasoning",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Magistral_(24B)-Reasoning-Conversational.ipynb",
+        "last_synced": "2025-10-20T15:53:20.265907+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Magistral_(24B)-Reasoning-Conversational.ipynb",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "meta-synthetic-data-llama3",
+      "name": "Meta Synthetic Data Llama3",
+      "description": "Fine-tune Meta Synthetic Data Llama3 with Unsloth on NVIDIA GPUs",
+      "notebook": "Meta-Synthetic-Data-Llama3.1_(8B).ipynb",
+      "path": "meta-synthetic-data-llama3",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Meta-Synthetic-Data-Llama3.ipynb",
+        "last_synced": "2025-10-20T15:53:22.149123+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Meta-Synthetic-Data-Llama3.1_(8B).ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "meta-synthetic-data-llama3-2-3b",
+      "name": "Meta Synthetic Data Llama3 2 (3B)",
+      "description": "Fine-tune Meta Synthetic Data Llama3 2 (3B) with Unsloth on NVIDIA GPUs",
+      "notebook": "Meta_Synthetic_Data_Llama3_2_(3B).ipynb",
+      "path": "meta-synthetic-data-llama3-2-3b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Meta_Synthetic_Data_Llama3_2_(3B).ipynb",
+        "last_synced": "2025-10-20T15:53:23.099303+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "Meta_Synthetic_Data_Llama3_2_(3B).ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "mistral-7b-text-completion",
+      "name": "Mistral (7B) Text Completion",
+      "description": "Fine-tune Mistral (7B) Text Completion with Unsloth on NVIDIA GPUs",
+      "notebook": "Mistral_(7B)-Text_Completion.ipynb",
+      "path": "mistral-7b-text-completion",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Mistral_(7B)-Text_Completion.ipynb",
+        "last_synced": "2025-10-20T15:53:23.531831+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "Mistral_(7B)-Text_Completion.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "mistral-nemo-12b",
+      "name": "Mistral Nemo (12B) Alpaca",
+      "description": "Fine-tune Mistral Nemo (12B) Alpaca with Unsloth on NVIDIA GPUs",
+      "notebook": "Mistral_Nemo_(12B)-Alpaca.ipynb",
+      "path": "mistral-nemo-12b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Mistral_Nemo_(12B)-Alpaca.ipynb",
+        "last_synced": "2025-10-20T15:53:23.252261+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "Mistral_Nemo_(12B)-Alpaca.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "mistral-small-22b",
+      "name": "Mistral Small (22B) Alpaca",
+      "description": "Fine-tune Mistral Small (22B) Alpaca with Unsloth on NVIDIA GPUs",
+      "notebook": "Mistral_Small_(22B)-Alpaca.ipynb",
+      "path": "mistral-small-22b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Mistral_Small_(22B)-Alpaca.ipynb",
+        "last_synced": "2025-10-20T15:53:22.546939+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "Mistral_Small_(22B)-Alpaca.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "mistral-v0",
+      "name": "Mistral V0",
+      "description": "Fine-tune Mistral V0 with Unsloth on NVIDIA GPUs",
+      "notebook": "Mistral_v0.3_(7B)-Conversational.ipynb",
+      "path": "mistral-v0",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Mistral_v0.ipynb",
+        "last_synced": "2025-10-20T15:53:23.174281+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Mistral_v0.3_(7B)-Conversational.ipynb",
+        "requirements.txt",
+        "Mistral_v0.3_(7B)-CPT.ipynb",
+        "README.md",
+        "Mistral_v0.3_(7B)-Alpaca.ipynb",
+        "Mistral_v0.3_(7B)-GRPO.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "orpheus-3b-tts",
+      "name": "Orpheus (3B) Tts",
+      "description": "Fine-tune Orpheus (3B) Tts with Unsloth on NVIDIA GPUs",
+      "notebook": "Orpheus_(3B)-TTS.ipynb",
+      "path": "orpheus-3b-tts",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Orpheus_(3B)-TTS.ipynb",
+        "last_synced": "2025-10-20T15:53:22.330045+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "Orpheus_(3B)-TTS.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "oute-tts-1b",
+      "name": "Oute Tts (1B)",
+      "description": "Fine-tune Oute Tts (1B) with Unsloth on NVIDIA GPUs",
+      "notebook": "Oute_TTS_(1B).ipynb",
+      "path": "oute-tts-1b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Oute_TTS_(1B).ipynb",
+        "last_synced": "2025-10-20T15:53:23.790270+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        "Oute_TTS_(1B).ipynb",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "phi-3",
+      "name": "Phi 3",
+      "description": "Fine-tune Phi 3 with Unsloth on NVIDIA GPUs",
+      "notebook": "Phi_3.5_Mini-Conversational.ipynb",
+      "path": "phi-3",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Phi_3.ipynb",
+        "last_synced": "2025-10-20T15:53:19.645509+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Phi_3.5_Mini-Conversational.ipynb",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "phi-3-medium",
+      "name": "Phi 3 Medium Conversational",
+      "description": "Fine-tune Phi 3 Medium Conversational with Unsloth on NVIDIA GPUs",
+      "notebook": "Phi_3_Medium-Conversational.ipynb",
+      "path": "phi-3-medium",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Phi_3_Medium-Conversational.ipynb",
+        "last_synced": "2025-10-20T15:53:24.235452+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        "Phi_3_Medium-Conversational.ipynb",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "phi-4-14b-fine-tuning",
+      "name": "Phi-4 (14B)",
+      "description": "Fine-tune Phi-4 (14B) with Unsloth on NVIDIA GPUs",
+      "notebook": "HuggingFace Course-Phi_4_(14B)-GRPO.ipynb",
+      "path": "phi-4-14b-fine-tuning",
+      "gpu": {
+        "tier": "A100-40GB",
+        "min_vram_gb": 24,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "text-generation",
+        "fine-tuning",
+        "reasoning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Phi-4_(14B).ipynb",
+        "last_synced": "2025-10-20T15:53:23.609648+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "HuggingFace Course-Phi_4_(14B)-GRPO.ipynb",
+        "requirements.txt",
+        "README.md",
+        "Kaggle-Phi_4_(14B)-GRPO.ipynb",
+        "Phi_4-Conversational.ipynb",
+        "docker-compose.yml",
+        "Phi_4_(14B)-GRPO.ipynb",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "pixtral-12b-vision",
+      "name": "Pixtral (12B) Vision",
+      "description": "Fine-tune Pixtral (12B) Vision with Unsloth on NVIDIA GPUs",
+      "notebook": "Pixtral_(12B)-Vision.ipynb",
+      "path": "pixtral-12b-vision",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Pixtral_(12B)-Vision.ipynb",
+        "last_synced": "2025-10-20T15:53:19.761301+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Pixtral_(12B)-Vision.ipynb",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "qwen2",
+      "name": "Qwen2",
+      "description": "Fine-tune Qwen2 with Unsloth on NVIDIA GPUs",
+      "notebook": "Qwen2.5_(3B)-GRPO.ipynb",
+      "path": "qwen2",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen2.ipynb",
+        "last_synced": "2025-10-20T15:53:24.392129+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Qwen2.5_(3B)-GRPO.ipynb",
+        "requirements.txt",
+        "README.md",
+        "Qwen2.5_VL_(7B)-Vision.ipynb",
+        "Qwen2.5_Coder_(14B)-Conversational.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json",
+        "Qwen2.5_(7B)-Alpaca.ipynb"
+      ]
+    },
+    {
+      "id": "qwen2-7b",
+      "name": "Qwen2 (7B) Alpaca",
+      "description": "Fine-tune Qwen2 (7B) Alpaca with Unsloth on NVIDIA GPUs",
+      "notebook": "Qwen2_(7B)-Alpaca.ipynb",
+      "path": "qwen2-7b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen2_(7B)-Alpaca.ipynb",
+        "last_synced": "2025-10-20T15:53:24.082310+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        "Qwen2_(7B)-Alpaca.ipynb",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "qwen2-5-7b-vl",
+      "name": "Qwen2 5 7B Vl Grpo",
+      "description": "Fine-tune Qwen2 5 7B Vl Grpo with Unsloth on NVIDIA GPUs",
+      "notebook": "Qwen2_5_7B_VL_GRPO.ipynb",
+      "path": "qwen2-5-7b-vl",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen2_5_7B_VL_GRPO.ipynb",
+        "last_synced": "2025-10-20T15:53:23.204279+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "Qwen2_5_7B_VL_GRPO.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "qwen2-vl-7b-vision",
+      "name": "Qwen2 Vl (7B) Vision",
+      "description": "Fine-tune Qwen2 Vl (7B) Vision with Unsloth on NVIDIA GPUs",
+      "notebook": "Qwen2_VL_(7B)-Vision.ipynb",
+      "path": "qwen2-vl-7b-vision",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen2_VL_(7B)-Vision.ipynb",
+        "last_synced": "2025-10-20T15:53:22.127406+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Qwen2_VL_(7B)-Vision.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "qwen2.5-coder-1",
+      "name": "Qwen2.5 Coder (1",
+      "description": "Fine-tune Qwen2.5 Coder (1 with Unsloth on NVIDIA GPUs",
+      "notebook": "Qwen2.5_Coder_(1.5B)-Tool_Calling.ipynb",
+      "path": "qwen2.5-coder-1",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen2.5_Coder_(1.ipynb",
+        "last_synced": "2025-10-20T15:53:20.792222+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Qwen2.5_Coder_(1.5B)-Tool_Calling.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "qwen3-14b-fine-tuning",
+      "name": "Qwen3 (14B)",
+      "description": "Fine-tune Qwen3 (14B) with Unsloth on NVIDIA GPUs",
+      "notebook": "Qwen3_(14B).ipynb",
+      "path": "qwen3-14b-fine-tuning",
+      "gpu": {
+        "tier": "A100-40GB",
+        "min_vram_gb": 24,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "text-generation",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3_(14B).ipynb",
+        "last_synced": "2025-10-20T15:53:24.356120+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Qwen3_(14B).ipynb",
+        "Qwen3_(14B)-Reasoning-Conversational.ipynb",
+        "Kaggle-Qwen3_(14B)-Reasoning-Conversational.ipynb",
+        "Kaggle-Qwen3_(14B).ipynb",
+        "README.md",
+        "Kaggle-Qwen3_(14B)-Alpaca.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json",
+        "Qwen3_(14B)-Alpaca.ipynb"
+      ]
+    },
+    {
+      "id": "qwen3-32b-a100-reasoning",
+      "name": "Qwen3 (32B) A100 Reasoning Conversational",
+      "description": "Fine-tune Qwen3 (32B) A100 Reasoning Conversational with Unsloth on NVIDIA GPUs",
+      "notebook": "Qwen3_(32B)_A100-Reasoning-Conversational.ipynb",
+      "path": "qwen3-32b-a100-reasoning",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3_(32B)_A100-Reasoning-Conversational.ipynb",
+        "last_synced": "2025-10-20T15:53:23.849792+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        "Qwen3_(32B)_A100-Reasoning-Conversational.ipynb",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "qwen3-4b-grpo-rl",
+      "name": "Qwen3 (4B) GRPO",
+      "description": "Fine-tune Qwen3 (4B) GRPO with Unsloth on NVIDIA GPUs",
+      "notebook": "Qwen3_(4B)-GRPO.ipynb",
+      "path": "qwen3-4b-grpo-rl",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "reinforcement-learning",
+        "grpo",
+        "reasoning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3_(4B)_grpo.ipynb",
+        "last_synced": "2025-10-20T15:53:22.494152+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "Qwen3_(4B)-GRPO.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "qwen3-4b-instruct",
+      "name": "Qwen3 (4B) Instruct",
+      "description": "Fine-tune Qwen3 (4B) Instruct with Unsloth on NVIDIA GPUs",
+      "notebook": "Qwen3_(4B)-Instruct.ipynb",
+      "path": "qwen3-4b-instruct",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3_(4B)-Instruct.ipynb",
+        "last_synced": "2025-10-20T15:53:19.995274+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Qwen3_(4B)-Instruct.ipynb",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "qwen3-4b-thinking",
+      "name": "Qwen3 (4B) Thinking",
+      "description": "Fine-tune Qwen3 (4B) Thinking with Unsloth on NVIDIA GPUs",
+      "notebook": "Qwen3_(4B)-Thinking.ipynb",
+      "path": "qwen3-4b-thinking",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3_(4B)-Thinking.ipynb",
+        "last_synced": "2025-10-20T15:53:23.329685+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "Qwen3_(4B)-Thinking.ipynb",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "qwen3-vl-8b-vision",
+      "name": "Qwen3-VL (8B)",
+      "description": "Fine-tune Qwen3-VL (8B) with Unsloth on NVIDIA GPUs",
+      "notebook": "Qwen3_VL_(8B)-Vision-GRPO.ipynb",
+      "path": "qwen3-vl-8b-vision",
+      "gpu": {
+        "tier": "A100-40GB",
+        "min_vram_gb": 24,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "vision",
+        "multimodal",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3-VL_(8B).ipynb",
+        "last_synced": "2025-10-20T15:53:23.679852+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Qwen3_VL_(8B)-Vision-GRPO.ipynb",
+        "requirements.txt",
+        "Kaggle-Qwen3_VL_(8B)-Vision-GRPO.ipynb",
+        "Kaggle-Qwen3_VL_(8B)-Vision.ipynb",
+        "HuggingFace Course-Qwen3_VL_(8B)-Vision-GRPO.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        "Qwen3_VL_(8B)-Vision.ipynb",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "sesame-csm-1b-tts",
+      "name": "Sesame-CSM (1B)",
+      "description": "Fine-tune Sesame-CSM (1B) with Unsloth on NVIDIA GPUs",
+      "notebook": "Sesame_CSM_(1B)-TTS.ipynb",
+      "path": "sesame-csm-1b-tts",
+      "gpu": {
+        "tier": "T4",
+        "min_vram_gb": 12,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "audio",
+        "text-to-speech",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Sesame-CSM_(1B).ipynb",
+        "last_synced": "2025-10-20T15:53:23.994119+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Sesame_CSM_(1B)-TTS.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        "Kaggle-Sesame_CSM_(1B)-TTS.ipynb",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "spark-tts-0-5b",
+      "name": "Spark Tts (0 5B)",
+      "description": "Fine-tune Spark Tts (0 5B) with Unsloth on NVIDIA GPUs",
+      "notebook": "Spark_TTS_(0_5B).ipynb",
+      "path": "spark-tts-0-5b",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Spark_TTS_(0_5B).ipynb",
+        "last_synced": "2025-10-20T15:53:20.238646+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Spark_TTS_(0_5B).ipynb",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "synthetic-data-hackathon",
+      "name": "Synthetic Data Hackathon",
+      "description": "Fine-tune Synthetic Data Hackathon with Unsloth on NVIDIA GPUs",
+      "notebook": "Synthetic_Data_Hackathon.ipynb",
+      "path": "synthetic-data-hackathon",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Synthetic_Data_Hackathon.ipynb",
+        "last_synced": "2025-10-20T15:53:24.374494+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json",
+        "Synthetic_Data_Hackathon.ipynb"
+      ]
+    },
+    {
+      "id": "tinyllama-1",
+      "name": "Tinyllama (1",
+      "description": "Fine-tune Tinyllama (1 with Unsloth on NVIDIA GPUs",
+      "notebook": "TinyLlama_(1.1B)-Alpaca.ipynb",
+      "path": "tinyllama-1",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/TinyLlama_(1.ipynb",
+        "last_synced": "2025-10-20T15:53:20.827811+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "TinyLlama_(1.1B)-Alpaca.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "unsloth-studio",
+      "name": "Unsloth Studio",
+      "description": "Fine-tune Unsloth Studio with Unsloth on NVIDIA GPUs",
+      "notebook": "Unsloth_Studio.ipynb",
+      "path": "unsloth-studio",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Unsloth_Studio.ipynb",
+        "last_synced": "2025-10-20T15:53:19.488156+00:00"
+      },
+      "files": [
+        "Unsloth_Studio.ipynb",
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "whisper-large-v3-stt",
+      "name": "Whisper Large V3",
+      "description": "Fine-tune Whisper Large V3 with Unsloth on NVIDIA GPUs",
+      "notebook": "Whisper.ipynb",
+      "path": "whisper-large-v3-stt",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "audio",
+        "speech-to-text",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Whisper_Large_V3.ipynb",
+        "last_synced": "2025-10-20T15:53:20.375137+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "Whisper.ipynb",
+        "requirements.txt",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "zephyr-7b-dpo",
+      "name": "Zephyr (7B) Dpo",
+      "description": "Fine-tune Zephyr (7B) Dpo with Unsloth on NVIDIA GPUs",
+      "notebook": "Zephyr_(7B)-DPO.ipynb",
+      "path": "zephyr-7b-dpo",
+      "gpu": {
+        "tier": "L4",
+        "min_vram_gb": 16,
+        "multi_gpu": false
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "fine-tuning"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Zephyr_(7B)-DPO.ipynb",
+        "last_synced": "2025-10-20T15:53:21.181211+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "Zephyr_(7B)-DPO.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "gpt-oss-120b-fine-tuning",
+      "name": "gpt-oss-120b",
+      "description": "Fine-tune gpt-oss-120b with Unsloth on NVIDIA GPUs",
+      "notebook": "gpt-oss-(120B)_A100-Fine-tuning.ipynb",
+      "path": "gpt-oss-120b-fine-tuning",
+      "gpu": {
+        "tier": "A100-80GB",
+        "min_vram_gb": 80,
+        "multi_gpu": true
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "reasoning",
+        "fine-tuning",
+        "large-model"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/gpt-oss-120b.ipynb",
+        "last_synced": "2025-10-20T15:53:23.655692+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "README.md",
+        "gpt-oss-(120B)_A100-Fine-tuning.ipynb",
+        "docker-compose.yml",
+        "Kaggle-gpt-oss-(120B)_A100-Fine-tuning.ipynb",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "gpt-oss-20b-fine-tuning",
+      "name": "gpt-oss-20b",
+      "description": "Fine-tune gpt-oss-20b with Unsloth on NVIDIA GPUs",
+      "notebook": "gpt-oss-(20B)_A100-GRPO.ipynb",
+      "path": "gpt-oss-20b-fine-tuning",
+      "gpu": {
+        "tier": "A100-40GB",
+        "min_vram_gb": 24,
+        "multi_gpu": true
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "reasoning",
+        "fine-tuning",
+        "large-model"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/gpt-oss-20b.ipynb",
+        "last_synced": "2025-10-20T15:53:24.332328+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "gpt-oss-(20B)_A100-GRPO.ipynb",
+        "requirements.txt",
+        "Kaggle-gpt-oss-(20B)_A100-GRPO.ipynb",
+        "gpt-oss-(20B)-Fine-tuning.ipynb",
+        "Kaggle-gpt-oss-(20B)-Fine-tuning.ipynb",
+        "gpt_oss_(20B)_Reinforcement_Learning_2048_Game.ipynb",
+        "gpt-oss-(20B)-GRPO.ipynb",
+        "README.md",
+        "HuggingFace Course-gpt-oss-(20B)_A100-GRPO.ipynb",
+        "gpt_oss_(20B)_Reinforcement_Learning_2048_Game_BF16.ipynb",
+        "gpt_oss_(20B)_Reinforcement_Learning_2048_Game_DGX_Spark.ipynb",
+        "docker-compose.yml",
+        "Kaggle-gpt-oss-(20B)-GRPO.ipynb",
+        "HuggingFace Course-gpt-oss-(20B)-GRPO.ipynb",
+        ".brevconfig.json"
+      ]
+    },
+    {
+      "id": "gpt-oss-20b-grpo-rl",
+      "name": "gpt-oss-20b-GRPO",
+      "description": "Fine-tune gpt-oss-20b-GRPO with Unsloth on NVIDIA GPUs",
+      "notebook": "gpt_oss_(20B)_GRPO_BF16.ipynb",
+      "path": "gpt-oss-20b-grpo-rl",
+      "gpu": {
+        "tier": "A100-80GB",
+        "min_vram_gb": 40,
+        "multi_gpu": true
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "reasoning",
+        "reinforcement-learning",
+        "grpo"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/gpt-oss-20b-grpo.ipynb",
+        "last_synced": "2025-10-20T15:53:21.244981+00:00"
+      },
+      "files": [
+        "setup.sh",
+        "requirements.txt",
+        "gpt_oss_(20B)_GRPO_BF16.ipynb",
+        "README.md",
+        "docker-compose.yml",
+        ".brevconfig.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Sesame-CSM (1B)",
+  "description": "Fine-tune Sesame-CSM (1B) with Unsloth on NVIDIA GPUs",
+  "version": "1.0.0",
+  "gpu": {
+    "tier": "T4",
+    "min_vram_gb": 12,
+    "multi_gpu": false
+  },
+  "ports": [
+    8888
+  ],
+  "environment": {
+    "JUPYTER_ENABLE_LAB": "yes"
+  },
+  "tags": [
+    "unsloth",
+    "fine-tuning",
+    "audio",
+    "text-to-speech",
+    "fine-tuning"
+  ],
+  "upstream": {
+    "source": "unslothai/notebooks",
+    "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Sesame-CSM_(1B).ipynb",
+    "last_synced": "2025-10-20T15:53:23.994119+00:00"
+  }
+}

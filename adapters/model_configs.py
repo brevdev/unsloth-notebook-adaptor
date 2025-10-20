@@ -4,6 +4,8 @@ Model Configurations
 Contains metadata and configuration for each supported model/notebook.
 """
 
+import re
+from pathlib import Path
 from typing import Dict, Optional
 
 # Model configurations registry
@@ -266,9 +268,59 @@ DEFAULT_CONFIG = {
 }
 
 
+def create_unique_default_config(notebook_name: str) -> Dict:
+    """
+    Create a unique default config based on filename.
+    
+    Args:
+        notebook_name: Notebook filename
+        
+    Returns:
+        Configuration dictionary
+    """
+    stem = Path(notebook_name).stem
+    
+    # Try to extract model name from patterns like "Gemma3_(4B)" or "Llama3_1_(8B)"
+    match = re.search(r'([A-Za-z]+\d*(?:_\d+)?)\s*\((\d+[A-Z]*)\)', stem)
+    if match:
+        model_base = match.group(1).replace('_', ' ')
+        model_size = match.group(2)
+        model_name = f"{model_base} ({model_size})"
+    else:
+        # Fallback: clean up the filename
+        model_name = stem.replace('_', ' ').replace('-', ' ').title()
+    
+    # Create slug from filename
+    slug = re.sub(r'[()]', '', stem.lower())  # Remove parens
+    slug = slug.replace('_', '-')              # Underscores to dashes
+    slug = re.sub(r'-+', '-', slug)            # Multiple dashes to single
+    
+    # Remove common suffixes
+    for suffix in ['-alpaca', '-conversational', '-inference', '-a100', '-grpo']:
+        if slug.endswith(suffix):
+            slug = slug[:-len(suffix)]
+    
+    return {
+        "model_name": model_name,
+        "launchable_name": slug,
+        "recommended_gpu": "L4",
+        "min_vram_gb": 16,
+        "recommended_batch_size": 2,
+        "categories": ["fine-tuning"],
+        "difficulty": "intermediate",
+        "upstream_notebook_url": f"https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/{stem}.ipynb",
+        "multi_gpu": False
+    }
+
+
 def get_config_for_notebook(notebook_name: str) -> Dict:
     """
     Get configuration for a notebook by matching its name.
+    
+    Handles various naming patterns:
+    - Gemma3_(4B).ipynb → gemma-3-4b
+    - Llama3_1_(8B)-Alpaca.ipynb → llama-3.1-8b
+    - Qwen2_5_(7B)-Alpaca.ipynb → qwen-2.5-7b
 
     Args:
         notebook_name: Name or path of the notebook
@@ -276,24 +328,47 @@ def get_config_for_notebook(notebook_name: str) -> Dict:
     Returns:
         Configuration dictionary
     """
-    # Clean the notebook name
-    clean_name = notebook_name.lower()
-    if clean_name.endswith('.ipynb'):
-        clean_name = clean_name[:-6]
-
-    # Remove common prefixes/suffixes
-    clean_name = clean_name.replace('_', '-')
-    clean_name = clean_name.replace(' ', '-')
-
+    # Extract just the filename stem
+    stem = Path(notebook_name).stem.lower()
+    
+    # Normalize: remove parentheses, replace underscores with dashes
+    clean_name = re.sub(r'[()]', '', stem)     # Remove parens
+    clean_name = clean_name.replace('_', '-')  # Underscores to dashes
+    clean_name = re.sub(r'-+', '-', clean_name) # Multiple dashes to single
+    
+    # Remove common suffixes
+    for suffix in ['-alpaca', '-conversational', '-inference', '-a100', '-grpo', '-vision']:
+        if clean_name.endswith(suffix):
+            clean_name = clean_name[:-len(suffix)]
+            break
+    
     # Try exact match first
     if clean_name in MODEL_CONFIGS:
         return MODEL_CONFIGS[clean_name].copy()
-
-    # Try fuzzy matching
-    for config_key, config in MODEL_CONFIGS.items():
-        if config_key in clean_name or clean_name in config_key:
-            return config.copy()
-
-    # Return default config
-    return DEFAULT_CONFIG.copy()
+    
+    # Try fuzzy matching with scoring
+    best_match = None
+    best_score = 0
+    
+    for config_key in MODEL_CONFIGS.keys():
+        # Calculate similarity score
+        if config_key in clean_name:
+            # Config key is substring of cleaned name
+            score = len(config_key)
+            if score > best_score:
+                best_score = score
+                best_match = config_key
+        elif clean_name in config_key:
+            # Cleaned name is substring of config key
+            score = len(clean_name)
+            if score > best_score:
+                best_score = score
+                best_match = config_key
+    
+    # Only use match if it's reasonably good (at least 5 characters)
+    if best_match and best_score >= 5:
+        return MODEL_CONFIGS[best_match].copy()
+    
+    # No good match found - create unique config from filename
+    return create_unique_default_config(notebook_name)
 

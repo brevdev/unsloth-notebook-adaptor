@@ -10,7 +10,7 @@ import argparse
 import json
 import logging
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 # Configure logging
@@ -48,11 +48,14 @@ def scan_launchables(notebooks_dir: Path) -> list:
             with open(config_file, 'r') as f:
                 brev_config = json.load(f)
             
-            # Check for notebook
-            notebook_file = launchable_dir / 'notebook.ipynb'
-            if not notebook_file.exists():
+            # Find notebook file (look for any .ipynb file)
+            notebook_files = list(launchable_dir.glob('*.ipynb'))
+            if not notebook_files:
                 logger.warning(f"No notebook found in {launchable_dir}")
                 continue
+            
+            # Use first notebook found (should only be one)
+            notebook_file = notebook_files[0]
             
             # List companion files
             companion_files = []
@@ -65,7 +68,7 @@ def scan_launchables(notebooks_dir: Path) -> list:
                 'id': launchable_dir.name,
                 'name': brev_config.get('name', launchable_dir.name),
                 'description': brev_config.get('description', ''),
-                'notebook': 'notebook.ipynb',
+                'notebook': notebook_file.name,
                 'path': str(launchable_dir.relative_to(notebooks_dir)),
                 'gpu': brev_config.get('gpu', {}),
                 'tags': brev_config.get('tags', []),
@@ -115,7 +118,7 @@ def main():
     # Build registry
     registry = {
         'version': '1.0.0',
-        'generated_at': datetime.utcnow().isoformat() + 'Z',
+        'generated_at': datetime.now(timezone.utc).isoformat(),
         'total_launchables': len(launchables),
         'launchables': sorted(launchables, key=lambda x: x['name'])
     }

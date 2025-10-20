@@ -1,0 +1,26 @@
+{
+  "name": "Kaggle Gemma3N (4B) Conversational",
+  "description": "Fine-tune Kaggle Gemma3N (4B) Conversational with Unsloth on NVIDIA GPUs",
+  "version": "1.0.0",
+  "gpu": {
+    "tier": "L4",
+    "min_vram_gb": 16,
+    "multi_gpu": false
+  },
+  "ports": [
+    8888
+  ],
+  "environment": {
+    "JUPYTER_ENABLE_LAB": "yes"
+  },
+  "tags": [
+    "unsloth",
+    "fine-tuning",
+    "fine-tuning"
+  ],
+  "upstream": {
+    "source": "unslothai/notebooks",
+    "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3N_(4B)-Conversational.ipynb",
+    "last_synced": "2025-10-20T15:53:22.103648+00:00"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "gpt-oss-20b-GRPO",
+  "description": "Fine-tune gpt-oss-20b-GRPO with Unsloth on NVIDIA GPUs",
+  "version": "1.0.0",
+  "gpu": {
+    "tier": "A100-80GB",
+    "min_vram_gb": 40,
+    "multi_gpu": true
+  },
+  "ports": [
+    8888
+  ],
+  "environment": {
+    "JUPYTER_ENABLE_LAB": "yes"
+  },
+  "tags": [
+    "unsloth",
+    "fine-tuning",
+    "reasoning",
+    "reinforcement-learning",
+    "grpo"
+  ],
+  "upstream": {
+    "source": "unslothai/notebooks",
+    "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/gpt-oss-20b-grpo.ipynb",
+    "last_synced": "2025-10-20T15:53:21.244981+00:00"
+  }
+}
