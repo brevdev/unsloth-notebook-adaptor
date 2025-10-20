@@ -1,5 +1,5 @@
 # Requirements for Kaggle Llama3 (8B) Conversational
-# Generated: 2025-10-20T22:11:21.532486+00:00
+# Generated: 2025-10-20T22:19:45.271491+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
