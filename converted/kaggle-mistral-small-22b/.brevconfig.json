@@ -20,7 +20,7 @@
   ],
   "upstream": {
     "source": "unslothai/notebooks",
-    "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Mistral_Small_(22B)-Alpaca.ipynb",
-    "last_synced": "2025-10-20T17:56:51.229005+00:00"
+    "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Mistral_Small_(22B)-Alpaca.ipynb",
+    "last_synced": "2025-10-20T21:43:04.729920+00:00"
   }
 }

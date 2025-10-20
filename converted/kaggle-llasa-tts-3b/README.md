@@ -79,7 +79,7 @@ This notebook has been adapted from the original Unsloth Colab version with the 
 
 - [Unsloth Documentation](https://docs.unsloth.ai/)
 - [Brev Documentation](https://docs.nvidia.com/brev)
-- [Original Notebook](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Kaggle-Llasa_TTS_(3B).ipynb)
+- [Original Notebook](https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Llasa_TTS_(3B).ipynb)
 - [Report Issues](https://github.com/brevdev/unsloth-notebook-adaptor/issues)
 
 ## 📄 License

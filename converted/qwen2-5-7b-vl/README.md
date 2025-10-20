@@ -79,7 +79,7 @@ This notebook has been adapted from the original Unsloth Colab version with the 
 
 - [Unsloth Documentation](https://docs.unsloth.ai/)
 - [Brev Documentation](https://docs.nvidia.com/brev)
-- [Original Notebook](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen2_5_7B_VL_GRPO.ipynb)
+- [Original Notebook](https://github.com/unslothai/notebooks/blob/main/nb/Qwen2_5_7B_VL_GRPO.ipynb)
 - [Report Issues](https://github.com/brevdev/unsloth-notebook-adaptor/issues)
 
 ## 📄 License

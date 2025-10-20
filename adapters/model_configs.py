@@ -19,7 +19,7 @@ MODEL_CONFIGS: Dict[str, Dict] = {
         "recommended_batch_size": 2,
         "categories": ["reasoning", "fine-tuning", "large-model"],
         "difficulty": "advanced",
-        "upstream_notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/gpt-oss-20b.ipynb",
+        "upstream_notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/gpt-oss-20b.ipynb",
         "multi_gpu": True
     },
     "gpt-oss-20b-grpo": {
@@ -30,7 +30,7 @@ MODEL_CONFIGS: Dict[str, Dict] = {
         "recommended_batch_size": 1,
         "categories": ["reasoning", "reinforcement-learning", "grpo"],
         "difficulty": "advanced",
-        "upstream_notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/gpt-oss-20b-grpo.ipynb",
+        "upstream_notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/gpt-oss-20b-grpo.ipynb",
         "multi_gpu": True
     },
     "gpt-oss-120b": {
@@ -41,7 +41,7 @@ MODEL_CONFIGS: Dict[str, Dict] = {
         "recommended_batch_size": 1,
         "categories": ["reasoning", "fine-tuning", "large-model"],
         "difficulty": "advanced",
-        "upstream_notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/gpt-oss-120b.ipynb",
+        "upstream_notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/gpt-oss-120b.ipynb",
         "multi_gpu": True
     },
 
@@ -54,7 +54,7 @@ MODEL_CONFIGS: Dict[str, Dict] = {
         "recommended_batch_size": 4,
         "categories": ["text-generation", "fine-tuning"],
         "difficulty": "beginner",
-        "upstream_notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma_3_(4B).ipynb",
+        "upstream_notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma_3_(4B).ipynb",
         "multi_gpu": False
     },
     "gemma-3-4b-vision": {
@@ -65,7 +65,7 @@ MODEL_CONFIGS: Dict[str, Dict] = {
         "recommended_batch_size": 2,
         "categories": ["vision", "multimodal", "fine-tuning"],
         "difficulty": "intermediate",
-        "upstream_notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma_3_(4B)_vision.ipynb",
+        "upstream_notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma_3_(4B)_vision.ipynb",
         "multi_gpu": False
     },
     "gemma-3-1b-grpo": {
@@ -76,7 +76,7 @@ MODEL_CONFIGS: Dict[str, Dict] = {
         "recommended_batch_size": 4,
         "categories": ["reinforcement-learning", "grpo", "reasoning"],
         "difficulty": "intermediate",
-        "upstream_notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma_3_(1B)_grpo.ipynb",
+        "upstream_notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma_3_(1B)_grpo.ipynb",
         "multi_gpu": False
     },
     "gemma-3n-e4b": {
@@ -87,7 +87,7 @@ MODEL_CONFIGS: Dict[str, Dict] = {
         "recommended_batch_size": 2,
         "categories": ["multimodal", "text", "vision", "audio"],
         "difficulty": "intermediate",
-        "upstream_notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma_3n_(E4B).ipynb",
+        "upstream_notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma_3n_(E4B).ipynb",
         "multi_gpu": False
     },
 
@@ -100,7 +100,7 @@ MODEL_CONFIGS: Dict[str, Dict] = {
         "recommended_batch_size": 4,
         "categories": ["text-generation", "fine-tuning"],
         "difficulty": "beginner",
-        "upstream_notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama_3.1_(8B).ipynb",
+        "upstream_notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Llama_3.1_(8B).ipynb",
         "multi_gpu": False
     },
     "llama-3.2-1b": {
@@ -111,7 +111,7 @@ MODEL_CONFIGS: Dict[str, Dict] = {
         "recommended_batch_size": 8,
         "categories": ["text-generation", "fine-tuning", "small-model"],
         "difficulty": "beginner",
-        "upstream_notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama_3.2_(1B).ipynb",
+        "upstream_notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Llama_3.2_(1B).ipynb",
         "multi_gpu": False
     },
     "llama-3.2-3b": {
@@ -122,7 +122,7 @@ MODEL_CONFIGS: Dict[str, Dict] = {
         "recommended_batch_size": 4,
         "categories": ["text-generation", "fine-tuning"],
         "difficulty": "beginner",
-        "upstream_notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama_3.2_(3B).ipynb",
+        "upstream_notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Llama_3.2_(3B).ipynb",
         "multi_gpu": False
     },
     "llama-3.2-3b-grpo": {
@@ -133,7 +133,7 @@ MODEL_CONFIGS: Dict[str, Dict] = {
         "recommended_batch_size": 2,
         "categories": ["reinforcement-learning", "grpo", "reasoning"],
         "difficulty": "intermediate",
-        "upstream_notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama_3.2_(3B)_grpo.ipynb",
+        "upstream_notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Llama_3.2_(3B)_grpo.ipynb",
         "multi_gpu": False
     },
     "llama-3.2-vision-11b": {
@@ -144,7 +144,7 @@ MODEL_CONFIGS: Dict[str, Dict] = {
         "recommended_batch_size": 2,
         "categories": ["vision", "multimodal", "fine-tuning"],
         "difficulty": "intermediate",
-        "upstream_notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama_3.2_Vision_(11B).ipynb",
+        "upstream_notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Llama_3.2_Vision_(11B).ipynb",
         "multi_gpu": False
     },
 
@@ -157,7 +157,7 @@ MODEL_CONFIGS: Dict[str, Dict] = {
         "recommended_batch_size": 2,
         "categories": ["text-generation", "fine-tuning"],
         "difficulty": "intermediate",
-        "upstream_notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3_(14B).ipynb",
+        "upstream_notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen3_(14B).ipynb",
         "multi_gpu": False
     },
     "qwen3-4b-grpo": {
@@ -168,7 +168,7 @@ MODEL_CONFIGS: Dict[str, Dict] = {
         "recommended_batch_size": 2,
         "categories": ["reinforcement-learning", "grpo", "reasoning"],
         "difficulty": "intermediate",
-        "upstream_notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3_(4B)_grpo.ipynb",
+        "upstream_notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen3_(4B)_grpo.ipynb",
         "multi_gpu": False
     },
     "qwen3-vl-8b": {
@@ -179,7 +179,7 @@ MODEL_CONFIGS: Dict[str, Dict] = {
         "recommended_batch_size": 2,
         "categories": ["vision", "multimodal", "fine-tuning"],
         "difficulty": "intermediate",
-        "upstream_notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3-VL_(8B).ipynb",
+        "upstream_notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen3-VL_(8B).ipynb",
         "multi_gpu": False
     },
     "qwen3-vl-8b-grpo": {
@@ -190,7 +190,7 @@ MODEL_CONFIGS: Dict[str, Dict] = {
         "recommended_batch_size": 1,
         "categories": ["vision", "reinforcement-learning", "grpo"],
         "difficulty": "advanced",
-        "upstream_notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3-VL_(8B)_grpo.ipynb",
+        "upstream_notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen3-VL_(8B)_grpo.ipynb",
         "multi_gpu": False
     },
 
@@ -203,7 +203,7 @@ MODEL_CONFIGS: Dict[str, Dict] = {
         "recommended_batch_size": 2,
         "categories": ["text-generation", "fine-tuning", "reasoning"],
         "difficulty": "intermediate",
-        "upstream_notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Phi-4_(14B).ipynb",
+        "upstream_notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Phi-4_(14B).ipynb",
         "multi_gpu": False
     },
     "phi-4-14b-grpo": {
@@ -214,7 +214,7 @@ MODEL_CONFIGS: Dict[str, Dict] = {
         "recommended_batch_size": 1,
         "categories": ["reinforcement-learning", "grpo", "reasoning"],
         "difficulty": "advanced",
-        "upstream_notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Phi-4_(14B)_grpo.ipynb",
+        "upstream_notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Phi-4_(14B)_grpo.ipynb",
         "multi_gpu": False
     },
 
@@ -227,7 +227,7 @@ MODEL_CONFIGS: Dict[str, Dict] = {
         "recommended_batch_size": 4,
         "categories": ["audio", "speech-to-text", "fine-tuning"],
         "difficulty": "intermediate",
-        "upstream_notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Whisper_Large_V3.ipynb",
+        "upstream_notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Whisper_Large_V3.ipynb",
         "multi_gpu": False
     },
     "sesame-csm-1b": {
@@ -238,7 +238,7 @@ MODEL_CONFIGS: Dict[str, Dict] = {
         "recommended_batch_size": 4,
         "categories": ["audio", "text-to-speech", "fine-tuning"],
         "difficulty": "intermediate",
-        "upstream_notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Sesame-CSM_(1B).ipynb",
+        "upstream_notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Sesame-CSM_(1B).ipynb",
         "multi_gpu": False
     },
     "orpheus-tts-3b": {
@@ -249,7 +249,7 @@ MODEL_CONFIGS: Dict[str, Dict] = {
         "recommended_batch_size": 2,
         "categories": ["audio", "text-to-speech", "fine-tuning"],
         "difficulty": "intermediate",
-        "upstream_notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Orpheus-TTS_(3B).ipynb",
+        "upstream_notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Orpheus-TTS_(3B).ipynb",
         "multi_gpu": False
     },
 }
@@ -308,7 +308,7 @@ def create_unique_default_config(notebook_name: str) -> Dict:
         "recommended_batch_size": 2,
         "categories": ["fine-tuning"],
         "difficulty": "intermediate",
-        "upstream_notebook_url": f"https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/{stem}.ipynb",
+        "upstream_notebook_url": f"https://github.com/unslothai/notebooks/blob/main/nb/{stem}.ipynb",
         "multi_gpu": False
     }
 

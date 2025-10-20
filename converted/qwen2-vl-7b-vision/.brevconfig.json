@@ -20,7 +20,7 @@
   ],
   "upstream": {
     "source": "unslothai/notebooks",
-    "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen2_VL_(7B)-Vision.ipynb",
-    "last_synced": "2025-10-20T17:56:45.310041+00:00"
+    "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen2_VL_(7B)-Vision.ipynb",
+    "last_synced": "2025-10-20T21:43:03.081498+00:00"
   }
 }

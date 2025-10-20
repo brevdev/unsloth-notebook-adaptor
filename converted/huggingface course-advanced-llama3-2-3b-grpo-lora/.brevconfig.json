@@ -20,7 +20,7 @@
   ],
   "upstream": {
     "source": "unslothai/notebooks",
-    "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/HuggingFace Course-Advanced_Llama3_2_(3B)_GRPO_LoRA.ipynb",
-    "last_synced": "2025-10-20T17:56:46.890908+00:00"
+    "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/HuggingFace Course-Advanced_Llama3_2_(3B)_GRPO_LoRA.ipynb",
+    "last_synced": "2025-10-20T21:43:04.368523+00:00"
   }
 }

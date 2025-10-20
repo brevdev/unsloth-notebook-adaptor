@@ -39,6 +39,8 @@ class ColabToBrevAdapter(NotebookAdapter):
     def _register_default_conversions(self):
         """Register all conversion functions."""
         self.register_conversion('installation', self.convert_installation)
+        self.register_conversion('colab_conditionals', self.clean_colab_conditionals)
+        self.register_conversion('colab_links', self.clean_colab_links)
         self.register_conversion('magic_commands', self.convert_magic_commands)
         self.register_conversion('gpu_check', self.convert_gpu_check)
         self.register_conversion('storage', self.convert_storage)
@@ -71,6 +73,99 @@ subprocess.check_call([
 ])'''
             
             code = re.sub(colab_pattern, replacement, code, flags=re.IGNORECASE)
+        
+        return code
+
+    def clean_colab_conditionals(self, code: str, config: Dict[str, Any]) -> str:
+        """
+        Remove Colab-specific conditional installation logic.
+
+        Args:
+            code: Source code
+            config: Configuration dictionary
+
+        Returns:
+            Cleaned code
+        """
+        # Check if this is a Colab conditional installation cell
+        # (Has %%capture, COLAB_ check, and complex installation logic)
+        if '%%capture' in code and 'COLAB_' in code and 'if "COLAB_"' in code:
+            logger.debug("Removing Colab conditional installation block")
+            # Replace entire cell with simple Brev installation
+            return '''# Install dependencies for Brev
+import subprocess
+import sys
+
+# Install Unsloth
+subprocess.check_call([sys.executable, "-m", "pip", "install", "unsloth"])
+# Install transformers and trl with specific versions
+subprocess.check_call([sys.executable, "-m", "pip", "install", "transformers==4.56.2"])
+subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-deps", "trl==0.22.2"])'''
+        
+        return code
+
+    def clean_colab_links(self, code: str, config: Dict[str, Any]) -> str:
+        """
+        Remove or update 'Some other links' sections and inline Colab links.
+
+        Args:
+            code: Source code
+            config: Configuration dictionary
+
+        Returns:
+            Cleaned code
+        """
+        # 1. Replace inline Colab/GitHub links with direct GitHub links
+        # Pattern: https://colab.research.google.com/github/... -> https://github.com/...
+        code = re.sub(
+            r'https://colab\.research\.google\.com/github/([^\s\)]+)',
+            r'https://github.com/\1',
+            code
+        )
+        
+        # 2. Remove Google Drive Colab links (can't be converted)
+        # Pattern: https://colab.research.google.com/drive/... -> generic message
+        code = re.sub(
+            r'\[([^\]]+)\]\(https://colab\.research\.google\.com/drive/[^\)]+\)',
+            r'(additional notebook - see Unsloth documentation)',
+            code
+        )
+        
+        # 3. Remove Colab badge images (markdown format)
+        code = re.sub(
+            r'!\[Open In Colab\]\(https://colab\.research\.google\.com/assets/colab-badge\.svg\)',
+            '',
+            code,
+            flags=re.IGNORECASE
+        )
+        code = re.sub(
+            r'\[!\[.*?\]\(https://colab\.research\.google\.com/assets/colab-badge\.svg\)\]\([^\)]+\)',
+            '',
+            code
+        )
+        
+        # 4. Remove Colab badge images (HTML format)
+        code = re.sub(
+            r'<a\s+href="[^"]*"\s+target="_parent"><img\s+src="https://colab\.research\.google\.com/assets/colab-badge\.svg"[^>]*></a>',
+            '',
+            code,
+            flags=re.IGNORECASE
+        )
+        
+        # 2. Pattern for "Some other links" section with Colab references
+        links_pattern = r'Some other links:.*?(?:Free Colab|Free notebook).*?(?=\n\n[A-Z]|\Z)'
+        
+        if re.search(links_pattern, code, re.DOTALL | re.IGNORECASE):
+            logger.debug("Removing Colab links section")
+            # Replace with Brev-specific links
+            replacement = '''**Additional Resources:**
+
+- 📚 [Unsloth Documentation](https://docs.unsloth.ai) - Complete guides and examples
+- 💬 [Unsloth Discord](https://discord.gg/unsloth) - Community support
+- 📖 [More Notebooks](https://github.com/unslothai/notebooks) - Full collection on GitHub
+- 🚀 [Brev Documentation](https://docs.nvidia.com/brev) - Deploy and scale on NVIDIA GPUs'''
+            
+            code = re.sub(links_pattern, replacement, code, flags=re.DOTALL | re.IGNORECASE)
         
         return code
 

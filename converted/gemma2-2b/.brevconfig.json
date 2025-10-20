@@ -20,7 +20,7 @@
   ],
   "upstream": {
     "source": "unslothai/notebooks",
-    "notebook_url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma2_(2B)-Alpaca.ipynb",
-    "last_synced": "2025-10-20T17:56:50.503851+00:00"
+    "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma2_(2B)-Alpaca.ipynb",
+    "last_synced": "2025-10-20T21:43:01.133186+00:00"
   }
 }

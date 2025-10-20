@@ -65,9 +65,14 @@ class NotebookAdapter(ABC):
         header_cell = self.create_header_cell(notebook_path, config)
         notebook.cells.insert(0, header_cell)
 
-        # Process each code cell
+        # Process each code and markdown cell
         for cell in notebook.cells:
             if cell.cell_type == 'code':
+                original_source = cell.source
+                adapted_source = self._apply_conversions(original_source, config)
+                cell.source = adapted_source
+            elif cell.cell_type == 'markdown':
+                # Apply conversions to markdown cells too (for cleaning links, etc.)
                 original_source = cell.source
                 adapted_source = self._apply_conversions(original_source, config)
                 cell.source = adapted_source

@@ -1,5 +1,5 @@
 # Requirements for Gemma3 (4B) Vision Grpo
-# Generated: 2025-10-20T17:56:48.992357+00:00
+# Generated: 2025-10-20T21:43:03.697202+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
