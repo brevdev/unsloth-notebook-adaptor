@@ -1,5 +1,5 @@
 # Requirements for Gemma3N (4B) Vision
-# Generated: 2025-10-20T21:43:03.723867+00:00
+# Generated: 2025-10-20T21:47:29.190857+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

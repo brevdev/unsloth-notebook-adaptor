@@ -1,5 +1,5 @@
 # Requirements for Kaggle Phi 3
-# Generated: 2025-10-20T21:43:03.931989+00:00
+# Generated: 2025-10-20T21:47:31.135970+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
