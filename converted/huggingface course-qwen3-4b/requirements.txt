@@ -1,5 +1,5 @@
 # Requirements for Huggingface Course Qwen3 (4B) Grpo
-# Generated: 2025-10-20T22:04:48.003197+00:00
+# Generated: 2025-10-20T22:08:01.060445+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

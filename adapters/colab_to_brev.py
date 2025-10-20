@@ -172,6 +172,7 @@ subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-deps", "trl
     def convert_magic_commands(self, code: str, config: Dict[str, Any]) -> str:
         """
         Convert Jupyter magic commands to subprocess calls.
+        Handles multiline commands with backslash continuation.
 
         Args:
             code: Source code
@@ -182,14 +183,36 @@ subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-deps", "trl
         """
         lines = code.split('\n')
         converted_lines = []
+        i = 0
         
-        for line in lines:
+        while i < len(lines):
+            line = lines[i]
             stripped = line.lstrip()
             
-            # Handle !command patterns
+            # Handle !command patterns (including multiline)
             if stripped.startswith('!'):
                 indent = line[:len(line) - len(stripped)]
                 command = stripped[1:].strip()
+                
+                # Check for multiline command (ends with \)
+                if command.endswith('\\'):
+                    # Accumulate continuation lines
+                    full_command_parts = [command[:-1].strip()]  # Remove trailing \
+                    i += 1
+                    
+                    # Collect continuation lines
+                    while i < len(lines):
+                        cont_line = lines[i].strip()
+                        if cont_line.endswith('\\'):
+                            full_command_parts.append(cont_line[:-1].strip())
+                            i += 1
+                        else:
+                            # Last line of the command
+                            full_command_parts.append(cont_line)
+                            break
+                    
+                    # Join with spaces
+                    command = ' '.join(full_command_parts)
                 
                 # Special handling for pip
                 if command.startswith('pip install'):
@@ -199,7 +222,7 @@ subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-deps", "trl
                 elif 'nvidia-smi' in command:
                     converted = f'{indent}subprocess.run([{repr(command)}], check=False, shell=True)'
                 else:
-                    # Generic command
+                    # Generic command - use shell=True for complex commands
                     converted = f'{indent}subprocess.run([{repr(command)}], check=True, shell=True)'
                 
                 converted_lines.append(converted)
@@ -219,6 +242,8 @@ subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-deps", "trl
                     code = 'import subprocess\nimport sys\n\n' + code
             else:
                 converted_lines.append(line)
+            
+            i += 1
         
         return '\n'.join(converted_lines)
 

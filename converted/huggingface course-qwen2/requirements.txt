@@ -1,5 +1,5 @@
 # Requirements for Huggingface Course Qwen2
-# Generated: 2025-10-20T22:04:46.363791+00:00
+# Generated: 2025-10-20T22:08:00.914828+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

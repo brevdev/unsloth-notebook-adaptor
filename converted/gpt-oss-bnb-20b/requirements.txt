@@ -1,5 +1,5 @@
 # Requirements for Gpt Oss Bnb (20B) Inference
-# Generated: 2025-10-20T22:04:45.944363+00:00
+# Generated: 2025-10-20T22:07:59.616936+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

@@ -1,5 +1,5 @@
 # Requirements for Kaggle Gemma3 (27B) A100 Conversational
-# Generated: 2025-10-20T22:04:45.523958+00:00
+# Generated: 2025-10-20T22:07:59.529507+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

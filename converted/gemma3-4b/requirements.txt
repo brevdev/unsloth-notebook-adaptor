@@ -1,5 +1,5 @@
 # Requirements for Gemma3 (4B)
-# Generated: 2025-10-20T22:04:44.683661+00:00
+# Generated: 2025-10-20T22:07:57.376831+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
