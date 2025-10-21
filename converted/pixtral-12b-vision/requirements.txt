@@ -1,5 +1,5 @@
 # Requirements for Pixtral (12B) Vision
-# Generated: 2025-10-21T16:15:46.990582+00:00
+# Generated: 2025-10-21T16:20:14.438898+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
