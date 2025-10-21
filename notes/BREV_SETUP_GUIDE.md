@@ -37,22 +37,26 @@ try:
 except ImportError:
     print("\n⚠️  Unsloth not found - will install")
 
-# Install unsloth in the kernel's Python environment
+# Install unsloth using uv (the package manager for this environment)
 import subprocess
 
-print(f"\nInstalling unsloth into: {sys.executable}")
+print(f"\nInstalling packages into: {sys.executable}")
+print("Using uv package manager...\n")
 
-subprocess.check_call([
-    sys.executable, "-m", "pip", "install", "unsloth"
-])
-subprocess.check_call([
-    sys.executable, "-m", "pip", "install", "transformers==4.56.2"
-])
-subprocess.check_call([
-    sys.executable, "-m", "pip", "install", "--no-deps", "trl==0.22.2"
-])
-
-print("\n✅ Installation complete")
+try:
+    # Use uv to install packages into the current environment
+    subprocess.check_call(["uv", "pip", "install", "unsloth"])
+    subprocess.check_call(["uv", "pip", "install", "transformers==4.56.2"])
+    subprocess.check_call(["uv", "pip", "install", "--no-deps", "trl==0.22.2"])
+    print("\n✅ Installation complete")
+except FileNotFoundError:
+    print("❌ 'uv' command not found. Trying alternative method...")
+    # Fallback: install pip into venv first, then use it
+    subprocess.check_call([sys.executable, "-m", "ensurepip", "--upgrade"])
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "unsloth"])
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "transformers==4.56.2"])
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-deps", "trl==0.22.2"])
+    print("\n✅ Installation complete")
 
 # Verify installation
 try:
@@ -66,14 +70,22 @@ except ImportError as e:
 
 ### Why This Works
 
-The key is `sys.executable` - it always points to the **exact Python interpreter** running the notebook kernel, regardless of:
+**Primary Method: `uv pip install`**
+- Brev instances use `uv` as the primary package manager
+- Virtual environments created by `uv` don't include `pip` by default
+- `uv pip install` automatically installs into the active virtual environment
+- Faster and more efficient than traditional pip
 
-- Virtual environments (venv, conda, etc.)
-- System Python locations
-- User-specific Python installations
-- uv-managed Python environments
+**Fallback Method: `ensurepip` + `pip`**
+- If `uv` is not found, the cell falls back to standard Python package management
+- `ensurepip` adds pip to environments that don't have it
+- Ensures compatibility with non-Brev environments
 
-When you run `subprocess.check_call([sys.executable, "-m", "pip", "install", "unsloth"])`, you're guaranteed to install into the same Python that will later run `import unsloth`.
+This dual approach guarantees installation works in:
+- ✅ Brev instances with uv-managed venvs
+- ✅ Standard virtual environments (venv, conda)
+- ✅ System Python installations
+- ✅ Any custom Python setup
 
 ## Brev Instance Compatibility
 
@@ -230,9 +242,10 @@ But this isn't necessary - the current code works fine.
 
 | Feature | Colab | Converted for Brev |
 |---------|-------|-------------------|
-| Installation | `!pip install unsloth` | `subprocess.check_call([sys.executable, "-m", "pip", "install", "unsloth"])` |
+| Installation | `!pip install unsloth` | `subprocess.check_call(["uv", "pip", "install", "unsloth"])` with fallback |
 | Environment check | Checks for `COLAB_` env var | Checks for unsloth import |
-| Installation target | System Python (unspecified) | Kernel's Python (explicit) |
+| Installation target | System Python (unspecified) | Active venv via uv (explicit) |
+| Package manager | pip | uv (with pip fallback) |
 | Verification | None | Explicit verification step |
 | GPU check | Colab-specific | Generic GPU detection |
 
