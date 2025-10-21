@@ -92,14 +92,20 @@ subprocess.check_call([
         if '%%capture' in code and 'COLAB_' in code:
             logger.debug("Removing Colab conditional installation block")
             # Replace entire cell with simple Brev installation
+            # Use sys.executable to ensure installation to the kernel's Python environment
             return '''# Install dependencies for Brev
 import subprocess
+import sys
+import os
+
+# Get pip for the current Python environment
+pip_cmd = os.path.join(os.path.dirname(sys.executable), 'pip')
 
 # Install Unsloth
-subprocess.check_call(["pip", "install", "unsloth"])
+subprocess.check_call([pip_cmd, "install", "unsloth"])
 # Install transformers and trl with specific versions
-subprocess.check_call(["pip", "install", "transformers==4.56.2"])
-subprocess.check_call(["pip", "install", "--no-deps", "trl==0.22.2"])'''
+subprocess.check_call([pip_cmd, "install", "transformers==4.56.2"])
+subprocess.check_call([pip_cmd, "install", "--no-deps", "trl==0.22.2"])'''
         
         # Remove standalone %%capture magic commands (won't work outside IPython)
         if '%%capture' in code:
@@ -223,7 +229,8 @@ subprocess.check_call(["pip", "install", "--no-deps", "trl==0.22.2"])'''
                 # Special handling for pip
                 if command.startswith('pip install'):
                     packages = command.replace('pip install', '').strip()
-                    converted = f'{indent}subprocess.check_call(["pip", "install", {repr(packages)}])'
+                    # Use kernel's pip to ensure correct environment
+                    converted = f'{indent}subprocess.check_call([os.path.join(os.path.dirname(sys.executable), "pip"), "install", {repr(packages)}])'
                 # Special handling for nvidia-smi (non-critical)
                 elif 'nvidia-smi' in command:
                     converted = f'{indent}subprocess.run([{repr(command)}], check=False, shell=True)'
@@ -238,7 +245,8 @@ subprocess.check_call(["pip", "install", "--no-deps", "trl==0.22.2"])'''
                 needs_imports = True
                 indent = line[:len(line) - len(stripped)]
                 packages = stripped.replace('%pip install', '').strip()
-                converted = f'{indent}subprocess.check_call(["pip", "install", {repr(packages)}])'
+                # Use kernel's pip to ensure correct environment
+                converted = f'{indent}subprocess.check_call([os.path.join(os.path.dirname(sys.executable), "pip"), "install", {repr(packages)}])'
                 converted_lines.append(converted)
             else:
                 converted_lines.append(line)
@@ -248,8 +256,17 @@ subprocess.check_call(["pip", "install", "--no-deps", "trl==0.22.2"])'''
         result = '\n'.join(converted_lines)
         
         # Add imports at the beginning if needed and not already present
-        if needs_imports and 'import subprocess' not in result:
-            result = 'import subprocess\nimport sys\n\n' + result
+        if needs_imports:
+            imports_needed = []
+            if 'import subprocess' not in result:
+                imports_needed.append('import subprocess')
+            if 'import sys' not in result:
+                imports_needed.append('import sys')
+            if 'import os' not in result:
+                imports_needed.append('import os')
+            
+            if imports_needed:
+                result = '\n'.join(imports_needed) + '\n\n' + result
         
         return result
 

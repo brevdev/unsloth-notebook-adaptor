@@ -1,5 +1,5 @@
 # Requirements for Advanced Llama3 2 (3B) Grpo Lora
-# Generated: 2025-10-21T14:57:13.730892+00:00
+# Generated: 2025-10-21T15:01:35.302700+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
