@@ -1,5 +1,5 @@
 # Requirements for Kaggle Gemma2 (2B) Alpaca
-# Generated: 2025-10-21T17:14:19.364824+00:00
+# Generated: 2025-10-21T17:26:13.304331+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

@@ -1,5 +1,5 @@
 # Requirements for Gemma3N (2B) Inference
-# Generated: 2025-10-21T17:14:17.397796+00:00
+# Generated: 2025-10-21T17:26:10.835312+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

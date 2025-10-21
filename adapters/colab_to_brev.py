@@ -45,6 +45,7 @@ class ColabToBrevAdapter(NotebookAdapter):
         self.register_conversion('gpu_check', self.convert_gpu_check)
         self.register_conversion('storage', self.convert_storage)
         self.register_conversion('model_config', self.adapt_model_config)
+        self.register_conversion('generation_cache', self.setup_generation_cache)
 
     def convert_installation(self, code: str, config: Dict[str, Any]) -> str:
         """
@@ -423,6 +424,51 @@ print("=" * 60)
                          f'per_device_train_batch_size={batch_size}', code)
         
         return code
+
+    def setup_generation_cache(self, code: str, config: Dict[str, Any]) -> str:
+        """
+        Add cache directory setup before model.generate() calls to avoid /tmp permission errors.
+
+        Args:
+            code: Source code
+            config: Configuration dictionary
+
+        Returns:
+            Converted code with cache setup
+        """
+        # Check if this cell has model.generate() or similar generation calls
+        if not re.search(r'(model\.generate|FastLanguageModel\.generate|trainer\.generate)', code):
+            return code
+        
+        # Check if cache setup is already present
+        if 'TORCHINDUCTOR_CACHE_DIR' in code or 'torch_cache' in code:
+            return code
+        
+        logger.debug("Adding torch cache setup before generation call")
+        
+        # Add cache setup at the beginning of the cell
+        cache_setup = '''# Fix torch compilation cache permissions
+import os
+import shutil
+
+# Create user-writable cache directory
+cache_dir = os.path.expanduser("~/.cache/torch/inductor")
+os.makedirs(cache_dir, exist_ok=True)
+
+# Set PyTorch to use this directory
+os.environ["TORCHINDUCTOR_CACHE_DIR"] = cache_dir
+os.environ["TORCH_COMPILE_DIR"] = cache_dir
+
+# Clean up any old compiled caches
+old_cache = os.path.join(os.getcwd(), "unsloth_compiled_cache")
+if os.path.exists(old_cache):
+    shutil.rmtree(old_cache, ignore_errors=True)
+
+print(f"✅ Torch cache: {cache_dir}")
+
+'''
+        
+        return cache_setup + code
 
     def _generate_requirements(self, config: Dict[str, Any]) -> str:
         """Generate requirements.txt from template."""
