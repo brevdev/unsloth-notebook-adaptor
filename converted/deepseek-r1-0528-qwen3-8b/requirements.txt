@@ -1,5 +1,5 @@
 # Requirements for Deepseek R1 0528 Qwen3 (8B) Grpo
-# Generated: 2025-10-21T21:48:41.972700+00:00
+# Generated: 2025-10-21T21:54:58.342672+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

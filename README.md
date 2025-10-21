@@ -61,13 +61,13 @@ Below are **181 Unsloth notebooks** organized into **129 launchables** for NVIDI
 
 | Model | Type | GPU Requirements | Notebook Link |
 |-------|------|------------------|---------------|
-| **Advanced_Llama3_1_(3B)_GRPO_LoRA** | GRPO | L4<br/>(16GB VRAM) | [View Notebook](converted/huggingface%20course-advanced-llama3-1-3b-grpo-lora/HuggingFace%20Course-Advanced_Llama3_1_%283B%29_GRPO_LoRA.ipynb) |
 | **Advanced_Llama3_1_(3B)_GRPO_LoRA** | GRPO | L4<br/>(16GB VRAM) | [View Notebook](converted/advanced-llama3-1-3b-grpo-lora/Advanced_Llama3_1_%283B%29_GRPO_LoRA.ipynb) |
-| **Advanced_Llama3_2_(3B)_GRPO_LoRA** | GRPO | L4<br/>(16GB VRAM) | [View Notebook](converted/advanced-llama3-2-3b-grpo-lora/Advanced_Llama3_2_%283B%29_GRPO_LoRA.ipynb) |
+| **Advanced_Llama3_1_(3B)_GRPO_LoRA** | GRPO | L4<br/>(16GB VRAM) | [View Notebook](converted/huggingface%20course-advanced-llama3-1-3b-grpo-lora/HuggingFace%20Course-Advanced_Llama3_1_%283B%29_GRPO_LoRA.ipynb) |
 | **Advanced_Llama3_2_(3B)_GRPO_LoRA** | GRPO | L4<br/>(16GB VRAM) | [View Notebook](converted/huggingface%20course-advanced-llama3-2-3b-grpo-lora/HuggingFace%20Course-Advanced_Llama3_2_%283B%29_GRPO_LoRA.ipynb) |
+| **Advanced_Llama3_2_(3B)_GRPO_LoRA** | GRPO | L4<br/>(16GB VRAM) | [View Notebook](converted/advanced-llama3-2-3b-grpo-lora/Advanced_Llama3_2_%283B%29_GRPO_LoRA.ipynb) |
 | **Llama3.1_(8B)-Alpaca** | Alpaca | L4<br/>(16GB VRAM) | [View Notebook](converted/llama3/Llama3.1_%288B%29-Alpaca.ipynb) |
-| **Llama3.1_(8B)-GRPO** | GRPO | L4<br/>(16GB VRAM) | [View Notebook](converted/llama3/Llama3.1_%288B%29-GRPO.ipynb) |
 | **Llama3.1_(8B)-GRPO** | GRPO | L4<br/>(16GB VRAM) | [View Notebook](converted/huggingface%20course-llama3/HuggingFace%20Course-Llama3.1_%288B%29-GRPO.ipynb) |
+| **Llama3.1_(8B)-GRPO** | GRPO | L4<br/>(16GB VRAM) | [View Notebook](converted/llama3/Llama3.1_%288B%29-GRPO.ipynb) |
 | **Llama3.1_(8B)-Inference** | Inference | L4<br/>(16GB VRAM) | [View Notebook](converted/llama3/Llama3.1_%288B%29-Inference.ipynb) |
 | **Llama3.2_(1B)-RAFT** | RAFT | L4<br/>(16GB VRAM) | [View Notebook](converted/llama3/Llama3.2_%281B%29-RAFT.ipynb) |
 | **Llama3.2_(1B_and_3B)-Conversational** | Conversational | L4<br/>(16GB VRAM) | [View Notebook](converted/llama3/Llama3.2_%281B_and_3B%29-Conversational.ipynb) |
@@ -79,6 +79,15 @@ Below are **181 Unsloth notebooks** organized into **129 launchables** for NVIDI
 | **Meta-Synthetic-Data-Llama3.1_(8B)** | Synthetic Data | L4<br/>(16GB VRAM) | [View Notebook](converted/meta-synthetic-data-llama3/Meta-Synthetic-Data-Llama3.1_%288B%29.ipynb) |
 | **Meta_Synthetic_Data_Llama3_2_(3B)** | Synthetic Data | L4<br/>(16GB VRAM) | [View Notebook](converted/meta-synthetic-data-llama3-2-3b/Meta_Synthetic_Data_Llama3_2_%283B%29.ipynb) |
 | **TinyLlama_(1.1B)-Alpaca** | Alpaca | L4<br/>(16GB VRAM) | [View Notebook](converted/tinyllama-1/TinyLlama_%281.1B%29-Alpaca.ipynb) |
+| **llama2** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/llama2/llama2.ipynb) |
+| **llama2-finetune** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/llama2-finetune/llama2-finetune.ipynb) |
+| **llama2-finetune-own-data** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/llama2-finetune-own-data/llama2-finetune-own-data.ipynb) |
+| **llama3-to-ollama** | Ollama | L4<br/>(16GB VRAM) | [View Notebook](converted/llama3-to-ollama/llama3-to-ollama.ipynb) |
+| **llama31_law** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/llama31-law/llama31_law.ipynb) |
+| **llama3_finetune_inference** | Inference | L4<br/>(16GB VRAM) | [View Notebook](converted/llama3-finetune/llama3_finetune_inference.ipynb) |
+| **llama3dpo** | DPO | L4<br/>(16GB VRAM) | [View Notebook](converted/llama3dpo/llama3dpo.ipynb) |
+| **nvidia_nim_agents_llama3.1** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/nvidia-nim-agents-llama3/nvidia_nim_agents_llama3.1.ipynb) |
+| **tensorrt-llama3** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/tensorrt-llama3/tensorrt-llama3.ipynb) |
 
 ### Gemma Notebooks
 
@@ -89,20 +98,21 @@ Below are **181 Unsloth notebooks** organized into **129 launchables** for NVIDI
 | **Gemma2_(9B)-Alpaca** | Alpaca | L4<br/>(16GB VRAM) | [View Notebook](converted/gemma2-9b/Gemma2_%289B%29-Alpaca.ipynb) |
 | **Gemma3N_(2B)-Inference** | Inference | L4<br/>(16GB VRAM) | [View Notebook](converted/gemma3n-2b/Gemma3N_%282B%29-Inference.ipynb) |
 | **Gemma3N_(4B)-Conversational** | Conversational | L4<br/>(16GB VRAM) | [View Notebook](converted/gemma3n-4b/Gemma3N_%284B%29-Conversational.ipynb) |
-| **Gemma3_(1B)-GRPO** | GRPO | L4<br/>(16GB VRAM) | [View Notebook](converted/gemma3-1b/Gemma3_%281B%29-GRPO.ipynb) |
 | **Gemma3_(1B)-GRPO** | GRPO | L4<br/>(16GB VRAM) | [View Notebook](converted/huggingface%20course-gemma3-1b/HuggingFace%20Course-Gemma3_%281B%29-GRPO.ipynb) |
+| **Gemma3_(1B)-GRPO** | GRPO | L4<br/>(16GB VRAM) | [View Notebook](converted/gemma3-1b/Gemma3_%281B%29-GRPO.ipynb) |
 | **Gemma3_(270M)** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/gemma3-270m/Gemma3_%28270M%29.ipynb) |
 | **Gemma3_(27B)_A100-Conversational** | Conversational | L4<br/>(16GB VRAM) | [View Notebook](converted/gemma3-27b/Gemma3_%2827B%29_A100-Conversational.ipynb) |
 | **Gemma3_(4B)** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/gemma3-4b/Gemma3_%284B%29.ipynb) |
+| **gemma7b** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/gemma7b/gemma7b.ipynb) |
 
 ### Qwen Notebooks
 
 | Model | Type | GPU Requirements | Notebook Link |
 |-------|------|------------------|---------------|
-| **DeepSeek_R1_0528_Qwen3_(8B)_GRPO** | GRPO | L4<br/>(16GB VRAM) | [View Notebook](converted/deepseek-r1-0528-qwen3-8b/DeepSeek_R1_0528_Qwen3_%288B%29_GRPO.ipynb) |
 | **DeepSeek_R1_0528_Qwen3_(8B)_GRPO** | GRPO | L4<br/>(16GB VRAM) | [View Notebook](converted/huggingface%20course-deepseek-r1-0528-qwen3-8b/HuggingFace%20Course-DeepSeek_R1_0528_Qwen3_%288B%29_GRPO.ipynb) |
-| **Qwen2.5_(3B)-GRPO** | GRPO | L4<br/>(16GB VRAM) | [View Notebook](converted/qwen2/Qwen2.5_%283B%29-GRPO.ipynb) |
+| **DeepSeek_R1_0528_Qwen3_(8B)_GRPO** | GRPO | L4<br/>(16GB VRAM) | [View Notebook](converted/deepseek-r1-0528-qwen3-8b/DeepSeek_R1_0528_Qwen3_%288B%29_GRPO.ipynb) |
 | **Qwen2.5_(3B)-GRPO** | GRPO | L4<br/>(16GB VRAM) | [View Notebook](converted/huggingface%20course-qwen2/HuggingFace%20Course-Qwen2.5_%283B%29-GRPO.ipynb) |
+| **Qwen2.5_(3B)-GRPO** | GRPO | L4<br/>(16GB VRAM) | [View Notebook](converted/qwen2/Qwen2.5_%283B%29-GRPO.ipynb) |
 | **Qwen2.5_(7B)-Alpaca** | Alpaca | L4<br/>(16GB VRAM) | [View Notebook](converted/qwen2/Qwen2.5_%287B%29-Alpaca.ipynb) |
 | **Qwen2.5_Coder_(1.5B)-Tool_Calling** | Tool Calling | L4<br/>(16GB VRAM) | [View Notebook](converted/qwen2.5-coder-1/Qwen2.5_Coder_%281.5B%29-Tool_Calling.ipynb) |
 | **Qwen2.5_Coder_(14B)-Conversational** | Conversational | L4<br/>(16GB VRAM) | [View Notebook](converted/qwen2/Qwen2.5_Coder_%2814B%29-Conversational.ipynb) |
@@ -111,8 +121,8 @@ Below are **181 Unsloth notebooks** organized into **129 launchables** for NVIDI
 | **Qwen3_(14B)-Alpaca** | Alpaca | A100-40GB<br/>(24GB VRAM) | [View Notebook](converted/qwen3-14b-fine-tuning/Qwen3_%2814B%29-Alpaca.ipynb) |
 | **Qwen3_(14B)-Reasoning-Conversational** | Conversational | A100-40GB<br/>(24GB VRAM) | [View Notebook](converted/qwen3-14b-fine-tuning/Qwen3_%2814B%29-Reasoning-Conversational.ipynb) |
 | **Qwen3_(32B)_A100-Reasoning-Conversational** | Conversational | L4<br/>(16GB VRAM) | [View Notebook](converted/qwen3-32b-a100-reasoning/Qwen3_%2832B%29_A100-Reasoning-Conversational.ipynb) |
-| **Qwen3_(4B)-GRPO** | GRPO | L4<br/>(16GB VRAM) | [View Notebook](converted/huggingface%20course-qwen3-4b/HuggingFace%20Course-Qwen3_%284B%29-GRPO.ipynb) |
 | **Qwen3_(4B)-GRPO** | GRPO | L4<br/>(16GB VRAM) | [View Notebook](converted/qwen3-4b-grpo-rl/Qwen3_%284B%29-GRPO.ipynb) |
+| **Qwen3_(4B)-GRPO** | GRPO | L4<br/>(16GB VRAM) | [View Notebook](converted/huggingface%20course-qwen3-4b/HuggingFace%20Course-Qwen3_%284B%29-GRPO.ipynb) |
 | **Qwen3_(4B)-Instruct** | Instruct | L4<br/>(16GB VRAM) | [View Notebook](converted/qwen3-4b-instruct/Qwen3_%284B%29-Instruct.ipynb) |
 | **Qwen3_(4B)-Thinking** | Thinking | L4<br/>(16GB VRAM) | [View Notebook](converted/qwen3-4b-thinking/Qwen3_%284B%29-Thinking.ipynb) |
 
@@ -125,6 +135,8 @@ Below are **181 Unsloth notebooks** organized into **129 launchables** for NVIDI
 | **Phi_4-Conversational** | Conversational | A100-40GB<br/>(24GB VRAM) | [View Notebook](converted/phi-4-14b-fine-tuning/Phi_4-Conversational.ipynb) |
 | **Phi_4_(14B)-GRPO** | GRPO | A100-40GB<br/>(24GB VRAM) | [View Notebook](converted/phi-4-14b-fine-tuning/HuggingFace%20Course-Phi_4_%2814B%29-GRPO.ipynb) |
 | **Phi_4_(14B)-GRPO** | GRPO | A100-40GB<br/>(24GB VRAM) | [View Notebook](converted/phi-4-14b-fine-tuning/Phi_4_%2814B%29-GRPO.ipynb) |
+| **phi2-finetune** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/phi2-finetune/phi2-finetune.ipynb) |
+| **phi2-finetune-own-data** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/phi2-finetune-own-data/phi2-finetune-own-data.ipynb) |
 
 ### Mistral Notebooks
 
@@ -138,6 +150,12 @@ Below are **181 Unsloth notebooks** organized into **129 launchables** for NVIDI
 | **Mistral_v0.3_(7B)-Conversational** | Conversational | L4<br/>(16GB VRAM) | [View Notebook](converted/mistral-v0/Mistral_v0.3_%287B%29-Conversational.ipynb) |
 | **Mistral_v0.3_(7B)-GRPO** | GRPO | L4<br/>(16GB VRAM) | [View Notebook](converted/huggingface%20course-mistral-v0/HuggingFace%20Course-Mistral_v0.3_%287B%29-GRPO.ipynb) |
 | **Mistral_v0.3_(7B)-GRPO** | GRPO | L4<br/>(16GB VRAM) | [View Notebook](converted/mistral-v0/Mistral_v0.3_%287B%29-GRPO.ipynb) |
+| **biomistral** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/biomistral/biomistral.ipynb) |
+| **biomistral-finetune** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/biomistral-finetune/biomistral-finetune.ipynb) |
+| **mistral-finetune** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/mistral-finetune/mistral-finetune.ipynb) |
+| **mistral-finetune-nemo** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/mistral-finetune-nemo/mistral-finetune-nemo.ipynb) |
+| **mistral-finetune-own-data** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/mistral-finetune-own-data/mistral-finetune-own-data.ipynb) |
+| **tensorrt_mistral** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/tensorrt-mistral/tensorrt_mistral.ipynb) |
 
 ### Vision Notebooks
 
@@ -263,10 +281,41 @@ Below are **181 Unsloth notebooks** organized into **129 launchables** for NVIDI
 | **Falcon_H1-Alpaca** | Alpaca | L4<br/>(16GB VRAM) | [View Notebook](converted/falcon-h1/Falcon_H1-Alpaca.ipynb) |
 | **Falcon_H1_(0.5B)-Alpaca** | Alpaca | L4<br/>(16GB VRAM) | [View Notebook](converted/falcon-h1-0/Falcon_H1_%280.5B%29-Alpaca.ipynb) |
 | **Granite4.0** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/granite4/Granite4.0.ipynb) |
+| **LoRAwithTensorRT-LLM** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/lorawithtensorrt-llm/LoRAwithTensorRT-LLM.ipynb) |
+| **RAG_WIth_Local_NIM_V2** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/rag-with-local-nim-v2/RAG_WIth_Local_NIM_V2.ipynb) |
 | **Synthetic_Data_Hackathon** | Synthetic Data | L4<br/>(16GB VRAM) | [View Notebook](converted/synthetic-data-hackathon/Synthetic_Data_Hackathon.ipynb) |
 | **Unsloth_Studio** | Studio | L4<br/>(16GB VRAM) | [View Notebook](converted/unsloth-studio/Unsloth_Studio.ipynb) |
 | **Zephyr_(7B)-DPO** | DPO | L4<br/>(16GB VRAM) | [View Notebook](converted/zephyr-7b-dpo/Zephyr_%287B%29-DPO.ipynb) |
+| **ara** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/ara/ara.ipynb) |
+| **automatic1111-stable-diffusion-ui** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/automatic1111-stable-diffusion-ui/automatic1111-stable-diffusion-ui.ipynb) |
+| **baklava** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/baklava/baklava.ipynb) |
 | **bert_classification** | Classification | L4<br/>(16GB VRAM) | [View Notebook](converted/bert-classification/bert_classification.ipynb) |
+| **caltech-protein-demo** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/caltech-protein-demo/caltech-protein-demo.ipynb) |
+| **comfyui** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/comfyui/comfyui.ipynb) |
+| **container_vulnerability_analysis** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/container-vulnerability-analysis/container_vulnerability_analysis.ipynb) |
+| **controlnet** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/controlnet/controlnet.ipynb) |
+| **dbrx_inference** | Inference | L4<br/>(16GB VRAM) | [View Notebook](converted/dbrx/dbrx_inference.ipynb) |
+| **deploy-to-replicate** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/deploy-to-replicate/deploy-to-replicate.ipynb) |
+| **diffusion_lora_inference** | Inference | L4<br/>(16GB VRAM) | [View Notebook](converted/diffusion-lora/diffusion_lora_inference.ipynb) |
+| **efficientvit-segmentation** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/efficientvit-segmentation/efficientvit-segmentation.ipynb) |
+| **gguf-export** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/gguf-export/gguf-export.ipynb) |
+| **julia-install** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/julia-install/julia-install.ipynb) |
+| **llava-finetune** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/llava-finetune/llava-finetune.ipynb) |
+| **meta-chameleon-model** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/meta-chameleon-model/meta-chameleon-model.ipynb) |
+| **mixtral-finetune** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/mixtral-finetune/mixtral-finetune.ipynb) |
+| **mixtral-finetune-own-data** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/mixtral-finetune-own-data/mixtral-finetune-own-data.ipynb) |
+| **molmim-optimization** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/molmim-optimization/molmim-optimization.ipynb) |
+| **nemo-reranker** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/nemo-reranker/nemo-reranker.ipynb) |
+| **nim-quickstart** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/nim-quickstart/nim-quickstart.ipynb) |
+| **ocr-pdf-analysis** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/ocr-pdf-analysis/ocr-pdf-analysis.ipynb) |
+| **oobabooga** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/oobabooga/oobabooga.ipynb) |
+| **pdf-blueprint** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/pdf-blueprint/pdf-blueprint.ipynb) |
+| **question_answer_nemo** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/question-answer-nemo/question_answer_nemo.ipynb) |
+| **rapids_cudf_pandas** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/rapids-cudf-pandas/rapids_cudf_pandas.ipynb) |
+| **setup-k8s** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/setup-k8s/setup-k8s.ipynb) |
+| **streamingllm-tensorrt** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/streamingllm-tensorrt/streamingllm-tensorrt.ipynb) |
+| **tensorrt-comfyui** | Fine-tuning | L4<br/>(16GB VRAM) | [View Notebook](converted/tensorrt-comfyui/tensorrt-comfyui.ipynb) |
+| **zephyr-chatbot** | Conversational | L4<br/>(16GB VRAM) | [View Notebook](converted/zephyr-chatbot/zephyr-chatbot.ipynb) |
 <!-- LAUNCHABLES_TABLE_END -->
 
 **Note:** Deploy buttons will be added by the Brev team as Launchables are created on the platform.

@@ -1,5 +1,5 @@
 # Requirements for Qwen2
-# Generated: 2025-10-21T21:48:43.306293+00:00
+# Generated: 2025-10-21T21:54:59.425825+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
