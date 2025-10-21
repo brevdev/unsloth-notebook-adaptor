@@ -1,5 +1,5 @@
 # Requirements for Qwen2 (7B) Alpaca
-# Generated: 2025-10-21T20:48:57.724709+00:00
+# Generated: 2025-10-21T20:52:55.195719+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

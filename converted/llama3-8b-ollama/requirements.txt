@@ -1,5 +1,5 @@
 # Requirements for Llama3 (8B) Ollama
-# Generated: 2025-10-21T20:48:51.246720+00:00
+# Generated: 2025-10-21T20:52:49.677170+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

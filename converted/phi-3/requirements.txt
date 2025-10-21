@@ -1,5 +1,5 @@
 # Requirements for Phi 3
-# Generated: 2025-10-21T20:48:50.712495+00:00
+# Generated: 2025-10-21T20:52:49.147095+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

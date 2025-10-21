@@ -1,5 +1,5 @@
 # Requirements for Huggingface Course Deepseek R1 0528 Qwen3 (8B) Grpo
-# Generated: 2025-10-21T20:48:53.558899+00:00
+# Generated: 2025-10-21T20:52:52.208462+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
