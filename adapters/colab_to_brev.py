@@ -40,6 +40,7 @@ class ColabToBrevAdapter(NotebookAdapter):
         """Register all conversion functions."""
         self.register_conversion('installation', self.convert_installation)
         self.register_conversion('colab_conditionals', self.clean_colab_conditionals)
+        self.register_conversion('colab_runtime_instructions', self.clean_colab_runtime_instructions)
         self.register_conversion('colab_links', self.clean_colab_links)
         self.register_conversion('magic_commands', self.convert_magic_commands)
         self.register_conversion('gpu_check', self.convert_gpu_check)
@@ -184,6 +185,31 @@ except ImportError as e:
         if '%%capture' in code:
             logger.debug("Removing standalone %%capture magic command")
             code = re.sub(r'%%capture\s*\n', '', code)
+        
+        return code
+
+    def clean_colab_runtime_instructions(self, code: str, config: Dict[str, Any]) -> str:
+        """
+        Remove Colab 'Runtime > Run all' instructions.
+
+        Args:
+            code: Source code
+            config: Configuration dictionary
+
+        Returns:
+            Cleaned code
+        """
+        # Pattern: "To run this, press "*Runtime*" and press "*Run all*"..."
+        # This appears in markdown cells and is Colab-specific
+        colab_run_patterns = [
+            r'To run this,\s+press\s+["\'\*]*Runtime["\'\*]*\s+and press\s+["\'\*]*Run all["\'\*]*\s+on.*?(?:Google Colab|Colab).*?(?:instance|notebook)[^\n]*',
+            r'press\s+["\'\*]*Runtime["\'\*]*.*?["\'\*]*Run all["\'\*]*.*?(?:Google Colab|Colab)',
+        ]
+        
+        for pattern in colab_run_patterns:
+            if re.search(pattern, code, re.IGNORECASE):
+                logger.debug("Removing Colab runtime instructions")
+                code = re.sub(pattern, '', code, flags=re.IGNORECASE)
         
         return code
 
