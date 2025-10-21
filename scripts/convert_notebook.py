@@ -161,11 +161,27 @@ def main():
         logger.warning("No notebooks to convert")
         sys.exit(0)
     
-    logger.info(f"Found {len(notebooks_to_convert)} notebook(s) to convert")
+    # Filter out Kaggle notebooks (they're redundant duplicates of the main notebooks)
+    original_count = len(notebooks_to_convert)
+    notebooks_to_convert = [
+        nb for nb in notebooks_to_convert 
+        if 'kaggle' not in nb.stem.lower() and 'kaggle' not in nb.name.lower()
+    ]
+    
+    if original_count != len(notebooks_to_convert):
+        kaggle_filtered = original_count - len(notebooks_to_convert)
+        logger.info(f"Filtered out {kaggle_filtered} Kaggle notebook(s) (redundant for Brev)")
+    
+    if not notebooks_to_convert:
+        logger.warning("No notebooks to convert after filtering Kaggle variants")
+        sys.exit(0)
+    
+    logger.info(f"Converting {len(notebooks_to_convert)} notebook(s)")
     
     # Convert notebooks
     successful = 0
     failed = 0
+    skipped = 0
     
     for notebook_path in notebooks_to_convert:
         if convert_single_notebook(notebook_path, args.output, templates_dir):
