@@ -1,5 +1,5 @@
 # Requirements for Gemma3 (27B) A100 Conversational
-# Generated: 2025-10-21T16:20:15.878490+00:00
+# Generated: 2025-10-21T16:24:06.255180+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

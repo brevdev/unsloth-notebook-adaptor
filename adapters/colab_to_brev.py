@@ -91,7 +91,7 @@ subprocess.check_call([
         # (Has %%capture and COLAB_ environment check)
         if '%%capture' in code and 'COLAB_' in code:
             logger.debug("Removing Colab conditional installation block")
-            # Replace with environment diagnostic cell
+            # Replace with environment check + installation using sys.executable
             return '''# Environment Check for Brev
 import sys
 
@@ -100,13 +100,35 @@ print(f"Python version: {sys.version}")
 
 try:
     from unsloth import FastLanguageModel
-    print("\\n✅ Unsloth loaded successfully")
+    print("\\n✅ Unsloth already available")
     print(f"   Location: {FastLanguageModel.__module__}")
+except ImportError:
+    print("\\n⚠️  Unsloth not found - will install in next cell")
+
+# Install unsloth in the kernel's Python environment
+import subprocess
+
+print(f"\\nInstalling unsloth into: {sys.executable}")
+
+subprocess.check_call([
+    sys.executable, "-m", "pip", "install", "unsloth"
+])
+subprocess.check_call([
+    sys.executable, "-m", "pip", "install", "transformers==4.56.2"
+])
+subprocess.check_call([
+    sys.executable, "-m", "pip", "install", "--no-deps", "trl==0.22.2"
+])
+
+print("\\n✅ Installation complete")
+
+# Verify installation
+try:
+    from unsloth import FastLanguageModel
+    print("✅ Unsloth is now available")
 except ImportError as e:
-    print(f"\\n❌ Unsloth not available in this kernel")
-    print(f"   Error: {e}")
-    print(f"\\n⚠️  Please ensure you're using the 'Python 3 (ipykernel)' kernel")
-    print(f"   and that unsloth is installed in the system Python.")
+    print(f"❌ Installation failed: {e}")
+    print("⚠️  Please restart kernel and try again")
     raise'''
         
         # Remove standalone %%capture magic commands (won't work outside IPython)

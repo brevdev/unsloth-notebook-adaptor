@@ -1,5 +1,5 @@
 # Requirements for Qwen3 (32B) A100 Reasoning Conversational
-# Generated: 2025-10-21T16:20:16.725469+00:00
+# Generated: 2025-10-21T16:24:10.138941+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
