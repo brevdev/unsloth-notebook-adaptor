@@ -1,5 +1,5 @@
 # Requirements for Sesame-CSM (1B)
-# Generated: 2025-10-21T16:24:10.261558+00:00
+# Generated: 2025-10-21T16:25:56.937146+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
