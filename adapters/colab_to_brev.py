@@ -104,13 +104,26 @@ print(f"Python version: {sys.version}")
 # Configure PyTorch cache directories to avoid permission errors
 # MUST be set before any torch imports
 # Prefer /ephemeral for Brev instances (larger scratch space)
-if os.path.exists("/ephemeral") and os.access("/ephemeral", os.W_OK):
+
+# Test if /ephemeral exists and is actually writable (not just readable)
+use_ephemeral = False
+if os.path.exists("/ephemeral"):
+    try:
+        test_file = "/ephemeral/.write_test"
+        with open(test_file, "w") as f:
+            f.write("test")
+        os.remove(test_file)
+        use_ephemeral = True
+    except (PermissionError, OSError):
+        pass
+
+if use_ephemeral:
     cache_base = "/ephemeral/torch_cache"
     triton_cache = "/ephemeral/triton_cache"
     print("Using /ephemeral for cache (Brev scratch space)")
 else:
-    cache_base = os.path.expanduser("~/torch_cache")
-    triton_cache = os.path.expanduser("~/triton_cache")
+    cache_base = os.path.expanduser("~/.cache/torch/inductor")
+    triton_cache = os.path.expanduser("~/.cache/triton")
     print("Using home directory for cache")
 
 os.environ["TORCHINDUCTOR_CACHE_DIR"] = cache_base
@@ -460,8 +473,19 @@ print("=" * 60)
 import os
 import shutil
 
-# Prefer /ephemeral for Brev instances (larger scratch space)
-if os.path.exists("/ephemeral") and os.access("/ephemeral", os.W_OK):
+# Test if /ephemeral is writable (not just readable)
+use_ephemeral = False
+if os.path.exists("/ephemeral"):
+    try:
+        test_file = "/ephemeral/.write_test"
+        with open(test_file, "w") as f:
+            f.write("test")
+        os.remove(test_file)
+        use_ephemeral = True
+    except (PermissionError, OSError):
+        pass
+
+if use_ephemeral:
     cache_dir = "/ephemeral/torch_cache"
 else:
     cache_dir = os.path.expanduser("~/.cache/torch/inductor")

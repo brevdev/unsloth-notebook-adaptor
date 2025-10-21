@@ -1,5 +1,5 @@
 # Requirements for Llama3 (8B) Conversational
-# Generated: 2025-10-21T20:15:01.260516+00:00
+# Generated: 2025-10-21T20:48:55.397384+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

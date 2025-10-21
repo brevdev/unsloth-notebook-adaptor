@@ -1,5 +1,5 @@
 # Requirements for Kaggle Qwen3 (4B) Grpo
-# Generated: 2025-10-21T20:14:59.983908+00:00
+# Generated: 2025-10-21T20:48:53.768513+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
