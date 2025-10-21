@@ -139,16 +139,17 @@ def get_model_type(launchable: Dict) -> str:
     return 'Fine-tuning'
 
 
-def categorize_launchables(launchables: List[Dict]) -> Dict[str, List[Dict]]:
+def categorize_launchables(launchables: List[Dict]) -> OrderedDict:
     """
     Categorize launchables to match Unsloth's exact structure.
     Includes top-level featured sections, then family groupings.
+    Kaggle notebooks are skipped as they're redundant for Brev.
 
     Args:
         launchables: List of launchable metadata dictionaries
 
     Returns:
-        Tuple of (regular_categories, kaggle_categories) OrderedDicts
+        OrderedDict mapping category names to lists of launchables
     """
     # Use OrderedDict to maintain category order - match Unsloth's exact structure
     # Top-level sections first, then family groupings
@@ -173,22 +174,6 @@ def categorize_launchables(launchables: List[Dict]) -> Dict[str, List[Dict]]:
         ('Other Notebooks', []),
     ])
     
-    # Separate list for Kaggle variants (same structure, in collapsible section)
-    kaggle_categories = OrderedDict([
-        ('GRPO Notebooks', []),
-        ('GPT-OSS Notebooks', []),
-        ('Gemma Notebooks', []),
-        ('Linear Attention Notebooks', []),
-        ('Llama Notebooks', []),
-        ('Mistral Notebooks', []),
-        ('Orpheus Notebooks', []),
-        ('Oute Notebooks', []),
-        ('Phi Notebooks', []),
-        ('Qwen Notebooks', []),
-        ('Spark Notebooks', []),
-        ('Whisper Notebooks', []),
-        ('Other Notebooks', []),
-    ])
     
     # Define which notebooks go in "Main Notebooks" (featured)
     main_featured = [
@@ -212,96 +197,90 @@ def categorize_launchables(launchables: List[Dict]) -> Dict[str, List[Dict]]:
         notebook = launchable.get('notebook', '').lower()
         notebook_base = launchable.get('notebook', '').replace('.ipynb', '').replace('Kaggle-', '').replace('HuggingFace Course-', '')
         
-        # Check if it's a Kaggle variant first
+        # Skip Kaggle notebooks entirely - they're redundant for Brev
         is_kaggle = 'kaggle' in notebook or 'kaggle' in name
+        if is_kaggle:
+            continue
         
-        # Determine which category to use
-        target_categories = kaggle_categories if is_kaggle else categories
-        
-        # For non-Kaggle notebooks, check if it's a Main featured notebook
-        if not is_kaggle and notebook_base in main_featured:
+        # Check if it's a Main featured notebook
+        if notebook_base in main_featured:
             categories['Main Notebooks'].append(launchable)
             continue
         
         # Check if it's BERT (special section)
         if 'bert' in name or 'bert' in notebook:
-            if not is_kaggle:  # BERT section only in main, not Kaggle
-                categories['BERT Notebooks'].append(launchable)
-            else:
-                target_categories['Other Notebooks'].append(launchable)
+            categories['BERT Notebooks'].append(launchable)
             continue
         
         # Check for specific use-cases (special section with different table format)
-        # These are notebooks with specific training approaches or use cases
-        if any(x in notebook for x in ['text_completion', 'tool_calling', 'classification']) and not is_kaggle:
+        if any(x in notebook for x in ['text_completion', 'tool_calling', 'classification']):
             categories['Specific use-case Notebooks'].append(launchable)
             continue
         
         # Check for TTS/STT (dedicated section before family groupings)
-        if model_type in ['TTS', 'STT'] and not is_kaggle:
+        if model_type in ['TTS', 'STT']:
             categories['Text-to-Speech (TTS) Notebooks'].append(launchable)
             # Also add to family grouping
             if 'llama' in name or 'llasa' in name:
-                target_categories['Llama Notebooks'].append(launchable)
+                categories['Llama Notebooks'].append(launchable)
             elif 'orpheus' in name:
-                target_categories['Orpheus Notebooks'].append(launchable)
+                categories['Orpheus Notebooks'].append(launchable)
             elif 'oute' in name:
-                target_categories['Oute Notebooks'].append(launchable)
+                categories['Oute Notebooks'].append(launchable)
             elif 'spark' in name:
-                target_categories['Spark Notebooks'].append(launchable)
+                categories['Spark Notebooks'].append(launchable)
             elif 'whisper' in name:
-                target_categories['Whisper Notebooks'].append(launchable)
+                categories['Whisper Notebooks'].append(launchable)
             elif 'sesame' in name or 'gemma' in name:
-                target_categories['Other Notebooks'].append(launchable)
+                categories['Other Notebooks'].append(launchable)
             continue
         
         # Check for Vision/Multimodal (dedicated section before family groupings)
-        if model_type == 'Vision' and not is_kaggle and not 'grpo' in notebook:
+        if model_type == 'Vision' and not 'grpo' in notebook:
             categories['Vision (Multimodal) Notebooks'].append(launchable)
             # Also add to family grouping
             if 'llama' in name:
-                target_categories['Llama Notebooks'].append(launchable)
+                categories['Llama Notebooks'].append(launchable)
             elif 'qwen' in name:
-                target_categories['Qwen Notebooks'].append(launchable)
+                categories['Qwen Notebooks'].append(launchable)
             elif 'pixtral' in name or 'mistral' in name:
-                target_categories['Mistral Notebooks'].append(launchable)
+                categories['Mistral Notebooks'].append(launchable)
             elif 'gemma' in name:
-                target_categories['Gemma Notebooks'].append(launchable)
+                categories['Gemma Notebooks'].append(launchable)
             continue
         
         # Now categorize by family/type for all remaining notebooks
         if 'grpo' in name or 'grpo' in notebook:
-            target_categories['GRPO Notebooks'].append(launchable)
+            categories['GRPO Notebooks'].append(launchable)
         elif 'gpt-oss' in name or 'gpt_oss' in name or 'gpt oss' in name:
-            target_categories['GPT-OSS Notebooks'].append(launchable)
+            categories['GPT-OSS Notebooks'].append(launchable)
         elif 'gemma' in name:
-            target_categories['Gemma Notebooks'].append(launchable)
+            categories['Gemma Notebooks'].append(launchable)
         elif 'liquid' in name or 'falcon' in name:
-            target_categories['Linear Attention Notebooks'].append(launchable)
+            categories['Linear Attention Notebooks'].append(launchable)
         elif 'llama' in name or 'llasa' in name:
-            target_categories['Llama Notebooks'].append(launchable)
+            categories['Llama Notebooks'].append(launchable)
         elif 'mistral' in name or 'zephyr' in name or 'pixtral' in name:
-            target_categories['Mistral Notebooks'].append(launchable)
+            categories['Mistral Notebooks'].append(launchable)
         elif 'orpheus' in name:
-            target_categories['Orpheus Notebooks'].append(launchable)
+            categories['Orpheus Notebooks'].append(launchable)
         elif 'oute' in name:
-            target_categories['Oute Notebooks'].append(launchable)
+            categories['Oute Notebooks'].append(launchable)
         elif 'phi' in name:
-            target_categories['Phi Notebooks'].append(launchable)
+            categories['Phi Notebooks'].append(launchable)
         elif 'qwen' in name:
-            target_categories['Qwen Notebooks'].append(launchable)
+            categories['Qwen Notebooks'].append(launchable)
         elif 'spark' in name:
-            target_categories['Spark Notebooks'].append(launchable)
+            categories['Spark Notebooks'].append(launchable)
         elif 'whisper' in name:
-            target_categories['Whisper Notebooks'].append(launchable)
+            categories['Whisper Notebooks'].append(launchable)
         else:
-            target_categories['Other Notebooks'].append(launchable)
+            categories['Other Notebooks'].append(launchable)
     
     # Remove empty categories
     categories = OrderedDict((k, v) for k, v in categories.items() if v)
-    kaggle_categories = OrderedDict((k, v) for k, v in kaggle_categories.items() if v)
     
-    return categories, kaggle_categories
+    return categories
 
 
 def format_model_name(launchable: Dict) -> str:
@@ -334,18 +313,18 @@ def format_model_name(launchable: Dict) -> str:
 def generate_table(launchables: List[Dict]) -> str:
     """
     Generate markdown table matching Unsloth's exact format with GPU requirements added.
-    Creates separate sections for regular notebooks and Kaggle notebooks (in collapsible).
+    Kaggle notebooks are skipped as they're redundant for Brev.
 
     Args:
         launchables: List of launchable metadata dictionaries
 
     Returns:
-        Markdown table as string with both regular and Kaggle sections
+        Markdown table as string
     """
     logger.info(f"Generating table for {len(launchables)} launchables")
     
-    # Categorize launchables (returns both regular and kaggle categories)
-    categories, kaggle_categories = categorize_launchables(launchables)
+    # Categorize launchables (Kaggle notebooks are filtered out)
+    categories = categorize_launchables(launchables)
     
     # Build tables by category
     lines = []
@@ -449,56 +428,6 @@ def generate_table(launchables: List[Dict]) -> str:
                 
                 # Add row
                 lines.append(f"| {formatted_name} | {type_cell} | {gpu_req} | {notebook_link} |")
-    
-    lines.append("")
-    
-    # Kaggle notebooks section (collapsible)
-    if kaggle_categories:
-        lines.append("# 📒 Kaggle Notebooks")
-        lines.append("<details>")
-        lines.append("  <summary>")
-        lines.append("    Click for all our Kaggle notebooks categorized by model:")
-        lines.append("  </summary>")
-        lines.append("")
-        
-        for category_name, category_launchables in kaggle_categories.items():
-            # Sort alphabetically by name within each category
-            category_launchables.sort(key=lambda x: x.get('notebook', ''))
-            
-            # Add category header
-            lines.append(f"### {category_name}")
-            lines.append("| Model | Type | GPU Requirements | Notebook Link |")
-            lines.append("| --- | --- | --- | --- |")
-            
-            for launchable in category_launchables:
-                formatted_name = format_model_name(launchable)
-                model_type = get_model_type(launchable)
-                
-                # GPU requirements
-                gpu_info = launchable.get('gpu', {})
-                gpu_tier = gpu_info.get('tier', 'L4')
-                min_vram = gpu_info.get('min_vram_gb', 16)
-                gpu_req = f"{gpu_tier} ({min_vram}GB)"
-                
-                # Get launchable path
-                launchable_path = launchable.get('path', launchable.get('id', ''))
-                notebook_name = launchable.get('notebook', 'notebook.ipynb')
-                
-                # URL-encode for GitHub links
-                encoded_path = quote(launchable_path)
-                encoded_notebook = quote(notebook_name)
-                github_path = f"https://github.com/brevdev/unsloth-notebook-adaptor/blob/main/converted/{encoded_path}/{encoded_notebook}"
-                
-                # Create link using HTML anchor tag
-                notebook_link = f'<a href="{github_path}" target="_blank" rel="noopener noreferrer">View Notebook</a>'
-                
-                # If model type is empty, leave it blank
-                type_cell = model_type if model_type and model_type != 'Fine-tuning' else ''
-                
-                # Add row
-                lines.append(f"| {formatted_name} | {type_cell} | {gpu_req} | {notebook_link} |")
-        
-        lines.append("</details>")
     
     lines.append("")
     lines.append("<!-- END OF EDITING -->")
