@@ -95,20 +95,20 @@ def test_generate_table(sample_launchables):
     assert "| Model | Type | GPU Requirements | Notebook Link |" in table
     assert "|-------|------|------------------|---------------|" in table
     
-    # Check categories are present
-    assert "### Main Notebooks" in table
-    assert "### Vision (Multimodal) Notebooks" in table
-    assert "### Speech-to-Text (STT) Notebooks" in table
+    # Check family-based categories are present
+    assert "### Llama Notebooks" in table
+    assert "### Vision Notebooks" in table
+    assert "### Audio Notebooks" in table
     
     # Check all models are in table (with bold formatting)
     assert "**Llama 3.1 (8B)**" in table
     assert "**Gemma 3 Vision**" in table
     assert "**Whisper Large V3**" in table
     
-    # Check GPU requirements (combined format)
-    assert "L4 (16GB)" in table
-    assert "A100-40GB (16GB)" in table
-    assert "L4 (20GB)" in table
+    # Check GPU requirements (with <br/> formatting)
+    assert "L4<br/>(16GB VRAM)" in table
+    assert "A100-40GB<br/>(16GB VRAM)" in table
+    assert "L4<br/>(20GB VRAM)" in table
     
     # Check notebook links are present
     assert "[View Notebook]" in table
