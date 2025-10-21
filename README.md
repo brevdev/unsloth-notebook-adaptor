@@ -1,7 +1,7 @@
 # 🚀 Unsloth to NVIDIA Brev Adapter
 
-[![Sync Notebooks](https://github.com/brevdev/unsloth-notebook-adaptor/actions/workflows/sync-and-convert.yml/badge.svg?branch=main)](https://github.com/brevdev/unsloth-notebook-adaptor/actions/workflows/sync-and-convert.yml)
-[![Test Conversions](https://github.com/brevdev/unsloth-notebook-adaptor/actions/workflows/test-conversions.yml/badge.svg?branch=main)](https://github.com/brevdev/unsloth-notebook-adaptor/actions/workflows/test-conversions.yml)
+[![Sync Notebooks](https://github.com/brevdev/unsloth-notebook-adaptor/workflows/Sync%20and%20Convert%20Notebooks/badge.svg)](https://github.com/brevdev/unsloth-notebook-adaptor/actions/workflows/sync-and-convert.yml)
+[![Test Conversions](https://github.com/brevdev/unsloth-notebook-adaptor/workflows/Test%20Conversions/badge.svg)](https://github.com/brevdev/unsloth-notebook-adaptor/actions/workflows/test-conversions.yml)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License: LGPL-3.0](https://img.shields.io/badge/License-LGPL%203.0-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 
