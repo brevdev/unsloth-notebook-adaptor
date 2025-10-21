@@ -1,5 +1,5 @@
 # Requirements for Kaggle Phi 3 Medium Conversational
-# Generated: 2025-10-21T15:01:35.251276+00:00
+# Generated: 2025-10-21T15:07:09.774659+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

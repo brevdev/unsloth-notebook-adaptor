@@ -1,5 +1,5 @@
 # Requirements for Kaggle Granite4
-# Generated: 2025-10-21T15:01:33.599101+00:00
+# Generated: 2025-10-21T15:07:06.392146+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

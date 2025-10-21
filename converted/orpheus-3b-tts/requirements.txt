@@ -1,5 +1,5 @@
 # Requirements for Orpheus (3B) Tts
-# Generated: 2025-10-21T15:01:37.301238+00:00
+# Generated: 2025-10-21T15:07:06.167005+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
