@@ -1,5 +1,5 @@
 # Requirements for Gemma3 (270M)
-# Generated: 2025-10-21T17:26:14.029913+00:00
+# Generated: 2025-10-21T17:28:22.325135+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
