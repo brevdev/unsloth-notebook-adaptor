@@ -10,6 +10,7 @@ import argparse
 import json
 import logging
 import sys
+from collections import OrderedDict
 from pathlib import Path
 from typing import List, Dict
 from urllib.parse import quote
@@ -140,61 +141,56 @@ def get_model_type(launchable: Dict) -> str:
 
 def categorize_launchables(launchables: List[Dict]) -> Dict[str, List[Dict]]:
     """
-    Categorize launchables by type for grouped display.
+    Categorize launchables to match Unsloth's exact structure.
 
     Args:
         launchables: List of launchable metadata dictionaries
 
     Returns:
-        Dictionary mapping category names to lists of launchables
+        Dictionary mapping category names to lists of launchables (ordered)
     """
-    categories = {
-        'Main Notebooks': [],
-        'Vision (Multimodal) Notebooks': [],
-        'Text-to-Speech (TTS) Notebooks': [],
-        'Speech-to-Text (STT) Notebooks': [],
-        'GRPO Notebooks': [],
-        'Other Notebooks': []
-    }
+    # Use OrderedDict to maintain category order
+    categories = OrderedDict([
+        ('Main Notebooks', []),
+        ('Vision Notebooks', []),
+        ('Kaggle Notebooks', []),
+        ('Spark Notebooks', []),
+        ('Whisper Notebooks', []),
+        ('Other Notebooks', [])
+    ])
     
     for launchable in launchables:
         model_type = get_model_type(launchable)
-        tags = launchable.get('tags', [])
         name = launchable.get('name', '').lower()
         notebook = launchable.get('notebook', '').lower()
         
-        # Check if it's a Kaggle variant (goes to Other)
-        is_kaggle = 'kaggle' in notebook or 'kaggle' in name
-        
-        # Categorize based on type and tags
-        if model_type == 'Vision':
-            categories['Vision (Multimodal) Notebooks'].append(launchable)
-        elif model_type in ['TTS', 'Audio'] and 'text-to-speech' in tags:
-            categories['Text-to-Speech (TTS) Notebooks'].append(launchable)
-        elif model_type == 'STT':
-            categories['Speech-to-Text (STT) Notebooks'].append(launchable)
-        elif model_type == 'GRPO':
-            categories['GRPO Notebooks'].append(launchable)
-        elif is_kaggle:
-            # Kaggle notebooks go to Other
-            categories['Other Notebooks'].append(launchable)
+        # Categorize based on Unsloth's structure
+        if 'kaggle' in notebook or 'kaggle' in name:
+            # Kaggle variants
+            categories['Kaggle Notebooks'].append(launchable)
+        elif 'spark' in name and 'tts' in name:
+            # Spark TTS models
+            categories['Spark Notebooks'].append(launchable)
+        elif 'whisper' in name:
+            # Whisper STT models
+            categories['Whisper Notebooks'].append(launchable)
+        elif model_type == 'Vision' or 'vision' in name or 'multimodal' in name:
+            # Vision/Multimodal models
+            categories['Vision Notebooks'].append(launchable)
+        elif any(main in name for main in ['gemma3n', 'qwen3', 'qwen2', 'gemma3', 'gemma2', 'llama3', 'phi', 'mistral']):
+            # Main featured models (Gemma, Qwen, Llama, Phi, Mistral families)
+            categories['Main Notebooks'].append(launchable)
         else:
-            # Add to Main if it's a popular/featured model type
-            is_main = any(popular in name for popular in ['llama3', 'gemma3', 'qwen3', 'qwen2', 'phi', 'mistral'])
-            is_main_type = model_type in ['Conversational', 'Alpaca', 'Reasoning', 'Inference', 'ORPO', 'DPO']
-            
-            if is_main or is_main_type:
-                categories['Main Notebooks'].append(launchable)
-            else:
-                categories['Other Notebooks'].append(launchable)
+            # Everything else
+            categories['Other Notebooks'].append(launchable)
     
     # Remove empty categories
-    return {k: v for k, v in categories.items() if v}
+    return OrderedDict((k, v) for k, v in categories.items() if v)
 
 
 def generate_table(launchables: List[Dict]) -> str:
     """
-    Generate markdown table from launchables list.
+    Generate markdown table matching Unsloth's format with GPU requirements added.
 
     Args:
         launchables: List of launchable metadata dictionaries
@@ -223,29 +219,28 @@ def generate_table(launchables: List[Dict]) -> str:
             name = launchable.get('name', 'Unknown')
             model_type = get_model_type(launchable)
             
-            # Format name with bold and size
+            # Format name - match Unsloth's bold style
             formatted_name = f"**{name}**"
             
-            # GPU requirements
+            # GPU requirements (our additional column)
             gpu_info = launchable.get('gpu', {})
             gpu_tier = gpu_info.get('tier', 'L4')
             min_vram = gpu_info.get('min_vram_gb', 16)
-            gpu_req = f"{gpu_tier} ({min_vram}GB)"
+            gpu_req = f"{gpu_tier}<br/>({min_vram}GB VRAM)"
             
-            # Get launchable path (use 'path' or 'id' which matches directory name)
+            # Get launchable path
             launchable_path = launchable.get('path', launchable.get('id', name.lower().replace(' ', '-')))
             notebook_name = launchable.get('notebook', 'notebook.ipynb')
             
-            # URL-encode path components for GitHub markdown links
-            # This handles spaces and special characters in filenames
+            # URL-encode for GitHub links
             encoded_path = quote(launchable_path)
             encoded_notebook = quote(notebook_name)
             github_path = f"converted/{encoded_path}/{encoded_notebook}"
             
-            # Create link to the notebook in the repo
-            notebook_link = f"[View Notebook]({github_path})"
+            # Create link - match Unsloth's style
+            notebook_link = f"[Open in Brev]({github_path})"
             
-            # Add row
+            # Add row with proper alignment
             lines.append(f"| {formatted_name} | {model_type} | {gpu_req} | {notebook_link} |")
     
     return '\n'.join(lines)
