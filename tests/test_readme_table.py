@@ -93,34 +93,45 @@ def test_generate_table(sample_launchables):
     
     # Check new Unsloth-style table structure
     assert "| Model | Type | GPU Requirements | Notebook Link |" in table
-    assert "|-------|------|------------------|---------------|" in table
+    assert "| --- | --- | --- | --- |" in table
     
     # Check family-based categories are present
     assert "### Llama Notebooks" in table
-    assert "### Vision Notebooks" in table
-    assert "### Audio Notebooks" in table
+    assert "### Gemma Notebooks" in table
+    assert "### Whisper Notebooks" in table
     
-    # Check all models are in table (with bold formatting)
-    assert "**Llama 3.1 (8B)**" in table
-    assert "**Gemma 3 Vision**" in table
-    assert "**Whisper Large V3**" in table
+    # Check all models are in table (with bold formatting from notebook filenames)
+    assert "**Llama3.1_(8B)**" in table
+    assert "**Gemma3_Vision**" in table
+    assert "**Whisper**" in table
     
-    # Check GPU requirements (with <br/> formatting)
-    assert "L4<br/>(16GB VRAM)" in table
-    assert "A100-40GB<br/>(16GB VRAM)" in table
-    assert "L4<br/>(20GB VRAM)" in table
+    # Check GPU requirements (new format without <br/> or VRAM text)
+    assert "L4 (16GB)" in table
+    assert "A100-40GB (16GB)" in table
+    assert "L4 (20GB)" in table
     
-    # Check notebook links are present
-    assert "[View Notebook]" in table
-    assert "converted/" in table
+    # Check notebook links use HTML anchor tags with full GitHub URLs
+    assert "<a href=" in table
+    assert "https://github.com/brevdev/unsloth-notebook-adaptor/blob/main/converted/" in table
+    assert 'target="_blank"' in table
+    assert 'rel="noopener noreferrer"' in table
+    assert "View Notebook</a>" in table
+    
+    # Check auto-generated markers
+    assert "<!-- START OF EDITING -->" in table
+    assert "<!-- END OF EDITING -->" in table
 
 
 def test_generate_table_empty():
     """Test table generation with empty list."""
     table = generate_table([])
     
-    # Empty list returns empty string (no categories to display)
-    assert table == ""
+    # Empty list still includes markers but no category sections
+    assert "<!-- START OF EDITING -->" in table
+    assert "<!-- END OF EDITING -->" in table
+    
+    # Should not have any category headers
+    assert "###" not in table
 
 
 def test_update_readme_success(sample_launchables, tmp_path):
@@ -159,8 +170,8 @@ Some content after.
     # Check old content is removed
     assert "Old table content here" not in updated_content
     
-    # Check new content is present
-    assert "Llama 3.1 (8B)" in updated_content
+    # Check new content is present (uses notebook filename format)
+    assert "**Llama3.1_(8B)**" in updated_content
     
     # Check surrounding content preserved
     assert "Some content before." in updated_content
@@ -216,15 +227,16 @@ def test_url_encoding_in_links():
     
     table = generate_table(launchables)
     
-    # Check that spaces are encoded as %20
+    # Check that spaces are encoded as %20 in the href
     assert "huggingface%20course-llama3" in table
     assert "HuggingFace%20Course-Llama3.1_%288B%29-GRPO.ipynb" in table
     
-    # Check that parentheses are encoded
+    # Check that parentheses are encoded in the href
     assert "%28" in table  # (
     assert "%29" in table  # )
     
-    # Check that the raw space/paren characters are NOT in the link
-    # (The link should be encoded, but the display name can have them)
-    assert "[View Notebook](converted/huggingface%20course-llama3/" in table
+    # Check HTML anchor tag format with full GitHub URL
+    assert '<a href="https://github.com/brevdev/unsloth-notebook-adaptor/blob/main/converted/huggingface%20course-llama3/' in table
+    assert 'target="_blank"' in table
+    assert 'rel="noopener noreferrer"' in table
 
