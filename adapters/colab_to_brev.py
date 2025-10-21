@@ -92,18 +92,16 @@ subprocess.check_call([
         if '%%capture' in code and 'COLAB_' in code:
             logger.debug("Removing Colab conditional installation block")
             # Replace entire cell with simple Brev installation
+            # Use sys.executable -m pip to ensure installation to the kernel's Python
             return '''# Install dependencies for Brev
 import subprocess
-import shutil
-
-# Find pip in the system PATH
-pip_cmd = shutil.which("pip") or shutil.which("pip3") or "pip"
+import sys
 
 # Install Unsloth
-subprocess.check_call([pip_cmd, "install", "unsloth"])
+subprocess.check_call([sys.executable, "-m", "pip", "install", "unsloth"])
 # Install transformers and trl with specific versions
-subprocess.check_call([pip_cmd, "install", "transformers==4.56.2"])
-subprocess.check_call([pip_cmd, "install", "--no-deps", "trl==0.22.2"])'''
+subprocess.check_call([sys.executable, "-m", "pip", "install", "transformers==4.56.2"])
+subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-deps", "trl==0.22.2"])'''
         
         # Remove standalone %%capture magic commands (won't work outside IPython)
         if '%%capture' in code:
@@ -227,8 +225,8 @@ subprocess.check_call([pip_cmd, "install", "--no-deps", "trl==0.22.2"])'''
                 # Special handling for pip
                 if command.startswith('pip install'):
                     packages = command.replace('pip install', '').strip()
-                    # Find pip in system PATH
-                    converted = f'{indent}pip_cmd = shutil.which("pip") or shutil.which("pip3") or "pip"\n{indent}subprocess.check_call([pip_cmd, "install", {repr(packages)}])'
+                    # Use sys.executable -m pip to install to kernel's Python
+                    converted = f'{indent}subprocess.check_call([sys.executable, "-m", "pip", "install", {repr(packages)}])'
                 # Special handling for nvidia-smi (non-critical)
                 elif 'nvidia-smi' in command:
                     converted = f'{indent}subprocess.run([{repr(command)}], check=False, shell=True)'
@@ -243,8 +241,8 @@ subprocess.check_call([pip_cmd, "install", "--no-deps", "trl==0.22.2"])'''
                 needs_imports = True
                 indent = line[:len(line) - len(stripped)]
                 packages = stripped.replace('%pip install', '').strip()
-                # Find pip in system PATH
-                converted = f'{indent}pip_cmd = shutil.which("pip") or shutil.which("pip3") or "pip"\n{indent}subprocess.check_call([pip_cmd, "install", {repr(packages)}])'
+                # Use sys.executable -m pip to install to kernel's Python
+                converted = f'{indent}subprocess.check_call([sys.executable, "-m", "pip", "install", {repr(packages)}])'
                 converted_lines.append(converted)
             else:
                 converted_lines.append(line)
@@ -258,8 +256,8 @@ subprocess.check_call([pip_cmd, "install", "--no-deps", "trl==0.22.2"])'''
             imports_needed = []
             if 'import subprocess' not in result:
                 imports_needed.append('import subprocess')
-            if 'import shutil' not in result:
-                imports_needed.append('import shutil')
+            if 'import sys' not in result:
+                imports_needed.append('import sys')
             
             if imports_needed:
                 result = '\n'.join(imports_needed) + '\n\n' + result
