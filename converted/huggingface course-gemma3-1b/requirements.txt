@@ -1,5 +1,5 @@
 # Requirements for Huggingface Course Gemma3 (1B) Grpo
-# Generated: 2025-10-21T06:07:54.062294+00:00
+# Generated: 2025-10-21T14:51:06.277431+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

@@ -1,5 +1,5 @@
 # Requirements for Liquid Lfm2 Conversational
-# Generated: 2025-10-21T06:07:55.981966+00:00
+# Generated: 2025-10-21T14:51:05.094269+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

@@ -1,5 +1,5 @@
 # Requirements for gpt-oss-20b-GRPO
-# Generated: 2025-10-21T06:07:54.732900+00:00
+# Generated: 2025-10-21T14:51:03.782296+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

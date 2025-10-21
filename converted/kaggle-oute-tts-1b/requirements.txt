@@ -1,5 +1,5 @@
 # Requirements for Kaggle Oute Tts (1B)
-# Generated: 2025-10-21T06:07:55.044144+00:00
+# Generated: 2025-10-21T14:51:01.277817+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

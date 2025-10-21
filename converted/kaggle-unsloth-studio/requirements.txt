@@ -1,5 +1,5 @@
 # Requirements for Kaggle Unsloth Studio
-# Generated: 2025-10-21T06:07:53.959639+00:00
+# Generated: 2025-10-21T14:51:07.731529+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

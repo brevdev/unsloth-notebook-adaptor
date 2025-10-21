@@ -1,5 +1,5 @@
 # Requirements for Huggingface Course Llama3
-# Generated: 2025-10-21T06:07:50.128148+00:00
+# Generated: 2025-10-21T14:51:01.620403+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

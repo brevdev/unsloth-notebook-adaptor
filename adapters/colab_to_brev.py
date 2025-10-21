@@ -338,6 +338,10 @@ print("=" * 60)
             call = match.group(1)
             # Check if device_map already present
             if 'device_map' not in call:
+                # Strip any trailing whitespace and commas before adding device_map
+                call = call.rstrip()
+                if call.endswith(','):
+                    call = call.rstrip(',').rstrip()
                 # Add device_map before the closing parenthesis
                 return call + ',\n    device_map="auto"'
             return call
