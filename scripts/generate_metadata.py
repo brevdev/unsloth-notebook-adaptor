@@ -21,15 +21,35 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
+def extract_notebook_name(notebook_filename: str) -> str:
+    """
+    Extract a clean model name from notebook filename.
+    
+    Args:
+        notebook_filename: Name of the notebook file
+    
+    Returns:
+        Clean model name
+    """
+    # Remove .ipynb extension
+    name = notebook_filename.replace('.ipynb', '')
+    
+    # Remove common prefixes
+    name = name.replace('Kaggle-', '').replace('HuggingFace Course-', '')
+    
+    return name
+
+
 def scan_launchables(notebooks_dir: Path) -> list:
     """
     Scan converted directory for launchables.
+    Creates individual entries for EACH notebook file (not grouped by directory).
 
     Args:
         notebooks_dir: Directory containing converted notebooks
 
     Returns:
-        List of launchable metadata dictionaries
+        List of launchable metadata dictionaries (one per notebook)
     """
     launchables = []
     
@@ -48,36 +68,38 @@ def scan_launchables(notebooks_dir: Path) -> list:
             with open(config_file, 'r') as f:
                 brev_config = json.load(f)
             
-            # Find notebook file (look for any .ipynb file)
-            notebook_files = list(launchable_dir.glob('*.ipynb'))
+            # Find ALL notebook files in this directory
+            notebook_files = sorted(launchable_dir.glob('*.ipynb'))
             if not notebook_files:
-                logger.warning(f"No notebook found in {launchable_dir}")
+                logger.warning(f"No notebooks found in {launchable_dir}")
                 continue
             
-            # Use first notebook found (should only be one)
-            notebook_file = notebook_files[0]
-            
-            # List companion files
+            # List companion files (shared across all notebooks in directory)
             companion_files = []
             for file_path in launchable_dir.iterdir():
-                if file_path.is_file():
+                if file_path.is_file() and not file_path.name.endswith('.ipynb'):
                     companion_files.append(file_path.name)
             
-            # Build launchable metadata
-            launchable = {
-                'id': launchable_dir.name,
-                'name': brev_config.get('name', launchable_dir.name),
-                'description': brev_config.get('description', ''),
-                'notebook': notebook_file.name,
-                'path': str(launchable_dir.relative_to(notebooks_dir)),
-                'gpu': brev_config.get('gpu', {}),
-                'tags': brev_config.get('tags', []),
-                'upstream': brev_config.get('upstream', {}),
-                'files': companion_files
-            }
-            
-            launchables.append(launchable)
-            logger.info(f"Found launchable: {launchable['name']}")
+            # Create a separate launchable entry for EACH notebook
+            for notebook_file in notebook_files:
+                # Extract specific model name from notebook filename
+                notebook_name = extract_notebook_name(notebook_file.name)
+                
+                # Build launchable metadata for this specific notebook
+                launchable = {
+                    'id': f"{launchable_dir.name}/{notebook_file.stem}",
+                    'name': notebook_name,
+                    'description': brev_config.get('description', ''),
+                    'notebook': notebook_file.name,
+                    'path': str(launchable_dir.relative_to(notebooks_dir)),
+                    'gpu': brev_config.get('gpu', {}),
+                    'tags': brev_config.get('tags', []),
+                    'upstream': brev_config.get('upstream', {}),
+                    'files': companion_files + [notebook_file.name]
+                }
+                
+                launchables.append(launchable)
+                logger.info(f"Found launchable: {notebook_name}")
             
         except Exception as e:
             logger.error(f"Error processing {launchable_dir}: {e}")

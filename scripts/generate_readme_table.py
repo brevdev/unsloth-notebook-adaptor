@@ -79,59 +79,60 @@ def generate_description(launchable: Dict) -> str:
 def get_model_type(launchable: Dict) -> str:
     """
     Determine the model type/use case from tags and notebook name.
+    Matches Unsloth's categorization approach.
 
     Args:
         launchable: Launchable metadata dictionary
 
     Returns:
-        Model type string (e.g., "Vision", "TTS", "GRPO", etc.)
+        Model type string (e.g., "Conversational", "Vision", "TTS", etc.)
     """
     tags = launchable.get('tags', [])
+    name = launchable.get('name', '').lower()
     notebook = launchable.get('notebook', '').lower()
     
-    # Check tags first
-    if 'vision' in tags or 'multimodal' in tags:
-        return 'Vision'
-    elif 'text-to-speech' in tags or 'tts' in tags:
-        return 'TTS'
-    elif 'speech-to-text' in tags or 'stt' in tags:
-        return 'STT'
-    elif 'grpo' in tags or 'reinforcement-learning' in tags:
-        return 'GRPO'
-    elif 'audio' in tags:
-        return 'Audio'
+    # Check tags and filename for clues
+    combined = f"{name} {notebook}".lower()
     
-    # Check notebook filename for clues
-    if 'vision' in notebook:
+    # Check for specific types in order of specificity
+    if 'vision' in combined or 'multimodal' in tags:
         return 'Vision'
-    elif 'tts' in notebook or 'text-to-speech' in notebook:
+    elif 'tts' in combined or 'text-to-speech' in tags:
         return 'TTS'
-    elif 'stt' in notebook or 'whisper' in notebook:
+    elif 'whisper' in combined or 'speech-to-text' in tags or 'stt' in tags:
         return 'STT'
-    elif 'grpo' in notebook:
+    elif 'grpo' in combined or 'reinforcement-learning' in tags:
         return 'GRPO'
-    elif 'alpaca' in notebook:
-        return 'Alpaca'
-    elif 'orpo' in notebook:
-        return 'ORPO'
-    elif 'dpo' in notebook:
-        return 'DPO'
-    elif 'conversational' in notebook or 'chat' in notebook:
+    elif 'conversational' in combined or 'chat' in combined:
         return 'Conversational'
-    elif 'inference' in notebook:
+    elif 'alpaca' in combined:
+        return 'Alpaca'
+    elif 'inference' in combined:
         return 'Inference'
-    elif 'reasoning' in notebook:
+    elif 'reasoning' in combined:
         return 'Reasoning'
-    elif 'thinking' in notebook:
+    elif 'orpo' in combined:
+        return 'ORPO'
+    elif 'dpo' in combined:
+        return 'DPO'
+    elif 'thinking' in combined:
         return 'Thinking'
-    elif 'synthetic' in notebook:
+    elif 'ollama' in combined:
+        return 'Ollama'
+    elif 'raft' in combined:
+        return 'RAFT'
+    elif 'synthetic' in combined:
         return 'Synthetic Data'
-    elif 'instruct' in notebook:
+    elif 'instruct' in combined:
         return 'Instruct'
-    elif 'cpt' in notebook:
+    elif 'cpt' in combined:
         return 'CPT'
-    elif 'classification' in notebook:
+    elif 'tool' in combined and 'calling' in combined:
+        return 'Tool Calling'
+    elif 'classification' in combined:
         return 'Classification'
+    elif 'studio' in combined:
+        return 'Studio'
     
     # Default
     return 'Fine-tuning'
@@ -159,6 +160,11 @@ def categorize_launchables(launchables: List[Dict]) -> Dict[str, List[Dict]]:
     for launchable in launchables:
         model_type = get_model_type(launchable)
         tags = launchable.get('tags', [])
+        name = launchable.get('name', '').lower()
+        notebook = launchable.get('notebook', '').lower()
+        
+        # Check if it's a Kaggle variant (goes to Other)
+        is_kaggle = 'kaggle' in notebook or 'kaggle' in name
         
         # Categorize based on type and tags
         if model_type == 'Vision':
@@ -169,10 +175,15 @@ def categorize_launchables(launchables: List[Dict]) -> Dict[str, List[Dict]]:
             categories['Speech-to-Text (STT) Notebooks'].append(launchable)
         elif model_type == 'GRPO':
             categories['GRPO Notebooks'].append(launchable)
+        elif is_kaggle:
+            # Kaggle notebooks go to Other
+            categories['Other Notebooks'].append(launchable)
         else:
-            # Add to Main if it's a popular/featured model, otherwise Other
-            name = launchable.get('name', '').lower()
-            if any(popular in name for popular in ['llama', 'gemma', 'qwen', 'phi', 'mistral']):
+            # Add to Main if it's a popular/featured model type
+            is_main = any(popular in name for popular in ['llama3', 'gemma3', 'qwen3', 'qwen2', 'phi', 'mistral'])
+            is_main_type = model_type in ['Conversational', 'Alpaca', 'Reasoning', 'Inference', 'ORPO', 'DPO']
+            
+            if is_main or is_main_type:
                 categories['Main Notebooks'].append(launchable)
             else:
                 categories['Other Notebooks'].append(launchable)
