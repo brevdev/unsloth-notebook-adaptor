@@ -91,17 +91,23 @@ subprocess.check_call([
         # (Has %%capture and COLAB_ environment check)
         if '%%capture' in code and 'COLAB_' in code:
             logger.debug("Removing Colab conditional installation block")
-            # Replace entire cell with simple Brev installation
-            # Use sys.executable -m pip to ensure installation to the kernel's Python
-            return '''# Install dependencies for Brev
-import subprocess
+            # Replace with environment diagnostic cell
+            return '''# Environment Check for Brev
 import sys
 
-# Install Unsloth
-subprocess.check_call([sys.executable, "-m", "pip", "install", "unsloth"])
-# Install transformers and trl with specific versions
-subprocess.check_call([sys.executable, "-m", "pip", "install", "transformers==4.56.2"])
-subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-deps", "trl==0.22.2"])'''
+print(f"Python executable: {sys.executable}")
+print(f"Python version: {sys.version}")
+
+try:
+    from unsloth import FastLanguageModel
+    print("\\n✅ Unsloth loaded successfully")
+    print(f"   Location: {FastLanguageModel.__module__}")
+except ImportError as e:
+    print(f"\\n❌ Unsloth not available in this kernel")
+    print(f"   Error: {e}")
+    print(f"\\n⚠️  Please ensure you're using the 'Python 3 (ipykernel)' kernel")
+    print(f"   and that unsloth is installed in the system Python.")
+    raise'''
         
         # Remove standalone %%capture magic commands (won't work outside IPython)
         if '%%capture' in code:
