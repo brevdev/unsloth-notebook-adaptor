@@ -141,17 +141,23 @@ def get_model_type(launchable: Dict) -> str:
 
 def categorize_launchables(launchables: List[Dict]) -> Dict[str, List[Dict]]:
     """
-    Categorize launchables by model family to match Unsloth's structure.
-    Matches the exact ordering from Unsloth's README.
+    Categorize launchables to match Unsloth's exact structure.
+    Includes top-level featured sections, then family groupings.
 
     Args:
         launchables: List of launchable metadata dictionaries
 
     Returns:
-        Dictionary mapping category names to lists of launchables (ordered)
+        Tuple of (regular_categories, kaggle_categories) OrderedDicts
     """
     # Use OrderedDict to maintain category order - match Unsloth's exact structure
+    # Top-level sections first, then family groupings
     categories = OrderedDict([
+        ('Main Notebooks', []),
+        ('Text-to-Speech (TTS) Notebooks', []),
+        ('Vision (Multimodal) Notebooks', []),
+        ('BERT Notebooks', []),
+        ('Specific use-case Notebooks', []),
         ('GRPO Notebooks', []),
         ('GPT-OSS Notebooks', []),
         ('Gemma Notebooks', []),
@@ -167,7 +173,7 @@ def categorize_launchables(launchables: List[Dict]) -> Dict[str, List[Dict]]:
         ('Other Notebooks', []),
     ])
     
-    # Separate list for Kaggle variants (in collapsible section)
+    # Separate list for Kaggle variants (same structure, in collapsible section)
     kaggle_categories = OrderedDict([
         ('GRPO Notebooks', []),
         ('GPT-OSS Notebooks', []),
@@ -184,10 +190,27 @@ def categorize_launchables(launchables: List[Dict]) -> Dict[str, List[Dict]]:
         ('Other Notebooks', []),
     ])
     
+    # Define which notebooks go in "Main Notebooks" (featured)
+    main_featured = [
+        'Gemma3N_(4B)-Conversational',  # Multimodal
+        'Qwen3_(14B)-Reasoning-Conversational',
+        'Qwen3_(4B)-GRPO',
+        'Gemma3_(4B)',  # Conversational
+        'Llama3.2_(1B_and_3B)-Conversational',
+        'Phi_4-Conversational',
+        'Llama3.2_(11B)-Vision',
+        'Llama3.1_(8B)-Alpaca',
+        'Mistral_v0.3_(7B)-Conversational',
+        'DeepSeek_R1_0528_Qwen3_(8B)_GRPO',
+        'Meta_Synthetic_Data_Llama3_2_(3B)',
+        'Sesame_CSM_(1B)-TTS',
+    ]
+    
     for launchable in launchables:
         model_type = get_model_type(launchable)
         name = launchable.get('name', '').lower()
         notebook = launchable.get('notebook', '').lower()
+        notebook_base = launchable.get('notebook', '').replace('.ipynb', '').replace('Kaggle-', '').replace('HuggingFace Course-', '')
         
         # Check if it's a Kaggle variant first
         is_kaggle = 'kaggle' in notebook or 'kaggle' in name
@@ -195,7 +218,58 @@ def categorize_launchables(launchables: List[Dict]) -> Dict[str, List[Dict]]:
         # Determine which category to use
         target_categories = kaggle_categories if is_kaggle else categories
         
-        # Categorize by family/type (matching Unsloth's exact logic)
+        # For non-Kaggle notebooks, check if it's a Main featured notebook
+        if not is_kaggle and notebook_base in main_featured:
+            categories['Main Notebooks'].append(launchable)
+            continue
+        
+        # Check if it's BERT (special section)
+        if 'bert' in name or 'bert' in notebook:
+            if not is_kaggle:  # BERT section only in main, not Kaggle
+                categories['BERT Notebooks'].append(launchable)
+            else:
+                target_categories['Other Notebooks'].append(launchable)
+            continue
+        
+        # Check for specific use-cases (special section with different table format)
+        # These are notebooks with specific training approaches or use cases
+        if any(x in notebook for x in ['text_completion', 'tool_calling', 'classification']) and not is_kaggle:
+            categories['Specific use-case Notebooks'].append(launchable)
+            continue
+        
+        # Check for TTS/STT (dedicated section before family groupings)
+        if model_type in ['TTS', 'STT'] and not is_kaggle:
+            categories['Text-to-Speech (TTS) Notebooks'].append(launchable)
+            # Also add to family grouping
+            if 'llama' in name or 'llasa' in name:
+                target_categories['Llama Notebooks'].append(launchable)
+            elif 'orpheus' in name:
+                target_categories['Orpheus Notebooks'].append(launchable)
+            elif 'oute' in name:
+                target_categories['Oute Notebooks'].append(launchable)
+            elif 'spark' in name:
+                target_categories['Spark Notebooks'].append(launchable)
+            elif 'whisper' in name:
+                target_categories['Whisper Notebooks'].append(launchable)
+            elif 'sesame' in name or 'gemma' in name:
+                target_categories['Other Notebooks'].append(launchable)
+            continue
+        
+        # Check for Vision/Multimodal (dedicated section before family groupings)
+        if model_type == 'Vision' and not is_kaggle and not 'grpo' in notebook:
+            categories['Vision (Multimodal) Notebooks'].append(launchable)
+            # Also add to family grouping
+            if 'llama' in name:
+                target_categories['Llama Notebooks'].append(launchable)
+            elif 'qwen' in name:
+                target_categories['Qwen Notebooks'].append(launchable)
+            elif 'pixtral' in name or 'mistral' in name:
+                target_categories['Mistral Notebooks'].append(launchable)
+            elif 'gemma' in name:
+                target_categories['Gemma Notebooks'].append(launchable)
+            continue
+        
+        # Now categorize by family/type for all remaining notebooks
         if 'grpo' in name or 'grpo' in notebook:
             target_categories['GRPO Notebooks'].append(launchable)
         elif 'gpt-oss' in name or 'gpt_oss' in name or 'gpt oss' in name:
@@ -288,36 +362,93 @@ def generate_table(launchables: List[Dict]) -> str:
         
         # Add category header
         lines.append(f"### {category_name}")
-        lines.append("| Model | Type | GPU Requirements | Notebook Link |")
-        lines.append("| --- | --- | --- | --- |")
         
-        for launchable in category_launchables:
-            formatted_name = format_model_name(launchable)
-            model_type = get_model_type(launchable)
+        # Special table format for "Specific use-case Notebooks"
+        if category_name == "Specific use-case Notebooks":
+            lines.append("| Usecase | Model | GPU Requirements | Notebook Link |")
+            lines.append("| --- | --- | --- | --- |")
             
-            # GPU requirements (our additional column)
-            gpu_info = launchable.get('gpu', {})
-            gpu_tier = gpu_info.get('tier', 'L4')
-            min_vram = gpu_info.get('min_vram_gb', 16)
-            gpu_req = f"{gpu_tier} ({min_vram}GB)"
+            for launchable in category_launchables:
+                formatted_name = format_model_name(launchable)
+                model_type = get_model_type(launchable)
+                
+                # Use the model type as the "Usecase" for this special section
+                usecase = model_type if model_type else ''
+                
+                # GPU requirements
+                gpu_info = launchable.get('gpu', {})
+                gpu_tier = gpu_info.get('tier', 'L4')
+                min_vram = gpu_info.get('min_vram_gb', 16)
+                gpu_req = f"{gpu_tier} ({min_vram}GB)"
+                
+                # Get launchable path and create link
+                launchable_path = launchable.get('path', launchable.get('id', ''))
+                notebook_name = launchable.get('notebook', 'notebook.ipynb')
+                encoded_path = quote(launchable_path)
+                encoded_notebook = quote(notebook_name)
+                github_path = f"https://github.com/brevdev/unsloth-notebook-adaptor/blob/main/converted/{encoded_path}/{encoded_notebook}"
+                notebook_link = f'<a href="{github_path}" target="_blank" rel="noopener noreferrer">View Notebook</a>'
+                
+                # Add row with Usecase column
+                lines.append(f"| {usecase} | {formatted_name} | {gpu_req} | {notebook_link} |")
+        
+        # Special table format for "BERT Notebooks" (no Type column, no GPU)
+        elif category_name == "BERT Notebooks":
+            lines.append("| Model | GPU Requirements | Notebook Link |")
+            lines.append("| --- | --- | --- |")
             
-            # Get launchable path
-            launchable_path = launchable.get('path', launchable.get('id', ''))
-            notebook_name = launchable.get('notebook', 'notebook.ipynb')
+            for launchable in category_launchables:
+                formatted_name = format_model_name(launchable)
+                
+                # GPU requirements
+                gpu_info = launchable.get('gpu', {})
+                gpu_tier = gpu_info.get('tier', 'L4')
+                min_vram = gpu_info.get('min_vram_gb', 16)
+                gpu_req = f"{gpu_tier} ({min_vram}GB)"
+                
+                # Get launchable path and create link
+                launchable_path = launchable.get('path', launchable.get('id', ''))
+                notebook_name = launchable.get('notebook', 'notebook.ipynb')
+                encoded_path = quote(launchable_path)
+                encoded_notebook = quote(notebook_name)
+                github_path = f"https://github.com/brevdev/unsloth-notebook-adaptor/blob/main/converted/{encoded_path}/{encoded_notebook}"
+                notebook_link = f'<a href="{github_path}" target="_blank" rel="noopener noreferrer">View Notebook</a>'
+                
+                # Add row without Type column
+                lines.append(f"| {formatted_name} | {gpu_req} | {notebook_link} |")
+        
+        # Standard table format for all other sections
+        else:
+            lines.append("| Model | Type | GPU Requirements | Notebook Link |")
+            lines.append("| --- | --- | --- | --- |")
             
-            # URL-encode for GitHub links
-            encoded_path = quote(launchable_path)
-            encoded_notebook = quote(notebook_name)
-            github_path = f"https://github.com/brevdev/unsloth-notebook-adaptor/blob/main/converted/{encoded_path}/{encoded_notebook}"
-            
-            # Create link using HTML anchor tag (match Unsloth's style)
-            notebook_link = f'<a href="{github_path}" target="_blank" rel="noopener noreferrer">View Notebook</a>'
-            
-            # If model type is empty, leave it blank (some Unsloth entries have no type)
-            type_cell = model_type if model_type and model_type != 'Fine-tuning' else ''
-            
-            # Add row
-            lines.append(f"| {formatted_name} | {type_cell} | {gpu_req} | {notebook_link} |")
+            for launchable in category_launchables:
+                formatted_name = format_model_name(launchable)
+                model_type = get_model_type(launchable)
+                
+                # GPU requirements
+                gpu_info = launchable.get('gpu', {})
+                gpu_tier = gpu_info.get('tier', 'L4')
+                min_vram = gpu_info.get('min_vram_gb', 16)
+                gpu_req = f"{gpu_tier} ({min_vram}GB)"
+                
+                # Get launchable path
+                launchable_path = launchable.get('path', launchable.get('id', ''))
+                notebook_name = launchable.get('notebook', 'notebook.ipynb')
+                
+                # URL-encode for GitHub links
+                encoded_path = quote(launchable_path)
+                encoded_notebook = quote(notebook_name)
+                github_path = f"https://github.com/brevdev/unsloth-notebook-adaptor/blob/main/converted/{encoded_path}/{encoded_notebook}"
+                
+                # Create link using HTML anchor tag (match Unsloth's style)
+                notebook_link = f'<a href="{github_path}" target="_blank" rel="noopener noreferrer">View Notebook</a>'
+                
+                # If model type is empty, leave it blank (some Unsloth entries have no type)
+                type_cell = model_type if model_type and model_type != 'Fine-tuning' else ''
+                
+                # Add row
+                lines.append(f"| {formatted_name} | {type_cell} | {gpu_req} | {notebook_link} |")
     
     lines.append("")
     
