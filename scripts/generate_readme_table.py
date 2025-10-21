@@ -141,7 +141,7 @@ def get_model_type(launchable: Dict) -> str:
 
 def categorize_launchables(launchables: List[Dict]) -> Dict[str, List[Dict]]:
     """
-    Categorize launchables to match Unsloth's exact structure.
+    Categorize launchables by model family to match Unsloth's structure.
 
     Args:
         launchables: List of launchable metadata dictionaries
@@ -149,13 +149,18 @@ def categorize_launchables(launchables: List[Dict]) -> Dict[str, List[Dict]]:
     Returns:
         Dictionary mapping category names to lists of launchables (ordered)
     """
-    # Use OrderedDict to maintain category order
+    # Use OrderedDict to maintain category order - organized by model family
     categories = OrderedDict([
         ('Main Notebooks', []),
+        ('GPT-OSS Notebooks', []),
+        ('Llama Notebooks', []),
+        ('Gemma Notebooks', []),
+        ('Qwen Notebooks', []),
+        ('Phi Notebooks', []),
+        ('Mistral Notebooks', []),
         ('Vision Notebooks', []),
+        ('Audio Notebooks', []),
         ('Kaggle Notebooks', []),
-        ('Spark Notebooks', []),
-        ('Whisper Notebooks', []),
         ('Other Notebooks', [])
     ])
     
@@ -164,21 +169,42 @@ def categorize_launchables(launchables: List[Dict]) -> Dict[str, List[Dict]]:
         name = launchable.get('name', '').lower()
         notebook = launchable.get('notebook', '').lower()
         
-        # Categorize based on Unsloth's structure
-        if 'kaggle' in notebook or 'kaggle' in name:
-            # Kaggle variants
+        # Check if it's a Kaggle variant first
+        is_kaggle = 'kaggle' in notebook or 'kaggle' in name
+        
+        # Check for special types that override family grouping
+        is_vision = model_type == 'Vision' or 'vision' in name or '-vl' in name or '_vl' in name or 'pixtral' in name
+        is_audio = model_type in ['TTS', 'STT', 'Audio'] or any(audio in name for audio in ['whisper', 'spark_tts', 'tts', 'orpheus', 'llasa', 'sesame', 'oute', 'audio'])
+        
+        if is_kaggle:
+            # Kaggle notebooks go to their own section
             categories['Kaggle Notebooks'].append(launchable)
-        elif 'spark' in name and 'tts' in name:
-            # Spark TTS models
-            categories['Spark Notebooks'].append(launchable)
-        elif 'whisper' in name:
-            # Whisper STT models
-            categories['Whisper Notebooks'].append(launchable)
-        elif model_type == 'Vision' or 'vision' in name or 'multimodal' in name:
-            # Vision/Multimodal models
+        elif is_vision:
+            # Vision/Multimodal models (prioritize over family)
             categories['Vision Notebooks'].append(launchable)
-        elif any(main in name for main in ['gemma3n', 'qwen3', 'qwen2', 'gemma3', 'gemma2', 'llama3', 'phi', 'mistral']):
-            # Main featured models (Gemma, Qwen, Llama, Phi, Mistral families)
+        elif is_audio:
+            # Audio models (TTS and STT - prioritize over family)
+            categories['Audio Notebooks'].append(launchable)
+        elif 'gpt-oss' in name or 'gpt_oss' in name:
+            # GPT-OSS family
+            categories['GPT-OSS Notebooks'].append(launchable)
+        elif 'llama' in name:
+            # Llama family (Llama3, Llama3.1, Llama3.2, etc.)
+            categories['Llama Notebooks'].append(launchable)
+        elif 'gemma' in name:
+            # Gemma family (Gemma2, Gemma3, Gemma3N, etc.)
+            categories['Gemma Notebooks'].append(launchable)
+        elif 'qwen' in name:
+            # Qwen family (Qwen2, Qwen2.5, Qwen3, etc.)
+            categories['Qwen Notebooks'].append(launchable)
+        elif 'phi' in name:
+            # Phi family (Phi-3, Phi-4, etc.)
+            categories['Phi Notebooks'].append(launchable)
+        elif 'mistral' in name:
+            # Mistral family (Mistral, Mistral Nemo, etc.)
+            categories['Mistral Notebooks'].append(launchable)
+        elif any(main in name for main in ['deepseek', 'magistral', 'liquid']):
+            # Featured main notebooks
             categories['Main Notebooks'].append(launchable)
         else:
             # Everything else
