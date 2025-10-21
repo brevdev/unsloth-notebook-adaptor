@@ -94,13 +94,12 @@ subprocess.check_call([
             # Replace entire cell with simple Brev installation
             return '''# Install dependencies for Brev
 import subprocess
-import sys
 
 # Install Unsloth
-subprocess.check_call([sys.executable, "-m", "pip", "install", "unsloth"])
+subprocess.check_call(["pip", "install", "unsloth"])
 # Install transformers and trl with specific versions
-subprocess.check_call([sys.executable, "-m", "pip", "install", "transformers==4.56.2"])
-subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-deps", "trl==0.22.2"])'''
+subprocess.check_call(["pip", "install", "transformers==4.56.2"])
+subprocess.check_call(["pip", "install", "--no-deps", "trl==0.22.2"])'''
         
         # Remove standalone %%capture magic commands (won't work outside IPython)
         if '%%capture' in code:
@@ -224,7 +223,7 @@ subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-deps", "trl
                 # Special handling for pip
                 if command.startswith('pip install'):
                     packages = command.replace('pip install', '').strip()
-                    converted = f'{indent}subprocess.check_call([sys.executable, "-m", "pip", "install", {repr(packages)}])'
+                    converted = f'{indent}subprocess.check_call(["pip", "install", {repr(packages)}])'
                 # Special handling for nvidia-smi (non-critical)
                 elif 'nvidia-smi' in command:
                     converted = f'{indent}subprocess.run([{repr(command)}], check=False, shell=True)'
@@ -239,7 +238,7 @@ subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-deps", "trl
                 needs_imports = True
                 indent = line[:len(line) - len(stripped)]
                 packages = stripped.replace('%pip install', '').strip()
-                converted = f'{indent}subprocess.check_call([sys.executable, "-m", "pip", "install", {repr(packages)}])'
+                converted = f'{indent}subprocess.check_call(["pip", "install", {repr(packages)}])'
                 converted_lines.append(converted)
             else:
                 converted_lines.append(line)
