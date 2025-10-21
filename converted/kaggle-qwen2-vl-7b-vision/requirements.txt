@@ -1,5 +1,5 @@
 # Requirements for Kaggle Qwen2 Vl (7B) Vision
-# Generated: 2025-10-21T17:35:49.871332+00:00
+# Generated: 2025-10-21T20:12:03.903188+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

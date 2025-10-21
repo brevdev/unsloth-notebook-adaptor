@@ -146,13 +146,17 @@ class NotebookAdapter(ABC):
 
 ## 📋 Configuration
 
+<div style="text-align: left;">
+
 | Parameter | Value |
-|-----------|-------|
+|:----------|:------|
 | **Model** | {model_name} |
 | **Recommended GPU** | {gpu} |
 | **Min VRAM** | {vram} GB |
 | **Batch Size** | {batch_size} |
 | **Categories** | {categories} |
+
+</div>
 
 ## 🔧 Key Adaptations for Brev
 
