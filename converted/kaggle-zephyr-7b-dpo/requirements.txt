@@ -1,5 +1,5 @@
 # Requirements for Kaggle Zephyr (7B) Dpo
-# Generated: 2025-10-21T21:34:46.759553+00:00
+# Generated: 2025-10-21T21:40:29.281045+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

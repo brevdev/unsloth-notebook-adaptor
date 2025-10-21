@@ -1,5 +1,5 @@
 # Requirements for Kaggle Gemma3N (4B) Audio
-# Generated: 2025-10-21T21:34:47.525974+00:00
+# Generated: 2025-10-21T21:40:30.884180+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

@@ -121,20 +121,26 @@ if os.path.exists("/ephemeral"):
 if use_ephemeral:
     cache_base = "/ephemeral/torch_cache"
     triton_cache = "/ephemeral/triton_cache"
+    tmpdir = "/ephemeral/tmp"
     print("Using /ephemeral for cache (Brev scratch space)")
 else:
     cache_base = os.path.expanduser("~/.cache/torch/inductor")
     triton_cache = os.path.expanduser("~/.cache/triton")
+    tmpdir = os.path.expanduser("~/.cache/tmp")
     print("Using home directory for cache")
 
+# Set ALL PyTorch/Triton cache and temp directories
 os.environ["TORCHINDUCTOR_CACHE_DIR"] = cache_base
 os.environ["TORCH_COMPILE_DIR"] = cache_base
 os.environ["TRITON_CACHE_DIR"] = triton_cache
 os.environ["XDG_CACHE_HOME"] = os.path.expanduser("~/.cache")
+os.environ["TMPDIR"] = tmpdir  # Override system /tmp
+os.environ["TEMP"] = tmpdir
+os.environ["TMP"] = tmpdir
 
-# Create cache directories with proper permissions
-for cache_dir in [cache_base, triton_cache, os.environ["XDG_CACHE_HOME"]]:
-    os.makedirs(cache_dir, mode=0o755, exist_ok=True)
+# Create cache directories with proper permissions (777 to ensure writability)
+for cache_dir in [cache_base, triton_cache, tmpdir, os.environ["XDG_CACHE_HOME"]]:
+    os.makedirs(cache_dir, mode=0o777, exist_ok=True)
 
 # Clean up any old compiled caches that point to /tmp
 old_cache = os.path.join(os.getcwd(), "unsloth_compiled_cache")
@@ -513,14 +519,24 @@ if os.path.exists("/ephemeral"):
 
 if use_ephemeral:
     cache_dir = "/ephemeral/torch_cache"
+    triton_cache = "/ephemeral/triton_cache"
+    tmpdir = "/ephemeral/tmp"
 else:
     cache_dir = os.path.expanduser("~/.cache/torch/inductor")
+    triton_cache = os.path.expanduser("~/.cache/triton")
+    tmpdir = os.path.expanduser("~/.cache/tmp")
 
-os.makedirs(cache_dir, exist_ok=True)
+# Create directories with full write permissions
+for d in [cache_dir, triton_cache, tmpdir]:
+    os.makedirs(d, mode=0o777, exist_ok=True)
 
-# Set PyTorch to use this directory
+# Set ALL PyTorch/Triton cache and temp directories
 os.environ["TORCHINDUCTOR_CACHE_DIR"] = cache_dir
 os.environ["TORCH_COMPILE_DIR"] = cache_dir
+os.environ["TRITON_CACHE_DIR"] = triton_cache
+os.environ["TMPDIR"] = tmpdir  # Override system /tmp
+os.environ["TEMP"] = tmpdir
+os.environ["TMP"] = tmpdir
 
 # Clean up any old compiled caches
 old_cache = os.path.join(os.getcwd(), "unsloth_compiled_cache")
@@ -528,6 +544,7 @@ if os.path.exists(old_cache):
     shutil.rmtree(old_cache, ignore_errors=True)
 
 print(f"✅ Torch cache: {cache_dir}")
+print(f"✅ Temp dir: {tmpdir}")
 
 '''
         

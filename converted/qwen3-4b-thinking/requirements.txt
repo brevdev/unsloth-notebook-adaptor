@@ -1,5 +1,5 @@
 # Requirements for Qwen3 (4B) Thinking
-# Generated: 2025-10-21T21:34:46.995620+00:00
+# Generated: 2025-10-21T21:40:29.751270+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
