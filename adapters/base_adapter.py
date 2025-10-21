@@ -71,11 +71,19 @@ class NotebookAdapter(ABC):
                 original_source = cell.source
                 adapted_source = self._apply_conversions(original_source, config)
                 cell.source = adapted_source
+                # Clear outputs and execution state
+                cell.outputs = []
+                cell.execution_count = None
             elif cell.cell_type == 'markdown':
                 # Apply conversions to markdown cells too (for cleaning links, etc.)
                 original_source = cell.source
                 adapted_source = self._apply_conversions(original_source, config)
                 cell.source = adapted_source
+
+        # Clean notebook-level metadata (remove widget state from Colab)
+        if 'widgets' in notebook.metadata:
+            del notebook.metadata['widgets']
+            logger.debug("Removed widget state metadata from notebook")
 
         # Generate companion files
         companion_files = self.generate_companion_files(notebook_path, config)

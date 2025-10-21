@@ -1,5 +1,5 @@
 # Requirements for Kaggle Bert Classification
-# Generated: 2025-10-21T21:08:10.345937+00:00
+# Generated: 2025-10-21T21:34:46.042984+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
