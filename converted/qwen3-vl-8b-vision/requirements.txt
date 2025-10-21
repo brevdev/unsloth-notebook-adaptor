@@ -1,5 +1,5 @@
 # Requirements for Qwen3-VL (8B)
-# Generated: 2025-10-21T17:06:20.946640+00:00
+# Generated: 2025-10-21T17:14:21.280791+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

@@ -1,5 +1,5 @@
 # Requirements for Unsloth Studio
-# Generated: 2025-10-21T17:06:15.687991+00:00
+# Generated: 2025-10-21T17:14:16.630889+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

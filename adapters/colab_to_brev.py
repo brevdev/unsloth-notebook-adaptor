@@ -95,20 +95,30 @@ subprocess.check_call([
             return '''# Environment Check for Brev
 import sys
 import os
+import shutil
 
 print(f"Python executable: {sys.executable}")
 print(f"Python version: {sys.version}")
 
 # Configure PyTorch cache directories to avoid permission errors
-os.environ["TORCHINDUCTOR_CACHE_DIR"] = os.path.expanduser("~/torch_compile_cache")
-os.environ["TORCH_COMPILE_DIR"] = os.path.expanduser("~/torch_compile_cache")
+# MUST be set before any torch imports
+cache_base = os.path.expanduser("~/torch_cache")
+os.environ["TORCHINDUCTOR_CACHE_DIR"] = cache_base
+os.environ["TORCH_COMPILE_DIR"] = cache_base
 os.environ["TRITON_CACHE_DIR"] = os.path.expanduser("~/triton_cache")
+os.environ["XDG_CACHE_HOME"] = os.path.expanduser("~/.cache")
 
-# Create cache directories if they don't exist
-for cache_dir in [os.environ["TORCHINDUCTOR_CACHE_DIR"], os.environ["TRITON_CACHE_DIR"]]:
-    os.makedirs(cache_dir, exist_ok=True)
+# Create cache directories with proper permissions
+for cache_dir in [cache_base, os.environ["TRITON_CACHE_DIR"], os.environ["XDG_CACHE_HOME"]]:
+    os.makedirs(cache_dir, mode=0o755, exist_ok=True)
 
-print(f"✅ PyTorch cache: {os.environ['TORCHINDUCTOR_CACHE_DIR']}")
+# Clean up any old compiled caches that point to /tmp
+old_cache = os.path.join(os.getcwd(), "unsloth_compiled_cache")
+if os.path.exists(old_cache):
+    print(f"⚠️  Removing old compiled cache: {old_cache}")
+    shutil.rmtree(old_cache, ignore_errors=True)
+
+print(f"✅ PyTorch cache: {cache_base}")
 
 try:
     from unsloth import FastLanguageModel

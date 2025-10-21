@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2025-10-21T17:06:42.397114+00:00",
+  "generated_at": "2025-10-21T17:17:46.185632+00:00",
   "total_launchables": 129,
   "launchables": [
     {
@@ -22,7 +22,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Advanced_Llama3_1_(3B)_GRPO_LoRA.ipynb",
-        "last_synced": "2025-10-21T17:06:20.830537+00:00"
+        "last_synced": "2025-10-21T17:14:21.174895+00:00"
       },
       "files": [
         "setup.sh",
@@ -52,7 +52,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Advanced_Llama3_2_(3B)_GRPO_LoRA.ipynb",
-        "last_synced": "2025-10-21T17:06:17.746960+00:00"
+        "last_synced": "2025-10-21T17:14:18.425898+00:00"
       },
       "files": [
         "setup.sh",
@@ -82,7 +82,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/bert_classification.ipynb",
-        "last_synced": "2025-10-21T17:06:21.396483+00:00"
+        "last_synced": "2025-10-21T17:14:21.672598+00:00"
       },
       "files": [
         "setup.sh",
@@ -112,7 +112,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/CodeForces-cot-Finetune_for_Reasoning_on_CodeForces.ipynb",
-        "last_synced": "2025-10-21T17:06:20.417934+00:00"
+        "last_synced": "2025-10-21T17:14:20.820569+00:00"
       },
       "files": [
         "setup.sh",
@@ -142,7 +142,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/CodeGemma_(7B)-Conversational.ipynb",
-        "last_synced": "2025-10-21T17:06:19.477058+00:00"
+        "last_synced": "2025-10-21T17:14:19.992081+00:00"
       },
       "files": [
         "setup.sh",
@@ -172,7 +172,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/DeepSeek_R1_0528_Qwen3_(8B)_GRPO.ipynb",
-        "last_synced": "2025-10-21T17:06:19.673024+00:00"
+        "last_synced": "2025-10-21T17:14:20.146288+00:00"
       },
       "files": [
         "setup.sh",
@@ -202,7 +202,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Falcon_H1_(0.ipynb",
-        "last_synced": "2025-10-21T17:06:17.058030+00:00"
+        "last_synced": "2025-10-21T17:14:17.680292+00:00"
       },
       "files": [
         "setup.sh",
@@ -232,7 +232,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Falcon_H1-Alpaca.ipynb",
-        "last_synced": "2025-10-21T17:06:16.366724+00:00"
+        "last_synced": "2025-10-21T17:14:17.097210+00:00"
       },
       "files": [
         "setup.sh",
@@ -262,7 +262,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma2_(2B)-Alpaca.ipynb",
-        "last_synced": "2025-10-21T17:06:16.386532+00:00"
+        "last_synced": "2025-10-21T17:14:17.119065+00:00"
       },
       "files": [
         "setup.sh",
@@ -292,7 +292,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma2_(9B)-Alpaca.ipynb",
-        "last_synced": "2025-10-21T17:06:17.916831+00:00"
+        "last_synced": "2025-10-21T17:14:18.582739+00:00"
       },
       "files": [
         "setup.sh",
@@ -322,7 +322,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma3_(1B)-GRPO.ipynb",
-        "last_synced": "2025-10-21T17:06:18.664001+00:00"
+        "last_synced": "2025-10-21T17:14:19.234209+00:00"
       },
       "files": [
         "setup.sh",
@@ -352,7 +352,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma3_(270M).ipynb",
-        "last_synced": "2025-10-21T17:06:19.383297+00:00"
+        "last_synced": "2025-10-21T17:14:19.902150+00:00"
       },
       "files": [
         "setup.sh",
@@ -382,7 +382,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma3_(27B)_A100-Conversational.ipynb",
-        "last_synced": "2025-10-21T17:06:17.641580+00:00"
+        "last_synced": "2025-10-21T17:14:18.330037+00:00"
       },
       "files": [
         "setup.sh",
@@ -412,7 +412,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma3_(4B).ipynb",
-        "last_synced": "2025-10-21T17:06:16.566082+00:00"
+        "last_synced": "2025-10-21T17:14:17.275520+00:00"
       },
       "files": [
         "setup.sh",
@@ -442,7 +442,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma3_(4B)-Vision-GRPO.ipynb",
-        "last_synced": "2025-10-21T17:06:19.847145+00:00"
+        "last_synced": "2025-10-21T17:14:20.332396+00:00"
       },
       "files": [
         "setup.sh",
@@ -473,7 +473,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma3N_(2B)-Inference.ipynb",
-        "last_synced": "2025-10-21T17:06:16.714227+00:00"
+        "last_synced": "2025-10-21T17:14:17.399769+00:00"
       },
       "files": [
         "setup.sh",
@@ -503,7 +503,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma3N_(4B)-Audio.ipynb",
-        "last_synced": "2025-10-21T17:06:19.452844+00:00"
+        "last_synced": "2025-10-21T17:14:19.958238+00:00"
       },
       "files": [
         "setup.sh",
@@ -533,7 +533,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma3N_(4B)-Conversational.ipynb",
-        "last_synced": "2025-10-21T17:06:16.862337+00:00"
+        "last_synced": "2025-10-21T17:14:17.513365+00:00"
       },
       "files": [
         "setup.sh",
@@ -563,7 +563,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma3N_(4B)-Vision.ipynb",
-        "last_synced": "2025-10-21T17:06:19.874787+00:00"
+        "last_synced": "2025-10-21T17:14:20.366143+00:00"
       },
       "files": [
         "setup.sh",
@@ -593,7 +593,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/GPT_OSS_BNB_(20B)-Inference.ipynb",
-        "last_synced": "2025-10-21T17:06:18.688590+00:00"
+        "last_synced": "2025-10-21T17:14:19.257152+00:00"
       },
       "files": [
         "setup.sh",
@@ -623,7 +623,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/GPT_OSS_MXFP4_(20B)-Inference.ipynb",
-        "last_synced": "2025-10-21T17:06:20.882940+00:00"
+        "last_synced": "2025-10-21T17:14:21.224623+00:00"
       },
       "files": [
         "setup.sh",
@@ -653,7 +653,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Granite4.ipynb",
-        "last_synced": "2025-10-21T17:06:16.947535+00:00"
+        "last_synced": "2025-10-21T17:14:17.581800+00:00"
       },
       "files": [
         "setup.sh",
@@ -683,7 +683,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/HuggingFace Course-Advanced_Llama3_1_(3B)_GRPO_LoRA.ipynb",
-        "last_synced": "2025-10-21T17:06:17.591564+00:00"
+        "last_synced": "2025-10-21T17:14:18.278741+00:00"
       },
       "files": [
         "setup.sh",
@@ -713,7 +713,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/HuggingFace Course-Advanced_Llama3_2_(3B)_GRPO_LoRA.ipynb",
-        "last_synced": "2025-10-21T17:06:20.717144+00:00"
+        "last_synced": "2025-10-21T17:14:21.083063+00:00"
       },
       "files": [
         "setup.sh",
@@ -743,7 +743,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/HuggingFace Course-DeepSeek_R1_0528_Qwen3_(8B)_GRPO.ipynb",
-        "last_synced": "2025-10-21T17:06:18.356225+00:00"
+        "last_synced": "2025-10-21T17:14:18.968199+00:00"
       },
       "files": [
         "setup.sh",
@@ -773,7 +773,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/HuggingFace Course-Gemma3_(1B)-GRPO.ipynb",
-        "last_synced": "2025-10-21T17:06:20.013034+00:00"
+        "last_synced": "2025-10-21T17:14:20.475219+00:00"
       },
       "files": [
         "setup.sh",
@@ -803,7 +803,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/HuggingFace Course-Gemma3_(4B)-Vision-GRPO.ipynb",
-        "last_synced": "2025-10-21T17:06:16.412820+00:00"
+        "last_synced": "2025-10-21T17:14:17.143728+00:00"
       },
       "files": [
         "setup.sh",
@@ -833,7 +833,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/HuggingFace Course-Llama3.ipynb",
-        "last_synced": "2025-10-21T17:06:16.298847+00:00"
+        "last_synced": "2025-10-21T17:14:17.023233+00:00"
       },
       "files": [
         "setup.sh",
@@ -863,7 +863,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/HuggingFace Course-Mistral_v0.ipynb",
-        "last_synced": "2025-10-21T17:06:21.517357+00:00"
+        "last_synced": "2025-10-21T17:14:21.746826+00:00"
       },
       "files": [
         "setup.sh",
@@ -893,7 +893,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/HuggingFace Course-Qwen2.ipynb",
-        "last_synced": "2025-10-21T17:06:19.909576+00:00"
+        "last_synced": "2025-10-21T17:14:20.392999+00:00"
       },
       "files": [
         "setup.sh",
@@ -923,7 +923,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/HuggingFace Course-Qwen2_5_7B_VL_GRPO.ipynb",
-        "last_synced": "2025-10-21T17:06:21.347836+00:00"
+        "last_synced": "2025-10-21T17:14:21.604034+00:00"
       },
       "files": [
         "setup.sh",
@@ -953,7 +953,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/HuggingFace Course-Qwen3_(4B)-GRPO.ipynb",
-        "last_synced": "2025-10-21T17:06:20.058608+00:00"
+        "last_synced": "2025-10-21T17:14:20.504281+00:00"
       },
       "files": [
         "setup.sh",
@@ -983,7 +983,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Advanced_Llama3_1_(3B)_GRPO_LoRA.ipynb",
-        "last_synced": "2025-10-21T17:06:19.417943+00:00"
+        "last_synced": "2025-10-21T17:14:19.928711+00:00"
       },
       "files": [
         "setup.sh",
@@ -1013,7 +1013,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Advanced_Llama3_2_(3B)_GRPO_LoRA.ipynb",
-        "last_synced": "2025-10-21T17:06:18.488701+00:00"
+        "last_synced": "2025-10-21T17:14:19.070250+00:00"
       },
       "files": [
         "setup.sh",
@@ -1043,7 +1043,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-bert_classification.ipynb",
-        "last_synced": "2025-10-21T17:06:18.285488+00:00"
+        "last_synced": "2025-10-21T17:14:18.913171+00:00"
       },
       "files": [
         "setup.sh",
@@ -1073,7 +1073,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-CodeForces-cot-Finetune_for_Reasoning_on_CodeForces.ipynb",
-        "last_synced": "2025-10-21T17:06:18.715559+00:00"
+        "last_synced": "2025-10-21T17:14:19.276650+00:00"
       },
       "files": [
         "setup.sh",
@@ -1103,7 +1103,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-CodeGemma_(7B)-Conversational.ipynb",
-        "last_synced": "2025-10-21T17:06:20.797447+00:00"
+        "last_synced": "2025-10-21T17:14:21.152774+00:00"
       },
       "files": [
         "setup.sh",
@@ -1133,7 +1133,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-DeepSeek_R1_0528_Qwen3_(8B)_GRPO.ipynb",
-        "last_synced": "2025-10-21T17:06:20.540377+00:00"
+        "last_synced": "2025-10-21T17:14:20.919850+00:00"
       },
       "files": [
         "setup.sh",
@@ -1163,7 +1163,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Falcon_H1_(0.ipynb",
-        "last_synced": "2025-10-21T17:06:17.454132+00:00"
+        "last_synced": "2025-10-21T17:14:18.171921+00:00"
       },
       "files": [
         "setup.sh",
@@ -1193,7 +1193,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Gemma2_(2B)-Alpaca.ipynb",
-        "last_synced": "2025-10-21T17:06:18.811061+00:00"
+        "last_synced": "2025-10-21T17:14:19.366929+00:00"
       },
       "files": [
         "setup.sh",
@@ -1223,7 +1223,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Gemma2_(9B)-Alpaca.ipynb",
-        "last_synced": "2025-10-21T17:06:17.309447+00:00"
+        "last_synced": "2025-10-21T17:14:18.045043+00:00"
       },
       "files": [
         "setup.sh",
@@ -1253,7 +1253,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3_(1B)-GRPO.ipynb",
-        "last_synced": "2025-10-21T17:06:15.994510+00:00"
+        "last_synced": "2025-10-21T17:14:16.708946+00:00"
       },
       "files": [
         "setup.sh",
@@ -1283,7 +1283,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3_(270M).ipynb",
-        "last_synced": "2025-10-21T17:06:17.778872+00:00"
+        "last_synced": "2025-10-21T17:14:18.456737+00:00"
       },
       "files": [
         "setup.sh",
@@ -1313,7 +1313,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3_(27B)_A100-Conversational.ipynb",
-        "last_synced": "2025-10-21T17:06:18.613886+00:00"
+        "last_synced": "2025-10-21T17:14:19.185520+00:00"
       },
       "files": [
         "setup.sh",
@@ -1343,7 +1343,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3_(4B).ipynb",
-        "last_synced": "2025-10-21T17:06:17.862834+00:00"
+        "last_synced": "2025-10-21T17:14:18.527837+00:00"
       },
       "files": [
         "setup.sh",
@@ -1373,7 +1373,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3_(4B)-Vision-GRPO.ipynb",
-        "last_synced": "2025-10-21T17:06:20.450302+00:00"
+        "last_synced": "2025-10-21T17:14:20.852880+00:00"
       },
       "files": [
         "setup.sh",
@@ -1404,7 +1404,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3N_(2B)-Inference.ipynb",
-        "last_synced": "2025-10-21T17:06:16.098448+00:00"
+        "last_synced": "2025-10-21T17:14:16.788885+00:00"
       },
       "files": [
         "setup.sh",
@@ -1434,7 +1434,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3N_(4B)-Audio.ipynb",
-        "last_synced": "2025-10-21T17:06:21.835621+00:00"
+        "last_synced": "2025-10-21T17:14:21.956071+00:00"
       },
       "files": [
         "setup.sh",
@@ -1464,7 +1464,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3N_(4B)-Conversational.ipynb",
-        "last_synced": "2025-10-21T17:06:18.999738+00:00"
+        "last_synced": "2025-10-21T17:14:19.545371+00:00"
       },
       "files": [
         "setup.sh",
@@ -1494,7 +1494,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Gemma3N_(4B)-Vision.ipynb",
-        "last_synced": "2025-10-21T17:06:16.642586+00:00"
+        "last_synced": "2025-10-21T17:14:17.336181+00:00"
       },
       "files": [
         "setup.sh",
@@ -1524,7 +1524,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-GPT_OSS_BNB_(20B)-Inference.ipynb",
-        "last_synced": "2025-10-21T17:06:21.145821+00:00"
+        "last_synced": "2025-10-21T17:14:21.446462+00:00"
       },
       "files": [
         "setup.sh",
@@ -1554,7 +1554,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-GPT_OSS_MXFP4_(20B)-Inference.ipynb",
-        "last_synced": "2025-10-21T17:06:21.775698+00:00"
+        "last_synced": "2025-10-21T17:14:21.911357+00:00"
       },
       "files": [
         "setup.sh",
@@ -1584,7 +1584,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Granite4.ipynb",
-        "last_synced": "2025-10-21T17:06:16.120859+00:00"
+        "last_synced": "2025-10-21T17:14:16.820389+00:00"
       },
       "files": [
         "setup.sh",
@@ -1614,7 +1614,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Liquid_LFM2_(1.ipynb",
-        "last_synced": "2025-10-21T17:06:21.710399+00:00"
+        "last_synced": "2025-10-21T17:14:21.857080+00:00"
       },
       "files": [
         "setup.sh",
@@ -1644,7 +1644,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Llama3.ipynb",
-        "last_synced": "2025-10-21T17:06:20.779351+00:00"
+        "last_synced": "2025-10-21T17:14:21.135076+00:00"
       },
       "files": [
         "setup.sh",
@@ -1680,7 +1680,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Llama3_(8B)-Conversational.ipynb",
-        "last_synced": "2025-10-21T17:06:21.213398+00:00"
+        "last_synced": "2025-10-21T17:14:21.502329+00:00"
       },
       "files": [
         "setup.sh",
@@ -1711,7 +1711,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Llama3_(8B)-Ollama.ipynb",
-        "last_synced": "2025-10-21T17:06:18.751128+00:00"
+        "last_synced": "2025-10-21T17:14:19.309107+00:00"
       },
       "files": [
         "setup.sh",
@@ -1741,7 +1741,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Llama3_(8B)-ORPO.ipynb",
-        "last_synced": "2025-10-21T17:06:21.800078+00:00"
+        "last_synced": "2025-10-21T17:14:21.933306+00:00"
       },
       "files": [
         "setup.sh",
@@ -1771,7 +1771,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Llasa_TTS_(1B).ipynb",
-        "last_synced": "2025-10-21T17:06:18.639229+00:00"
+        "last_synced": "2025-10-21T17:14:19.204004+00:00"
       },
       "files": [
         "setup.sh",
@@ -1801,7 +1801,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Llasa_TTS_(3B).ipynb",
-        "last_synced": "2025-10-21T17:06:16.185385+00:00"
+        "last_synced": "2025-10-21T17:14:16.922813+00:00"
       },
       "files": [
         "setup.sh",
@@ -1831,7 +1831,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Magistral_(24B)-Reasoning-Conversational.ipynb",
-        "last_synced": "2025-10-21T17:06:20.586407+00:00"
+        "last_synced": "2025-10-21T17:14:20.975843+00:00"
       },
       "files": [
         "setup.sh",
@@ -1861,7 +1861,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Meta-Synthetic-Data-Llama3.ipynb",
-        "last_synced": "2025-10-21T17:06:16.824046+00:00"
+        "last_synced": "2025-10-21T17:14:17.485337+00:00"
       },
       "files": [
         "setup.sh",
@@ -1891,7 +1891,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Meta_Synthetic_Data_Llama3_2_(3B).ipynb",
-        "last_synced": "2025-10-21T17:06:16.329835+00:00"
+        "last_synced": "2025-10-21T17:14:17.057942+00:00"
       },
       "files": [
         "setup.sh",
@@ -1921,7 +1921,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Mistral_(7B)-Text_Completion.ipynb",
-        "last_synced": "2025-10-21T17:06:17.890680+00:00"
+        "last_synced": "2025-10-21T17:14:18.554001+00:00"
       },
       "files": [
         "setup.sh",
@@ -1951,7 +1951,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Mistral_Nemo_(12B)-Alpaca.ipynb",
-        "last_synced": "2025-10-21T17:06:19.330210+00:00"
+        "last_synced": "2025-10-21T17:14:19.849753+00:00"
       },
       "files": [
         "setup.sh",
@@ -1981,7 +1981,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Mistral_Small_(22B)-Alpaca.ipynb",
-        "last_synced": "2025-10-21T17:06:21.241479+00:00"
+        "last_synced": "2025-10-21T17:14:21.525536+00:00"
       },
       "files": [
         "setup.sh",
@@ -2011,7 +2011,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Mistral_v0.ipynb",
-        "last_synced": "2025-10-21T17:06:21.690548+00:00"
+        "last_synced": "2025-10-21T17:14:21.840246+00:00"
       },
       "files": [
         "setup.sh",
@@ -2044,7 +2044,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Orpheus_(3B)-TTS.ipynb",
-        "last_synced": "2025-10-21T17:06:21.614882+00:00"
+        "last_synced": "2025-10-21T17:14:21.779543+00:00"
       },
       "files": [
         "setup.sh",
@@ -2074,7 +2074,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Oute_TTS_(1B).ipynb",
-        "last_synced": "2025-10-21T17:06:16.062786+00:00"
+        "last_synced": "2025-10-21T17:14:16.761333+00:00"
       },
       "files": [
         "setup.sh",
@@ -2104,7 +2104,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Phi_3.ipynb",
-        "last_synced": "2025-10-21T17:06:20.152973+00:00"
+        "last_synced": "2025-10-21T17:14:20.598175+00:00"
       },
       "files": [
         "setup.sh",
@@ -2134,7 +2134,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Phi_3_Medium-Conversational.ipynb",
-        "last_synced": "2025-10-21T17:06:17.681405+00:00"
+        "last_synced": "2025-10-21T17:14:18.368176+00:00"
       },
       "files": [
         "setup.sh",
@@ -2164,7 +2164,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Phi_4-Conversational.ipynb",
-        "last_synced": "2025-10-21T17:06:17.194213+00:00"
+        "last_synced": "2025-10-21T17:14:17.838076+00:00"
       },
       "files": [
         "setup.sh",
@@ -2194,7 +2194,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Pixtral_(12B)-Vision.ipynb",
-        "last_synced": "2025-10-21T17:06:19.253482+00:00"
+        "last_synced": "2025-10-21T17:14:19.784861+00:00"
       },
       "files": [
         "setup.sh",
@@ -2224,7 +2224,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Qwen2.ipynb",
-        "last_synced": "2025-10-21T17:06:20.242517+00:00"
+        "last_synced": "2025-10-21T17:14:20.673644+00:00"
       },
       "files": [
         "setup.sh",
@@ -2257,7 +2257,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Qwen2_(7B)-Alpaca.ipynb",
-        "last_synced": "2025-10-21T17:06:18.909884+00:00"
+        "last_synced": "2025-10-21T17:14:19.463087+00:00"
       },
       "files": [
         "setup.sh",
@@ -2287,7 +2287,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Qwen2_5_7B_VL_GRPO.ipynb",
-        "last_synced": "2025-10-21T17:06:20.984943+00:00"
+        "last_synced": "2025-10-21T17:14:21.309828+00:00"
       },
       "files": [
         "setup.sh",
@@ -2317,7 +2317,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Qwen2_VL_(7B)-Vision.ipynb",
-        "last_synced": "2025-10-21T17:06:15.924772+00:00"
+        "last_synced": "2025-10-21T17:14:16.674930+00:00"
       },
       "files": [
         "Kaggle-Qwen2_VL_(7B)-Vision.ipynb",
@@ -2347,7 +2347,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Qwen2.5_Coder_(1.ipynb",
-        "last_synced": "2025-10-21T17:06:19.817132+00:00"
+        "last_synced": "2025-10-21T17:14:20.301983+00:00"
       },
       "files": [
         "setup.sh",
@@ -2377,7 +2377,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Qwen3_(32B)_A100-Reasoning-Conversational.ipynb",
-        "last_synced": "2025-10-21T17:06:18.310945+00:00"
+        "last_synced": "2025-10-21T17:14:18.930393+00:00"
       },
       "files": [
         "setup.sh",
@@ -2407,7 +2407,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Qwen3_(4B)-GRPO.ipynb",
-        "last_synced": "2025-10-21T17:06:18.533558+00:00"
+        "last_synced": "2025-10-21T17:14:19.103478+00:00"
       },
       "files": [
         "setup.sh",
@@ -2437,7 +2437,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Qwen3_(4B)-Instruct.ipynb",
-        "last_synced": "2025-10-21T17:06:20.123957+00:00"
+        "last_synced": "2025-10-21T17:14:20.571144+00:00"
       },
       "files": [
         "setup.sh",
@@ -2467,7 +2467,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Qwen3_(4B)-Thinking.ipynb",
-        "last_synced": "2025-10-21T17:06:16.212441+00:00"
+        "last_synced": "2025-10-21T17:14:16.952309+00:00"
       },
       "files": [
         "setup.sh",
@@ -2497,7 +2497,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Spark_TTS_(0_5B).ipynb",
-        "last_synced": "2025-10-21T17:06:17.812941+00:00"
+        "last_synced": "2025-10-21T17:14:18.482537+00:00"
       },
       "files": [
         "setup.sh",
@@ -2527,7 +2527,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-TinyLlama_(1.ipynb",
-        "last_synced": "2025-10-21T17:06:16.993295+00:00"
+        "last_synced": "2025-10-21T17:14:17.624530+00:00"
       },
       "files": [
         "setup.sh",
@@ -2557,7 +2557,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Unsloth_Studio.ipynb",
-        "last_synced": "2025-10-21T17:06:21.123668+00:00"
+        "last_synced": "2025-10-21T17:14:21.432825+00:00"
       },
       "files": [
         "setup.sh",
@@ -2587,7 +2587,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Whisper.ipynb",
-        "last_synced": "2025-10-21T17:06:18.258109+00:00"
+        "last_synced": "2025-10-21T17:14:18.875580+00:00"
       },
       "files": [
         "setup.sh",
@@ -2617,7 +2617,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Zephyr_(7B)-DPO.ipynb",
-        "last_synced": "2025-10-21T17:06:19.945851+00:00"
+        "last_synced": "2025-10-21T17:14:20.429065+00:00"
       },
       "files": [
         "setup.sh",
@@ -2647,7 +2647,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Liquid_LFM2_(1.ipynb",
-        "last_synced": "2025-10-21T17:06:17.711842+00:00"
+        "last_synced": "2025-10-21T17:14:18.395153+00:00"
       },
       "files": [
         "setup.sh",
@@ -2677,7 +2677,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Liquid_LFM2-Conversational.ipynb",
-        "last_synced": "2025-10-21T17:06:19.096290+00:00"
+        "last_synced": "2025-10-21T17:14:19.638789+00:00"
       },
       "files": [
         "setup.sh",
@@ -2707,7 +2707,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Llama3.ipynb",
-        "last_synced": "2025-10-21T17:06:21.381067+00:00"
+        "last_synced": "2025-10-21T17:14:21.654133+00:00"
       },
       "files": [
         "setup.sh",
@@ -2743,7 +2743,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Llama3_(8B)-Conversational.ipynb",
-        "last_synced": "2025-10-21T17:06:19.782538+00:00"
+        "last_synced": "2025-10-21T17:14:20.273506+00:00"
       },
       "files": [
         "setup.sh",
@@ -2774,7 +2774,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Llama3_(8B)-Ollama.ipynb",
-        "last_synced": "2025-10-21T17:06:16.488109+00:00"
+        "last_synced": "2025-10-21T17:14:17.202719+00:00"
       },
       "files": [
         "setup.sh",
@@ -2804,7 +2804,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Llama3_(8B)-ORPO.ipynb",
-        "last_synced": "2025-10-21T17:06:19.122230+00:00"
+        "last_synced": "2025-10-21T17:14:19.660898+00:00"
       },
       "files": [
         "setup.sh",
@@ -2834,7 +2834,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Llasa_TTS_(1B).ipynb",
-        "last_synced": "2025-10-21T17:06:20.684445+00:00"
+        "last_synced": "2025-10-21T17:14:21.053117+00:00"
       },
       "files": [
         "setup.sh",
@@ -2864,7 +2864,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Llasa_TTS_(3B).ipynb",
-        "last_synced": "2025-10-21T17:06:21.456220+00:00"
+        "last_synced": "2025-10-21T17:14:21.717283+00:00"
       },
       "files": [
         "setup.sh",
@@ -2894,7 +2894,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Magistral_(24B)-Reasoning-Conversational.ipynb",
-        "last_synced": "2025-10-21T17:06:16.794983+00:00"
+        "last_synced": "2025-10-21T17:14:17.459928+00:00"
       },
       "files": [
         "setup.sh",
@@ -2924,7 +2924,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Meta-Synthetic-Data-Llama3.ipynb",
-        "last_synced": "2025-10-21T17:06:19.068404+00:00"
+        "last_synced": "2025-10-21T17:14:19.611319+00:00"
       },
       "files": [
         "setup.sh",
@@ -2954,7 +2954,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Meta_Synthetic_Data_Llama3_2_(3B).ipynb",
-        "last_synced": "2025-10-21T17:06:20.177802+00:00"
+        "last_synced": "2025-10-21T17:14:20.620912+00:00"
       },
       "files": [
         "setup.sh",
@@ -2984,7 +2984,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Mistral_(7B)-Text_Completion.ipynb",
-        "last_synced": "2025-10-21T17:06:20.748839+00:00"
+        "last_synced": "2025-10-21T17:14:21.112364+00:00"
       },
       "files": [
         "setup.sh",
@@ -3014,7 +3014,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Mistral_Nemo_(12B)-Alpaca.ipynb",
-        "last_synced": "2025-10-21T17:06:20.387084+00:00"
+        "last_synced": "2025-10-21T17:14:20.790819+00:00"
       },
       "files": [
         "setup.sh",
@@ -3044,7 +3044,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Mistral_Small_(22B)-Alpaca.ipynb",
-        "last_synced": "2025-10-21T17:06:19.598461+00:00"
+        "last_synced": "2025-10-21T17:14:20.085798+00:00"
       },
       "files": [
         "setup.sh",
@@ -3074,7 +3074,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Mistral_v0.ipynb",
-        "last_synced": "2025-10-21T17:06:20.272344+00:00"
+        "last_synced": "2025-10-21T17:14:20.700813+00:00"
       },
       "files": [
         "setup.sh",
@@ -3107,7 +3107,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Orpheus_(3B)-TTS.ipynb",
-        "last_synced": "2025-10-21T17:06:19.291025+00:00"
+        "last_synced": "2025-10-21T17:14:19.821279+00:00"
       },
       "files": [
         "setup.sh",
@@ -3137,7 +3137,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Oute_TTS_(1B).ipynb",
-        "last_synced": "2025-10-21T17:06:21.085019+00:00"
+        "last_synced": "2025-10-21T17:14:21.401310+00:00"
       },
       "files": [
         "setup.sh",
@@ -3167,7 +3167,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Phi_3.ipynb",
-        "last_synced": "2025-10-21T17:06:16.144670+00:00"
+        "last_synced": "2025-10-21T17:14:16.868358+00:00"
       },
       "files": [
         "setup.sh",
@@ -3197,7 +3197,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Phi_3_Medium-Conversational.ipynb",
-        "last_synced": "2025-10-21T17:06:21.739945+00:00"
+        "last_synced": "2025-10-21T17:14:21.883413+00:00"
       },
       "files": [
         "setup.sh",
@@ -3229,7 +3229,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Phi-4_(14B).ipynb",
-        "last_synced": "2025-10-21T17:06:20.856669+00:00"
+        "last_synced": "2025-10-21T17:14:21.203561+00:00"
       },
       "files": [
         "setup.sh",
@@ -3262,7 +3262,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Pixtral_(12B)-Vision.ipynb",
-        "last_synced": "2025-10-21T17:06:16.248115+00:00"
+        "last_synced": "2025-10-21T17:14:16.982565+00:00"
       },
       "files": [
         "setup.sh",
@@ -3292,7 +3292,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen2.ipynb",
-        "last_synced": "2025-10-21T17:06:21.945462+00:00"
+        "last_synced": "2025-10-21T17:14:22.055361+00:00"
       },
       "files": [
         "setup.sh",
@@ -3325,7 +3325,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen2_(7B)-Alpaca.ipynb",
-        "last_synced": "2025-10-21T17:06:21.419168+00:00"
+        "last_synced": "2025-10-21T17:14:21.693451+00:00"
       },
       "files": [
         "setup.sh",
@@ -3355,7 +3355,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen2_5_7B_VL_GRPO.ipynb",
-        "last_synced": "2025-10-21T17:06:20.316548+00:00"
+        "last_synced": "2025-10-21T17:14:20.733717+00:00"
       },
       "files": [
         "setup.sh",
@@ -3385,7 +3385,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen2_VL_(7B)-Vision.ipynb",
-        "last_synced": "2025-10-21T17:06:19.034285+00:00"
+        "last_synced": "2025-10-21T17:14:19.580206+00:00"
       },
       "files": [
         "setup.sh",
@@ -3415,7 +3415,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen2.5_Coder_(1.ipynb",
-        "last_synced": "2025-10-21T17:06:17.416001+00:00"
+        "last_synced": "2025-10-21T17:14:18.138115+00:00"
       },
       "files": [
         "setup.sh",
@@ -3446,7 +3446,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen3_(14B).ipynb",
-        "last_synced": "2025-10-21T17:06:21.888125+00:00"
+        "last_synced": "2025-10-21T17:14:22.018859+00:00"
       },
       "files": [
         "setup.sh",
@@ -3481,7 +3481,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen3_(32B)_A100-Reasoning-Conversational.ipynb",
-        "last_synced": "2025-10-21T17:06:21.171648+00:00"
+        "last_synced": "2025-10-21T17:14:21.466892+00:00"
       },
       "files": [
         "setup.sh",
@@ -3513,7 +3513,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen3_(4B)_grpo.ipynb",
-        "last_synced": "2025-10-21T17:06:19.513130+00:00"
+        "last_synced": "2025-10-21T17:14:20.013365+00:00"
       },
       "files": [
         "setup.sh",
@@ -3543,7 +3543,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen3_(4B)-Instruct.ipynb",
-        "last_synced": "2025-10-21T17:06:16.447628+00:00"
+        "last_synced": "2025-10-21T17:14:17.173880+00:00"
       },
       "files": [
         "setup.sh",
@@ -3573,7 +3573,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen3_(4B)-Thinking.ipynb",
-        "last_synced": "2025-10-21T17:06:20.486567+00:00"
+        "last_synced": "2025-10-21T17:14:20.881295+00:00"
       },
       "files": [
         "setup.sh",
@@ -3605,7 +3605,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen3-VL_(8B).ipynb",
-        "last_synced": "2025-10-21T17:06:20.949015+00:00"
+        "last_synced": "2025-10-21T17:14:21.282914+00:00"
       },
       "files": [
         "setup.sh",
@@ -3641,7 +3641,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Sesame-CSM_(1B).ipynb",
-        "last_synced": "2025-10-21T17:06:21.289747+00:00"
+        "last_synced": "2025-10-21T17:14:21.553464+00:00"
       },
       "files": [
         "setup.sh",
@@ -3672,7 +3672,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Spark_TTS_(0_5B).ipynb",
-        "last_synced": "2025-10-21T17:06:16.743603+00:00"
+        "last_synced": "2025-10-21T17:14:17.433117+00:00"
       },
       "files": [
         "setup.sh",
@@ -3702,7 +3702,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Synthetic_Data_Hackathon.ipynb",
-        "last_synced": "2025-10-21T17:06:21.917657+00:00"
+        "last_synced": "2025-10-21T17:14:22.042360+00:00"
       },
       "files": [
         "setup.sh",
@@ -3732,7 +3732,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/TinyLlama_(1.ipynb",
-        "last_synced": "2025-10-21T17:06:17.475762+00:00"
+        "last_synced": "2025-10-21T17:14:18.190785+00:00"
       },
       "files": [
         "setup.sh",
@@ -3762,7 +3762,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Unsloth_Studio.ipynb",
-        "last_synced": "2025-10-21T17:06:15.720164+00:00"
+        "last_synced": "2025-10-21T17:14:16.634931+00:00"
       },
       "files": [
         "Unsloth_Studio.ipynb",
@@ -3794,7 +3794,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Whisper_Large_V3.ipynb",
-        "last_synced": "2025-10-21T17:06:16.902901+00:00"
+        "last_synced": "2025-10-21T17:14:17.547975+00:00"
       },
       "files": [
         "setup.sh",
@@ -3824,7 +3824,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Zephyr_(7B)-DPO.ipynb",
-        "last_synced": "2025-10-21T17:06:17.975709+00:00"
+        "last_synced": "2025-10-21T17:14:18.633907+00:00"
       },
       "files": [
         "setup.sh",
@@ -3856,7 +3856,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/gpt-oss-120b.ipynb",
-        "last_synced": "2025-10-21T17:06:20.920493+00:00"
+        "last_synced": "2025-10-21T17:14:21.251326+00:00"
       },
       "files": [
         "setup.sh",
@@ -3889,7 +3889,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/gpt-oss-20b.ipynb",
-        "last_synced": "2025-10-21T17:06:21.863888+00:00"
+        "last_synced": "2025-10-21T17:14:21.992626+00:00"
       },
       "files": [
         "setup.sh",
@@ -3931,7 +3931,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/gpt-oss-20b-grpo.ipynb",
-        "last_synced": "2025-10-21T17:06:18.070651+00:00"
+        "last_synced": "2025-10-21T17:14:18.706818+00:00"
       },
       "files": [
         "setup.sh",

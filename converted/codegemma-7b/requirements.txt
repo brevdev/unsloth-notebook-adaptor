@@ -1,5 +1,5 @@
 # Requirements for Codegemma (7B) Conversational
-# Generated: 2025-10-21T17:06:19.474915+00:00
+# Generated: 2025-10-21T17:14:19.989952+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
