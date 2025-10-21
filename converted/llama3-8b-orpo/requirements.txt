@@ -1,5 +1,5 @@
 # Requirements for Llama3 (8B) Orpo
-# Generated: 2025-10-21T21:54:57.196157+00:00
+# Generated: 2025-10-21T22:15:32.203568+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

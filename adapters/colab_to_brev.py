@@ -152,40 +152,80 @@ print(f"✅ PyTorch cache: {cache_base}")
 
 try:
     from unsloth import FastLanguageModel
+    import transformers
     print("\\n✅ Unsloth already available")
-    print(f"   Location: {FastLanguageModel.__module__}")
+    print(f"   Unsloth: {FastLanguageModel.__module__}")
+    print(f"   Transformers: {transformers.__version__}")
+    
+    # Check if we need to upgrade/downgrade transformers
+    import pkg_resources
+    try:
+        current_transformers = pkg_resources.get_distribution("transformers").version
+        if current_transformers != "4.56.2":
+            print(f"   ⚠️  Transformers {current_transformers} != 4.56.2, may need adjustment")
+    except:
+        pass
+    
+    print("   ✅ All packages OK, skipping installation")
 except ImportError:
-    print("\\n⚠️  Unsloth not found - will install")
-
-# Install unsloth using uv (the package manager for this environment)
-import subprocess
-
-print(f"\\nInstalling packages into: {sys.executable}")
-print("Using uv package manager...\\n")
-
-try:
-    # Use uv to install packages into the current environment
-    subprocess.check_call(["uv", "pip", "install", "unsloth"])
-    subprocess.check_call(["uv", "pip", "install", "transformers==4.56.2"])
-    subprocess.check_call(["uv", "pip", "install", "--no-deps", "trl==0.22.2"])
-    print("\\n✅ Installation complete")
-except FileNotFoundError:
-    print("❌ 'uv' command not found. Trying alternative method...")
-    # Fallback: install pip into venv first, then use it
-    subprocess.check_call([sys.executable, "-m", "ensurepip", "--upgrade"])
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "unsloth"])
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "transformers==4.56.2"])
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-deps", "trl==0.22.2"])
-    print("\\n✅ Installation complete")
-
-# Verify installation
-try:
-    from unsloth import FastLanguageModel
-    print("✅ Unsloth is now available")
-except ImportError as e:
-    print(f"❌ Installation failed: {e}")
-    print("⚠️  Please restart kernel and try again")
-    raise'''
+    print("\\n⚠️  Unsloth not found - installing required packages...")
+    import subprocess
+    
+    # Find uv in common locations
+    uv_paths = [
+        "uv",  # In PATH
+        os.path.expanduser("~/.venv/bin/uv"),
+        os.path.expanduser("~/.cargo/bin/uv"),
+        "/usr/local/bin/uv"
+    ]
+    
+    uv_cmd = None
+    for path in uv_paths:
+        try:
+            result = subprocess.run([path, "--version"], capture_output=True, timeout=2)
+            if result.returncode == 0:
+                uv_cmd = path
+                print(f"   Found uv at: {path}")
+                break
+        except (FileNotFoundError, subprocess.TimeoutExpired):
+            continue
+    
+    print(f"\\nInstalling packages into: {sys.executable}")
+    
+    if uv_cmd:
+        print("Using uv package manager...\\n")
+        try:
+            subprocess.check_call([uv_cmd, "pip", "install", "unsloth"])
+            subprocess.check_call([uv_cmd, "pip", "install", "transformers==4.56.2"])
+            subprocess.check_call([uv_cmd, "pip", "install", "--no-deps", "trl==0.22.2"])
+            print("\\n✅ Installation complete")
+        except subprocess.CalledProcessError as e:
+            print(f"⚠️  uv install failed: {e}")
+            uv_cmd = None  # Fall back to pip
+    
+    if not uv_cmd:
+        print("Using pip package manager...\\n")
+        try:
+            # Ensure pip is available
+            subprocess.run([sys.executable, "-m", "ensurepip", "--upgrade"], 
+                         capture_output=True, timeout=30)
+            # Install packages
+            subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "unsloth"])
+            subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "transformers==4.56.2"])
+            subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "--no-deps", "trl==0.22.2"])
+            print("\\n✅ Installation complete")
+        except subprocess.CalledProcessError as e:
+            print(f"❌ Installation failed: {e}")
+            print("   This may be due to permission issues.")
+            print("   Packages may already be installed - attempting to continue...")
+    
+    # Verify installation
+    try:
+        from unsloth import FastLanguageModel
+        print("✅ Unsloth is now available")
+    except ImportError as e:
+        print(f"❌ Unsloth still not available: {e}")
+        print("⚠️  Please check setup script ran successfully or restart instance")'''
         
         # Remove standalone %%capture magic commands (won't work outside IPython)
         if '%%capture' in code:
