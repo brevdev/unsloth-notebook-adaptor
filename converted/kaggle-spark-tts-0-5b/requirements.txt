@@ -1,5 +1,5 @@
 # Requirements for Kaggle Spark Tts (0 5B)
-# Generated: 2025-10-21T16:36:07.896245+00:00
+# Generated: 2025-10-21T16:37:55.621211+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
