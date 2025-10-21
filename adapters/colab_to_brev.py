@@ -103,14 +103,23 @@ print(f"Python version: {sys.version}")
 
 # Configure PyTorch cache directories to avoid permission errors
 # MUST be set before any torch imports
-cache_base = os.path.expanduser("~/torch_cache")
+# Prefer /ephemeral for Brev instances (larger scratch space)
+if os.path.exists("/ephemeral") and os.access("/ephemeral", os.W_OK):
+    cache_base = "/ephemeral/torch_cache"
+    triton_cache = "/ephemeral/triton_cache"
+    print("Using /ephemeral for cache (Brev scratch space)")
+else:
+    cache_base = os.path.expanduser("~/torch_cache")
+    triton_cache = os.path.expanduser("~/triton_cache")
+    print("Using home directory for cache")
+
 os.environ["TORCHINDUCTOR_CACHE_DIR"] = cache_base
 os.environ["TORCH_COMPILE_DIR"] = cache_base
-os.environ["TRITON_CACHE_DIR"] = os.path.expanduser("~/triton_cache")
+os.environ["TRITON_CACHE_DIR"] = triton_cache
 os.environ["XDG_CACHE_HOME"] = os.path.expanduser("~/.cache")
 
 # Create cache directories with proper permissions
-for cache_dir in [cache_base, os.environ["TRITON_CACHE_DIR"], os.environ["XDG_CACHE_HOME"]]:
+for cache_dir in [cache_base, triton_cache, os.environ["XDG_CACHE_HOME"]]:
     os.makedirs(cache_dir, mode=0o755, exist_ok=True)
 
 # Clean up any old compiled caches that point to /tmp
@@ -451,8 +460,12 @@ print("=" * 60)
 import os
 import shutil
 
-# Create user-writable cache directory
-cache_dir = os.path.expanduser("~/.cache/torch/inductor")
+# Prefer /ephemeral for Brev instances (larger scratch space)
+if os.path.exists("/ephemeral") and os.access("/ephemeral", os.W_OK):
+    cache_dir = "/ephemeral/torch_cache"
+else:
+    cache_dir = os.path.expanduser("~/.cache/torch/inductor")
+
 os.makedirs(cache_dir, exist_ok=True)
 
 # Set PyTorch to use this directory
