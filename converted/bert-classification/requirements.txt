@@ -1,5 +1,5 @@
 # Requirements for Bert Classification
-# Generated: 2025-10-21T16:37:51.424073+00:00
+# Generated: 2025-10-21T17:06:21.394224+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

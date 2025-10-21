@@ -1,5 +1,5 @@
 # Requirements for Phi-4 (14B)
-# Generated: 2025-10-21T16:37:56.259063+00:00
+# Generated: 2025-10-21T17:06:20.854763+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

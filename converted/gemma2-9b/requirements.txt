@@ -1,5 +1,5 @@
 # Requirements for Gemma2 (9B) Alpaca
-# Generated: 2025-10-21T16:37:52.169720+00:00
+# Generated: 2025-10-21T17:06:17.914885+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

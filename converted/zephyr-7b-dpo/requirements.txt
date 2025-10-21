@@ -1,5 +1,5 @@
 # Requirements for Zephyr (7B) Dpo
-# Generated: 2025-10-21T16:37:55.140202+00:00
+# Generated: 2025-10-21T17:06:17.973586+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

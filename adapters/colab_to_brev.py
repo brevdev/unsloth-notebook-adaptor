@@ -94,9 +94,21 @@ subprocess.check_call([
             # Replace with environment check + installation using uv
             return '''# Environment Check for Brev
 import sys
+import os
 
 print(f"Python executable: {sys.executable}")
 print(f"Python version: {sys.version}")
+
+# Configure PyTorch cache directories to avoid permission errors
+os.environ["TORCHINDUCTOR_CACHE_DIR"] = os.path.expanduser("~/torch_compile_cache")
+os.environ["TORCH_COMPILE_DIR"] = os.path.expanduser("~/torch_compile_cache")
+os.environ["TRITON_CACHE_DIR"] = os.path.expanduser("~/triton_cache")
+
+# Create cache directories if they don't exist
+for cache_dir in [os.environ["TORCHINDUCTOR_CACHE_DIR"], os.environ["TRITON_CACHE_DIR"]]:
+    os.makedirs(cache_dir, exist_ok=True)
+
+print(f"✅ PyTorch cache: {os.environ['TORCHINDUCTOR_CACHE_DIR']}")
 
 try:
     from unsloth import FastLanguageModel

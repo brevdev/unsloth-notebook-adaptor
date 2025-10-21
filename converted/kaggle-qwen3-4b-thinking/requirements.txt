@@ -1,5 +1,5 @@
 # Requirements for Kaggle Qwen3 (4B) Thinking
-# Generated: 2025-10-21T16:37:56.374944+00:00
+# Generated: 2025-10-21T17:06:16.210334+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
