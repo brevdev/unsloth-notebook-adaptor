@@ -1,5 +1,5 @@
 # Requirements for Kaggle Llama3 (8B) Orpo
-# Generated: 2025-10-21T15:53:41.862132+00:00
+# Generated: 2025-10-21T15:55:11.976804+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
