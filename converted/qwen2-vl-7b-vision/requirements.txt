@@ -1,5 +1,5 @@
 # Requirements for Qwen2 Vl (7B) Vision
-# Generated: 2025-10-21T16:25:52.519745+00:00
+# Generated: 2025-10-21T16:36:08.843822+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

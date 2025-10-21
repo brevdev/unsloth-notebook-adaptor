@@ -91,7 +91,7 @@ subprocess.check_call([
         # (Has %%capture and COLAB_ environment check)
         if '%%capture' in code and 'COLAB_' in code:
             logger.debug("Removing Colab conditional installation block")
-            # Replace with environment check + installation using sys.executable
+            # Replace with environment check + installation using uv
             return '''# Environment Check for Brev
 import sys
 
@@ -103,24 +103,28 @@ try:
     print("\\n✅ Unsloth already available")
     print(f"   Location: {FastLanguageModel.__module__}")
 except ImportError:
-    print("\\n⚠️  Unsloth not found - will install in next cell")
+    print("\\n⚠️  Unsloth not found - will install")
 
-# Install unsloth in the kernel's Python environment
+# Install unsloth using uv (the package manager for this environment)
 import subprocess
 
-print(f"\\nInstalling unsloth into: {sys.executable}")
+print(f"\\nInstalling packages into: {sys.executable}")
+print("Using uv package manager...\\n")
 
-subprocess.check_call([
-    sys.executable, "-m", "pip", "install", "unsloth"
-])
-subprocess.check_call([
-    sys.executable, "-m", "pip", "install", "transformers==4.56.2"
-])
-subprocess.check_call([
-    sys.executable, "-m", "pip", "install", "--no-deps", "trl==0.22.2"
-])
-
-print("\\n✅ Installation complete")
+try:
+    # Use uv to install packages into the current environment
+    subprocess.check_call(["uv", "pip", "install", "unsloth"])
+    subprocess.check_call(["uv", "pip", "install", "transformers==4.56.2"])
+    subprocess.check_call(["uv", "pip", "install", "--no-deps", "trl==0.22.2"])
+    print("\\n✅ Installation complete")
+except FileNotFoundError:
+    print("❌ 'uv' command not found. Trying alternative method...")
+    # Fallback: install pip into venv first, then use it
+    subprocess.check_call([sys.executable, "-m", "ensurepip", "--upgrade"])
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "unsloth"])
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "transformers==4.56.2"])
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-deps", "trl==0.22.2"])
+    print("\\n✅ Installation complete")
 
 # Verify installation
 try:

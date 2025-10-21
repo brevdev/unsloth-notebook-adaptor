@@ -1,5 +1,5 @@
 # Requirements for Kaggle Phi 4 Conversational
-# Generated: 2025-10-21T16:25:57.718130+00:00
+# Generated: 2025-10-21T16:36:07.472565+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
