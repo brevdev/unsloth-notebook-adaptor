@@ -154,31 +154,35 @@ class NotebookAdapter(ABC):
 
 ## 📋 Configuration
 
-<table style="width: auto; margin-left: 0; border-collapse: collapse; border: 1px solid rgba(128, 128, 128, 0.5);">
-    <tr style="border-bottom: 2px solid rgba(128, 128, 128, 0.5); background-color: rgba(128, 128, 128, 0.1);">
-        <th style="text-align: left; padding: 8px 12px; border-right: 1px solid rgba(128, 128, 128, 0.5); font-weight: bold;">Parameter</th>
-        <th style="text-align: left; padding: 8px 12px; font-weight: bold;">Value</th>
-    </tr>
-    <tr style="border-bottom: 1px solid rgba(128, 128, 128, 0.3);">
-        <td style="text-align: left; padding: 8px 12px; border-right: 1px solid rgba(128, 128, 128, 0.5);"><strong>Model</strong></td>
-        <td style="text-align: left; padding: 8px 12px;">{model_name}</td>
-    </tr>
-    <tr style="border-bottom: 1px solid rgba(128, 128, 128, 0.3);">
-        <td style="text-align: left; padding: 8px 12px; border-right: 1px solid rgba(128, 128, 128, 0.5);"><strong>Recommended GPU</strong></td>
-        <td style="text-align: left; padding: 8px 12px;">{gpu}</td>
-    </tr>
-    <tr style="border-bottom: 1px solid rgba(128, 128, 128, 0.3);">
-        <td style="text-align: left; padding: 8px 12px; border-right: 1px solid rgba(128, 128, 128, 0.5);"><strong>Min VRAM</strong></td>
-        <td style="text-align: left; padding: 8px 12px;">{vram} GB</td>
-    </tr>
-    <tr style="border-bottom: 1px solid rgba(128, 128, 128, 0.3);">
-        <td style="text-align: left; padding: 8px 12px; border-right: 1px solid rgba(128, 128, 128, 0.5);"><strong>Batch Size</strong></td>
-        <td style="text-align: left; padding: 8px 12px;">{batch_size}</td>
-    </tr>
-    <tr>
-        <td style="text-align: left; padding: 8px 12px; border-right: 1px solid rgba(128, 128, 128, 0.5);"><strong>Categories</strong></td>
-        <td style="text-align: left; padding: 8px 12px;">{categories}</td>
-    </tr>
+<table style="width: auto; margin-left: 0; border-collapse: collapse; border: 2px solid #808080;">
+    <thead>
+        <tr style="border-bottom: 2px solid #808080;">
+            <th style="text-align: left; padding: 8px 12px; border-right: 2px solid #808080; font-weight: bold;">Parameter</th>
+            <th style="text-align: left; padding: 8px 12px; font-weight: bold;">Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align: left; padding: 8px 12px; border-right: 1px solid #808080;"><strong>Model</strong></td>
+            <td style="text-align: left; padding: 8px 12px;">{model_name}</td>
+        </tr>
+        <tr>
+            <td style="text-align: left; padding: 8px 12px; border-right: 1px solid #808080;"><strong>Recommended GPU</strong></td>
+            <td style="text-align: left; padding: 8px 12px;">{gpu}</td>
+        </tr>
+        <tr>
+            <td style="text-align: left; padding: 8px 12px; border-right: 1px solid #808080;"><strong>Min VRAM</strong></td>
+            <td style="text-align: left; padding: 8px 12px;">{vram} GB</td>
+        </tr>
+        <tr>
+            <td style="text-align: left; padding: 8px 12px; border-right: 1px solid #808080;"><strong>Batch Size</strong></td>
+            <td style="text-align: left; padding: 8px 12px;">{batch_size}</td>
+        </tr>
+        <tr>
+            <td style="text-align: left; padding: 8px 12px; border-right: 1px solid #808080;"><strong>Categories</strong></td>
+            <td style="text-align: left; padding: 8px 12px;">{categories}</td>
+        </tr>
+    </tbody>
 </table>
 
 ## 🔧 Key Adaptations for Brev
