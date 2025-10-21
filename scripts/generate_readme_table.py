@@ -263,8 +263,8 @@ def generate_table(launchables: List[Dict]) -> str:
             encoded_notebook = quote(notebook_name)
             github_path = f"converted/{encoded_path}/{encoded_notebook}"
             
-            # Create link - match Unsloth's style
-            notebook_link = f"[Open in Brev]({github_path})"
+            # Create link to view the notebook file on GitHub
+            notebook_link = f"[View Notebook]({github_path})"
             
             # Add row with proper alignment
             lines.append(f"| {formatted_name} | {model_type} | {gpu_req} | {notebook_link} |")
