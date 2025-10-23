@@ -1,5 +1,5 @@
 # Requirements for Qwen3 (14B)
-# Generated: 2025-10-22T06:07:48.055519+00:00
+# Generated: 2025-10-23T06:07:41.455618+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
