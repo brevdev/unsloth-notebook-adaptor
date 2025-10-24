@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "generated_at": "2025-10-23T06:07:41.629868+00:00",
-  "total_launchables": 163,
+  "generated_at": "2025-10-24T06:07:27.459500+00:00",
+  "total_launchables": 164,
   "launchables": [
     {
       "id": "advanced-llama3-1-3b-grpo-lora/Advanced_Llama3_1_(3B)_GRPO_LoRA",
@@ -22,7 +22,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Advanced_Llama3_1_(3B)_GRPO_LoRA.ipynb",
-        "last_synced": "2025-10-23T06:07:39.445535+00:00"
+        "last_synced": "2025-10-24T06:07:25.363401+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -52,7 +52,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/HuggingFace Course-Advanced_Llama3_1_(3B)_GRPO_LoRA.ipynb",
-        "last_synced": "2025-10-23T06:07:39.759237+00:00"
+        "last_synced": "2025-10-24T06:07:25.666259+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -82,7 +82,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/HuggingFace Course-Advanced_Llama3_2_(3B)_GRPO_LoRA.ipynb",
-        "last_synced": "2025-10-23T06:07:40.500005+00:00"
+        "last_synced": "2025-10-24T06:07:26.359159+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -112,7 +112,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Advanced_Llama3_2_(3B)_GRPO_LoRA.ipynb",
-        "last_synced": "2025-10-23T06:07:40.174977+00:00"
+        "last_synced": "2025-10-24T06:07:26.053502+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -142,7 +142,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/CodeForces-cot-Finetune_for_Reasoning_on_CodeForces.ipynb",
-        "last_synced": "2025-10-23T06:07:40.713139+00:00"
+        "last_synced": "2025-10-24T06:07:26.588631+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -172,7 +172,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/CodeGemma_(7B)-Conversational.ipynb",
-        "last_synced": "2025-10-23T06:07:41.191593+00:00"
+        "last_synced": "2025-10-24T06:07:27.046937+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -202,7 +202,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/HuggingFace Course-DeepSeek_R1_0528_Qwen3_(8B)_GRPO.ipynb",
-        "last_synced": "2025-10-23T06:07:40.791685+00:00"
+        "last_synced": "2025-10-24T06:07:26.668738+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -232,7 +232,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/DeepSeek_R1_0528_Qwen3_(8B)_GRPO.ipynb",
-        "last_synced": "2025-10-23T06:07:40.374485+00:00"
+        "last_synced": "2025-10-24T06:07:26.242493+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -262,7 +262,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Falcon_H1-Alpaca.ipynb",
-        "last_synced": "2025-10-23T06:07:40.041108+00:00"
+        "last_synced": "2025-10-24T06:07:25.928082+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -292,7 +292,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Falcon_H1_(0.ipynb",
-        "last_synced": "2025-10-23T06:07:40.674416+00:00"
+        "last_synced": "2025-10-24T06:07:26.522978+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -322,7 +322,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/GPT_OSS_BNB_(20B)-Inference.ipynb",
-        "last_synced": "2025-10-23T06:07:41.207251+00:00"
+        "last_synced": "2025-10-24T06:07:27.062305+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -352,7 +352,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/GPT_OSS_MXFP4_(20B)-Inference.ipynb",
-        "last_synced": "2025-10-23T06:07:40.412993+00:00"
+        "last_synced": "2025-10-24T06:07:26.277654+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -382,7 +382,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma2_(2B)-Alpaca.ipynb",
-        "last_synced": "2025-10-23T06:07:40.254936+00:00"
+        "last_synced": "2025-10-24T06:07:26.128796+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -412,7 +412,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma2_(9B)-Alpaca.ipynb",
-        "last_synced": "2025-10-23T06:07:40.113766+00:00"
+        "last_synced": "2025-10-24T06:07:25.996572+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -442,7 +442,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma3N_(2B)-Inference.ipynb",
-        "last_synced": "2025-10-23T06:07:40.150445+00:00"
+        "last_synced": "2025-10-24T06:07:26.030408+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -472,7 +472,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma3N_(4B)-Audio.ipynb",
-        "last_synced": "2025-10-23T06:07:40.602293+00:00"
+        "last_synced": "2025-10-24T06:07:26.453635+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -502,7 +502,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma3N_(4B)-Conversational.ipynb",
-        "last_synced": "2025-10-23T06:07:41.368601+00:00"
+        "last_synced": "2025-10-24T06:07:27.210982+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -532,7 +532,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma3N_(4B)-Vision.ipynb",
-        "last_synced": "2025-10-23T06:07:40.581604+00:00"
+        "last_synced": "2025-10-24T06:07:26.434614+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -562,7 +562,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/HuggingFace Course-Gemma3_(1B)-GRPO.ipynb",
-        "last_synced": "2025-10-23T06:07:40.733526+00:00"
+        "last_synced": "2025-10-24T06:07:26.608608+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -592,7 +592,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma3_(1B)-GRPO.ipynb",
-        "last_synced": "2025-10-23T06:07:41.037874+00:00"
+        "last_synced": "2025-10-24T06:07:26.902485+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -622,7 +622,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma3_(270M).ipynb",
-        "last_synced": "2025-10-23T06:07:41.390847+00:00"
+        "last_synced": "2025-10-24T06:07:27.232638+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -652,7 +652,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma3_(27B)_A100-Conversational.ipynb",
-        "last_synced": "2025-10-23T06:07:40.620549+00:00"
+        "last_synced": "2025-10-24T06:07:26.470797+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -682,7 +682,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma3_(4B).ipynb",
-        "last_synced": "2025-10-23T06:07:40.093576+00:00"
+        "last_synced": "2025-10-24T06:07:25.977383+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -712,7 +712,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma3_(4B)-Vision-GRPO.ipynb",
-        "last_synced": "2025-10-23T06:07:41.083869+00:00"
+        "last_synced": "2025-10-24T06:07:26.945349+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -742,7 +742,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Gemma3_(4B)-Vision-GRPO.ipynb",
-        "last_synced": "2025-10-23T06:07:41.083869+00:00"
+        "last_synced": "2025-10-24T06:07:26.945349+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -772,7 +772,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/HuggingFace Course-Gemma3_(4B)-Vision-GRPO.ipynb",
-        "last_synced": "2025-10-23T06:07:39.616559+00:00"
+        "last_synced": "2025-10-24T06:07:25.528089+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -802,7 +802,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Granite4.ipynb",
-        "last_synced": "2025-10-23T06:07:40.953208+00:00"
+        "last_synced": "2025-10-24T06:07:26.824661+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -832,7 +832,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Liquid_LFM2-Conversational.ipynb",
-        "last_synced": "2025-10-23T06:07:41.226202+00:00"
+        "last_synced": "2025-10-24T06:07:27.080174+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -862,7 +862,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Liquid_LFM2_(1.ipynb",
-        "last_synced": "2025-10-23T06:07:39.593241+00:00"
+        "last_synced": "2025-10-24T06:07:25.506001+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -892,7 +892,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Llama3.ipynb",
-        "last_synced": "2025-10-23T06:07:41.114374+00:00"
+        "last_synced": "2025-10-24T06:07:26.972965+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -922,7 +922,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/HuggingFace Course-Llama3.ipynb",
-        "last_synced": "2025-10-23T06:07:39.266579+00:00"
+        "last_synced": "2025-10-24T06:07:25.192394+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -952,7 +952,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Llama3.ipynb",
-        "last_synced": "2025-10-23T06:07:41.114374+00:00"
+        "last_synced": "2025-10-24T06:07:26.972965+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -982,7 +982,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Llama3.ipynb",
-        "last_synced": "2025-10-23T06:07:41.114374+00:00"
+        "last_synced": "2025-10-24T06:07:26.972965+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1012,7 +1012,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Llama3.ipynb",
-        "last_synced": "2025-10-23T06:07:41.114374+00:00"
+        "last_synced": "2025-10-24T06:07:26.972965+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1042,7 +1042,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Llama3.ipynb",
-        "last_synced": "2025-10-23T06:07:41.114374+00:00"
+        "last_synced": "2025-10-24T06:07:26.972965+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1072,7 +1072,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Llama3.ipynb",
-        "last_synced": "2025-10-23T06:07:41.114374+00:00"
+        "last_synced": "2025-10-24T06:07:26.972965+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1102,7 +1102,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Llama3.ipynb",
-        "last_synced": "2025-10-23T06:07:41.114374+00:00"
+        "last_synced": "2025-10-24T06:07:26.972965+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1132,7 +1132,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Llama3_(8B)-Conversational.ipynb",
-        "last_synced": "2025-10-23T06:07:41.326111+00:00"
+        "last_synced": "2025-10-24T06:07:27.172171+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1162,7 +1162,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Llama3_(8B)-Conversational.ipynb",
-        "last_synced": "2025-10-23T06:07:41.326111+00:00"
+        "last_synced": "2025-10-24T06:07:27.172171+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1192,7 +1192,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Llama3_(8B)-ORPO.ipynb",
-        "last_synced": "2025-10-23T06:07:39.552390+00:00"
+        "last_synced": "2025-10-24T06:07:25.467167+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1222,7 +1222,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Llama3_(8B)-Ollama.ipynb",
-        "last_synced": "2025-10-23T06:07:39.884393+00:00"
+        "last_synced": "2025-10-24T06:07:25.782348+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1252,7 +1252,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Llasa_TTS_(1B).ipynb",
-        "last_synced": "2025-10-23T06:07:40.474752+00:00"
+        "last_synced": "2025-10-24T06:07:26.335780+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1282,7 +1282,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Llasa_TTS_(3B).ipynb",
-        "last_synced": "2025-10-23T06:07:39.305199+00:00"
+        "last_synced": "2025-10-24T06:07:25.230652+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1342,7 +1342,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Magistral_(24B)-Reasoning-Conversational.ipynb",
-        "last_synced": "2025-10-23T06:07:39.572070+00:00"
+        "last_synced": "2025-10-24T06:07:25.486248+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1372,7 +1372,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Meta-Synthetic-Data-Llama3.ipynb",
-        "last_synced": "2025-10-23T06:07:40.542850+00:00"
+        "last_synced": "2025-10-24T06:07:26.398999+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1402,7 +1402,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Meta_Synthetic_Data_Llama3_2_(3B).ipynb",
-        "last_synced": "2025-10-23T06:07:39.816935+00:00"
+        "last_synced": "2025-10-24T06:07:25.719752+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1432,7 +1432,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Mistral_(7B)-Text_Completion.ipynb",
-        "last_synced": "2025-10-23T06:07:40.904972+00:00"
+        "last_synced": "2025-10-24T06:07:26.786478+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1462,7 +1462,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Mistral_Nemo_(12B)-Alpaca.ipynb",
-        "last_synced": "2025-10-23T06:07:40.215971+00:00"
+        "last_synced": "2025-10-24T06:07:26.092146+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1492,7 +1492,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Mistral_Small_(22B)-Alpaca.ipynb",
-        "last_synced": "2025-10-23T06:07:41.153892+00:00"
+        "last_synced": "2025-10-24T06:07:27.010289+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1522,7 +1522,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Mistral_v0.ipynb",
-        "last_synced": "2025-10-23T06:07:41.246613+00:00"
+        "last_synced": "2025-10-24T06:07:27.098617+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1552,7 +1552,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Mistral_v0.ipynb",
-        "last_synced": "2025-10-23T06:07:41.246613+00:00"
+        "last_synced": "2025-10-24T06:07:27.098617+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1582,7 +1582,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Mistral_v0.ipynb",
-        "last_synced": "2025-10-23T06:07:41.246613+00:00"
+        "last_synced": "2025-10-24T06:07:27.098617+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1612,7 +1612,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/HuggingFace Course-Mistral_v0.ipynb",
-        "last_synced": "2025-10-23T06:07:41.061823+00:00"
+        "last_synced": "2025-10-24T06:07:26.924902+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1642,7 +1642,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Mistral_v0.ipynb",
-        "last_synced": "2025-10-23T06:07:41.246613+00:00"
+        "last_synced": "2025-10-24T06:07:27.098617+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1651,6 +1651,38 @@
         "README.md",
         "docker-compose.yml",
         "Mistral_v0.3_(7B)-GRPO.ipynb"
+      ]
+    },
+    {
+      "id": "gpt-oss-20b-fine-tuning/OpenEnv_gpt_oss_(20B)_Reinforcement_Learning_2048_Game",
+      "name": "OpenEnv_gpt_oss_(20B)_Reinforcement_Learning_2048_Game",
+      "description": "Fine-tune gpt-oss-20b with Unsloth on NVIDIA GPUs",
+      "notebook": "OpenEnv_gpt_oss_(20B)_Reinforcement_Learning_2048_Game.ipynb",
+      "path": "gpt-oss-20b-fine-tuning",
+      "gpu": {
+        "tier": "A100-40GB",
+        "min_vram_gb": 24,
+        "multi_gpu": true
+      },
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "reasoning",
+        "fine-tuning",
+        "large-model"
+      ],
+      "upstream": {
+        "source": "unslothai/notebooks",
+        "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/gpt-oss-20b.ipynb",
+        "last_synced": "2025-10-24T06:07:27.348836+00:00"
+      },
+      "files": [
+        ".brevconfig.json",
+        "requirements.txt",
+        "setup.sh",
+        "README.md",
+        "docker-compose.yml",
+        "OpenEnv_gpt_oss_(20B)_Reinforcement_Learning_2048_Game.ipynb"
       ]
     },
     {
@@ -1672,7 +1704,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Orpheus_(3B)-TTS.ipynb",
-        "last_synced": "2025-10-23T06:07:40.396274+00:00"
+        "last_synced": "2025-10-24T06:07:26.262328+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1702,7 +1734,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Oute_TTS_(1B).ipynb",
-        "last_synced": "2025-10-23T06:07:39.796243+00:00"
+        "last_synced": "2025-10-24T06:07:25.700380+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1732,7 +1764,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Phi_3.ipynb",
-        "last_synced": "2025-10-23T06:07:41.306394+00:00"
+        "last_synced": "2025-10-24T06:07:27.153824+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1762,7 +1794,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Phi_3_Medium-Conversational.ipynb",
-        "last_synced": "2025-10-23T06:07:41.286437+00:00"
+        "last_synced": "2025-10-24T06:07:27.135128+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1794,7 +1826,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Phi-4_(14B).ipynb",
-        "last_synced": "2025-10-23T06:07:41.345826+00:00"
+        "last_synced": "2025-10-24T06:07:27.189782+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1826,7 +1858,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Phi-4_(14B).ipynb",
-        "last_synced": "2025-10-23T06:07:41.345826+00:00"
+        "last_synced": "2025-10-24T06:07:27.189782+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1858,7 +1890,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Phi-4_(14B).ipynb",
-        "last_synced": "2025-10-23T06:07:41.345826+00:00"
+        "last_synced": "2025-10-24T06:07:27.189782+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1890,7 +1922,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Phi-4_(14B).ipynb",
-        "last_synced": "2025-10-23T06:07:41.345826+00:00"
+        "last_synced": "2025-10-24T06:07:27.189782+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1920,7 +1952,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Pixtral_(12B)-Vision.ipynb",
-        "last_synced": "2025-10-23T06:07:40.196341+00:00"
+        "last_synced": "2025-10-24T06:07:26.073662+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1950,7 +1982,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/HuggingFace Course-Qwen2.ipynb",
-        "last_synced": "2025-10-23T06:07:39.974793+00:00"
+        "last_synced": "2025-10-24T06:07:25.865910+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -1980,7 +2012,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen2.ipynb",
-        "last_synced": "2025-10-23T06:07:40.933678+00:00"
+        "last_synced": "2025-10-24T06:07:26.806186+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2010,7 +2042,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen2.ipynb",
-        "last_synced": "2025-10-23T06:07:40.933678+00:00"
+        "last_synced": "2025-10-24T06:07:26.806186+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2040,7 +2072,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen2.5_Coder_(1.ipynb",
-        "last_synced": "2025-10-23T06:07:39.529167+00:00"
+        "last_synced": "2025-10-24T06:07:25.445146+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2070,7 +2102,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen2.ipynb",
-        "last_synced": "2025-10-23T06:07:40.933678+00:00"
+        "last_synced": "2025-10-24T06:07:26.806186+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2100,7 +2132,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen2.ipynb",
-        "last_synced": "2025-10-23T06:07:40.933678+00:00"
+        "last_synced": "2025-10-24T06:07:26.806186+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2130,7 +2162,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen2_(7B)-Alpaca.ipynb",
-        "last_synced": "2025-10-23T06:07:40.640990+00:00"
+        "last_synced": "2025-10-24T06:07:26.490068+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2160,7 +2192,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen2_5_7B_VL_GRPO.ipynb",
-        "last_synced": "2025-10-23T06:07:39.736057+00:00"
+        "last_synced": "2025-10-24T06:07:25.644438+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2190,7 +2222,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/HuggingFace Course-Qwen2_5_7B_VL_GRPO.ipynb",
-        "last_synced": "2025-10-23T06:07:41.419284+00:00"
+        "last_synced": "2025-10-24T06:07:27.258550+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2220,7 +2252,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen2_VL_(7B)-Vision.ipynb",
-        "last_synced": "2025-10-23T06:07:39.466275+00:00"
+        "last_synced": "2025-10-24T06:07:25.383557+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2251,7 +2283,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen3_(14B).ipynb",
-        "last_synced": "2025-10-23T06:07:41.460497+00:00"
+        "last_synced": "2025-10-24T06:07:27.297235+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2282,7 +2314,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen3_(14B).ipynb",
-        "last_synced": "2025-10-23T06:07:41.460497+00:00"
+        "last_synced": "2025-10-24T06:07:27.297235+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2313,7 +2345,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen3_(14B).ipynb",
-        "last_synced": "2025-10-23T06:07:41.460497+00:00"
+        "last_synced": "2025-10-24T06:07:27.297235+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2344,7 +2376,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen3_(14B).ipynb",
-        "last_synced": "2025-10-23T06:07:41.460497+00:00"
+        "last_synced": "2025-10-24T06:07:27.297235+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2375,7 +2407,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen3_(14B).ipynb",
-        "last_synced": "2025-10-23T06:07:41.460497+00:00"
+        "last_synced": "2025-10-24T06:07:27.297235+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2406,7 +2438,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen3_(14B).ipynb",
-        "last_synced": "2025-10-23T06:07:41.460497+00:00"
+        "last_synced": "2025-10-24T06:07:27.297235+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2436,7 +2468,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen3_(32B)_A100-Reasoning-Conversational.ipynb",
-        "last_synced": "2025-10-23T06:07:40.838729+00:00"
+        "last_synced": "2025-10-24T06:07:26.713630+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2468,7 +2500,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen3_(4B)_grpo.ipynb",
-        "last_synced": "2025-10-23T06:07:41.490619+00:00"
+        "last_synced": "2025-10-24T06:07:27.325985+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2498,7 +2530,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/HuggingFace Course-Qwen3_(4B)-GRPO.ipynb",
-        "last_synced": "2025-10-23T06:07:40.284646+00:00"
+        "last_synced": "2025-10-24T06:07:26.155662+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2528,7 +2560,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen3_(4B)-Instruct.ipynb",
-        "last_synced": "2025-10-23T06:07:41.174389+00:00"
+        "last_synced": "2025-10-24T06:07:27.030573+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2558,7 +2590,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen3_(4B)-Thinking.ipynb",
-        "last_synced": "2025-10-23T06:07:40.755279+00:00"
+        "last_synced": "2025-10-24T06:07:26.633288+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2588,7 +2620,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen3_(4B)_Instruct-QAT.ipynb",
-        "last_synced": "2025-10-23T06:07:40.433932+00:00"
+        "last_synced": "2025-10-24T06:07:26.296910+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2620,7 +2652,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen3-VL_(8B).ipynb",
-        "last_synced": "2025-10-23T06:07:41.437799+00:00"
+        "last_synced": "2025-10-24T06:07:27.275963+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2652,7 +2684,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen3-VL_(8B).ipynb",
-        "last_synced": "2025-10-23T06:07:41.437799+00:00"
+        "last_synced": "2025-10-24T06:07:27.275963+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2684,7 +2716,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen3-VL_(8B).ipynb",
-        "last_synced": "2025-10-23T06:07:41.437799+00:00"
+        "last_synced": "2025-10-24T06:07:27.275963+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2716,7 +2748,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen3-VL_(8B).ipynb",
-        "last_synced": "2025-10-23T06:07:41.437799+00:00"
+        "last_synced": "2025-10-24T06:07:27.275963+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2748,7 +2780,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Qwen3-VL_(8B).ipynb",
-        "last_synced": "2025-10-23T06:07:41.437799+00:00"
+        "last_synced": "2025-10-24T06:07:27.275963+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2810,7 +2842,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Sesame-CSM_(1B).ipynb",
-        "last_synced": "2025-10-23T06:07:39.660495+00:00"
+        "last_synced": "2025-10-24T06:07:25.570500+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2842,7 +2874,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Sesame-CSM_(1B).ipynb",
-        "last_synced": "2025-10-23T06:07:39.660495+00:00"
+        "last_synced": "2025-10-24T06:07:25.570500+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2872,7 +2904,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Spark_TTS_(0_5B).ipynb",
-        "last_synced": "2025-10-23T06:07:40.561922+00:00"
+        "last_synced": "2025-10-24T06:07:26.416296+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2902,7 +2934,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Synthetic_Data_Hackathon.ipynb",
-        "last_synced": "2025-10-23T06:07:41.100823+00:00"
+        "last_synced": "2025-10-24T06:07:26.960237+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2932,7 +2964,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/TinyLlama_(1.ipynb",
-        "last_synced": "2025-10-23T06:07:39.373553+00:00"
+        "last_synced": "2025-10-24T06:07:25.295678+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2962,7 +2994,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Unsloth_Studio.ipynb",
-        "last_synced": "2025-10-23T06:07:39.504755+00:00"
+        "last_synced": "2025-10-24T06:07:25.421102+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -2994,7 +3026,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Whisper_Large_V3.ipynb",
-        "last_synced": "2025-10-23T06:07:39.710221+00:00"
+        "last_synced": "2025-10-24T06:07:25.619078+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -3024,7 +3056,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/Zephyr_(7B)-DPO.ipynb",
-        "last_synced": "2025-10-23T06:07:40.997866+00:00"
+        "last_synced": "2025-10-24T06:07:26.865937+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -3144,7 +3176,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/bert_classification.ipynb",
-        "last_synced": "2025-10-23T06:07:39.776171+00:00"
+        "last_synced": "2025-10-24T06:07:25.682124+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -3536,7 +3568,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/gpt-oss-120b.ipynb",
-        "last_synced": "2025-10-23T06:07:39.861614+00:00"
+        "last_synced": "2025-10-24T06:07:25.760903+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -3568,7 +3600,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/gpt-oss-120b.ipynb",
-        "last_synced": "2025-10-23T06:07:39.861614+00:00"
+        "last_synced": "2025-10-24T06:07:25.760903+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -3600,7 +3632,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/gpt-oss-20b.ipynb",
-        "last_synced": "2025-10-23T06:07:41.515128+00:00"
+        "last_synced": "2025-10-24T06:07:27.348836+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -3632,7 +3664,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/gpt-oss-20b.ipynb",
-        "last_synced": "2025-10-23T06:07:41.515128+00:00"
+        "last_synced": "2025-10-24T06:07:27.348836+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -3664,7 +3696,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/gpt-oss-20b.ipynb",
-        "last_synced": "2025-10-23T06:07:41.515128+00:00"
+        "last_synced": "2025-10-24T06:07:27.348836+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -3696,7 +3728,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/gpt-oss-20b.ipynb",
-        "last_synced": "2025-10-23T06:07:41.515128+00:00"
+        "last_synced": "2025-10-24T06:07:27.348836+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -3728,7 +3760,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/gpt-oss-20b.ipynb",
-        "last_synced": "2025-10-23T06:07:41.515128+00:00"
+        "last_synced": "2025-10-24T06:07:27.348836+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -3760,7 +3792,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/gpt-oss-20b.ipynb",
-        "last_synced": "2025-10-23T06:07:41.515128+00:00"
+        "last_synced": "2025-10-24T06:07:27.348836+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -3792,7 +3824,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/gpt-oss-20b.ipynb",
-        "last_synced": "2025-10-23T06:07:41.515128+00:00"
+        "last_synced": "2025-10-24T06:07:27.348836+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -3824,7 +3856,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/gpt-oss-20b.ipynb",
-        "last_synced": "2025-10-23T06:07:41.515128+00:00"
+        "last_synced": "2025-10-24T06:07:27.348836+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -3856,7 +3888,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/gpt-oss-20b-grpo.ipynb",
-        "last_synced": "2025-10-23T06:07:40.863827+00:00"
+        "last_synced": "2025-10-24T06:07:26.737921+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -3888,7 +3920,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/gpt-oss-20b-grpo.ipynb",
-        "last_synced": "2025-10-23T06:07:40.863827+00:00"
+        "last_synced": "2025-10-24T06:07:26.737921+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -3920,7 +3952,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/gpt-oss-20b.ipynb",
-        "last_synced": "2025-10-23T06:07:41.515128+00:00"
+        "last_synced": "2025-10-24T06:07:27.348836+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -3952,7 +3984,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/gpt-oss-20b.ipynb",
-        "last_synced": "2025-10-23T06:07:41.515128+00:00"
+        "last_synced": "2025-10-24T06:07:27.348836+00:00"
       },
       "files": [
         ".brevconfig.json",
@@ -3984,7 +4016,7 @@
       "upstream": {
         "source": "unslothai/notebooks",
         "notebook_url": "https://github.com/unslothai/notebooks/blob/main/nb/gpt-oss-20b.ipynb",
-        "last_synced": "2025-10-23T06:07:41.515128+00:00"
+        "last_synced": "2025-10-24T06:07:27.348836+00:00"
       },
       "files": [
         ".brevconfig.json",
