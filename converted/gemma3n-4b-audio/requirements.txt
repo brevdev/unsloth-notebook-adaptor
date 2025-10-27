@@ -1,5 +1,5 @@
 # Requirements for Gemma3N (4B) Audio
-# Generated: 2025-10-26T06:07:07.460685+00:00
+# Generated: 2025-10-27T06:08:09.139517+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
