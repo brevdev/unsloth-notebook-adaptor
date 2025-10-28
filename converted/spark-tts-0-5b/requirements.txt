@@ -1,5 +1,5 @@
 # Requirements for Spark Tts (0 5B)
-# Generated: 2025-10-27T06:08:09.101569+00:00
+# Generated: 2025-10-28T06:07:39.360811+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 

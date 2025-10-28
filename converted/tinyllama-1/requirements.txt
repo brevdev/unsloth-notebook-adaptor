@@ -1,5 +1,5 @@
 # Requirements for Tinyllama (1
-# Generated: 2025-10-27T06:08:07.957783+00:00
+# Generated: 2025-10-28T06:07:38.135374+00:00
 # 
 # This requirements file is optimized for NVIDIA Brev environments
 
